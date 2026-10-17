@@ -6,7 +6,7 @@
 
 ![城市区域总览](checks/city-final-v22.png)
 
-**[在线预览 →](https://xxcool.github.io/urban-building-dashboard/)**
+**[在线预览 →](https://urban-building-dashboard.vercel.app/)**
 
 ## 交互体验
 
