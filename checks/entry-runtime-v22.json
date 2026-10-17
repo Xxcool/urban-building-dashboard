@@ -1,0 +1,698 @@
+{
+  "delayed": {
+    "waiting": {
+      "seconds": 1.05,
+      "phase": "waiting",
+      "ready": false,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 0,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          551.5382738774781,
+          919.1786607790355,
+          989.7697990424913
+        ],
+        "target": [
+          203.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 42
+      },
+      "campusCamera": {
+        "eye": [
+          257.6644250944282,
+          680.8730820585447,
+          637.1338511425862
+        ],
+        "target": [
+          0,
+          25,
+          0
+        ],
+        "fov": 42
+      }
+    },
+    "end": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  "failure": {
+    "level": "city",
+    "message": "园区资源暂未准备好，请重试进入。\n\n重试进入园区\n×",
+    "retryEnd": {
+      "seconds": 2.801,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  "interruptBefore": {
+    "level": "city",
+    "active": "false"
+  },
+  "interruptAfter": {
+    "level": "campus",
+    "active": "false"
+  },
+  "navigateAway": {
+    "level": "building",
+    "active": "false"
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.101,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：32.8 ms · 已渲染 4431 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 2,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.116,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.3 ms · 已渲染 4590 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 3,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.101,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.4 ms · 已渲染 4750 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 4,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.117,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.4 ms · 已渲染 4909 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 5,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.116,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.4 ms · 已渲染 5062 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 6,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.117,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.4 ms · 已渲染 5204 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 7,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.117,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.4 ms · 已渲染 6878 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 8,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.132,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.4 ms · 已渲染 7010 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 9,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.117,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 7132 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 10,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.117,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 7254 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 11,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.1,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 7384 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    },
+    {
+      "cycle": 12,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "entry": {
+        "seconds": 1.133,
+        "phase": "complete",
+        "ready": true,
+        "repeat": true,
+        "reduced": false,
+        "campusOpacity": 1,
+        "panel": 1,
+        "labels": [
+          1,
+          1,
+          1
+        ],
+        "cityCamera": {
+          "eye": [
+            487.1913,
+            445.50000000000006,
+            791.1391
+          ],
+          "target": [
+            230.6913,
+            33.75,
+            129.6391
+          ],
+          "fov": 32
+        },
+        "campusCamera": {
+          "eye": [
+            210,
+            330,
+            490
+          ],
+          "target": [
+            20,
+            25,
+            0
+          ],
+          "fov": 32
+        }
+      },
+      "resources": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：40975\n\n几何：112 · 纹理：17\n\n帧间隔 P95：34.1 ms · 已渲染 7506 帧\n\n层级：campus · 选择：A1",
+      "enabled": true
+    }
+  ],
+  "replayCancels": {
+    "level": "city",
+    "active": "false"
+  }
+}

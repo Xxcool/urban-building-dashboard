@@ -1,0 +1,27 @@
+{
+  "version": "v12",
+  "viewport": "1280×720等比网页截图；运动和性能另以1920×1080 DOM采样核对",
+  "conditions": "同一B确认基准、固定相机、演示A1；车辆为运行时刻快照，与AI停放位置不作逐车像素匹配。",
+  "differences": [
+    {
+      "id": "T-01",
+      "expected": "道路车辆持续行驶",
+      "actual": "18辆双向等距，8m/s绕行；圆弧转弯，切层不中断",
+      "cause": "此前车体合并在静态环境网格内",
+      "sourceChange": "Blender独立车体模板，Three实例批次，traffic.js道路派生闭合路线与统一时钟",
+      "evidence": "traffic-runtime-v12.json；traffic.test.mjs；rebuild-v12-final.json",
+      "result": "实际位置和朝向随时间变化；通过4轮切层连续性与路线检查",
+      "next": "保留装饰演示属性，不接入交通统计"
+    },
+    {
+      "id": "T-02",
+      "expected": "不扰动原确认构图与主要建筑",
+      "actual": "同一8栋、同一相机；远景随机序列保留",
+      "cause": "移除旧车时随机序列会变化",
+      "sourceChange": "保留原18次景观随机采样；车辆不投静态车影",
+      "evidence": "两层v12截图；assets-contract-v12.json",
+      "result": "结构和原材料保持；此前远景简化、窗格重复限制仍在",
+      "next": "不宣称用户最终视觉验收"
+    }
+  ]
+}

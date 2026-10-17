@@ -1,0 +1,75 @@
+{
+  "result": "passed",
+  "output": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/work/rebuild-v22-001",
+  "seconds": 22.79,
+  "steps": [
+    {
+      "step": "Blender从规划源生成",
+      "exitCode": 0,
+      "seconds": 5.0
+    },
+    {
+      "step": "Blender生成区域LOD",
+      "exitCode": 0,
+      "seconds": 9.44
+    },
+    {
+      "step": "生成网页配置",
+      "exitCode": 0,
+      "seconds": 0.1
+    },
+    {
+      "step": "安装锁定依赖",
+      "exitCode": 0,
+      "seconds": 1.67
+    },
+    {
+      "step": "道路水域边界回归",
+      "exitCode": 0,
+      "seconds": 0.16
+    },
+    {
+      "step": "业务契约测试",
+      "exitCode": 0,
+      "seconds": 1.1
+    },
+    {
+      "step": "生产构建",
+      "exitCode": 0,
+      "seconds": 3.71
+    },
+    {
+      "step": "实际资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.2
+    },
+    {
+      "step": "区域资产契约核对",
+      "exitCode": 0,
+      "seconds": 1.35
+    }
+  ],
+  "comparisons": {
+    "app/public/assets/campus.glb": {
+      "original": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca",
+      "rebuilt": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca",
+      "identical": true
+    },
+    "app/public/assets/runtime.json": {
+      "original": "efa299ad236c3961c7f8a3e1d70f3634289ad65921d5d038967708fa1df6fc5d",
+      "rebuilt": "efa299ad236c3961c7f8a3e1d70f3634289ad65921d5d038967708fa1df6fc5d",
+      "identical": true
+    },
+    "app/public/assets/city.glb": {
+      "original": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58",
+      "rebuilt": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58",
+      "identical": true
+    }
+  },
+  "log": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/work/rebuild-v22-001/rebuild.log",
+  "notes": [
+    "未复制旧GLB、blend、runtime、node_modules或dist；只复制规划、脚本、固定图像输入和前端源码。",
+    "blend包含保存路径等本机元数据，不要求二进制相同；实际GLB和网页配置做哈希比对。",
+    "网页交互和视觉需继续从本次dist实际打开核对。"
+  ]
+}

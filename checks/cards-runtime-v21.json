@@ -1,0 +1,244 @@
+{
+  "cases": [
+    {
+      "id": "B1",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "left",
+      "rect": "{\"bottom\":542.796875,\"height\":348.796875,\"left\":824.59375,\"right\":1160.59375,\"top\":194,\"width\":336,\"x\":824.59375,\"y\":194}",
+      "text": "楼宇档案\n\nB1\n次要塔楼\n\n建筑面积\n\n4.2\n万㎡\n出租率\n88%\n入驻企业\n38家\n演示数据\n模型高度 84 m"
+    },
+    {
+      "id": "B2",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "left",
+      "rect": "{\"bottom\":624.796875,\"height\":348.796875,\"left\":1110.59375,\"right\":1446.59375,\"top\":276,\"width\":336,\"x\":1110.59375,\"y\":276}",
+      "text": "楼宇档案\n\nB2\n次要塔楼\n\n建筑面积\n\n3.6\n万㎡\n出租率\n86%\n入驻企业\n32家\n演示数据\n模型高度 76 m"
+    },
+    {
+      "id": "A2",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "right",
+      "rect": "{\"bottom\":624.796875,\"height\":348.796875,\"left\":931.59375,\"right\":1267.59375,\"top\":276,\"width\":336,\"x\":931.59375,\"y\":276}",
+      "text": "楼宇档案\n\nA2\n低层研发办公楼\n\n建筑面积\n\n2.2\n万㎡\n出租率\n80%\n入驻企业\n18家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "B3",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "left",
+      "rect": "{\"bottom\":624.796875,\"height\":348.796875,\"left\":1167.59375,\"right\":1503.59375,\"top\":276,\"width\":336,\"x\":1167.59375,\"y\":276}",
+      "text": "楼宇档案\n\nB3\n低层研发办公楼\n\n建筑面积\n\n2.2\n万㎡\n出租率\n82%\n入驻企业\n18家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "C1",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":586.796875,\"height\":348.796875,\"left\":857.59375,\"right\":1193.59375,\"top\":238,\"width\":336,\"x\":857.59375,\"y\":238}",
+      "text": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "C2",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":659.796875,\"height\":348.796875,\"left\":1047.59375,\"right\":1383.59375,\"top\":311,\"width\":336,\"x\":1047.59375,\"y\":311}",
+      "text": "楼宇档案\n\nC2\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n84%\n入驻企业\n24家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "C3",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":724.796875,\"height\":348.796875,\"left\":1286.59375,\"right\":1622.59375,\"top\":376,\"width\":336,\"x\":1286.59375,\"y\":376}",
+      "text": "楼宇档案\n\nC3\n低层研发办公楼\n\n建筑面积\n\n2.2\n万㎡\n出租率\n69%\n入驻企业\n22家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "case": "C1-wide-no-data",
+      "id": "C1",
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":516.7072906494141,\"height\":307.13507080078125,\"left\":933.9150390625,\"right\":1229.78173828125,\"top\":209.5722198486328,\"width\":295.86669921875,\"x\":933.9150390625,\"y\":209.5722198486328}"
+    },
+    {
+      "case": "C1-1280",
+      "inside": true,
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":391.19793701171875,\"height\":232.53126525878906,\"left\":571.7291870117188,\"right\":795.7291870117188,\"top\":158.6666717529297,\"width\":224,\"x\":571.7291870117188,\"y\":158.6666717529297}"
+    }
+  ],
+  "firstAttempt": [
+    {
+      "id": "INDUSTRY-DEMO",
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":356.4453125,\"height\":329.4453125,\"left\":854.59375,\"right\":1190.59375,\"top\":27,\"width\":336,\"x\":854.59375,\"y\":27}",
+      "text": "产业空间 · 区域概览\n\n产业楼宇\n园区楼宇\n8栋\n建筑面积\n24万㎡\n\n产业方向\n\n软件研发\n光电子信息\n企业服务\n演示数据\n光谷示范园区"
+    },
+    {
+      "id": "SERVICE-DEMO",
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":554.546875,\"height\":336.546875,\"left\":1525.59375,\"right\":1861.59375,\"top\":218,\"width\":336,\"x\":1525.59375,\"y\":218}",
+      "text": "园区配套 · 区域概览\n\n配套服务\n会议空间\n交流与协作\n停车服务\n到访与泊车\n通勤配套\n园区通达\n示范配套\n设施信息待核定"
+    },
+    {
+      "case": "service-zoom-rotate",
+      "id": "SERVICE-DEMO",
+      "obstruction": "0",
+      "placement": "bottom",
+      "rect": "{\"bottom\":940.546875,\"height\":336.546875,\"left\":1139.59375,\"right\":1475.59375,\"top\":604,\"width\":336,\"x\":1139.59375,\"y\":604}"
+    },
+    {
+      "id": "B1",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "bottom",
+      "rect": "{\"bottom\":630.796875,\"height\":348.796875,\"left\":1071.59375,\"right\":1407.59375,\"top\":282,\"width\":336,\"x\":1071.59375,\"y\":282}",
+      "text": "楼宇档案\n\nB1\n次要塔楼\n\n建筑面积\n\n4.2\n万㎡\n出租率\n88%\n入驻企业\n38家\n演示数据\n模型高度 84 m"
+    },
+    {
+      "id": "B2",
+      "labelOverlap": 906.6551699638368,
+      "obstruction": "7051.216817082241",
+      "placement": "left",
+      "rect": "{\"bottom\":701.796875,\"height\":348.796875,\"left\":1161.59375,\"right\":1497.59375,\"top\":353,\"width\":336,\"x\":1161.59375,\"y\":353}",
+      "text": "楼宇档案\n\nB2\n次要塔楼\n\n建筑面积\n\n3.6\n万㎡\n出租率\n86%\n入驻企业\n32家\n演示数据\n模型高度 76 m"
+    },
+    {
+      "id": "A2",
+      "labelOverlap": 81.03320646286011,
+      "obstruction": "2792.7626262083763",
+      "placement": "right",
+      "rect": "{\"bottom\":606.796875,\"height\":348.796875,\"left\":830.59375,\"right\":1166.59375,\"top\":258,\"width\":336,\"x\":830.59375,\"y\":258}",
+      "text": "楼宇档案\n\nA2\n低层研发办公楼\n\n建筑面积\n\n2.2\n万㎡\n出租率\n80%\n入驻企业\n18家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "B3",
+      "labelOverlap": 638.249755859375,
+      "obstruction": "5318.900059913662",
+      "placement": "right",
+      "rect": "{\"bottom\":565.796875,\"height\":348.796875,\"left\":1565.59375,\"right\":1901.59375,\"top\":217,\"width\":336,\"x\":1565.59375,\"y\":217}",
+      "text": "楼宇档案\n\nB3\n低层研发办公楼\n\n建筑面积\n\n2.2\n万㎡\n出租率\n82%\n入驻企业\n18家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "C1",
+      "labelOverlap": 638.249755859375,
+      "obstruction": "5318.900059913662",
+      "placement": "right",
+      "rect": "{\"bottom\":541.796875,\"height\":348.796875,\"left\":1565.59375,\"right\":1901.59375,\"top\":193,\"width\":336,\"x\":1565.59375,\"y\":193}",
+      "text": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "C2",
+      "labelOverlap": 0,
+      "obstruction": "0",
+      "placement": "top",
+      "rect": "{\"bottom\":659.796875,\"height\":348.796875,\"left\":1047.59375,\"right\":1383.59375,\"top\":311,\"width\":336,\"x\":1047.59375,\"y\":311}",
+      "text": "楼宇档案\n\nC2\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n84%\n入驻企业\n24家\n演示数据\n模型高度 21 m"
+    },
+    {
+      "id": "C3",
+      "labelOverlap": 638.249755859375,
+      "obstruction": "5318.900059913662",
+      "placement": "right",
+      "rect": "{\"bottom\":541.796875,\"height\":348.796875,\"left\":1565.59375,\"right\":1901.59375,\"top\":193,\"width\":336,\"x\":1565.59375,\"y\":193}",
+      "text": "楼宇档案\n\nC3\n低层研发办公楼\n\n建筑面积\n\n2.2\n万㎡\n出租率\n69%\n入驻企业\n22家\n演示数据\n模型高度 21 m"
+    }
+  ],
+  "noData": {
+    "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n—\n出租率\n—\n入驻企业\n—\n暂无经营数据\n模型高度 21 m",
+    "rail": "C1 低层研发办公楼\n已选楼宇\n\n— 层 · — 万㎡\n\n出租率 — · 入驻企业 — 家"
+  },
+  "cycles": [],
+  "finalCycles": [
+    {
+      "cycle": 1,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：111 · 纹理：17\n\n帧间隔 P95：33.6 ms · 已渲染 984 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：184\n\n每帧提交三角形：72161\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.6 ms · 已渲染 1031 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：21\n\n帧间隔 P95：16.7 ms · 已渲染 5 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 2,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 1110 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：129\n\n每帧提交三角形：60929\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.6 ms · 已渲染 1155 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：21\n\n帧间隔 P95：34.2 ms · 已渲染 20 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 3,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：183\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.7 ms · 已渲染 1231 帧\n\n层级：campus · 选择：C1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.7 ms · 已渲染 1278 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：21\n\n帧间隔 P95：33.4 ms · 已渲染 36 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 4,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：183\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.6 ms · 已渲染 1345 帧\n\n层级：campus · 选择：C1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.7 ms · 已渲染 1394 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 55 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 5,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：169\n\n每帧提交三角形：69257\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.7 ms · 已渲染 1427 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 1468 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 70 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 6,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1551 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：139\n\n每帧提交三角形：63617\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1596 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：50 ms · 已渲染 86 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 7,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1659 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：139\n\n每帧提交三角形：63617\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1705 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 786 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 8,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：183\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1783 帧\n\n层级：campus · 选择：C1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1829 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 800 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 9,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：143\n\n每帧提交三角形：65753\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1863 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1953 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 816 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 10,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：167\n\n每帧提交三角形：69113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 1984 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 2027 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 833 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 11,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 2106 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 2148 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 850 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 12,
+      "card": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 2235 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：131\n\n每帧提交三角形：61073\n\n几何：112 · 纹理：17\n\n帧间隔 P95：33.8 ms · 已渲染 2281 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：49 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 868 帧\n\n层级：city · 选择：PARK-DEMO"
+    }
+  ]
+}

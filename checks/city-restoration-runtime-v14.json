@@ -1,0 +1,50 @@
+{
+  "bounds": {
+    "bottom": 0.8905419752451142,
+    "left": 0.018258580139883296,
+    "right": 0.9633381123833826,
+    "top": 0.1477151933551597
+  },
+  "canvas": {
+    "bottom": 1080,
+    "height": 1080,
+    "left": 0,
+    "right": 1920,
+    "top": 0,
+    "width": 1920,
+    "x": 0,
+    "y": 0
+  },
+  "projection": {
+    "INDUSTRY-DEMO": {
+      "visible": true,
+      "x": 0.3039416838863969,
+      "y": 0.3687566387189809
+    },
+    "PARK-DEMO": {
+      "visible": true,
+      "x": 0.5829809724398682,
+      "y": 0.4420828897545929
+    },
+    "SERVICE-DEMO": {
+      "visible": true,
+      "x": 0.8404279263970503,
+      "y": 0.5632305963477947
+    }
+  },
+  "stats": "场景信息\n\n资产：city.glb · detailed\n\n版本：7da8e7431320 · 模型三角形：160688\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：69\n\n每帧提交三角形：302643\n\n几何：34 · 纹理：28\n\n帧间隔 P95：49.1 ms · 已渲染 7332 帧\n\n层级：city · 选择：PARK-DEMO",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "meshPick": {
+    "level": "campus",
+    "selection": "A1"
+  },
+  "missing": {
+    "level": "city",
+    "metrics": "—\n\n楼宇数\n\n—\n\n建筑面积\n\n—\n\n出租率\n\n—\n\n入驻企业",
+    "mode": "no-data"
+  },
+  "logsAfterBuild": []
+}

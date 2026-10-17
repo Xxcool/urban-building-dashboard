@@ -1,0 +1,19 @@
+Use case: ui-mockup.
+Create ONE original complete 16:9 landscape Chinese 3D dashboard concept image for a new city/regional overview layer of “高新区数字楼宇”. Image 1 is ONLY the already-approved campus layer style reference: preserve its warm ivory backdrop, deep petrol teal Chinese typography, understated teal selection, daylight architectural exhibition quality and generous layout. Design a NEW REGION SCALE composition; do not just repeat the park.
+Canvas target 1920x1080 full-screen presentation. Left 28% a quiet warm-white information rail. Right 72% a broad 3D urban region map model viewed from elevated oblique bird's-eye, all important geometry fits with generous margins. The focus is spatial hierarchy from REGION to one selected demo CAMPUS to its A1 building. High-end architectural planning exhibition visual, refined simple realizable forms, soft daylight, ambient contact shadows, clean matte pale stone base, pale blue-green water shapes, desaturated green landscape, fine gray roads, many small white low-detail urban building masses. A flat irregular regional map plate with very shallow relief and a THIN teal boundary, internally three subtle pastel functional areas (not actual administrative subdivisions). Regional urban context over kilometers, noticeably much broader than the campus scene. Include understated water/lake shapes and connected road corridors as diagrammatic context, NOT an exact map or a claimed Wuhan district border. No arbitrary Chinese street names or geographic precision. The selected demo campus is one SMALL outlined rectangular precinct in the center-right of this regional map; zoomed out simplified 8 tiny building masses inside it, three rear towers and five low buildings, with A1 taller on rear-left. It occupies under 10% of the regional model area. A single restrained warm-bronze pin highlights it; a fine connector leads to a small floating white/teal information card “光谷示范园区” and a clearly legible action “进入园区 ›”. Only two other quiet neutral cluster pins “产业楼宇” and “配套服务”, avoiding visual clutter. No inset detailed campus, no second hero rendering, no decorative luminous columns.
+Left rail EXACT readable text:
+Top large “高新区数字楼宇”
+Second line “武汉 · 光谷” and a small pill “区域概念 · 演示方案”
+Section “区域总览”
+A short line “东湖高新区产业空间”
+Section “产业方向”
+Three compact icon+text rows “软件研发” / “光电子信息” / “企业服务”.
+Section “重点园区”
+Prominent selected card header “光谷示范园区”
+Within that card only: “8 栋楼宇” and “24 万㎡” on one row; “出租率 84%” and “216 家企业” on another. These numbers are explicitly scoped to this fictional park, NEVER to the whole regional map.
+Large teal action on card “进入园区 ›”.
+The rail has plenty of breathing room, not dense stacks of data widgets.
+Top of map area tiny navigation “区域总览  ›  园区总览  ›  重点楼宇” with ONLY first item active.
+Bottom right compact legend “区域示意” “示范园区”.
+Bottom left below map small readable footer “区域轮廓、路网与点位为概念示意，非测绘成果”.
+Constraints: all labels Chinese clean typography; no invented regional area/total building count/operating metrics; no fake official boundary; no Chengdu place names. Do not import reference website's dark blue sci-fi visual language. No nighttime, neon grids, HUD chrome, purple gradients, circular floating platform, giant skyscrapers at region scale, alarms/security/floor/room content. This is an AI VISUAL CONCEPT for user confirmation, not a screenshot of existing software.

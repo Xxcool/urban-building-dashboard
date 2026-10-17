@@ -1,0 +1,7 @@
+// 验证资源门闩、交接镜头投影、短入场与减弱动效，避免空白交接和返回跳镜。
+import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {campusEntryFrame,campusEntryCameras,advanceEntryClock,entryGateSeconds} from '../src/campus-entry.js';
+const p=JSON.parse(fs.readFileSync(new URL('../../planning/project.json',import.meta.url))),s=p.production.campusEntry;
+p.production.city=JSON.parse(fs.readFileSync(new URL('../public/assets/runtime.json',import.meta.url))).production.city;
+test('资源未就绪时停在交接前，恢复后按限幅步长继续',()=>{let time=0;for(let i=0;i<100;i++)time=advanceEntryClock(time,1,false,s);assert.equal(time,entryGateSeconds(s));assert.ok(advanceEntryClock(time,100,true,s)-time<=.100001);});
+test('两种场景在交叠期间使用严格对应的镜头和目标',()=>{const start={eye:[1100,2800,2720],target:[0,0,0],fov:42},c=p.production.city,origin=[c.campusPositionM[0],c.campusPositionM[2],-c.campusPositionM[1]];for(const t of [1.05,1.2,1.4,1.65,2.3]){const a=campusEntryCameras(start,p.production,campusEntryFrame(t,s));for(const k of ['eye','target'])for(let i=0;i<3;i++)assert.ok(Math.abs((a.city[k][i]-origin[i])/c.campusScale-a.campus[k][i])<1e-8);assert.equal(a.city.fov,a.campus.fov);}});
+test('首次、再次进入和减弱动效均达到完整标签与面板终态',()=>{for(const options of [{},{repeat:true},{reduced:true}]){const duration=options.reduced?s.reducedDuration:options.repeat?s.repeatDuration:s.duration;const f=campusEntryFrame(duration,s,options);assert.equal(f.done,true);assert.equal(f.campusOpacity,1);assert.equal(f.panel,1);assert.deepEqual(f.labels,[1,1,1]);assert.deepEqual(f.kpis,[1,1,1,1]);}});

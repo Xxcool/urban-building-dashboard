@@ -1,0 +1,27 @@
+{
+  "version": "v7",
+  "viewport": "1280×720截图；1920×1080画布等比缩放",
+  "conditions": "锁定B-campus-v2与B-building-v2r1，不裁切、不拉伸基准；演示快照A1、巡览关闭，固定该版制作相机。新旧版本图片保留。",
+  "differences": [
+    {
+      "id": "V-05",
+      "expected": "蓝灰玻璃有窗内层次",
+      "actual": "幕墙已使用规则4×4固定输入贴图，并按层高铺UV",
+      "cause": "此前统一PBR颜色缺少细节",
+      "sourceChange": "build_scene.py材质节点及按真实分格UV；固定图像哈希进入唯一规划源",
+      "evidence": "building-detailed-v6.jpg → building-detailed-v7.jpg；design/material-generation-v1.json",
+      "result": "已改善；图中反射为材质细节，不宣称动态实景反射",
+      "next": "继续以锁定基准比对色彩和尺度"
+    },
+    {
+      "id": "V-08",
+      "expected": "总览A1位于左后排、前排对应布局接近基准",
+      "actual": "A1仍偏右，前排整体偏左",
+      "cause": "初始制作坐标与AI投影不吻合",
+      "sourceChange": "v9校准同一空间中的楼栋坐标与两层镜头",
+      "evidence": "campus-detailed-v7.jpg → campus-detailed-v9.jpg",
+      "result": "后续已修正主要偏移",
+      "next": "不通过修改设计图片掩盖误差"
+    }
+  ]
+}

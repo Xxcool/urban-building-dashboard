@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>B方案逐版对照 v4</title><style>
+body{margin:0;padding:28px;background:#f4f3ee;color:#123b40;font:15px/1.7 system-ui,sans-serif}h1{font-size:28px}h2{margin-top:32px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:white;border:1px solid #d7e1df;border-radius:8px;overflow:hidden}img{display:block;width:100%;height:auto}figcaption{padding:10px 14px}table{border-collapse:collapse;width:100%;background:#fffefa}th,td{padding:12px;border:1px solid #cfdbd7;vertical-align:top;min-width:100px}.table{overflow:auto}pre{white-space:pre-wrap;word-break:break-all;font-size:12px}@media(max-width:800px){.pair{grid-template-columns:1fr}}
+</style><h1>B方案 · v4 实际网页与确认基准</h1><p>初次细化后复核，默认园区/A1近景，演示快照；使用该版制作相机，无自动巡览。</p><p>两图保留原始比例，AI图不具备测绘精度；对照不把AI不可数细节当作工程数据。浏览器截图是实际WebGL画面。</p><h2>园区总览</h2><div class="pair"><figure><img src="../design/concepts/B-campus-v2.png"><figcaption>已确认整屏基准 · B-campus-v2.png</figcaption></figure><figure><img src="campus-detailed-v4.jpg"><figcaption>实际网页 · v4 · 1280×720，1920×1080画布等比缩放</figcaption></figure></div><h2>重点楼宇</h2><div class="pair"><figure><img src="../design/concepts/B-building-v2r1.png"><figcaption>已确认整屏基准 · B-building-v2r1.png</figcaption></figure><figure><img src="building-detailed-v4.jpg"><figcaption>实际网页 · v4 · 1280×720，1920×1080画布等比缩放</figcaption></figure></div><h2>差异与复验</h2><div class="table"><table><tr><th>ID</th><th>预期</th><th>实际</th><th>原因假设</th><th>源修改</th><th>重建/复验证据</th><th>结果</th><th>后续</th></tr><tr><td>V-01</td><td>中性日光下建筑、景观清楚</td><td>v1偏白，v4减曝光并补180棵庭院树；蓝灰幕墙层次仍少</td><td>环境反射偏平、材质缺纹理</td><td>降低曝光，增加冠层簇和屋顶种植</td><td>campus-detailed-v1.jpg → campus-detailed-v4.jpg</td><td>局部改善</td><td>继续补材质细节</td></tr><tr><td>V-02</td><td>近景低视点完整展示三级退台</td><td>近景俯视偏高</td><td>相机高度/目标点偏离基准</td><td>后续v5/v6降低眼点，缩小翼片厚度</td><td>building-detailed-v4.jpg</td><td>待后版复验</td><td>保持同一几何校准相机</td></tr><tr><td>E-01</td><td>绘制调用≤350</td><td>454次描边渲染变为167次</td><td>全场景描边额外绘制过多</td><td>按同源规格创建少量EdgesGeometry</td><td>performance-v6.txt及后续性能记录</td><td>v4技术优化已实测</td><td>新增AO后重新测量</td></tr></table></div><h2>输入哈希</h2><pre>[
+  {
+    &quot;level&quot;: &quot;campus&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-campus-v2.png&quot;,
+    &quot;baselineSha256&quot;: &quot;b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264&quot;,
+    &quot;actual&quot;: &quot;checks/campus-detailed-v4.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;51c35e01b9444488633bff4edb88859962e170d8312d148bd9b07390a40f8b91&quot;
+  },
+  {
+    &quot;level&quot;: &quot;building&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-building-v2r1.png&quot;,
+    &quot;baselineSha256&quot;: &quot;1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4&quot;,
+    &quot;actual&quot;: &quot;checks/building-detailed-v4.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;270d91bb91f4e4f5e18af52bc5facce302639147afca68574e7d2af4c64d805c&quot;
+  }
+]</pre></html>

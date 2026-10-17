@@ -1,0 +1,1378 @@
+[
+  {
+    "time": 1792238426598,
+    "data": {
+      "seconds": 0.1,
+      "phase": "locate",
+      "ready": false,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 0,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          1100,
+          2800,
+          2720
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "fov": 42
+      },
+      "campusCamera": {
+        "eye": [
+          257.6644250944282,
+          680.8730820585447,
+          637.1338511425862
+        ],
+        "target": [
+          0,
+          25,
+          0
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "time": 1792238427119,
+    "data": {
+      "seconds": 0.482,
+      "phase": "approach",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 0,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          987.9522218876136,
+          2415.758325424163,
+          2366.523284293993
+        ],
+        "target": [
+          41.61303605846329,
+          6.894943313598253,
+          26.484570243730232
+        ],
+        "fov": 42
+      },
+      "campusCamera": {
+        "eye": [
+          257.6644250944282,
+          680.8730820585447,
+          637.1338511425862
+        ],
+        "target": [
+          0,
+          25,
+          0
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "time": 1792238427373,
+    "data": {
+      "seconds": 0.717,
+      "phase": "approach",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 0,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          757.7129157909808,
+          1626.206421601366,
+          1640.188187636943
+        ],
+        "target": [
+          127.1208141517053,
+          21.062890155937215,
+          80.90589994709808
+        ],
+        "fov": 42
+      },
+      "campusCamera": {
+        "eye": [
+          257.6644250944282,
+          680.8730820585447,
+          637.1338511425862
+        ],
+        "target": [
+          0,
+          25,
+          0
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "time": 1792238427749,
+    "data": {
+      "seconds": 1.183,
+      "phase": "handoff",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 0.12510748349072862,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          549.5166848736797,
+          904.29709736957,
+          983.5294179833029
+        ],
+        "target": [
+          204.53955905265553,
+          33.75,
+          129.6391
+        ],
+        "fov": 41.68582998049795
+      },
+      "campusCamera": {
+        "eye": [
+          256.1669517582812,
+          669.849701755237,
+          632.5113466542984
+        ],
+        "target": [
+          0.628340039004096,
+          25,
+          0
+        ],
+        "fov": 41.68582998049795
+      }
+    }
+  },
+  {
+    "time": 1792238428168,
+    "data": {
+      "seconds": 1.516,
+      "phase": "handoff",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 0.8724719057499898,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          531.3845492577448,
+          770.8206462162696,
+          927.5578849725331
+        ],
+        "target": [
+          212.14780590762683,
+          33.75,
+          129.6391
+        ],
+        "fov": 38.867960774953026
+      },
+      "campusCamera": {
+        "eye": [
+          242.73574019092197,
+          570.978256456496,
+          591.0509518315059
+        ],
+        "target": [
+          6.2640784500939475,
+          25,
+          0
+        ],
+        "fov": 38.867960774953026
+      }
+    }
+  },
+  {
+    "time": 1792238428470,
+    "data": {
+      "seconds": 1.817,
+      "phase": "settle",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          508.59605169002907,
+          603.0672250593508,
+          857.2127711429025
+        ],
+        "target": [
+          221.70986294390462,
+          33.75,
+          129.6391
+        ],
+        "fov": 35.32645816892422
+      },
+      "campusCamera": {
+        "eye": [
+          225.85537162224375,
+          446.71646300692646,
+          538.9434601058537
+        ],
+        "target": [
+          13.347083662151555,
+          25,
+          0
+        ],
+        "fov": 35.32645816892422
+      }
+    }
+  },
+  {
+    "time": 1792238428680,
+    "data": {
+      "seconds": 2.033,
+      "phase": "settle",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          494.71867541438303,
+          500.9114186046276,
+          814.3751241735855
+        ],
+        "target": [
+          227.53281213427186,
+          33.75,
+          129.6391
+        ],
+        "fov": 33.16981032064005
+      },
+      "campusCamera": {
+        "eye": [
+          215.5758336402837,
+          371.0454952626871,
+          507.2118697582115
+        ],
+        "target": [
+          17.66037935871989,
+          25,
+          0
+        ],
+        "fov": 33.16981032064005
+      }
+    }
+  },
+  {
+    "time": 1792238428883,
+    "data": {
+      "seconds": 2.233,
+      "phase": "reveal",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 0.09405495057725317,
+      "labels": [
+        0.6604336314073849,
+        0.018844063249994478,
+        0
+      ],
+      "cityCamera": {
+        "eye": [
+          487.7323659573984,
+          449.48295961176945,
+          792.8092999001658
+        ],
+        "target": [
+          230.46426864219953,
+          33.75,
+          129.6391
+        ],
+        "fov": 32.08408568807425
+      },
+      "campusCamera": {
+        "eye": [
+          210.40078959807286,
+          332.95034045316254,
+          491.2371851112339
+        ],
+        "target": [
+          19.8318286238515,
+          25,
+          0
+        ],
+        "fov": 32.08408568807425
+      }
+    }
+  },
+  {
+    "time": 1792238429186,
+    "data": {
+      "seconds": 2.532,
+      "phase": "reveal",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 0.6735115706996937,
+      "labels": [
+        1,
+        0.9241811523437343,
+        0.36001817558296684
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238429491,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238429794,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238430050,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238430305,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238430604,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238430908,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238431210,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238431499,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238431920,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238432312,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238432815,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238433250,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238433544,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238433820,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238434051,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238434322,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238434584,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238434860,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238435162,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238435570,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238435970,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238436346,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  },
+  {
+    "time": 1792238436676,
+    "data": {
+      "seconds": 2.8,
+      "phase": "complete",
+      "ready": true,
+      "repeat": false,
+      "reduced": false,
+      "campusOpacity": 1,
+      "panel": 1,
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "cityCamera": {
+        "eye": [
+          487.1913,
+          445.50000000000006,
+          791.1391
+        ],
+        "target": [
+          230.6913,
+          33.75,
+          129.6391
+        ],
+        "fov": 32
+      },
+      "campusCamera": {
+        "eye": [
+          210,
+          330,
+          490
+        ],
+        "target": [
+          20,
+          25,
+          0
+        ],
+        "fov": 32
+      }
+    }
+  }
+]

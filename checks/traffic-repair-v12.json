@@ -1,0 +1,15 @@
+{
+  "scope": "局部车辆动画修复",
+  "result": "passed",
+  "planningSha256": "82934b1d70c7243043e4bfb937e62c550975aa01bba9179c7f04b14f83e683f4",
+  "priorWorkflow": "state.json为v11完整流程历史，当前修复以本记录及新增证据审计，不冒充新增用户视觉批准",
+  "evidence": [
+    "checks/traffic-runtime-v12.json",
+    "checks/assets-contract-v12.json",
+    "checks/rebuild-v12-final.json",
+    "checks/comparison-v12.html",
+    "docs/traffic-review-v12.md"
+  ],
+  "verification": "路线测试、网页连续运动、4轮切层、无数据态、构建、同源重建",
+  "limits": "后台恢复按代码与时间步长约束；未做自动后台切换实测，硬件/长时未覆盖"
+}

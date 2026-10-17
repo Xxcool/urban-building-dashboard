@@ -1,0 +1,70 @@
+{
+  "result": "passed",
+  "output": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/work/rebuild-v14-001",
+  "seconds": 14.94,
+  "steps": [
+    {
+      "step": "Blender从规划源生成",
+      "exitCode": 0,
+      "seconds": 3.73
+    },
+    {
+      "step": "Blender生成区域LOD",
+      "exitCode": 0,
+      "seconds": 8.26
+    },
+    {
+      "step": "生成网页配置",
+      "exitCode": 0,
+      "seconds": 0.06
+    },
+    {
+      "step": "安装锁定依赖",
+      "exitCode": 0,
+      "seconds": 0.96
+    },
+    {
+      "step": "业务契约测试",
+      "exitCode": 0,
+      "seconds": 0.23
+    },
+    {
+      "step": "生产构建",
+      "exitCode": 0,
+      "seconds": 1.53
+    },
+    {
+      "step": "实际资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.09
+    },
+    {
+      "step": "区域资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.05
+    }
+  ],
+  "comparisons": {
+    "app/public/assets/campus.glb": {
+      "original": "fe4835d83c984cd928f523a90b5f03501782ae49c0ba26718313719c8964957f",
+      "rebuilt": "fe4835d83c984cd928f523a90b5f03501782ae49c0ba26718313719c8964957f",
+      "identical": true
+    },
+    "app/public/assets/runtime.json": {
+      "original": "2fa510372a8ab24390373ebb4f94e3bd8dec0917e896029982512c0c26cbf5f1",
+      "rebuilt": "2fa510372a8ab24390373ebb4f94e3bd8dec0917e896029982512c0c26cbf5f1",
+      "identical": true
+    },
+    "app/public/assets/city.glb": {
+      "original": "7da8e7431320bc3920f77842709f9af029ba69c60ab9bfa5fbbdf1b4907d86ea",
+      "rebuilt": "7da8e7431320bc3920f77842709f9af029ba69c60ab9bfa5fbbdf1b4907d86ea",
+      "identical": true
+    }
+  },
+  "log": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/work/rebuild-v14-001/rebuild.log",
+  "notes": [
+    "未复制旧GLB、blend、runtime、node_modules或dist；只复制规划、脚本、固定图像输入和前端源码。",
+    "blend包含保存路径等本机元数据，不要求二进制相同；实际GLB和网页配置做哈希比对。",
+    "网页交互和视觉需继续从本次dist实际打开核对。"
+  ]
+}

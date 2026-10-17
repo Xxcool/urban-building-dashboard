@@ -1,0 +1,57 @@
+{
+  "quality": "detailed",
+  "triangles": 35698,
+  "asset": "campus.glb",
+  "assetSha256": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca",
+  "objects": [
+    {
+      "objectId": "A1",
+      "rootNode": "building_A1",
+      "anchorNode": "anchor_A1",
+      "heightM": 100.80000000000001
+    },
+    {
+      "objectId": "B1",
+      "rootNode": "building_B1",
+      "anchorNode": "anchor_B1",
+      "heightM": 84
+    },
+    {
+      "objectId": "B2",
+      "rootNode": "building_B2",
+      "anchorNode": "anchor_B2",
+      "heightM": 76
+    },
+    {
+      "objectId": "A2",
+      "rootNode": "building_A2",
+      "anchorNode": "anchor_A2",
+      "heightM": 21
+    },
+    {
+      "objectId": "B3",
+      "rootNode": "building_B3",
+      "anchorNode": "anchor_B3",
+      "heightM": 21
+    },
+    {
+      "objectId": "C1",
+      "rootNode": "building_C1",
+      "anchorNode": "anchor_C1",
+      "heightM": 21
+    },
+    {
+      "objectId": "C2",
+      "rootNode": "building_C2",
+      "anchorNode": "anchor_C2",
+      "heightM": 21
+    },
+    {
+      "objectId": "C3",
+      "rootNode": "building_C3",
+      "anchorNode": "anchor_C3",
+      "heightM": 21
+    }
+  ],
+  "planningSha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+}

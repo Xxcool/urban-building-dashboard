@@ -1,0 +1,24 @@
+{
+  "result": "passed",
+  "errors": [],
+  "planningSha256": "f35a355d6afd2e04461d9306902f50552b3f1c4f6cf9c4b2fad9c96b2a022635",
+  "model": {
+    "quality": "detailed",
+    "planningSha256": "f35a355d6afd2e04461d9306902f50552b3f1c4f6cf9c4b2fad9c96b2a022635",
+    "scriptSha256": "82ca9bb5b658fcf224fc6cd8ffa6cc1b92d6dab90fe93f9fc59a9e1c827df89e",
+    "asset": "city.glb",
+    "assetSha256": "7da8e7431320bc3920f77842709f9af029ba69c60ab9bfa5fbbdf1b4907d86ea",
+    "bytes": 13685224,
+    "triangles": 160688,
+    "decorativeBuildings": 2383,
+    "trees": 8500,
+    "regionObjectIds": [
+      "PARK-DEMO",
+      "INDUSTRY-DEMO",
+      "SERVICE-DEMO"
+    ],
+    "scope": "概念区域；装饰建筑不等于真实楼宇数据",
+    "blender": "5.2.2 LTS"
+  },
+  "scope": "结构与预算检查，非真实地理/视觉/硬件认证"
+}

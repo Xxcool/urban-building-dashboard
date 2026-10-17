@@ -1,0 +1,26 @@
+{
+  "result": "failed",
+  "errors": [
+    "区域模型超过体积预算"
+  ],
+  "planningSha256": "220d8cb51bd077d09769c38d5e40909098588062b1c1bfff71eed6215487b8c8",
+  "model": {
+    "quality": "detailed",
+    "planningSha256": "220d8cb51bd077d09769c38d5e40909098588062b1c1bfff71eed6215487b8c8",
+    "scriptSha256": "4e795135a2bc98711635bd0a980c1d79a43c0677b35417a9694087efad13bc6d",
+    "asset": "city.glb",
+    "assetSha256": "cba6360060f6276981d38970f5a9ec8afef662db378723fae37252b742d4eca6",
+    "bytes": 18490824,
+    "triangles": 243452,
+    "decorativeBuildings": 1718,
+    "trees": 8500,
+    "regionObjectIds": [
+      "PARK-DEMO",
+      "INDUSTRY-DEMO",
+      "SERVICE-DEMO"
+    ],
+    "scope": "概念区域；装饰建筑不等于真实楼宇数据",
+    "blender": "5.2.2 LTS"
+  },
+  "scope": "结构与预算检查，非真实地理/视觉/硬件认证"
+}

@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>B方案逐版对照 v12</title><style>
+body{margin:0;padding:28px;background:#f4f3ee;color:#123b40;font:15px/1.7 system-ui,sans-serif}h1{font-size:28px}h2{margin-top:32px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:white;border:1px solid #d7e1df;border-radius:8px;overflow:hidden}img{display:block;width:100%;height:auto}figcaption{padding:10px 14px}table{border-collapse:collapse;width:100%;background:#fffefa}th,td{padding:12px;border:1px solid #cfdbd7;vertical-align:top;min-width:100px}.table{overflow:auto}pre{white-space:pre-wrap;word-break:break-all;font-size:12px}@media(max-width:800px){.pair{grid-template-columns:1fr}}
+</style><h1>B方案 · v12 实际网页与确认基准</h1><p>同一B确认基准、固定相机、演示A1；车辆为运行时刻快照，与AI停放位置不作逐车像素匹配。</p><p>两图保留原始比例，AI图不具备测绘精度；对照不把AI不可数细节当作工程数据。浏览器截图是实际WebGL画面。</p><h2>园区总览</h2><div class="pair"><figure><img src="../design/concepts/B-campus-v2.png"><figcaption>已确认整屏基准 · B-campus-v2.png</figcaption></figure><figure><img src="campus-detailed-v12.jpg"><figcaption>实际网页 · v12 · 1280×720等比网页截图；运动和性能另以1920×1080 DOM采样核对</figcaption></figure></div><h2>重点楼宇</h2><div class="pair"><figure><img src="../design/concepts/B-building-v2r1.png"><figcaption>已确认整屏基准 · B-building-v2r1.png</figcaption></figure><figure><img src="building-detailed-v12.jpg"><figcaption>实际网页 · v12 · 1280×720等比网页截图；运动和性能另以1920×1080 DOM采样核对</figcaption></figure></div><h2>差异与复验</h2><div class="table"><table><tr><th>ID</th><th>预期</th><th>实际</th><th>原因假设</th><th>源修改</th><th>重建/复验证据</th><th>结果</th><th>后续</th></tr><tr><td>T-01</td><td>道路车辆持续行驶</td><td>18辆双向等距，8m/s绕行；圆弧转弯，切层不中断</td><td>此前车体合并在静态环境网格内</td><td>Blender独立车体模板，Three实例批次，traffic.js道路派生闭合路线与统一时钟</td><td>traffic-runtime-v12.json；traffic.test.mjs；rebuild-v12-final.json</td><td>实际位置和朝向随时间变化；通过4轮切层连续性与路线检查</td><td>保留装饰演示属性，不接入交通统计</td></tr><tr><td>T-02</td><td>不扰动原确认构图与主要建筑</td><td>同一8栋、同一相机；远景随机序列保留</td><td>移除旧车时随机序列会变化</td><td>保留原18次景观随机采样；车辆不投静态车影</td><td>两层v12截图；assets-contract-v12.json</td><td>结构和原材料保持；此前远景简化、窗格重复限制仍在</td><td>不宣称用户最终视觉验收</td></tr></table></div><h2>输入哈希</h2><pre>[
+  {
+    &quot;level&quot;: &quot;campus&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-campus-v2.png&quot;,
+    &quot;baselineSha256&quot;: &quot;b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264&quot;,
+    &quot;actual&quot;: &quot;checks/campus-detailed-v12.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;1fcf0de7793e833b0aaf6ccbf324ecc3d79634effd7776e346389418f662837b&quot;
+  },
+  {
+    &quot;level&quot;: &quot;building&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-building-v2r1.png&quot;,
+    &quot;baselineSha256&quot;: &quot;1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4&quot;,
+    &quot;actual&quot;: &quot;checks/building-detailed-v12.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;3c2034485717b6ed45d1e24f92c2a3abb262d3f2ff5a7d017f244e9d2a0b6589&quot;
+  }
+]</pre></html>

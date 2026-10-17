@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "title": "高新区数字楼宇",
+    "context": "武汉东湖高新区（光谷）产业背景",
+    "siteType": "虚构示范园区",
+    "purpose": "招商展示与领导汇报",
+    "dataMode": "演示数据",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "levels": [
+    {
+      "id": "campus",
+      "name": "园区总览",
+      "content": [
+        "楼宇分布与空间关系",
+        "楼宇数与建筑面积",
+        "出租率与入驻企业",
+        "产业构成",
+        "重点楼宇入口"
+      ]
+    },
+    {
+      "id": "building",
+      "name": "重点楼宇",
+      "content": [
+        "建筑外观与楼宇档案",
+        "空间利用",
+        "入驻企业与产业",
+        "配套服务",
+        "返回园区"
+      ]
+    }
+  ],
+  "demoDesign": {
+    "status": "概念设计假设，非真实测绘或经营资料",
+    "campus": {
+      "buildings": 8,
+      "grossAreaM2": 240000,
+      "rentableAreaM2": 200000,
+      "rentedAreaM2": 168000,
+      "enterprises": 216
+    },
+    "focusBuilding": {
+      "id": "A1",
+      "name": "科创大厦",
+      "floors": 24,
+      "grossAreaM2": 48000,
+      "rentableAreaM2": 40000,
+      "rentedAreaM2": 36000,
+      "enterprises": 42,
+      "form": "修长矩形玻璃塔楼、三级退台裙房、右侧立面竖向古铜色翼片、内退屋顶花园",
+      "floorsDefinition": {
+        "total": 24,
+        "podium": 3,
+        "towerAbovePodium": 21
+      }
+    },
+    "layout": "矩形地块，八栋楼围合中央绿庭，后排三栋塔楼，侧翼和前排五栋研发办公楼，A1位于后排左侧",
+    "metricRules": {
+      "occupancy": "rentedAreaM2 / rentableAreaM2",
+      "vacantRentableAreaM2": "rentableAreaM2 - rentedAreaM2"
+    },
+    "buildingIdentities": [
+      {
+        "id": "A1",
+        "role": "重点楼宇",
+        "form": "24层总层数，其中3层退台裙房、21层塔楼；右立面古铜翼片、矩形蓝灰玻璃塔身、内退屋顶花园",
+        "conceptPlacement": "后排左侧"
+      },
+      {
+        "id": "B1",
+        "role": "次要塔楼",
+        "conceptPlacement": "后排中部"
+      },
+      {
+        "id": "B2",
+        "role": "次要塔楼",
+        "conceptPlacement": "后排右侧"
+      },
+      {
+        "id": "A2",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "中排左侧"
+      },
+      {
+        "id": "B3",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "中排右侧"
+      },
+      {
+        "id": "C1",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排左侧"
+      },
+      {
+        "id": "C2",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排中部"
+      },
+      {
+        "id": "C3",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排右侧"
+      }
+    ],
+    "identityStatus": "概念修订设定；相对排布不等于已验证制作坐标，尺寸与相机在整屏基准后补齐",
+    "contentDefinitions": {
+      "industryDirections": {
+        "heading": "产业方向",
+        "labels": [
+          "软件研发",
+          "光电子信息",
+          "企业服务"
+        ],
+        "semantics": "示范产业方向，不表示企业统计占比"
+      },
+      "buildingIndustries": {
+        "heading": "入驻产业",
+        "labels": [
+          "软件研发",
+          "光电子信息",
+          "企业服务"
+        ],
+        "semantics": "产业类别展示，企业总数沿用重点楼宇的演示指标，不虚构真实企业名单"
+      },
+      "spaceUsage": {
+        "heading": "空间利用",
+        "labels": {
+          "rented": "已租面积",
+          "rentable": "可租面积",
+          "vacant": "可租空置面积",
+          "occupancy": "出租率"
+        },
+        "unit": "万㎡",
+        "precision": 1
+      },
+      "services": {
+        "heading": "配套服务",
+        "labels": [
+          "会议空间",
+          "停车服务",
+          "通勤配套"
+        ],
+        "semantics": "示范配套，不表示真实交通或车位数据"
+      }
+    },
+    "conceptRevision": {
+      "candidate": "B",
+      "version": "v2",
+      "status": "user_confirmed_visual",
+      "lighting": "柔和中性日光，灰白石材与蓝灰玻璃，弱暖反射，古铜翼片避免金黄自发光",
+      "campusLabelPolicy": "八栋主体均可辨识并一一标注稳定ID，A1追加名称；外围城市降为无标签低对比背景",
+      "buildingIdentityPolicy": "总览和近景沿用相同A1塔身、三级退台、古铜翼片与屋顶花园；不以AI可数楼层替代规格验证"
+    }
+  },
+  "visualCandidates": [
+    {
+      "id": "A",
+      "name": "深色建筑沙盘",
+      "layout": "中央大场景、精简双侧面板、顶部关键指标",
+      "palette": [
+        "#081522",
+        "#8BCFD0",
+        "#D8E3E8"
+      ],
+      "materials": "实体玻璃建筑、银灰构件、少量暖窗、克制青绿选中轮廓"
+    },
+    {
+      "id": "B",
+      "name": "浅色建筑展陈",
+      "layout": "左侧集中信息栏、右侧开放建筑场景",
+      "palette": [
+        "#F1F0EB",
+        "#277D78",
+        "#B29367"
+      ],
+      "materials": "珍珠灰石材、淡蓝玻璃、暖光、自然景观与柔和阴影"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D001",
+      "status": "user_confirmed",
+      "reply": "武汉；园区总览 → 重点楼宇；暂无，先做示范方案"
+    },
+    {
+      "id": "D002",
+      "status": "user_confirmed",
+      "reply": "招商展示与领导汇报（推荐）"
+    },
+    {
+      "id": "D003",
+      "status": "user_confirmed",
+      "reply": "希望先看两种方向的概念图"
+    },
+    {
+      "id": "D004",
+      "status": "user_confirmed",
+      "reply": "合适，按此开展概念设计（推荐）",
+      "covers": "武汉东湖高新区产业背景、虚构示范园区、演示标识、16:9 1920×1080"
+    },
+    {
+      "id": "D005",
+      "status": "user_instruction",
+      "reply": "那概念图是需要修正吗？那B方案修正后的图看看效果",
+      "covers": "授权修订和展示B方案两层概念图，尚不等于批准新图或开始整屏设计"
+    },
+    {
+      "id": "D006",
+      "status": "user_confirmed",
+      "reply": "可以",
+      "covers": "对前一条展示的B-campus-v2与B-building-v2r1两层概念视觉确认，继续整屏设计",
+      "evidence": "docs/B-concept-approval.md"
+    }
+  ],
+  "exclusions": [
+    "楼层与房间下钻",
+    "真实楼宇或地形精确复原",
+    "真实接口接入",
+    "设备远程控制",
+    "安防视频与告警处置"
+  ],
+  "nextGate": "概念两层已获确认；继续整屏设计及制作。改变已确认视觉方向时重新确认；按制作规格与逐版网页对照验证，不把概念批准当作几何或性能批准。",
+  "selectedVisual": {
+    "candidate": "B",
+    "concepts": {
+      "campus": {
+        "path": "design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264",
+        "decisionId": "D006"
+      },
+      "building": {
+        "path": "design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4",
+        "decisionId": "D006"
+      }
+    },
+    "approvalRecord": "docs/B-concept-approval.md"
+  },
+  "design": {
+    "baselineReuse": {
+      "campus": "selectedVisual.concepts.campus",
+      "building": "selectedVisual.concepts.building"
+    },
+    "layout": {
+      "railFraction": 0.28,
+      "sceneFraction": 0.72,
+      "paddingPx": 40,
+      "kpiColumns": 2,
+      "baseViewport": "project.viewport",
+      "safeBottomPx": 28
+    },
+    "typography": {
+      "family": "system-ui, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, sans-serif",
+      "titlePx": 54,
+      "headingPx": 28,
+      "metricPx": 40,
+      "bodyPx": 18,
+      "captionPx": 15
+    },
+    "palette": {
+      "background": "#f4f3ee",
+      "surface": "#fffefa",
+      "ink": "#123b40",
+      "muted": "#637e80",
+      "accent": "#197e83",
+      "line": "#d8e2df",
+      "glass": "#8cabb7",
+      "bronze": "#9c7b50",
+      "grass": "#8d9e70"
+    },
+    "states": {
+      "campus": [
+        "selected-A1",
+        "no-data"
+      ],
+      "building": [
+        "selected-A1",
+        "no-data"
+      ],
+      "noData": {
+        "metricValue": null,
+        "formatted": "—",
+        "message": "暂无数据",
+        "geometry": "保留规划建筑，不把数据缺失渲染为故障或移除建筑"
+      }
+    },
+    "interactions": {
+      "initialLevel": "campus",
+      "initialSelection": "A1",
+      "focusBuilding": "demoDesign.focusBuilding.id",
+      "focusTrigger": [
+        "点击A1标签或建筑",
+        "点击重点楼宇导航"
+      ],
+      "otherBuildingSelection": "只展示ID和已定义角色；不捏造未定义的指标或楼宇详情",
+      "return": "返回园区保留A1选择并恢复园区镜头",
+      "dataModes": [
+        "demo",
+        "no-data"
+      ],
+      "camera": "拖拽旋转、滚轮缩放、复位镜头",
+      "unrequestedStatesExcluded": [
+        "告警",
+        "回放",
+        "房间下钻"
+      ]
+    },
+    "data": {
+      "mode": "演示快照，非实时接入",
+      "campusMetrics": "demoDesign.campus",
+      "buildingMetrics": "demoDesign.focusBuilding",
+      "aggregates": "园区为独立定义的全园汇总；不以只有A1明细的部分数据假装全园逐栋汇总",
+      "missing": "数值null，格式化为—；已知身份和产业示范定位仍可显示"
+    },
+    "productionGate": "整屏稿、状态与布局锁定后补规格；先在网页验证简化模型的构图、锚点和标签，再深化。",
+    "baselines": {
+      "campus": {
+        "selected-A1": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        "no-data": {
+          "path": "design/screens/campus-no-data-design-v1.png",
+          "sha256": "c86ff0a54a91de0c7fe0294b3c8e7206c42b3f657cfb83cdb0d7ba395d205d39"
+        }
+      },
+      "building": {
+        "selected-A1": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        },
+        "no-data": {
+          "path": "design/screens/building-no-data-design-v1.png",
+          "sha256": "a8a1d81530bcc4361ea0da471f89c283f3d16f3f664e21e0e189ba5a4f73288e"
+        }
+      }
+    }
+  },
+  "production": {
+    "version": "v1",
+    "dimensionBasis": "全部为虚构示范的制作估计，不是实测；由同一几何解释两层投影，网页构图不通过则改源",
+    "coordinateSystem": {
+      "unit": "m",
+      "blender": "X向右、Y向园区后排、Z向上，原点为园区地面中心",
+      "threeConversion": "[x,y,z] -> [x,z,-y]，GLB默认Y向上导出",
+      "modelOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    "floorHeightM": 3.6,
+    "geometryById": {
+      "A1": {
+        "position": [
+          -95,
+          70,
+          0
+        ],
+        "podiumSizes": [
+          [
+            70,
+            58
+          ],
+          [
+            62,
+            50
+          ],
+          [
+            54,
+            42
+          ]
+        ],
+        "towerSize": [
+          30,
+          36
+        ],
+        "towerOffset": [
+          0,
+          5
+        ],
+        "bronzeFace": "positiveX"
+      },
+      "B1": {
+        "position": [
+          8,
+          78,
+          0
+        ],
+        "size": [
+          43,
+          34,
+          72
+        ]
+      },
+      "B2": {
+        "position": [
+          112,
+          76,
+          0
+        ],
+        "size": [
+          43,
+          34,
+          65
+        ]
+      },
+      "A2": {
+        "position": [
+          -147,
+          -5,
+          0
+        ],
+        "size": [
+          59,
+          43,
+          18
+        ]
+      },
+      "B3": {
+        "position": [
+          148,
+          -5,
+          0
+        ],
+        "size": [
+          59,
+          43,
+          18
+        ]
+      },
+      "C1": {
+        "position": [
+          -112,
+          -98,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          18
+        ]
+      },
+      "C2": {
+        "position": [
+          0,
+          -100,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          18
+        ]
+      },
+      "C3": {
+        "position": [
+          112,
+          -98,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          18
+        ]
+      }
+    },
+    "site": {
+      "parkSize": [
+        400,
+        320
+      ],
+      "roadWidth": 16,
+      "seed": 219,
+      "treeCount": 110,
+      "cityCount": 65
+    },
+    "cameras": {
+      "campus": {
+        "type": "perspective",
+        "eye": [
+          310,
+          -470,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          22
+        ],
+        "fov": 32,
+        "near": 0.5,
+        "far": 2200
+      },
+      "building": {
+        "type": "perspective",
+        "eye": [
+          36,
+          -86,
+          100
+        ],
+        "target": [
+          -95,
+          70,
+          42
+        ],
+        "fov": 30,
+        "near": 0.2,
+        "far": 1800
+      }
+    },
+    "render": {
+      "lighting": "中性日光，环境反射与单主光；静态几何不烘入动态状态",
+      "sunPosition": [
+        -160,
+        -120,
+        280
+      ],
+      "exposure": 1.05,
+      "shadowMapSize": 2048,
+      "maxPixelRatio": 1.6,
+      "fogNear": 650,
+      "fogFar": 1900,
+      "baking": "本版不烘焙，先验证实时材质；如测得收益再评估静态光照贴图"
+    },
+    "assets": {
+      "scene": "app/public/assets/campus.glb",
+      "sourceBlend": "assets/scene.blend",
+      "grayScene": "app/public/assets/campus-gray.glb",
+      "businessNodePrefix": "building_",
+      "loading": "单包一次加载，两层复用，同一业务根节点下按材质合批；不复制全场景"
+    },
+    "budget": {
+      "status": "待实测目标，非承诺目标硬件结果",
+      "triangles": 500000,
+      "drawCalls": 350,
+      "glbMegabytes": 25,
+      "frameTimeP95Ms": 40,
+      "resourceCycles": 12
+    },
+    "compositionGate": "网页目标1920×1080与缩小视口，核对八栋ID、A1全高、UI占位、标签与已知锚点；灰盒未通过前不深化",
+    "openItems": [
+      "P-01",
+      "P-02",
+      "P-03"
+    ]
+  }
+}

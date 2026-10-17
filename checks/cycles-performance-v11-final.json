@@ -1,0 +1,91 @@
+{
+  "before": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：158\n\n每帧提交三角形：62249\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 14849 帧\n\n层级：campus · 选择：A1",
+  "cycles": [
+    {
+      "cycle": 1,
+      "viewport": "1280×720",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：158\n\n每帧提交三角形：62249\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.8 ms · 已渲染 15059 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 2,
+      "viewport": "1280×720",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：158\n\n每帧提交三角形：62249\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.9 ms · 已渲染 15205 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 3,
+      "viewport": "1280×720",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：158\n\n每帧提交三角形：62249\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.8 ms · 已渲染 15362 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 4,
+      "viewport": "1280×720",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：158\n\n每帧提交三角形：62249\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 15529 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 5,
+      "viewport": "1280×720",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：156\n\n每帧提交三角形：62129\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 15709 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 6,
+      "viewport": "1280×720",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：126\n\n每帧提交三角形：56273\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.6 ms · 已渲染 15868 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 7,
+      "viewport": "1920×1080",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：158\n\n每帧提交三角形：62249\n\n几何：104 · 纹理：17\n\n帧间隔 P95：27 ms · 已渲染 19569 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 8,
+      "viewport": "1920×1080",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：126\n\n每帧提交三角形：56273\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.8 ms · 已渲染 19713 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 9,
+      "viewport": "1920×1080",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：111\n\n每帧提交三角形：53585\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 19864 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 10,
+      "viewport": "1920×1080",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：111\n\n每帧提交三角形：53585\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 20021 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 11,
+      "viewport": "1920×1080",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：101\n\n每帧提交三角形：50897\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 20177 帧\n\n层级：campus · 选择：A1"
+    },
+    {
+      "cycle": 12,
+      "viewport": "1920×1080",
+      "level": "campus",
+      "selected": "A1",
+      "stats": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：85\n\n每帧提交三角形：50081\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 20326 帧\n\n层级：campus · 选择：A1"
+    }
+  ],
+  "targetBefore": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：158\n\n每帧提交三角形：62249\n\n几何：104 · 纹理：17\n\n帧间隔 P95：27.1 ms · 已渲染 19431 帧\n\n层级：campus · 选择：A1",
+  "after": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：85\n\n每帧提交三角形：50081\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 20326 帧\n\n层级：campus · 选择：A1"
+}

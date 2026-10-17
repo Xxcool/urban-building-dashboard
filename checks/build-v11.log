@@ -1,0 +1,172 @@
+00:02.710  translation      | WARNING Falling back to standard locale ("C")
+/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/scripts/build_scene.py:64: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+BlenderMCP addon registered
+Info: Saved as "scene.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+15:22:32 | INFO: Starting glTF 2.0 export
+15:22:33 | INFO: Extracting primitive: A1_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A1_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A1_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A1_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A1_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A1_leavesCard
+15:22:33 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A1_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A1_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: A2_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B1_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B2_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: B3_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C1_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C2_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_bronze
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_frame
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_roof
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: C3_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_bark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_car
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_carDark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_city
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_cityLight
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_dark
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_glass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_grass
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_leavesCard
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_marking
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_path
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_paving
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_road
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Extracting primitive: environment_stone
+15:22:33 | INFO: Primitives created: 1
+15:22:33 | INFO: Finished glTF 2.0 export in 0.38772106170654297 s
+
+BUILD_RESULT {"quality": "detailed", "glb": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/app/public/assets/campus.glb", "bytes": 6983532, "triangles": 35946, "objects": 8}
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

@@ -1,0 +1,14 @@
+{
+  "campus": {
+    "mode": "no-data",
+    "kpis": "—\n\n楼宇总数\n\n—\n\n建筑面积\n\n—\n\n出租率\n\n—\n\n入驻企业",
+    "visibleLabels": 8
+  },
+  "building": {
+    "mode": "no-data",
+    "kpis": "—\n\n楼层数\n\n—\n\n建筑面积\n\n—\n\n出租率\n\n—\n\n入驻企业",
+    "space": "空间利用\n出租率\n—\n已租面积\n— 万㎡\n可租面积\n— 万㎡\n可租空置面积\n— 万㎡",
+    "industries": "入驻产业\n\n暂无产业数据",
+    "services": "配套服务\n会议空间\n停车服务\n通勤配套"
+  }
+}

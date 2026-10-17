@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "intent": "城市正常态沿用已确认概念，另生成无数据态",
+  "prompt": "design/screens/city-no-data-prompt-v1.txt",
+  "input": {
+    "path": "design/concepts/city/B-city-v1.png",
+    "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+  },
+  "output": {
+    "path": "design/screens/city-no-data-design-v1.png",
+    "sha256": "fdfdc01606df25c5d73d072a2851bb14dbf434ee2ab211c32861dcf33fd79300"
+  },
+  "originalOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-09b781f6-c737-414b-81e2-d40183ec744f.png",
+  "review": "实际查看：区域模型与定位保留，园区四指标缺失值，暂无园区经营数据，入口仍可用；非用户新增批准"
+}

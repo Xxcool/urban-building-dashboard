@@ -1,0 +1,7 @@
+// 覆盖数据缺失、面积口径和坐标边界，防止无数据变零或把总建面当出租率分母。
+import {test} from 'node:test';import assert from 'node:assert/strict';import {snapshot,number,area,occupancy,vacant,toThree} from '../src/state.js';
+test('面积口径与缺失状态',()=>{const source={id:'A1',grossAreaM2:48000,rentableAreaM2:40000,rentedAreaM2:36000,enterprises:42};assert.equal(occupancy(source),90);assert.equal(vacant(source),4000);assert.equal(area(source.grossAreaM2),'4.8');const data=snapshot({demoDesign:{campus:source,focusBuilding:source,buildingMetrics:{}}},'no-data');assert.equal(data.building.rentedAreaM2,null);assert.equal(occupancy(data.building),null);assert.equal(vacant(data.building),null);assert.equal(number(null),'—');assert.equal(number(0),'0');});
+test('已知原点与轴向转换',()=>{assert.deepEqual(toThree([0,0,0]),[0,0,-0]);assert.deepEqual(toThree([10,20,30]),[10,30,-20]);});
+
+import fs from 'node:fs';
+test('各栋演示指标汇总守恒且无数据模式一致',()=>{const config=JSON.parse(fs.readFileSync(new URL('../../planning/project.json',import.meta.url)));const normal=snapshot(config,'demo'),empty=snapshot(config,'no-data');assert.deepEqual(normal.campus,config.demoDesign.campus);assert.equal(normal.byBuilding.C1.grossAreaM2,24000);assert.equal(occupancy(normal.byBuilding.C1),82);assert.equal(normal.byBuilding.C1.enterprises,22);assert.equal(empty.byBuilding.C1.grossAreaM2,null);assert.equal(occupancy(empty.byBuilding.C1),null);assert.equal(empty.campus.enterprises,null);assert.equal(normal.byBuilding.A1,normal.building);});

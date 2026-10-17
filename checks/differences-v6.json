@@ -1,0 +1,57 @@
+{
+  "version": "v6",
+  "viewport": "1280×720，1920×1080画布等比缩放",
+  "conditions": "演示快照A1，园区与楼宇分别使用production-spec-v6-camera-sky.md中的固定相机；截图1280×720，设计画布1920×1080等比例缩放。",
+  "differences": [
+    {
+      "id": "V-02",
+      "expected": "低视点且塔楼/三级裙房完整",
+      "actual": "近景完整，角度较v4降低",
+      "cause": "先前眼点过高",
+      "sourceChange": "调整相机眼点、目标和FOV",
+      "evidence": "building-detailed-v4.jpg → building-detailed-v6.jpg",
+      "result": "构图修复，尚非像素一致",
+      "next": "保持设计基准不改"
+    },
+    {
+      "id": "V-03",
+      "expected": "背景无AO几何伪影",
+      "actual": "灰色片区消失",
+      "cause": "移除天空GBuffer几何",
+      "sourceChange": "程序化背景纹理",
+      "evidence": "building-detailed-v6.jpg",
+      "result": "已修复",
+      "next": "复验旋转"
+    },
+    {
+      "id": "V-05",
+      "expected": "幕墙有反射与窗内层次",
+      "actual": "当前幕墙仍偏平色",
+      "cause": "无贴图、只有统一PBR颜色",
+      "sourceChange": "后续加入固定输入幕墙材质，UV按真实窗格映射",
+      "evidence": "building-detailed-v6.jpg",
+      "result": "待纹理版",
+      "next": "v7重建并实看"
+    },
+    {
+      "id": "E-02",
+      "expected": "AO后绘制调用≤350",
+      "actual": "361次，高于350预算",
+      "cause": "静态阴影在颜色和法线通道重复更新",
+      "sourceChange": "按静态演示语义只在载入后更新阴影",
+      "evidence": "performance-v6.txt",
+      "result": "待复测",
+      "next": "最终版重新读实际诊断"
+    },
+    {
+      "id": "I-01",
+      "expected": "其他楼宇身份卡不暗示进入该栋完整详情",
+      "actual": "已拆成不可点击身份标题与明确A1入口",
+      "cause": "整卡按钮曾隐含转到A1",
+      "sourceChange": "源码拆分标题和操作",
+      "evidence": "binding-labels-v6.json",
+      "result": "已修复",
+      "next": "最终版再走完整路径"
+    }
+  ]
+}

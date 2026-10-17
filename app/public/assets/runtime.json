@@ -1,0 +1,5752 @@
+{
+  "project": {
+    "title": "高新区数字楼宇",
+    "context": "武汉东湖高新区（光谷）产业背景",
+    "siteType": "虚构示范园区",
+    "purpose": "招商展示与领导汇报",
+    "dataMode": "演示数据",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "demoDesign": {
+    "status": "概念设计假设，非真实测绘或经营资料",
+    "campus": {
+      "buildings": 8,
+      "grossAreaM2": 240000,
+      "rentableAreaM2": 200000,
+      "rentedAreaM2": 168000,
+      "enterprises": 216
+    },
+    "focusBuilding": {
+      "id": "A1",
+      "name": "科创大厦",
+      "floors": 24,
+      "grossAreaM2": 48000,
+      "rentableAreaM2": 40000,
+      "rentedAreaM2": 36000,
+      "enterprises": 42,
+      "form": "修长矩形玻璃塔楼、三级退台裙房、右侧立面竖向古铜色翼片、内退屋顶花园",
+      "floorsDefinition": {
+        "total": 24,
+        "podium": 3,
+        "towerAbovePodium": 21
+      }
+    },
+    "layout": "矩形地块，八栋楼围合中央绿庭，后排三栋塔楼，侧翼和前排五栋研发办公楼，A1位于后排左侧",
+    "metricRules": {
+      "occupancy": "rentedAreaM2 / rentableAreaM2",
+      "vacantRentableAreaM2": "rentableAreaM2 - rentedAreaM2"
+    },
+    "buildingIdentities": [
+      {
+        "id": "A1",
+        "role": "重点楼宇",
+        "form": "24层总层数，其中3层退台裙房、21层塔楼；右立面古铜翼片、矩形蓝灰玻璃塔身、内退屋顶花园",
+        "conceptPlacement": "后排左侧"
+      },
+      {
+        "id": "B1",
+        "role": "次要塔楼",
+        "conceptPlacement": "后排中部"
+      },
+      {
+        "id": "B2",
+        "role": "次要塔楼",
+        "conceptPlacement": "后排右侧"
+      },
+      {
+        "id": "A2",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "中排左侧"
+      },
+      {
+        "id": "B3",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "中排右侧"
+      },
+      {
+        "id": "C1",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排左侧"
+      },
+      {
+        "id": "C2",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排中部"
+      },
+      {
+        "id": "C3",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排右侧"
+      }
+    ],
+    "identityStatus": "概念修订设定；相对排布不等于已验证制作坐标，尺寸与相机在整屏基准后补齐",
+    "contentDefinitions": {
+      "industryDirections": {
+        "heading": "产业方向",
+        "labels": [
+          "软件研发",
+          "光电子信息",
+          "企业服务"
+        ],
+        "semantics": "示范产业方向，不表示企业统计占比"
+      },
+      "buildingIndustries": {
+        "heading": "入驻产业",
+        "labels": [
+          "软件研发",
+          "光电子信息",
+          "企业服务"
+        ],
+        "semantics": "产业类别展示，企业总数沿用重点楼宇的演示指标，不虚构真实企业名单"
+      },
+      "spaceUsage": {
+        "heading": "空间利用",
+        "labels": {
+          "rented": "已租面积",
+          "rentable": "可租面积",
+          "vacant": "可租空置面积",
+          "occupancy": "出租率"
+        },
+        "unit": "万㎡",
+        "precision": 1
+      },
+      "services": {
+        "heading": "配套服务",
+        "labels": [
+          "会议空间",
+          "停车服务",
+          "通勤配套"
+        ],
+        "semantics": "示范配套，不表示真实交通或车位数据"
+      }
+    },
+    "conceptRevision": {
+      "candidate": "B",
+      "version": "v2",
+      "status": "user_confirmed_visual",
+      "lighting": "柔和中性日光，灰白石材与蓝灰玻璃，弱暖反射，古铜翼片避免金黄自发光",
+      "campusLabelPolicy": "八栋主体均可辨识并一一标注稳定ID，A1追加名称；外围城市降为无标签低对比背景",
+      "buildingIdentityPolicy": "总览和近景沿用相同A1塔身、三级退台、古铜翼片与屋顶花园；不以AI可数楼层替代规格验证"
+    },
+    "region": {
+      "id": "REGION-DEMO",
+      "name": "东湖高新区产业空间",
+      "campusId": "PARK-DEMO",
+      "campusName": "光谷示范园区",
+      "quality": "schematic",
+      "disclaimer": "区域轮廓、路网与点位为概念示意，非测绘成果",
+      "scope": "武汉光谷产业背景；不声称真实行政边界、路网、湖泊或园区地理位置"
+    },
+    "buildingMetrics": {
+      "B1": {
+        "floors": 20,
+        "grossAreaM2": 42000,
+        "rentableAreaM2": 35000,
+        "rentedAreaM2": 30800,
+        "enterprises": 38
+      },
+      "B2": {
+        "floors": 18,
+        "grossAreaM2": 36000,
+        "rentableAreaM2": 30000,
+        "rentedAreaM2": 25800,
+        "enterprises": 32
+      },
+      "A2": {
+        "floors": 5,
+        "grossAreaM2": 22000,
+        "rentableAreaM2": 18000,
+        "rentedAreaM2": 14400,
+        "enterprises": 18
+      },
+      "B3": {
+        "floors": 5,
+        "grossAreaM2": 22000,
+        "rentableAreaM2": 18000,
+        "rentedAreaM2": 14760,
+        "enterprises": 18
+      },
+      "C1": {
+        "floors": 5,
+        "grossAreaM2": 24000,
+        "rentableAreaM2": 20000,
+        "rentedAreaM2": 16400,
+        "enterprises": 22
+      },
+      "C2": {
+        "floors": 5,
+        "grossAreaM2": 24000,
+        "rentableAreaM2": 20000,
+        "rentedAreaM2": 16800,
+        "enterprises": 24
+      },
+      "C3": {
+        "floors": 5,
+        "grossAreaM2": 22000,
+        "rentableAreaM2": 19000,
+        "rentedAreaM2": 13040,
+        "enterprises": 22
+      }
+    },
+    "dataDeclaration": "全部经营指标为虚构演示快照；园区指标由各栋汇总，campus保留为原确认总量校验约束。"
+  },
+  "production": {
+    "version": "v14-city-restoration",
+    "dimensionBasis": "全部为虚构示范的制作估计，不是实测；由同一几何解释两层投影，网页构图不通过则改源",
+    "coordinateSystem": {
+      "unit": "m",
+      "blender": "X向右、Y向园区后排、Z向上，原点为园区地面中心",
+      "threeConversion": "[x,y,z] -> [x,z,-y]，GLB默认Y向上导出",
+      "modelOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    "floorHeightM": 4.2,
+    "geometryById": {
+      "A1": {
+        "position": [
+          -125,
+          70,
+          0
+        ],
+        "podiumSizes": [
+          [
+            70,
+            58
+          ],
+          [
+            62,
+            50
+          ],
+          [
+            54,
+            42
+          ]
+        ],
+        "towerSize": [
+          36,
+          40
+        ],
+        "towerOffset": [
+          0,
+          5
+        ],
+        "bronzeFace": "positiveX"
+      },
+      "B1": {
+        "position": [
+          -6,
+          78,
+          0
+        ],
+        "size": [
+          43,
+          34,
+          84
+        ]
+      },
+      "B2": {
+        "position": [
+          104,
+          76,
+          0
+        ],
+        "size": [
+          43,
+          34,
+          76
+        ]
+      },
+      "A2": {
+        "position": [
+          -147,
+          -5,
+          0
+        ],
+        "size": [
+          59,
+          43,
+          21
+        ]
+      },
+      "B3": {
+        "position": [
+          170,
+          -5,
+          0
+        ],
+        "size": [
+          59,
+          43,
+          21
+        ]
+      },
+      "C1": {
+        "position": [
+          -50,
+          -98,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          21
+        ]
+      },
+      "C2": {
+        "position": [
+          55,
+          -100,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          21
+        ]
+      },
+      "C3": {
+        "position": [
+          160,
+          -98,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          21
+        ]
+      }
+    },
+    "site": {
+      "parkSize": [
+        400,
+        320
+      ],
+      "roadWidth": 16,
+      "seed": 219,
+      "treeCount": 240,
+      "cityCount": 65,
+      "centralTreePositionsM": [
+        [
+          -55,
+          30
+        ],
+        [
+          -47,
+          -26
+        ],
+        [
+          52,
+          28
+        ],
+        [
+          45,
+          -30
+        ],
+        [
+          30,
+          38
+        ],
+        [
+          -18,
+          34
+        ]
+      ]
+    },
+    "cameras": {
+      "campus": {
+        "type": "perspective",
+        "eye": [
+          210,
+          -490,
+          330
+        ],
+        "target": [
+          20,
+          0,
+          25
+        ],
+        "fov": 32,
+        "near": 0.5,
+        "far": 2200
+      },
+      "building": {
+        "type": "perspective",
+        "eye": [
+          5,
+          -200,
+          85
+        ],
+        "target": [
+          -125,
+          70,
+          49
+        ],
+        "fov": 26,
+        "near": 0.2,
+        "far": 1800
+      }
+    },
+    "render": {
+      "lighting": "中性日光，环境反射与单主光；静态几何不烘入动态状态",
+      "sunPosition": [
+        -160,
+        -120,
+        280
+      ],
+      "exposure": 0.85,
+      "shadowMapSize": 2048,
+      "maxPixelRatio": 1.6,
+      "fogNear": 650,
+      "fogFar": 1900,
+      "baking": "本版不烘焙，先验证实时材质；如测得收益再评估静态光照贴图",
+      "hemisphereIntensity": 0.75,
+      "sunIntensity": 2.5,
+      "environmentIntensity": 0.65,
+      "selectionStyle": "由同一制作规格派生轻量轮廓线与标签，不执行全场景多次描边渲染",
+      "ambientOcclusion": {
+        "radius": 3,
+        "thickness": 2,
+        "scale": 0.65,
+        "blendIntensity": 0.65,
+        "samples": 8
+      },
+      "shadowUpdate": "静态几何与光源在模型载入后更新一次，巡览与数据模式不修改阴影",
+      "skyTopRgb": [
+        80,
+        154,
+        222
+      ],
+      "skyHorizonRgb": [
+        156,
+        209,
+        241
+      ]
+    },
+    "assets": {
+      "scene": "app/public/assets/campus.glb",
+      "sourceBlend": "assets/scene.blend",
+      "grayScene": "app/public/assets/campus-gray.glb",
+      "businessNodePrefix": "building_",
+      "loading": "单包一次加载，两层复用，同一业务根节点下按材质合批；不复制全场景"
+    },
+    "budget": {
+      "status": "待实测目标，非承诺目标硬件结果",
+      "triangles": 500000,
+      "drawCalls": 350,
+      "glbMegabytes": 25,
+      "frameTimeP95Ms": 40,
+      "resourceCycles": 12
+    },
+    "compositionGate": "网页目标1920×1080与缩小视口，核对八栋ID、A1全高、UI占位、标签与已知锚点；灰盒未通过前不深化",
+    "openItems": [
+      "P-01",
+      "P-02",
+      "P-03"
+    ],
+    "compositionRevision": "在v8实屏与锁定基准并排后，A1后排左侧偏右、前排偏左；校准同一园区坐标及两层眼点，不改业务ID、24总层数、视觉基准或主题。",
+    "materialInputs": {
+      "curtainWall": {
+        "path": "design/materials/curtain-wall-v1.png",
+        "sha256": "dcd3dba1ce867875792225a713a856ad39b69c2384787593f1e6557211477a4e",
+        "atlasColumns": 4,
+        "atlasRows": 4,
+        "provenance": "design/material-generation-v1.json",
+        "use": "预渲染窗内细节与反射，仅作幕墙表面；不代表室内空间或实时灯光"
+      },
+      "foliage": {
+        "path": "design/materials/foliage-cluster-v1.png",
+        "sha256": "58a272e5451f17de076d059f3fd59ab7609c17c8d969b26ae07abb4e88458b0e",
+        "cardsPerTree": 12,
+        "alphaCutoff": 0.48,
+        "provenance": "design/foliage-generation-v1.json",
+        "use": "静态交错双面叶簇，Alpha裁切、真实裁切阴影；不参与AO法线通道，无业务状态或风速含义",
+        "widthHeightRatioRange": [
+          0.55,
+          0.75
+        ],
+        "heightRatioRange": [
+          0.45,
+          0.65
+        ]
+      }
+    },
+    "traffic": {
+      "kind": "decorative-demo",
+      "vehicleCount": 18,
+      "speedMps": 8,
+      "laneOffsetM": 3.5,
+      "cornerRadiusM": 14,
+      "maxStepSeconds": 0.1,
+      "fleet": [
+        {
+          "type": "sedan",
+          "count": 9,
+          "lengthM": 4.6,
+          "widthM": 1.85,
+          "heightM": 1.48
+        },
+        {
+          "type": "suv",
+          "count": 6,
+          "lengthM": 4.8,
+          "widthM": 1.98,
+          "heightM": 1.85
+        },
+        {
+          "type": "truck",
+          "count": 3,
+          "lengthM": 6.4,
+          "widthM": 2.15,
+          "heightM": 2.9
+        }
+      ],
+      "colors": [
+        "#20282c",
+        "#ecece7",
+        "#983c39",
+        "#727d82"
+      ]
+    },
+    "city": {
+      "coordinateBasis": "局部米制视觉估计；Blender XYZ同园区，Three [x,z,-y]；无真实地理对应",
+      "seed": 318,
+      "extentM": [
+        24000,
+        24000
+      ],
+      "roads": {
+        "widthM": 20,
+        "spacingM": 260,
+        "rotationDeg": -9,
+        "originM": [
+          50,
+          20
+        ],
+        "laneMarkM": 2
+      },
+      "campusScale": 1.35,
+      "poi": [
+        {
+          "id": "PARK-DEMO",
+          "label": "光谷示范园区",
+          "action": "enter-campus",
+          "heightM": 120,
+          "content": {
+            "eyebrow": "园区配套",
+            "description": "展示服务园区的公共配套方向，具体设施位置与服务能力待真实资料接入后核定。"
+          },
+          "position": [
+            256.5376,
+            250.9696,
+            120
+          ]
+        },
+        {
+          "id": "INDUSTRY-DEMO",
+          "label": "产业楼宇",
+          "action": "show-info",
+          "heightM": 85,
+          "content": {
+            "eyebrow": "产业空间",
+            "description": "围绕示范园区组织的产业楼宇展示，点击园区可进一步查看逐栋空间与入驻指标。"
+          },
+          "position": [
+            -992.27,
+            194.81,
+            85
+          ]
+        },
+        {
+          "id": "SERVICE-DEMO",
+          "label": "配套服务",
+          "action": "show-info",
+          "heightM": 70,
+          "content": {
+            "eyebrow": "园区配套",
+            "description": "展示服务园区的公共配套方向，具体设施位置与服务能力待真实资料接入后核定。"
+          },
+          "position": [
+            1293.3517,
+            158.5283,
+            70
+          ]
+        }
+      ],
+      "camera": {
+        "eye": [
+          1100,
+          -2720,
+          2800
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "fov": 42,
+        "near": 20,
+        "far": 15000
+      },
+      "layoutAnchors": {
+        "regionFillWidthRange": [
+          0.72,
+          0.98
+        ],
+        "regionFillHeightRange": [
+          0.55,
+          0.9
+        ],
+        "campusWithinSceneXRange": [
+          0.45,
+          0.8
+        ],
+        "campusWithinSceneYRange": [
+          0.35,
+          0.75
+        ]
+      },
+      "assets": {
+        "scene": "app/public/assets/city.glb",
+        "grayScene": "app/public/assets/city-gray.glb",
+        "blend": "assets/city.blend"
+      },
+      "budget": {
+        "glbMegabytes": 15,
+        "triangles": 380000,
+        "drawCalls": 130
+      },
+      "buildings": {
+        "gridM": 72,
+        "jitterM": 9,
+        "widthM": [
+          30,
+          52
+        ],
+        "depthM": [
+          35,
+          65
+        ],
+        "heightM": [
+          20,
+          85
+        ],
+        "blockRows": 2,
+        "blockColumns": 3,
+        "pitchM": 68,
+        "lakeBufferM": 32
+      },
+      "trees": {
+        "count": 6500,
+        "heightM": [
+          15,
+          30
+        ],
+        "radiusM": [
+          10,
+          18
+        ]
+      },
+      "palette": {
+        "ground": "#c9d2bb",
+        "grass": "#b1c69b",
+        "water": "#459fc0",
+        "road": "#8e9b9d",
+        "marking": "#f5f3e9",
+        "building": "#e8ece5",
+        "buildingWarm": "#ede3cf",
+        "roof": "#c7d0c9",
+        "trunk": "#867c63",
+        "leaf": "#638246",
+        "leafLight": "#91a868",
+        "boundary": "#208b96",
+        "boundaryRim": "#effdfb",
+        "campus": "#d3b171",
+        "glass": "#7299a9",
+        "bronze": "#a88655",
+        "waterDeep": "#388caa",
+        "shore": "#bacb9d",
+        "zoneGreen": "#aec19a",
+        "zoneCyan": "#a6ccc7",
+        "zoneGold": "#dfc38e"
+      },
+      "render": {
+        "background": "#e6ede8",
+        "exposure": 0.85,
+        "sunIntensity": 2.3,
+        "hemisphereIntensity": 1.25,
+        "shadowMapSize": 4096,
+        "pixelRatioCap": 1.6,
+        "bloom": {
+          "strength": 0.85,
+          "radius": 0.18,
+          "threshold": 0.4
+        }
+      },
+      "grayGate": "简化区域边界、水系、8栋园区和3个锚点先网页核对；通过后再生成城市楼群与景观，不将简化模型当定稿",
+      "alignment": {
+        "imageSize": [
+          1672,
+          941
+        ],
+        "source": "design/concepts/city/B-city-v1.png",
+        "generator": "scripts/city_layout.py",
+        "generatorSha256": "60f1f6cfd13fe07c2a9f31c6f54276e49afd54d30f49c17ca8e97a28de0b0c57",
+        "outlinePixels": [
+          [
+            490,
+            392
+          ],
+          [
+            540,
+            370
+          ],
+          [
+            589,
+            346
+          ],
+          [
+            651,
+            329
+          ],
+          [
+            688,
+            304
+          ],
+          [
+            735,
+            287
+          ],
+          [
+            791,
+            264
+          ],
+          [
+            818,
+            247
+          ],
+          [
+            820,
+            216
+          ],
+          [
+            852,
+            198
+          ],
+          [
+            855,
+            172
+          ],
+          [
+            896,
+            154
+          ],
+          [
+            897,
+            141
+          ],
+          [
+            935,
+            139
+          ],
+          [
+            966,
+            153
+          ],
+          [
+            1016,
+            156
+          ],
+          [
+            1046,
+            177
+          ],
+          [
+            1051,
+            202
+          ],
+          [
+            1115,
+            214
+          ],
+          [
+            1167,
+            239
+          ],
+          [
+            1202,
+            239
+          ],
+          [
+            1218,
+            261
+          ],
+          [
+            1263,
+            281
+          ],
+          [
+            1260,
+            309
+          ],
+          [
+            1310,
+            333
+          ],
+          [
+            1315,
+            357
+          ],
+          [
+            1372,
+            374
+          ],
+          [
+            1375,
+            398
+          ],
+          [
+            1434,
+            418
+          ],
+          [
+            1461,
+            435
+          ],
+          [
+            1491,
+            427
+          ],
+          [
+            1508,
+            442
+          ],
+          [
+            1513,
+            478
+          ],
+          [
+            1550,
+            497
+          ],
+          [
+            1582,
+            497
+          ],
+          [
+            1589,
+            523
+          ],
+          [
+            1628,
+            539
+          ],
+          [
+            1622,
+            575
+          ],
+          [
+            1601,
+            595
+          ],
+          [
+            1625,
+            624
+          ],
+          [
+            1590,
+            643
+          ],
+          [
+            1582,
+            671
+          ],
+          [
+            1540,
+            674
+          ],
+          [
+            1522,
+            701
+          ],
+          [
+            1476,
+            704
+          ],
+          [
+            1470,
+            728
+          ],
+          [
+            1428,
+            790
+          ],
+          [
+            1393,
+            809
+          ],
+          [
+            1367,
+            817
+          ],
+          [
+            1312,
+            813
+          ],
+          [
+            1299,
+            820
+          ],
+          [
+            1270,
+            817
+          ],
+          [
+            1251,
+            840
+          ],
+          [
+            1203,
+            838
+          ],
+          [
+            1165,
+            813
+          ],
+          [
+            1115,
+            793
+          ],
+          [
+            1079,
+            782
+          ],
+          [
+            1037,
+            762
+          ],
+          [
+            996,
+            753
+          ],
+          [
+            957,
+            736
+          ],
+          [
+            918,
+            719
+          ],
+          [
+            881,
+            714
+          ],
+          [
+            846,
+            685
+          ],
+          [
+            811,
+            676
+          ],
+          [
+            784,
+            660
+          ],
+          [
+            748,
+            631
+          ],
+          [
+            707,
+            623
+          ],
+          [
+            679,
+            592
+          ],
+          [
+            666,
+            558
+          ],
+          [
+            633,
+            548
+          ],
+          [
+            623,
+            515
+          ],
+          [
+            584,
+            502
+          ],
+          [
+            568,
+            478
+          ],
+          [
+            536,
+            470
+          ],
+          [
+            522,
+            450
+          ],
+          [
+            501,
+            442
+          ]
+        ],
+        "waterPixels": [
+          [
+            [
+              350,
+              -200
+            ],
+            [
+              900,
+              -200
+            ],
+            [
+              935,
+              10
+            ],
+            [
+              905,
+              44
+            ],
+            [
+              862,
+              89
+            ],
+            [
+              886,
+              129
+            ],
+            [
+              842,
+              154
+            ],
+            [
+              833,
+              196
+            ],
+            [
+              798,
+              232
+            ],
+            [
+              713,
+              258
+            ],
+            [
+              659,
+              244
+            ],
+            [
+              646,
+              212
+            ],
+            [
+              570,
+              215
+            ],
+            [
+              526,
+              184
+            ],
+            [
+              350,
+              193
+            ]
+          ],
+          [
+            [
+              1000,
+              -80
+            ],
+            [
+              1280,
+              -80
+            ],
+            [
+              1300,
+              78
+            ],
+            [
+              1393,
+              81
+            ],
+            [
+              1450,
+              145
+            ],
+            [
+              1422,
+              201
+            ],
+            [
+              1356,
+              220
+            ],
+            [
+              1318,
+              196
+            ],
+            [
+              1200,
+              175
+            ],
+            [
+              1153,
+              199
+            ],
+            [
+              1060,
+              175
+            ],
+            [
+              1027,
+              127
+            ],
+            [
+              1001,
+              102
+            ]
+          ],
+          [
+            [
+              922,
+              237
+            ],
+            [
+              971,
+              234
+            ],
+            [
+              1001,
+              260
+            ],
+            [
+              1060,
+              267
+            ],
+            [
+              1090,
+              296
+            ],
+            [
+              1044,
+              315
+            ],
+            [
+              1014,
+              348
+            ],
+            [
+              948,
+              350
+            ],
+            [
+              911,
+              321
+            ],
+            [
+              917,
+              282
+            ]
+          ],
+          [
+            [
+              804,
+              596
+            ],
+            [
+              850,
+              591
+            ],
+            [
+              884,
+              603
+            ],
+            [
+              925,
+              611
+            ],
+            [
+              969,
+              630
+            ],
+            [
+              985,
+              650
+            ],
+            [
+              955,
+              671
+            ],
+            [
+              911,
+              680
+            ],
+            [
+              868,
+              677
+            ],
+            [
+              838,
+              664
+            ],
+            [
+              799,
+              660
+            ],
+            [
+              781,
+              641
+            ],
+            [
+              783,
+              615
+            ]
+          ],
+          [
+            [
+              1499,
+              358
+            ],
+            [
+              1750,
+              355
+            ],
+            [
+              1850,
+              490
+            ],
+            [
+              1620,
+              489
+            ],
+            [
+              1563,
+              440
+            ],
+            [
+              1541,
+              395
+            ]
+          ],
+          [
+            [
+              1486,
+              714
+            ],
+            [
+              1553,
+              692
+            ],
+            [
+              1850,
+              699
+            ],
+            [
+              1850,
+              855
+            ],
+            [
+              1574,
+              820
+            ],
+            [
+              1522,
+              780
+            ]
+          ],
+          [
+            [
+              1034,
+              687
+            ],
+            [
+              1084,
+              675
+            ],
+            [
+              1126,
+              685
+            ],
+            [
+              1163,
+              695
+            ],
+            [
+              1202,
+              698
+            ],
+            [
+              1243,
+              706
+            ],
+            [
+              1279,
+              721
+            ],
+            [
+              1320,
+              727
+            ],
+            [
+              1364,
+              742
+            ],
+            [
+              1395,
+              763
+            ],
+            [
+              1360,
+              786
+            ],
+            [
+              1318,
+              792
+            ],
+            [
+              1285,
+              780
+            ],
+            [
+              1248,
+              790
+            ],
+            [
+              1197,
+              784
+            ],
+            [
+              1152,
+              766
+            ],
+            [
+              1110,
+              754
+            ],
+            [
+              1070,
+              731
+            ],
+            [
+              1033,
+              730
+            ],
+            [
+              1019,
+              711
+            ]
+          ]
+        ],
+        "zones": [
+          {
+            "id": "REGION-TINT",
+            "material": "zoneGreen",
+            "pixels": [
+              [
+                490,
+                392
+              ],
+              [
+                735,
+                287
+              ],
+              [
+                896,
+                154
+              ],
+              [
+                1046,
+                177
+              ],
+              [
+                1263,
+                281
+              ],
+              [
+                1434,
+                418
+              ],
+              [
+                1628,
+                539
+              ],
+              [
+                1582,
+                671
+              ],
+              [
+                1251,
+                826
+              ],
+              [
+                881,
+                714
+              ],
+              [
+                679,
+                592
+              ],
+              [
+                568,
+                478
+              ]
+            ]
+          },
+          {
+            "id": "CYAN-SECTOR",
+            "material": "zoneCyan",
+            "pixels": [
+              [
+                850,
+                201
+              ],
+              [
+                955,
+                163
+              ],
+              [
+                1045,
+                189
+              ],
+              [
+                1165,
+                243
+              ],
+              [
+                1260,
+                297
+              ],
+              [
+                1332,
+                377
+              ],
+              [
+                1392,
+                420
+              ],
+              [
+                1340,
+                477
+              ],
+              [
+                1210,
+                405
+              ],
+              [
+                1035,
+                403
+              ],
+              [
+                956,
+                320
+              ],
+              [
+                877,
+                287
+              ]
+            ]
+          },
+          {
+            "id": "DEMO-SECTOR",
+            "material": "zoneGold",
+            "pixels": [
+              [
+                1035,
+                403
+              ],
+              [
+                1210,
+                405
+              ],
+              [
+                1358,
+                490
+              ],
+              [
+                1398,
+                591
+              ],
+              [
+                1276,
+                679
+              ],
+              [
+                1120,
+                621
+              ],
+              [
+                1010,
+                559
+              ],
+              [
+                956,
+                469
+              ]
+            ]
+          }
+        ],
+        "islands": [
+          [
+            554,
+            114,
+            45,
+            16
+          ],
+          [
+            637,
+            91,
+            37,
+            14
+          ],
+          [
+            717,
+            147,
+            48,
+            19
+          ],
+          [
+            801,
+            119,
+            23,
+            14
+          ],
+          [
+            751,
+            67,
+            37,
+            12
+          ],
+          [
+            858,
+            67,
+            22,
+            9
+          ],
+          [
+            944,
+            287,
+            18,
+            10
+          ],
+          [
+            992,
+            301,
+            22,
+            9
+          ],
+          [
+            1080,
+            714,
+            18,
+            10
+          ],
+          [
+            1208,
+            749,
+            25,
+            12
+          ],
+          [
+            1534,
+            737,
+            26,
+            11
+          ],
+          [
+            1650,
+            752,
+            39,
+            20
+          ],
+          [
+            1292,
+            752,
+            14,
+            8
+          ]
+        ],
+        "roads": [
+          {
+            "pixels": [
+              [
+                350,
+                375
+              ],
+              [
+                650,
+                305
+              ],
+              [
+                910,
+                222
+              ],
+              [
+                1000,
+                220
+              ],
+              [
+                1110,
+                240
+              ],
+              [
+                1250,
+                309
+              ],
+              [
+                1700,
+                260
+              ]
+            ],
+            "width": 22
+          },
+          {
+            "pixels": [
+              [
+                520,
+                1030
+              ],
+              [
+                710,
+                670
+              ],
+              [
+                866,
+                428
+              ],
+              [
+                960,
+                190
+              ],
+              [
+                1040,
+                -120
+              ]
+            ],
+            "width": 24,
+            "bridge": true
+          },
+          {
+            "pixels": [
+              [
+                650,
+                450
+              ],
+              [
+                920,
+                488
+              ],
+              [
+                1160,
+                566
+              ],
+              [
+                1490,
+                681
+              ],
+              [
+                1550,
+                650
+              ],
+              [
+                1750,
+                650
+              ],
+              [
+                1800,
+                675
+              ]
+            ],
+            "width": 20
+          },
+          {
+            "pixels": [
+              [
+                1000,
+                1030
+              ],
+              [
+                1150,
+                776
+              ],
+              [
+                1280,
+                563
+              ],
+              [
+                1410,
+                351
+              ],
+              [
+                1520,
+                90
+              ]
+            ],
+            "width": 22,
+            "bridge": true
+          }
+        ],
+        "campusPixel": [
+          1114,
+          513
+        ],
+        "poiPixels": {
+          "PARK-DEMO": [
+            1170,
+            416
+          ],
+          "INDUSTRY-DEMO": [
+            834,
+            347
+          ],
+          "SERVICE-DEMO": [
+            1480,
+            530
+          ]
+        },
+        "containedWaterIndices": [
+          3,
+          6
+        ],
+        "buildingGridPx": [
+          90,
+          88
+        ],
+        "greenPixels": [
+          [
+            [
+              701,
+              555
+            ],
+            [
+              810,
+              561
+            ],
+            [
+              1030,
+              640
+            ],
+            [
+              1030,
+              710
+            ],
+            [
+              880,
+              701
+            ],
+            [
+              730,
+              630
+            ]
+          ],
+          [
+            [
+              1005,
+              661
+            ],
+            [
+              1090,
+              653
+            ],
+            [
+              1350,
+              702
+            ],
+            [
+              1428,
+              756
+            ],
+            [
+              1355,
+              807
+            ],
+            [
+              1155,
+              786
+            ],
+            [
+              1010,
+              733
+            ]
+          ],
+          [
+            [
+              525,
+              376
+            ],
+            [
+              675,
+              332
+            ],
+            [
+              752,
+              361
+            ],
+            [
+              735,
+              418
+            ],
+            [
+              630,
+              466
+            ],
+            [
+              528,
+              434
+            ]
+          ],
+          [
+            [
+              819,
+              332
+            ],
+            [
+              950,
+              316
+            ],
+            [
+              1070,
+              365
+            ],
+            [
+              1015,
+              432
+            ],
+            [
+              874,
+              400
+            ]
+          ],
+          [
+            [
+              889,
+              163
+            ],
+            [
+              1027,
+              169
+            ],
+            [
+              1081,
+              217
+            ],
+            [
+              970,
+              245
+            ],
+            [
+              884,
+              220
+            ]
+          ],
+          [
+            [
+              552,
+              676
+            ],
+            [
+              673,
+              700
+            ],
+            [
+              733,
+              765
+            ],
+            [
+              660,
+              839
+            ],
+            [
+              522,
+              810
+            ]
+          ]
+        ],
+        "localRoadPixels": [
+          [
+            [
+              470,
+              490
+            ],
+            [
+              650,
+              450
+            ],
+            [
+              870,
+              460
+            ],
+            [
+              1035,
+              403
+            ]
+          ],
+          [
+            [
+              710,
+              670
+            ],
+            [
+              838,
+              560
+            ],
+            [
+              920,
+              488
+            ]
+          ],
+          [
+            [
+              920,
+              488
+            ],
+            [
+              956,
+              400
+            ],
+            [
+              1070,
+              365
+            ],
+            [
+              1250,
+              309
+            ]
+          ],
+          [
+            [
+              866,
+              428
+            ],
+            [
+              760,
+              385
+            ],
+            [
+              650,
+              305
+            ]
+          ],
+          [
+            [
+              1160,
+              566
+            ],
+            [
+              1210,
+              405
+            ],
+            [
+              1332,
+              377
+            ],
+            [
+              1410,
+              351
+            ]
+          ],
+          [
+            [
+              1280,
+              563
+            ],
+            [
+              1435,
+              555
+            ],
+            [
+              1600,
+              570
+            ]
+          ],
+          [
+            [
+              1134,
+              805
+            ],
+            [
+              1040,
+              780
+            ],
+            [
+              945,
+              730
+            ],
+            [
+              710,
+              670
+            ]
+          ],
+          [
+            [
+              1490,
+              681
+            ],
+            [
+              1560,
+              620
+            ],
+            [
+              1600,
+              570
+            ]
+          ]
+        ]
+      },
+      "geometryBudgetReason": "用户指出v13明显未还原设计；扩展连续城市覆盖并增加自然岸线、岛屿、分组楼宇与叶簇。预算随实际场景范围重新制定，仍须实测。",
+      "boundary": {
+        "bloomMix": 0.16,
+        "layers": [
+          {
+            "radius": 20,
+            "color": "#2aa7c1",
+            "opacity": 0.045,
+            "order": 1
+          },
+          {
+            "radius": 13,
+            "color": "#2aa7c1",
+            "opacity": 0.075,
+            "order": 2
+          },
+          {
+            "radius": 8,
+            "color": "#2aa7c1",
+            "opacity": 0.12,
+            "order": 3
+          },
+          {
+            "radius": 5.1,
+            "color": "#e2ffff",
+            "opacity": 1,
+            "order": 4
+          },
+          {
+            "radius": 3.3,
+            "color": "#007fa8",
+            "opacity": 1,
+            "order": 5
+          },
+          {
+            "radius": 3.1,
+            "color": "#44cfea",
+            "opacity": 1,
+            "emission": 4,
+            "glow": true,
+            "order": 4
+          }
+        ]
+      },
+      "context": {
+        "radiusM": 13000,
+        "districtPitchM": 1250,
+        "buildingsPerDistrict": 6,
+        "seed": 20201017,
+        "fogNearDistanceFactor": 1.5,
+        "fogDepthM": 11000,
+        "innerRadiusM": 1800,
+        "middleRadiusM": 6000,
+        "middleBuildingsPerDistrict": 24,
+        "middleTreesPerDistrict": 12
+      },
+      "outline": [
+        [
+          -2058.6151,
+          -397.5022
+        ],
+        [
+          -1976.4272,
+          -230.8867
+        ],
+        [
+          -1901.8587,
+          -48.8237
+        ],
+        [
+          -1751.6944,
+          123.7956
+        ],
+        [
+          -1715.3885,
+          309.9126
+        ],
+        [
+          -1610.189,
+          473.9966
+        ],
+        [
+          -1490.2171,
+          693.7799
+        ],
+        [
+          -1452.3666,
+          841.0258
+        ],
+        [
+          -1564.9124,
+          1048.7234
+        ],
+        [
+          -1510.501,
+          1225.7843
+        ],
+        [
+          -1605.9494,
+          1422.4655
+        ],
+        [
+          -1511.7489,
+          1631.8486
+        ],
+        [
+          -1563.3884,
+          1739.2368
+        ],
+        [
+          -1409.468,
+          1821.5713
+        ],
+        [
+          -1221.2643,
+          1759.0521
+        ],
+        [
+          -999.8281,
+          1819.4874
+        ],
+        [
+          -802.6408,
+          1701.0021
+        ],
+        [
+          -702.1629,
+          1517.6935
+        ],
+        [
+          -413.8542,
+          1531.1515
+        ],
+        [
+          -147.951,
+          1432.2901
+        ],
+        [
+          -14.0964,
+          1486.4224
+        ],
+        [
+          94.1711,
+          1357.469
+        ],
+        [
+          299.8593,
+          1290.3456
+        ],
+        [
+          339.2263,
+          1105.856
+        ],
+        [
+          554.0153,
+          1029.5928
+        ],
+        [
+          606.1712,
+          894.9723
+        ],
+        [
+          820.433,
+          875.5393
+        ],
+        [
+          858.2721,
+          746.6738
+        ],
+        [
+          1070.022,
+          716.8996
+        ],
+        [
+          1170.9022,
+          662.7997
+        ],
+        [
+          1259.8695,
+          743.0797
+        ],
+        [
+          1324.3861,
+          686.6169
+        ],
+        [
+          1363.4002,
+          512.8484
+        ],
+        [
+          1486.1126,
+          467.0361
+        ],
+        [
+          1582.0987,
+          505.854
+        ],
+        [
+          1613.7048,
+          392.8441
+        ],
+        [
+          1733.027,
+          366.3148
+        ],
+        [
+          1726.5505,
+          202.2972
+        ],
+        [
+          1674.1285,
+          95.3111
+        ],
+        [
+          1748.5819,
+          5.6374
+        ],
+        [
+          1660.0171,
+          -105.8514
+        ],
+        [
+          1648.0959,
+          -218.3644
+        ],
+        [
+          1539.3438,
+          -273.6229
+        ],
+        [
+          1504.0638,
+          -387.2173
+        ],
+        [
+          1387.7165,
+          -445.0699
+        ],
+        [
+          1384.6403,
+          -531.0821
+        ],
+        [
+          1313.3031,
+          -766.2702
+        ],
+        [
+          1239.9697,
+          -855.7639
+        ],
+        [
+          1182.9881,
+          -903.5538
+        ],
+        [
+          1050.0559,
+          -944.9729
+        ],
+        [
+          1024.1983,
+          -976.9827
+        ],
+        [
+          953.4377,
+          -996.3867
+        ],
+        [
+          926.3059,
+          -1077.0704
+        ],
+        [
+          812.7363,
+          -1117.0202
+        ],
+        [
+          701.2604,
+          -1086.0299
+        ],
+        [
+          562.2609,
+          -1079.5498
+        ],
+        [
+          463.6206,
+          -1084.2382
+        ],
+        [
+          338.0641,
+          -1069.6515
+        ],
+        [
+          225.8309,
+          -1085.0391
+        ],
+        [
+          106.1077,
+          -1075.7618
+        ],
+        [
+          -16.4857,
+          -1066.2621
+        ],
+        [
+          -117.9225,
+          -1089.638
+        ],
+        [
+          -255.1531,
+          -1040.2728
+        ],
+        [
+          -361.8979,
+          -1049.9987
+        ],
+        [
+          -462.1754,
+          -1030.0046
+        ],
+        [
+          -615.1794,
+          -978.4262
+        ],
+        [
+          -742.881,
+          -997.8965
+        ],
+        [
+          -888.9861,
+          -928.5442
+        ],
+        [
+          -1006.9715,
+          -828.1072
+        ],
+        [
+          -1126.8353,
+          -831.4703
+        ],
+        [
+          -1244.1349,
+          -724.7685
+        ],
+        [
+          -1396.8421,
+          -723.4783
+        ],
+        [
+          -1516.9373,
+          -651.9939
+        ],
+        [
+          -1639.9001,
+          -660.6089
+        ],
+        [
+          -1748.7294,
+          -599.3348
+        ],
+        [
+          -1841.7486,
+          -593.8053
+        ]
+      ],
+      "waterPolygons": [
+        [
+          [
+            -7998.5923,
+            4887.3756
+          ],
+          [
+            -4045.4373,
+            6486.078
+          ],
+          [
+            -2048.1417,
+            3098.2309
+          ],
+          [
+            -2003.1276,
+            2660.1632
+          ],
+          [
+            -1964.517,
+            2132.4145
+          ],
+          [
+            -1664.1497,
+            1820.4666
+          ],
+          [
+            -1738.8415,
+            1540.0097
+          ],
+          [
+            -1594.7255,
+            1209.3363
+          ],
+          [
+            -1586.6808,
+            907.1246
+          ],
+          [
+            -1805.1161,
+            612.4625
+          ],
+          [
+            -2068.53,
+            615.6191
+          ],
+          [
+            -2266.1749,
+            799.0522
+          ],
+          [
+            -2550.1273,
+            658.745
+          ],
+          [
+            -2892.1597,
+            791.9941
+          ],
+          [
+            -3549.5845,
+            445.3365
+          ]
+        ],
+        [
+          [
+            -2274.6689,
+            4456.2621
+          ],
+          [
+            -652.1683,
+            5112.4204
+          ],
+          [
+            0.0232,
+            3053.9094
+          ],
+          [
+            435.8022,
+            3195.1488
+          ],
+          [
+            804.3673,
+            2656.8961
+          ],
+          [
+            773.4743,
+            2123.1775
+          ],
+          [
+            543.302,
+            1867.6779
+          ],
+          [
+            349.211,
+            1995.4871
+          ],
+          [
+            -177.2083,
+            1972.4031
+          ],
+          [
+            -304.0657,
+            1704.9037
+          ],
+          [
+            -751.824,
+            1740.0217
+          ],
+          [
+            -1060.9242,
+            2085.0923
+          ],
+          [
+            -1276.0474,
+            2265.2313
+          ]
+        ],
+        [
+          [
+            -1091.7409,
+            1066.7163
+          ],
+          [
+            -913.6068,
+            1163.0444
+          ],
+          [
+            -719.6514,
+            1036.0294
+          ],
+          [
+            -480.1088,
+            1079.4783
+          ],
+          [
+            -296.7116,
+            940.3204
+          ],
+          [
+            -414.5186,
+            759.5273
+          ],
+          [
+            -438.0139,
+            530.2475
+          ],
+          [
+            -658.8805,
+            428.0509
+          ],
+          [
+            -867.4845,
+            535.3254
+          ],
+          [
+            -963.5635,
+            772.0482
+          ]
+        ],
+        [
+          [
+            -533.4633,
+            -801.6848
+          ],
+          [
+            -415.7486,
+            -732.9154
+          ],
+          [
+            -298.8655,
+            -736.1675
+          ],
+          [
+            -171.9256,
+            -717.9981
+          ],
+          [
+            -20.6495,
+            -733.9908
+          ],
+          [
+            53.3634,
+            -782.9431
+          ],
+          [
+            6.1984,
+            -882.367
+          ],
+          [
+            -94.5958,
+            -956.816
+          ],
+          [
+            -211.495,
+            -992.9115
+          ],
+          [
+            -312.5185,
+            -984.7517
+          ],
+          [
+            -422.5777,
+            -1013.9908
+          ],
+          [
+            -506.5565,
+            -974.1749
+          ],
+          [
+            -552.6993,
+            -888.4193
+          ]
+        ],
+        [
+          [
+            1232.0708,
+            1141.7589
+          ],
+          [
+            2083.899,
+            1505.2881
+          ],
+          [
+            2387.6545,
+            866.437
+          ],
+          [
+            1693.3504,
+            590.6582
+          ],
+          [
+            1496.2518,
+            767.003
+          ],
+          [
+            1399.2059,
+            983.109
+          ]
+        ],
+        [
+          [
+            1418.1593,
+            -468.4284
+          ],
+          [
+            1580.1499,
+            -323.7666
+          ],
+          [
+            2344.9277,
+            -39.936
+          ],
+          [
+            2320.5257,
+            -557.5838
+          ],
+          [
+            1673.7005,
+            -714.3164
+          ],
+          [
+            1535.9877,
+            -644.1035
+          ]
+        ],
+        [
+          [
+            234.8725,
+            -849.4734
+          ],
+          [
+            349.1216,
+            -758.7112
+          ],
+          [
+            470.6548,
+            -746.7475
+          ],
+          [
+            577.5767,
+            -740.1594
+          ],
+          [
+            681.0035,
+            -709.2258
+          ],
+          [
+            793.783,
+            -692.4381
+          ],
+          [
+            898.5509,
+            -703.2343
+          ],
+          [
+            1006.7622,
+            -680.4254
+          ],
+          [
+            1127.704,
+            -683.1346
+          ],
+          [
+            1217.7646,
+            -717.2009
+          ],
+          [
+            1146.8987,
+            -820.7738
+          ],
+          [
+            1049.6816,
+            -879.2523
+          ],
+          [
+            961.0984,
+            -876.5955
+          ],
+          [
+            879.6103,
+            -941.6607
+          ],
+          [
+            751.2894,
+            -974.3409
+          ],
+          [
+            624.4992,
+            -967.0292
+          ],
+          [
+            508.5983,
+            -974.0364
+          ],
+          [
+            382.6251,
+            -946.7049
+          ],
+          [
+            288.5317,
+            -981.2969
+          ],
+          [
+            228.4797,
+            -938.9009
+          ]
+        ]
+      ],
+      "zones": [
+        {
+          "id": "REGION-TINT",
+          "material": "zoneGreen",
+          "polygon": [
+            [
+              -2058.6151,
+              -397.5022
+            ],
+            [
+              -1610.189,
+              473.9966
+            ],
+            [
+              -1511.7489,
+              1631.8486
+            ],
+            [
+              -802.6408,
+              1701.0021
+            ],
+            [
+              299.8593,
+              1290.3456
+            ],
+            [
+              1070.022,
+              716.8996
+            ],
+            [
+              1733.027,
+              366.3148
+            ],
+            [
+              1648.0959,
+              -218.3644
+            ],
+            [
+              915.5159,
+              -1039.2514
+            ],
+            [
+              -117.9225,
+              -1089.638
+            ],
+            [
+              -888.9861,
+              -928.5442
+            ],
+            [
+              -1516.9373,
+              -651.9939
+            ]
+          ]
+        },
+        {
+          "id": "CYAN-SECTOR",
+          "material": "zoneCyan",
+          "polygon": [
+            [
+              -1506.4345,
+              1201.1556
+            ],
+            [
+              -1228.4998,
+              1659.8603
+            ],
+            [
+              -767.4405,
+              1606.1716
+            ],
+            [
+              -146.0164,
+              1401.0655
+            ],
+            [
+              317.9948,
+              1181.7803
+            ],
+            [
+              690.6441,
+              804.6785
+            ],
+            [
+              937.2167,
+              651.8776
+            ],
+            [
+              835.0243,
+              304.2755
+            ],
+            [
+              329.9912,
+              492.1624
+            ],
+            [
+              -242.9146,
+              272.0963
+            ],
+            [
+              -711.9762,
+              605.0174
+            ],
+            [
+              -1093.5534,
+              682.9301
+            ]
+          ]
+        },
+        {
+          "id": "DEMO-SECTOR",
+          "material": "zoneGold",
+          "polygon": [
+            [
+              -242.9146,
+              272.0963
+            ],
+            [
+              329.9912,
+              492.1624
+            ],
+            [
+              903.1823,
+              266.099
+            ],
+            [
+              1108.2541,
+              -116.5908
+            ],
+            [
+              854.072,
+              -569.4424
+            ],
+            [
+              375.2741,
+              -537.597
+            ],
+            [
+              -23.4965,
+              -434.85
+            ],
+            [
+              -353.0907,
+              -135.0293
+            ]
+          ]
+        }
+      ],
+      "parks": [
+        [
+          [
+            -914.2777,
+            -777.1629
+          ],
+          [
+            -589.5697,
+            -672.6987
+          ],
+          [
+            158.6347,
+            -701.2227
+          ],
+          [
+            255.1584,
+            -924.5524
+          ],
+          [
+            -141.0937,
+            -1052.5383
+          ],
+          [
+            -665.8132,
+            -994.9025
+          ]
+        ],
+        [
+          [
+            122.6873,
+            -797.3052
+          ],
+          [
+            336.527,
+            -680.0598
+          ],
+          [
+            1064.0463,
+            -568.7708
+          ],
+          [
+            1294.8802,
+            -662.7445
+          ],
+          [
+            1148.3013,
+            -886.6082
+          ],
+          [
+            651.6405,
+            -1021.0621
+          ],
+          [
+            234.7081,
+            -1013.4307
+          ]
+        ],
+        [
+          [
+            -2003.7262,
+            -278.8438
+          ],
+          [
+            -1656.9755,
+            142.0875
+          ],
+          [
+            -1293.5675,
+            101.4289
+          ],
+          [
+            -1174.934,
+            -190.987
+          ],
+          [
+            -1363.2845,
+            -527.9742
+          ],
+          [
+            -1784.0978,
+            -526.7337
+          ]
+        ],
+        [
+          [
+            -1155.9259,
+            344.7178
+          ],
+          [
+            -744.2688,
+            619.3026
+          ],
+          [
+            -208.6315,
+            515.1129
+          ],
+          [
+            -246.243,
+            106.2288
+          ],
+          [
+            -774.8598,
+            74.4863
+          ]
+        ],
+        [
+          [
+            -1503.1602,
+            1548.7843
+          ],
+          [
+            -907.9259,
+            1732.8091
+          ],
+          [
+            -538.7695,
+            1455.2721
+          ],
+          [
+            -882.2775,
+            1087.4111
+          ],
+          [
+            -1299.1346,
+            1122.5749
+          ]
+        ],
+        [
+          [
+            -1037.6639,
+            -1323.2865
+          ],
+          [
+            -673.5238,
+            -1264.2489
+          ],
+          [
+            -403.2872,
+            -1379.381
+          ],
+          [
+            -453.056,
+            -1631.913
+          ],
+          [
+            -830.2403,
+            -1696.0888
+          ]
+        ]
+      ],
+      "islands": [
+        [
+          [
+            -2999.9368,
+            1437.7944
+          ],
+          [
+            -2944.2089,
+            1408.8498
+          ],
+          [
+            -2956.8189,
+            1362.9512
+          ],
+          [
+            -2979.9289,
+            1322.3738
+          ],
+          [
+            -2999.3929,
+            1282.3721
+          ],
+          [
+            -3059.6539,
+            1262.7736
+          ],
+          [
+            -3117.3658,
+            1257.1751
+          ],
+          [
+            -3153.4567,
+            1224.8386
+          ],
+          [
+            -3207.9024,
+            1198.0485
+          ],
+          [
+            -3266.5238,
+            1206.4715
+          ],
+          [
+            -3327.6959,
+            1212.9642
+          ],
+          [
+            -3390.0281,
+            1228.5553
+          ],
+          [
+            -3397.0414,
+            1277.2007
+          ],
+          [
+            -3381.0221,
+            1320.6347
+          ],
+          [
+            -3404.256,
+            1352.8541
+          ],
+          [
+            -3407.8656,
+            1391.1454
+          ],
+          [
+            -3377.7859,
+            1425.152
+          ],
+          [
+            -3364.8286,
+            1470.9871
+          ],
+          [
+            -3327.7497,
+            1517.3499
+          ],
+          [
+            -3252.4427,
+            1516.4373
+          ],
+          [
+            -3190.0119,
+            1501.0901
+          ],
+          [
+            -3133.3132,
+            1502.1777
+          ],
+          [
+            -3088.4776,
+            1480.5586
+          ],
+          [
+            -3060.9944,
+            1450.0577
+          ]
+        ],
+        [
+          [
+            -2783.0544,
+            1778.6752
+          ],
+          [
+            -2757.194,
+            1740.7607
+          ],
+          [
+            -2786.718,
+            1698.4456
+          ],
+          [
+            -2804.6683,
+            1664.6773
+          ],
+          [
+            -2821.0397,
+            1631.9667
+          ],
+          [
+            -2866.1298,
+            1616.1266
+          ],
+          [
+            -2899.7165,
+            1597.2243
+          ],
+          [
+            -2929.7268,
+            1556.4923
+          ],
+          [
+            -2982.776,
+            1542.5655
+          ],
+          [
+            -3033.0895,
+            1561.3124
+          ],
+          [
+            -3082.2632,
+            1573.7512
+          ],
+          [
+            -3121.1384,
+            1599.0561
+          ],
+          [
+            -3119.0661,
+            1642.7882
+          ],
+          [
+            -3127.7024,
+            1672.8774
+          ],
+          [
+            -3167.6898,
+            1702.9726
+          ],
+          [
+            -3170.0043,
+            1741.5283
+          ],
+          [
+            -3145.2302,
+            1775.8582
+          ],
+          [
+            -3128.2701,
+            1818.1116
+          ],
+          [
+            -3080.5928,
+            1842.9396
+          ],
+          [
+            -3016.33,
+            1827.062
+          ],
+          [
+            -2970.6394,
+            1820.9543
+          ],
+          [
+            -2922.838,
+            1829.9318
+          ],
+          [
+            -2881.4564,
+            1813.3699
+          ],
+          [
+            -2843.2647,
+            1793.4875
+          ]
+        ],
+        [
+          [
+            -2059.3478,
+            1478.9729
+          ],
+          [
+            -2064.4503,
+            1425.2701
+          ],
+          [
+            -2107.0777,
+            1379.1863
+          ],
+          [
+            -2111.9149,
+            1340.5747
+          ],
+          [
+            -2125.344,
+            1300.2194
+          ],
+          [
+            -2169.7306,
+            1274.1511
+          ],
+          [
+            -2202.9323,
+            1235.3905
+          ],
+          [
+            -2250.6568,
+            1189.9117
+          ],
+          [
+            -2318.3819,
+            1195.7434
+          ],
+          [
+            -2371.146,
+            1226.4634
+          ],
+          [
+            -2423.9075,
+            1240.3384
+          ],
+          [
+            -2460.064,
+            1271.6329
+          ],
+          [
+            -2466.4076,
+            1314.3531
+          ],
+          [
+            -2508.463,
+            1342.7836
+          ],
+          [
+            -2559.8685,
+            1384.3468
+          ],
+          [
+            -2541.0773,
+            1433.3954
+          ],
+          [
+            -2500.9139,
+            1474.1338
+          ],
+          [
+            -2467.4649,
+            1518.0596
+          ],
+          [
+            -2400.6318,
+            1530.8138
+          ],
+          [
+            -2335.5709,
+            1515.2233
+          ],
+          [
+            -2286.2027,
+            1532.4215
+          ],
+          [
+            -2222.9118,
+            1552.1812
+          ],
+          [
+            -2170.1003,
+            1530.7627
+          ],
+          [
+            -2117.7811,
+            1507.2829
+          ]
+        ],
+        [
+          [
+            -1972.1665,
+            1800.2831
+          ],
+          [
+            -1978.2003,
+            1763.2659
+          ],
+          [
+            -1985.1544,
+            1736.3109
+          ],
+          [
+            -1968.5755,
+            1703.6568
+          ],
+          [
+            -1969.2413,
+            1671.9437
+          ],
+          [
+            -1988.9859,
+            1652.5894
+          ],
+          [
+            -2004.0309,
+            1624.4074
+          ],
+          [
+            -2032.9868,
+            1609.966
+          ],
+          [
+            -2071.7053,
+            1635.8676
+          ],
+          [
+            -2100.5687,
+            1659.1717
+          ],
+          [
+            -2130.8733,
+            1667.3081
+          ],
+          [
+            -2155.3827,
+            1691.0278
+          ],
+          [
+            -2173.8908,
+            1718.7034
+          ],
+          [
+            -2210.3115,
+            1746.0317
+          ],
+          [
+            -2232.3215,
+            1784.7946
+          ],
+          [
+            -2212.8182,
+            1814.366
+          ],
+          [
+            -2193.9964,
+            1837.1123
+          ],
+          [
+            -2179.559,
+            1861.3361
+          ],
+          [
+            -2146.6772,
+            1861.4058
+          ],
+          [
+            -2118.6089,
+            1859.4617
+          ],
+          [
+            -2094.8795,
+            1882.8852
+          ],
+          [
+            -2059.0447,
+            1885.8899
+          ],
+          [
+            -2027.6601,
+            1857.1387
+          ],
+          [
+            -1997.4844,
+            1831.5076
+          ]
+        ],
+        [
+          [
+            -2432.2514,
+            2200.9275
+          ],
+          [
+            -2448.8312,
+            2163.6627
+          ],
+          [
+            -2439.8344,
+            2135.4874
+          ],
+          [
+            -2413.9765,
+            2098.7633
+          ],
+          [
+            -2437.1817,
+            2062.5045
+          ],
+          [
+            -2481.1055,
+            2036.7195
+          ],
+          [
+            -2520.1298,
+            2006.4893
+          ],
+          [
+            -2573.8393,
+            1999.0282
+          ],
+          [
+            -2619.9728,
+            2021.4563
+          ],
+          [
+            -2659.8688,
+            2023.5441
+          ],
+          [
+            -2712.8307,
+            2016.1075
+          ],
+          [
+            -2748.2135,
+            2036.0217
+          ],
+          [
+            -2778.7879,
+            2060.784
+          ],
+          [
+            -2822.2387,
+            2087.6049
+          ],
+          [
+            -2814.3909,
+            2128.902
+          ],
+          [
+            -2762.5678,
+            2161.903
+          ],
+          [
+            -2737.2151,
+            2190.9202
+          ],
+          [
+            -2712.7815,
+            2221.9748
+          ],
+          [
+            -2666.9297,
+            2235.2896
+          ],
+          [
+            -2626.3669,
+            2256.7215
+          ],
+          [
+            -2574.0652,
+            2291.6082
+          ],
+          [
+            -2518.4828,
+            2285.934
+          ],
+          [
+            -2486.3426,
+            2252.3058
+          ],
+          [
+            -2451.597,
+            2230.8221
+          ]
+        ],
+        [
+          [
+            -2004.89,
+            2373.7574
+          ],
+          [
+            -2003.2829,
+            2350.2326
+          ],
+          [
+            -1983.6792,
+            2326.9621
+          ],
+          [
+            -1972.6792,
+            2296.1762
+          ],
+          [
+            -1998.1076,
+            2274.9775
+          ],
+          [
+            -2026.5554,
+            2261.5065
+          ],
+          [
+            -2049.9102,
+            2245.4904
+          ],
+          [
+            -2080.9697,
+            2248.0909
+          ],
+          [
+            -2106.9275,
+            2258.3505
+          ],
+          [
+            -2135.7515,
+            2248.6088
+          ],
+          [
+            -2171.2086,
+            2246.6828
+          ],
+          [
+            -2192.0586,
+            2268.279
+          ],
+          [
+            -2210.9387,
+            2290.4289
+          ],
+          [
+            -2228.0471,
+            2315.5136
+          ],
+          [
+            -2211.4119,
+            2343.2703
+          ],
+          [
+            -2187.5002,
+            2362.1724
+          ],
+          [
+            -2186.2801,
+            2386.3611
+          ],
+          [
+            -2175.2528,
+            2410.8866
+          ],
+          [
+            -2148.5706,
+            2422.3566
+          ],
+          [
+            -2123.0729,
+            2440.978
+          ],
+          [
+            -2089.3135,
+            2454.0944
+          ],
+          [
+            -2059.7823,
+            2432.8246
+          ],
+          [
+            -2042.2828,
+            2407.1223
+          ],
+          [
+            -2018.6454,
+            2394.519
+          ]
+        ],
+        [
+          [
+            -785.9392,
+            807.3329
+          ],
+          [
+            -780.1608,
+            791.2115
+          ],
+          [
+            -767.5061,
+            773.0452
+          ],
+          [
+            -770.9787,
+            753.3147
+          ],
+          [
+            -793.1708,
+            743.6215
+          ],
+          [
+            -808.6054,
+            735.0798
+          ],
+          [
+            -821.4993,
+            724.2087
+          ],
+          [
+            -839.3964,
+            724.6684
+          ],
+          [
+            -855.8126,
+            723.4896
+          ],
+          [
+            -877.4941,
+            713.6453
+          ],
+          [
+            -898.5224,
+            719.3579
+          ],
+          [
+            -907.3839,
+            738.6897
+          ],
+          [
+            -916.9173,
+            754.3639
+          ],
+          [
+            -922.1817,
+            771.4262
+          ],
+          [
+            -910.6442,
+            787.773
+          ],
+          [
+            -905.5829,
+            801.4734
+          ],
+          [
+            -910.5617,
+            822.182
+          ],
+          [
+            -900.5006,
+            838.6858
+          ],
+          [
+            -881.4182,
+            845.5795
+          ],
+          [
+            -863.3748,
+            855.8223
+          ],
+          [
+            -842.134,
+            855.2422
+          ],
+          [
+            -827.2812,
+            836.6452
+          ],
+          [
+            -815.1659,
+            825.6684
+          ],
+          [
+            -796.3838,
+            821.2178
+          ]
+        ],
+        [
+          [
+            -552.8346,
+            801.2111
+          ],
+          [
+            -548.5543,
+            785.4518
+          ],
+          [
+            -543.2126,
+            768.3933
+          ],
+          [
+            -560.4787,
+            751.5406
+          ],
+          [
+            -585.8034,
+            742.1226
+          ],
+          [
+            -597.7461,
+            729.4885
+          ],
+          [
+            -612.4232,
+            715.4895
+          ],
+          [
+            -633.1232,
+            711.1537
+          ],
+          [
+            -654.8827,
+            703.3841
+          ],
+          [
+            -682.0897,
+            695.2411
+          ],
+          [
+            -698.2303,
+            707.2332
+          ],
+          [
+            -701.0578,
+            725.9959
+          ],
+          [
+            -710.6781,
+            737.3774
+          ],
+          [
+            -713.7241,
+            751.5851
+          ],
+          [
+            -704.3184,
+            766.7846
+          ],
+          [
+            -706.8614,
+            782.2899
+          ],
+          [
+            -707.7182,
+            803.3264
+          ],
+          [
+            -686.3898,
+            816.8426
+          ],
+          [
+            -661.7229,
+            822.8841
+          ],
+          [
+            -639.8736,
+            831.4838
+          ],
+          [
+            -618.6518,
+            828.2016
+          ],
+          [
+            -605.5147,
+            815.9737
+          ],
+          [
+            -586.2811,
+            816.0788
+          ],
+          [
+            -561.2992,
+            815.4665
+          ]
+        ],
+        [
+          [
+            436.1468,
+            -865.5658
+          ],
+          [
+            436.545,
+            -874.945
+          ],
+          [
+            435.5215,
+            -884.514
+          ],
+          [
+            423.5625,
+            -892.8416
+          ],
+          [
+            413.7519,
+            -898.9141
+          ],
+          [
+            409.9632,
+            -909.0321
+          ],
+          [
+            400.232,
+            -917.7443
+          ],
+          [
+            387.2214,
+            -920.4204
+          ],
+          [
+            373.6806,
+            -924.7534
+          ],
+          [
+            360.0196,
+            -925.1706
+          ],
+          [
+            355.4439,
+            -915.0544
+          ],
+          [
+            353.3726,
+            -906.633
+          ],
+          [
+            344.7436,
+            -902.5304
+          ],
+          [
+            341.9909,
+            -894.8531
+          ],
+          [
+            344.2696,
+            -886.0142
+          ],
+          [
+            341.6814,
+            -875.8107
+          ],
+          [
+            346.8676,
+            -864.4617
+          ],
+          [
+            362.8463,
+            -859.6315
+          ],
+          [
+            375.9917,
+            -856.78
+          ],
+          [
+            387.4414,
+            -851.9369
+          ],
+          [
+            398.3359,
+            -853.5204
+          ],
+          [
+            407.421,
+            -855.9904
+          ],
+          [
+            422.4919,
+            -852.5101
+          ],
+          [
+            435.433,
+            -855.1018
+          ]
+        ],
+        [
+          [
+            806.3192,
+            -836.8295
+          ],
+          [
+            805.8887,
+            -847.0187
+          ],
+          [
+            802.4333,
+            -857.7044
+          ],
+          [
+            788.8986,
+            -867.6537
+          ],
+          [
+            782.0067,
+            -877.7519
+          ],
+          [
+            775.6683,
+            -892.5062
+          ],
+          [
+            758.5407,
+            -901.6713
+          ],
+          [
+            740.5536,
+            -903.8132
+          ],
+          [
+            723.1814,
+            -907.9471
+          ],
+          [
+            709.5024,
+            -905.0382
+          ],
+          [
+            706.5497,
+            -893.76
+          ],
+          [
+            698.0717,
+            -889.4082
+          ],
+          [
+            682.4383,
+            -886.9283
+          ],
+          [
+            680.3901,
+            -876.8183
+          ],
+          [
+            683.8706,
+            -865.166
+          ],
+          [
+            685.2087,
+            -852.2388
+          ],
+          [
+            700.4767,
+            -840.513
+          ],
+          [
+            721.9981,
+            -836.1672
+          ],
+          [
+            736.1191,
+            -829.9713
+          ],
+          [
+            750.9054,
+            -821.4889
+          ],
+          [
+            765.6166,
+            -820.7618
+          ],
+          [
+            781.195,
+            -818.8217
+          ],
+          [
+            802.7418,
+            -814.3268
+          ],
+          [
+            811.9935,
+            -822.3729
+          ]
+        ],
+        [
+          [
+            1604.4061,
+            -473.2639
+          ],
+          [
+            1607.3103,
+            -481.0029
+          ],
+          [
+            1604.0467,
+            -491.1873
+          ],
+          [
+            1592.9708,
+            -501.8462
+          ],
+          [
+            1586.7882,
+            -514.5178
+          ],
+          [
+            1574.0339,
+            -529.1401
+          ],
+          [
+            1553.5884,
+            -534.4572
+          ],
+          [
+            1536.9133,
+            -535.2512
+          ],
+          [
+            1520.7666,
+            -539.1314
+          ],
+          [
+            1510.1005,
+            -535.5838
+          ],
+          [
+            1505.1427,
+            -528.696
+          ],
+          [
+            1489.0403,
+            -529.4193
+          ],
+          [
+            1474.4936,
+            -525.8021
+          ],
+          [
+            1479.5891,
+            -513.1221
+          ],
+          [
+            1487.2554,
+            -500.6815
+          ],
+          [
+            1495.0151,
+            -488.0565
+          ],
+          [
+            1514.5454,
+            -478.4402
+          ],
+          [
+            1532.3565,
+            -473.3414
+          ],
+          [
+            1545.1315,
+            -462.5295
+          ],
+          [
+            1562.3749,
+            -452.0335
+          ],
+          [
+            1578.4019,
+            -450.4735
+          ],
+          [
+            1596.0603,
+            -447.4213
+          ],
+          [
+            1613.5732,
+            -447.0693
+          ],
+          [
+            1612.3473,
+            -460.0244
+          ]
+        ],
+        [
+          [
+            1919.9991,
+            -396.5412
+          ],
+          [
+            1933.2169,
+            -408.1376
+          ],
+          [
+            1928.0439,
+            -427.3442
+          ],
+          [
+            1912.4432,
+            -447.2121
+          ],
+          [
+            1899.8124,
+            -470.7493
+          ],
+          [
+            1874.0374,
+            -489.2955
+          ],
+          [
+            1844.8879,
+            -489.4319
+          ],
+          [
+            1823.1111,
+            -491.3897
+          ],
+          [
+            1799.2965,
+            -499.8485
+          ],
+          [
+            1782.4444,
+            -494.9353
+          ],
+          [
+            1766.5755,
+            -489.4039
+          ],
+          [
+            1737.5401,
+            -489.9398
+          ],
+          [
+            1727.1445,
+            -474.5339
+          ],
+          [
+            1745.0448,
+            -449.4588
+          ],
+          [
+            1757.4816,
+            -429.1638
+          ],
+          [
+            1771.0224,
+            -409.4196
+          ],
+          [
+            1797.5267,
+            -396.1673
+          ],
+          [
+            1817.4262,
+            -382.95
+          ],
+          [
+            1837.7016,
+            -357.752
+          ],
+          [
+            1866.2557,
+            -343.69
+          ],
+          [
+            1889.6376,
+            -346.8015
+          ],
+          [
+            1913.9881,
+            -346.5599
+          ],
+          [
+            1930.1862,
+            -355.9895
+          ],
+          [
+            1921.7948,
+            -380.6856
+          ]
+        ],
+        [
+          [
+            987.8233,
+            -773.524
+          ],
+          [
+            995.2006,
+            -778.2355
+          ],
+          [
+            992.4267,
+            -786.2712
+          ],
+          [
+            986.8556,
+            -793.9114
+          ],
+          [
+            981.8848,
+            -801.9666
+          ],
+          [
+            971.5721,
+            -806.2525
+          ],
+          [
+            961.5103,
+            -805.9258
+          ],
+          [
+            953.9161,
+            -809.7483
+          ],
+          [
+            944.5206,
+            -814.3785
+          ],
+          [
+            936.6666,
+            -812.9449
+          ],
+          [
+            928.2651,
+            -811.7018
+          ],
+          [
+            918.4493,
+            -809.8782
+          ],
+          [
+            918.5935,
+            -801.5214
+          ],
+          [
+            925.0827,
+            -792.6875
+          ],
+          [
+            926.1902,
+            -786.2016
+          ],
+          [
+            928.9977,
+            -779.3266
+          ],
+          [
+            936.3866,
+            -773.8815
+          ],
+          [
+            941.4593,
+            -766.5281
+          ],
+          [
+            948.8554,
+            -757.192
+          ],
+          [
+            959.6439,
+            -755.4511
+          ],
+          [
+            968.1977,
+            -758.2661
+          ],
+          [
+            976.6936,
+            -758.7544
+          ],
+          [
+            981.8907,
+            -763.1528
+          ],
+          [
+            982.0164,
+            -770.2698
+          ]
+        ]
+      ],
+      "arterials": [
+        {
+          "points": [
+            [
+              -2592.0882,
+              -510.6601
+            ],
+            [
+              -1847.3637,
+              249.519
+            ],
+            [
+              -1190.4811,
+              1149.809
+            ],
+            [
+              -846.3324,
+              1305.6934
+            ],
+            [
+              -363.3153,
+              1337.1669
+            ],
+            [
+              303.6374,
+              1091.4634
+            ],
+            [
+              1895.0904,
+              2093.4618
+            ]
+          ],
+          "width": 22,
+          "bridge": false
+        },
+        {
+          "points": [
+            [
+              -461.3582,
+              -2143.199
+            ],
+            [
+              -637.3715,
+              -1138.864
+            ],
+            [
+              -728.8685,
+              -66.7613
+            ],
+            [
+              -1107.2025,
+              1459.8119
+            ],
+            [
+              -2329.1129,
+              5223.1345
+            ]
+          ],
+          "width": 24,
+          "bridge": true
+        },
+        {
+          "points": [
+            [
+              -1349.0828,
+              -437.713
+            ],
+            [
+              -422.6056,
+              -260.045
+            ],
+            [
+              413.6589,
+              -289.1631
+            ],
+            [
+              1412.2123,
+              -351.1609
+            ],
+            [
+              1555.9327,
+              -175.2864
+            ],
+            [
+              2087.8156,
+              39.8133
+            ],
+            [
+              2218.6219,
+              -2.6632
+            ]
+          ],
+          "width": 20,
+          "bridge": false
+        },
+        {
+          "points": [
+            [
+              534.6416,
+              -1740.4049
+            ],
+            [
+              629.6489,
+              -997.6715
+            ],
+            [
+              750.7729,
+              -139.5423
+            ],
+            [
+              922.1997,
+              1061.039
+            ],
+            [
+              1032.2003,
+              3332.9513
+            ]
+          ],
+          "width": 22,
+          "bridge": true
+        }
+      ],
+      "campusPositionM": [
+        203.6913,
+        -129.6391,
+        0
+      ],
+      "coveragePolygon": [
+        [
+          -14719.2317,
+          8255.7293
+        ],
+        [
+          4842.5037,
+          16166.7253
+        ],
+        [
+          2582.7071,
+          -1448.5899
+        ],
+        [
+          -849.689,
+          -2836.6913
+        ]
+      ],
+      "buildingSites": [
+        [
+          -6492.0314,
+          3539.6013
+        ],
+        [
+          -5934.4977,
+          3765.0744
+        ],
+        [
+          -5376.9639,
+          3990.5476
+        ],
+        [
+          -4819.4302,
+          4216.0208
+        ],
+        [
+          -4261.8965,
+          4441.494
+        ],
+        [
+          -3704.3628,
+          4666.9672
+        ],
+        [
+          -3146.829,
+          4892.4404
+        ],
+        [
+          -2589.2953,
+          5117.9136
+        ],
+        [
+          -2031.7616,
+          5343.3868
+        ],
+        [
+          -1474.2279,
+          5568.86
+        ],
+        [
+          -916.6941,
+          5794.3332
+        ],
+        [
+          -359.1604,
+          6019.8064
+        ],
+        [
+          198.3733,
+          6245.2796
+        ],
+        [
+          755.907,
+          6470.7528
+        ],
+        [
+          1313.4408,
+          6696.226
+        ],
+        [
+          1870.9745,
+          6921.6992
+        ],
+        [
+          2428.5082,
+          7147.1724
+        ],
+        [
+          -5358.5715,
+          2387.2853
+        ],
+        [
+          -4874.5721,
+          2583.0204
+        ],
+        [
+          -4390.5726,
+          2778.7555
+        ],
+        [
+          -3906.5732,
+          2974.4905
+        ],
+        [
+          -3422.5737,
+          3170.2256
+        ],
+        [
+          -2938.5743,
+          3365.9607
+        ],
+        [
+          -2454.5749,
+          3561.6957
+        ],
+        [
+          -1970.5754,
+          3757.4308
+        ],
+        [
+          -1486.576,
+          3953.1659
+        ],
+        [
+          -1002.5765,
+          4148.9009
+        ],
+        [
+          -518.5771,
+          4344.636
+        ],
+        [
+          -34.5776,
+          4540.3711
+        ],
+        [
+          449.4218,
+          4736.1061
+        ],
+        [
+          933.4213,
+          4931.8412
+        ],
+        [
+          1417.4207,
+          5127.5763
+        ],
+        [
+          1901.4201,
+          5323.3114
+        ],
+        [
+          2385.4196,
+          5519.0464
+        ],
+        [
+          -4489.2612,
+          1503.5132
+        ],
+        [
+          -4061.6591,
+          1676.4406
+        ],
+        [
+          -3634.057,
+          1849.3679
+        ],
+        [
+          -3206.4548,
+          2022.2952
+        ],
+        [
+          -2778.8527,
+          2195.2225
+        ],
+        [
+          -2351.2506,
+          2368.1499
+        ],
+        [
+          -1923.6485,
+          2541.0772
+        ],
+        [
+          -1496.0464,
+          2714.0045
+        ],
+        [
+          -1068.4443,
+          2886.9319
+        ],
+        [
+          -640.8422,
+          3059.8592
+        ],
+        [
+          -213.24,
+          3232.7865
+        ],
+        [
+          214.3621,
+          3405.7138
+        ],
+        [
+          641.9642,
+          3578.6412
+        ],
+        [
+          1069.5663,
+          3751.5685
+        ],
+        [
+          1497.1684,
+          3924.4958
+        ],
+        [
+          1924.7705,
+          4097.4231
+        ],
+        [
+          2352.3727,
+          4270.3505
+        ],
+        [
+          -3801.3982,
+          804.2071
+        ],
+        [
+          -3418.4218,
+          959.0872
+        ],
+        [
+          -3035.4455,
+          1113.9673
+        ],
+        [
+          -2652.4691,
+          1268.8475
+        ],
+        [
+          -2269.4928,
+          1423.7276
+        ],
+        [
+          -1886.5164,
+          1578.6078
+        ],
+        [
+          -1503.5401,
+          1733.4879
+        ],
+        [
+          -1120.5637,
+          1888.3681
+        ],
+        [
+          -737.5874,
+          2043.2482
+        ],
+        [
+          -354.611,
+          2198.1283
+        ],
+        [
+          28.3653,
+          2353.0085
+        ],
+        [
+          411.3417,
+          2507.8886
+        ],
+        [
+          794.318,
+          2662.7688
+        ],
+        [
+          1177.2944,
+          2817.6489
+        ],
+        [
+          1560.2707,
+          2972.5291
+        ],
+        [
+          1943.2471,
+          3127.4092
+        ],
+        [
+          2326.2235,
+          3282.2893
+        ],
+        [
+          -3243.542,
+          237.0704
+        ],
+        [
+          -2896.7571,
+          377.3143
+        ],
+        [
+          -2549.9722,
+          517.5582
+        ],
+        [
+          -2203.1873,
+          657.8021
+        ],
+        [
+          -1856.4024,
+          798.046
+        ],
+        [
+          -1509.6175,
+          938.2899
+        ],
+        [
+          -1162.8326,
+          1078.5338
+        ],
+        [
+          -816.0476,
+          1218.7777
+        ],
+        [
+          -469.2627,
+          1359.0216
+        ],
+        [
+          -122.4778,
+          1499.2655
+        ],
+        [
+          224.3071,
+          1639.5094
+        ],
+        [
+          571.092,
+          1779.7533
+        ],
+        [
+          917.8769,
+          1919.9972
+        ],
+        [
+          1264.6618,
+          2060.2411
+        ],
+        [
+          1611.4467,
+          2200.4849
+        ],
+        [
+          1958.2316,
+          2340.7288
+        ],
+        [
+          2305.0165,
+          2480.9727
+        ],
+        [
+          -2782.0177,
+          -232.1317
+        ],
+        [
+          -2465.1746,
+          -103.9966
+        ],
+        [
+          -2148.3315,
+          24.1384
+        ],
+        [
+          -1831.4885,
+          152.2735
+        ],
+        [
+          -1514.6454,
+          280.4086
+        ],
+        [
+          -1197.8023,
+          408.5436
+        ],
+        [
+          -880.9592,
+          536.6787
+        ],
+        [
+          -564.1161,
+          664.8138
+        ],
+        [
+          -247.2731,
+          792.9488
+        ],
+        [
+          69.57,
+          921.0839
+        ],
+        [
+          386.4131,
+          1049.219
+        ],
+        [
+          703.2562,
+          1177.3541
+        ],
+        [
+          1020.0993,
+          1305.4891
+        ],
+        [
+          1336.9423,
+          1433.6242
+        ],
+        [
+          1653.7854,
+          1561.7593
+        ],
+        [
+          1970.6285,
+          1689.8943
+        ],
+        [
+          2287.4716,
+          1818.0294
+        ],
+        [
+          -2393.8563,
+          -626.7505
+        ],
+        [
+          -2102.1956,
+          -508.7995
+        ],
+        [
+          -1810.5348,
+          -390.8484
+        ],
+        [
+          -1518.8741,
+          -272.8974
+        ],
+        [
+          -1227.2133,
+          -154.9464
+        ],
+        [
+          -935.5526,
+          -36.9953
+        ],
+        [
+          -643.8918,
+          80.9557
+        ],
+        [
+          -352.2311,
+          198.9067
+        ],
+        [
+          -60.5704,
+          316.8578
+        ],
+        [
+          231.0904,
+          434.8088
+        ],
+        [
+          522.7511,
+          552.7599
+        ],
+        [
+          814.4119,
+          670.7109
+        ],
+        [
+          1106.0726,
+          788.6619
+        ],
+        [
+          1397.7333,
+          906.613
+        ],
+        [
+          1689.3941,
+          1024.564
+        ],
+        [
+          1981.0548,
+          1142.515
+        ],
+        [
+          2272.7156,
+          1260.4661
+        ],
+        [
+          -2062.8533,
+          -963.26
+        ],
+        [
+          -1792.6667,
+          -853.9934
+        ],
+        [
+          -1522.4801,
+          -744.7267
+        ],
+        [
+          -1252.2935,
+          -635.4601
+        ],
+        [
+          -982.1069,
+          -526.1935
+        ],
+        [
+          -711.9202,
+          -416.9268
+        ],
+        [
+          -441.7336,
+          -307.6602
+        ],
+        [
+          -171.547,
+          -198.3935
+        ],
+        [
+          98.6396,
+          -89.1269
+        ],
+        [
+          368.8262,
+          20.1398
+        ],
+        [
+          639.0128,
+          129.4064
+        ],
+        [
+          909.1994,
+          238.6731
+        ],
+        [
+          1179.386,
+          347.9397
+        ],
+        [
+          1449.5726,
+          457.2063
+        ],
+        [
+          1719.7592,
+          566.473
+        ],
+        [
+          1989.9458,
+          675.7396
+        ],
+        [
+          2260.1325,
+          785.0063
+        ],
+        [
+          -1777.2493,
+          -1253.6153
+        ],
+        [
+          -1525.5915,
+          -1151.842
+        ],
+        [
+          -1273.9337,
+          -1050.0686
+        ],
+        [
+          -1022.2759,
+          -948.2952
+        ],
+        [
+          -770.6182,
+          -846.5219
+        ],
+        [
+          -518.9604,
+          -744.7485
+        ],
+        [
+          -267.3026,
+          -642.9751
+        ],
+        [
+          -15.6448,
+          -541.2018
+        ],
+        [
+          236.013,
+          -439.4284
+        ],
+        [
+          487.6707,
+          -337.655
+        ],
+        [
+          739.3285,
+          -235.8817
+        ],
+        [
+          990.9863,
+          -134.1083
+        ],
+        [
+          1242.6441,
+          -32.3349
+        ],
+        [
+          1494.3018,
+          69.4384
+        ],
+        [
+          1745.9596,
+          171.2118
+        ],
+        [
+          1997.6174,
+          272.9852
+        ],
+        [
+          2249.2752,
+          374.7585
+        ],
+        [
+          -1528.3036,
+          -1506.7025
+        ],
+        [
+          -1292.7964,
+          -1411.4606
+        ],
+        [
+          -1057.2892,
+          -1316.2187
+        ],
+        [
+          -821.782,
+          -1220.9768
+        ],
+        [
+          -586.2748,
+          -1125.735
+        ],
+        [
+          -350.7676,
+          -1030.4931
+        ],
+        [
+          -115.2604,
+          -935.2512
+        ],
+        [
+          120.2468,
+          -840.0093
+        ],
+        [
+          355.754,
+          -744.7674
+        ],
+        [
+          591.2612,
+          -649.5256
+        ],
+        [
+          826.7683,
+          -554.2837
+        ],
+        [
+          1062.2755,
+          -459.0418
+        ],
+        [
+          1297.7827,
+          -363.7999
+        ],
+        [
+          1533.2899,
+          -268.5581
+        ],
+        [
+          1768.7971,
+          -173.3162
+        ],
+        [
+          2004.3043,
+          -78.0743
+        ],
+        [
+          2239.8115,
+          17.1676
+        ],
+        [
+          -1309.3839,
+          -1729.264
+        ],
+        [
+          -1088.0794,
+          -1639.7658
+        ],
+        [
+          -866.7748,
+          -1550.2677
+        ],
+        [
+          -645.4702,
+          -1460.7695
+        ],
+        [
+          -424.1656,
+          -1371.2713
+        ],
+        [
+          -202.8611,
+          -1281.7731
+        ],
+        [
+          18.4435,
+          -1192.275
+        ],
+        [
+          239.7481,
+          -1102.7768
+        ],
+        [
+          461.0526,
+          -1013.2786
+        ],
+        [
+          682.3572,
+          -923.7805
+        ],
+        [
+          903.6618,
+          -834.2823
+        ],
+        [
+          1124.9664,
+          -744.7841
+        ],
+        [
+          1346.2709,
+          -655.2859
+        ],
+        [
+          1567.5755,
+          -565.7878
+        ],
+        [
+          1788.8801,
+          -476.2896
+        ],
+        [
+          2010.1847,
+          -386.7914
+        ],
+        [
+          2231.4892,
+          -297.2932
+        ],
+        [
+          -1115.3671,
+          -1926.5085
+        ],
+        [
+          -906.6495,
+          -1842.1007
+        ],
+        [
+          -697.932,
+          -1757.6929
+        ],
+        [
+          -489.2144,
+          -1673.285
+        ],
+        [
+          -280.4969,
+          -1588.8772
+        ],
+        [
+          -71.7793,
+          -1504.4694
+        ],
+        [
+          136.9382,
+          -1420.0615
+        ],
+        [
+          345.6557,
+          -1335.6537
+        ],
+        [
+          554.3733,
+          -1251.2459
+        ],
+        [
+          763.0908,
+          -1166.838
+        ],
+        [
+          971.8084,
+          -1082.4302
+        ],
+        [
+          1180.5259,
+          -998.0224
+        ],
+        [
+          1389.2435,
+          -913.6145
+        ],
+        [
+          1597.961,
+          -829.2067
+        ],
+        [
+          1806.6786,
+          -744.7989
+        ],
+        [
+          2015.3961,
+          -660.3911
+        ],
+        [
+          2224.1137,
+          -575.9832
+        ],
+        [
+          -942.2325,
+          -2102.5233
+        ],
+        [
+          -744.7472,
+          -2022.658
+        ],
+        [
+          -547.2619,
+          -1942.7926
+        ],
+        [
+          -349.7767,
+          -1862.9272
+        ],
+        [
+          -152.2914,
+          -1783.0619
+        ],
+        [
+          45.1939,
+          -1703.1965
+        ],
+        [
+          242.6792,
+          -1623.3311
+        ],
+        [
+          440.1644,
+          -1543.4658
+        ],
+        [
+          637.6497,
+          -1463.6004
+        ],
+        [
+          835.135,
+          -1383.735
+        ],
+        [
+          1032.6203,
+          -1303.8696
+        ],
+        [
+          1230.1055,
+          -1224.0043
+        ],
+        [
+          1427.5908,
+          -1144.1389
+        ],
+        [
+          1625.0761,
+          -1064.2735
+        ],
+        [
+          1822.5614,
+          -984.4082
+        ],
+        [
+          2020.0466,
+          -904.5428
+        ],
+        [
+          2217.5319,
+          -824.6774
+        ],
+        [
+          -786.781,
+          -2260.5609
+        ],
+        [
+          -599.3808,
+          -2184.7741
+        ],
+        [
+          -411.9806,
+          -2108.9872
+        ],
+        [
+          -224.5803,
+          -2033.2004
+        ],
+        [
+          -37.1801,
+          -1957.4135
+        ],
+        [
+          150.2201,
+          -1881.6267
+        ],
+        [
+          337.6203,
+          -1805.8398
+        ],
+        [
+          525.0205,
+          -1730.053
+        ],
+        [
+          712.4207,
+          -1654.2661
+        ],
+        [
+          899.8209,
+          -1578.4793
+        ],
+        [
+          1087.2211,
+          -1502.6924
+        ],
+        [
+          1274.6214,
+          -1426.9056
+        ],
+        [
+          1462.0216,
+          -1351.1187
+        ],
+        [
+          1649.4218,
+          -1275.3319
+        ],
+        [
+          1836.822,
+          -1199.545
+        ],
+        [
+          2024.2222,
+          -1123.7582
+        ],
+        [
+          2211.6224,
+          -1047.9713
+        ],
+        [
+          -646.4351,
+          -2403.2416
+        ],
+        [
+          -468.1399,
+          -2331.1369
+        ],
+        [
+          -289.8448,
+          -2259.0323
+        ],
+        [
+          -111.5497,
+          -2186.9276
+        ],
+        [
+          66.7455,
+          -2114.823
+        ],
+        [
+          245.0406,
+          -2042.7183
+        ],
+        [
+          423.3358,
+          -1970.6137
+        ],
+        [
+          601.6309,
+          -1898.509
+        ],
+        [
+          779.926,
+          -1826.4044
+        ],
+        [
+          958.2212,
+          -1754.2997
+        ],
+        [
+          1136.5163,
+          -1682.1951
+        ],
+        [
+          1314.8114,
+          -1610.0904
+        ],
+        [
+          1493.1066,
+          -1537.9858
+        ],
+        [
+          1671.4017,
+          -1465.8811
+        ],
+        [
+          1849.6969,
+          -1393.7765
+        ],
+        [
+          2027.992,
+          -1321.6718
+        ],
+        [
+          2206.2871,
+          -1249.5672
+        ]
+      ],
+      "localRoads": [
+        [
+          [
+            -1776.1091,
+            -817.4379
+          ],
+          [
+            -1349.0828,
+            -437.713
+          ],
+          [
+            -638.3465,
+            -203.38
+          ],
+          [
+            -242.9146,
+            272.0963
+          ]
+        ],
+        [
+          [
+            -637.3715,
+            -1138.864
+          ],
+          [
+            -511.9213,
+            -636.8393
+          ],
+          [
+            -422.6056,
+            -260.045
+          ]
+        ],
+        [
+          [
+            -422.6056,
+            -260.045
+          ],
+          [
+            -507.1904,
+            182.7349
+          ],
+          [
+            -208.6315,
+            515.1129
+          ],
+          [
+            303.6374,
+            1091.4634
+          ]
+        ],
+        [
+          [
+            -728.8685,
+            -66.7613
+          ],
+          [
+            -1191.9323,
+            -5.1542
+          ],
+          [
+            -1847.3637,
+            249.519
+          ]
+        ],
+        [
+          [
+            413.6589,
+            -289.1631
+          ],
+          [
+            329.9912,
+            492.1624
+          ],
+          [
+            690.6441,
+            804.6785
+          ],
+          [
+            922.1997,
+            1061.039
+          ]
+        ],
+        [
+          [
+            750.7729,
+            -139.5423
+          ],
+          [
+            1185.5872,
+            72.0472
+          ],
+          [
+            1662.8773,
+            198.4159
+          ]
+        ],
+        [
+          [
+            619.865,
+            -1094.07
+          ],
+          [
+            366.8036,
+            -1116.9353
+          ],
+          [
+            67.6029,
+            -1070.6431
+          ],
+          [
+            -637.3715,
+            -1138.864
+          ]
+        ],
+        [
+          [
+            1412.2123,
+            -351.1609
+          ],
+          [
+            1570.7178,
+            -50.0841
+          ],
+          [
+            1662.8773,
+            198.4159
+          ]
+        ]
+      ],
+      "projectionBasis": "确认稿平面控制点+当前制作相机的反投影估计；不是地理或高度测量"
+    },
+    "campusEntry": {
+      "duration": 2.8,
+      "repeatDuration": 1.1,
+      "returnDuration": 0.6,
+      "reducedDuration": 0.15,
+      "maxStepSeconds": 0.1,
+      "locate": [
+        0,
+        0.25
+      ],
+      "approach": [
+        0.25,
+        1.05
+      ],
+      "handoff": [
+        1.05,
+        1.65
+      ],
+      "settle": [
+        1.05,
+        2.3
+      ],
+      "material": [
+        1.45,
+        2.3
+      ],
+      "panel": [
+        2.1,
+        2.8
+      ],
+      "cityPanel": [
+        0.25,
+        1.05
+      ],
+      "labels": [
+        [
+          2.05,
+          2.35
+        ],
+        [
+          2.2,
+          2.6
+        ],
+        [
+          2.35,
+          2.8
+        ]
+      ],
+      "kpiStagger": 0.12,
+      "targetHeightM": 25,
+      "handoffDistanceM": 950
+    }
+  },
+  "design": {
+    "layout": {
+      "railFraction": 0.28,
+      "sceneFraction": 0.72,
+      "paddingPx": 40,
+      "kpiColumns": 2,
+      "baseViewport": "project.viewport",
+      "safeBottomPx": 28
+    },
+    "typography": {
+      "family": "system-ui, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, sans-serif",
+      "titlePx": 54,
+      "headingPx": 28,
+      "metricPx": 40,
+      "bodyPx": 18,
+      "captionPx": 15
+    },
+    "palette": {
+      "background": "#f4f3ee",
+      "surface": "#fffefa",
+      "ink": "#123b40",
+      "muted": "#637e80",
+      "accent": "#197e83",
+      "line": "#d8e2df",
+      "glass": "#648497",
+      "bronze": "#9c7b50",
+      "grass": "#8d9e70"
+    },
+    "states": {
+      "campus": [
+        "selected-A1",
+        "no-data"
+      ],
+      "building": [
+        "selected-A1",
+        "no-data"
+      ],
+      "noData": {
+        "metricValue": null,
+        "formatted": "—",
+        "message": "暂无数据",
+        "geometry": "保留规划建筑，不把数据缺失渲染为故障或移除建筑"
+      }
+    },
+    "interactions": {
+      "initialLevel": "city",
+      "initialSelection": "A1",
+      "focusBuilding": "demoDesign.focusBuilding.id",
+      "focusTrigger": [
+        "点击A1标签或建筑",
+        "点击重点楼宇导航"
+      ],
+      "otherBuildingSelection": "保持园区镜头，选中高亮；场景信息卡和左侧楼宇摘要读取同一选中对象的演示快照，A1可下钻；无数据态统一显示—",
+      "return": "返回园区保留A1选择并恢复园区镜头",
+      "dataModes": [
+        "demo",
+        "no-data"
+      ],
+      "camera": "拖拽旋转、滚轮缩放、复位镜头",
+      "unrequestedStatesExcluded": [
+        "告警",
+        "回放",
+        "房间下钻"
+      ]
+    },
+    "data": {
+      "mode": "演示快照，非实时接入",
+      "campusMetrics": "demoDesign.campus",
+      "buildingMetrics": "demoDesign.focusBuilding",
+      "aggregates": "园区为独立定义的全园汇总；不以只有A1明细的部分数据假装全园逐栋汇总",
+      "missing": "数值null，格式化为—；已知身份和产业示范定位仍可显示"
+    },
+    "productionGate": "整屏稿、状态与布局锁定后补规格；先在网页验证简化模型的构图、锚点和标签，再深化。",
+    "motion": {
+      "cityEntrance": {
+        "duration": 3.2,
+        "returnDuration": 0.45,
+        "cameraDistanceFactor": 1.06,
+        "cityReveal": [
+          0,
+          0.6
+        ],
+        "materialReveal": [
+          0.4,
+          1.6
+        ],
+        "boundaryReveal": [
+          0.9,
+          2.3
+        ],
+        "parkReveal": [
+          2,
+          2.8
+        ],
+        "labelsReveal": [
+          2.3,
+          3.05
+        ],
+        "panelReveal": [
+          0.4,
+          3.2
+        ]
+      }
+    }
+  },
+  "planningSha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "level": "campus",
+    "baseline": "design/concepts/B-campus-v2.png",
+    "baselineSha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264",
+    "actual": "checks/campus-detailed-v11.jpg",
+    "actualSha256": "0207824e615e63561e536b29480fa5bd68b5cbd13ce0e1fc75a19a87310466c0"
+  },
+  {
+    "level": "building",
+    "baseline": "design/concepts/B-building-v2r1.png",
+    "baselineSha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4",
+    "actual": "checks/building-detailed-v11.jpg",
+    "actualSha256": "c0407fc6a250ad687712f74dbc61fa5cf9d413db5e1c03d4bf70fc2205b802ae"
+  }
+]

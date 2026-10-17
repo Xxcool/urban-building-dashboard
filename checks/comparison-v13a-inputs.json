@@ -1,0 +1,9 @@
+[
+  {
+    "level": "city",
+    "baseline": "design/concepts/city/B-city-v1.png",
+    "baselineSha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170",
+    "actual": "checks/city-detailed-v13a.jpg",
+    "actualSha256": "be149809f0bb4641a32169425349a8029dde551e73b351b1fcc1556d33c4811d"
+  }
+]

@@ -1,0 +1,83 @@
+00:00.159  translation      | WARNING Falling back to standard locale ("C")
+/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/scripts/build_city.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('city_'+k);m.use_nodes=True;b=m.node_tree.nodes.get('Principled BSDF');b.inputs['Base Color'].default_value=(*linear(h),1);b.inputs['Roughness'].default_value=.77 if k!='water' else .25;b.inputs['Metallic'].default_value=.12 if k in ['water','glass','bronze'] else 0;mats[k]=m
+/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/scripts/build_city.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  image=bpy.data.images.load(str(leaf_path));image.pack();leaf=bpy.data.materials.new('city_leafCard');leaf.use_nodes=True;bsdf=leaf.node_tree.nodes.get('Principled BSDF');bsdf.inputs['Roughness'].default_value=.9;tex=leaf.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image;leaf.node_tree.links.new(tex.outputs['Color'],bsdf.inputs['Base Color']);leaf.node_tree.links.new(tex.outputs['Alpha'],bsdf.inputs['Alpha']);leaf.surface_render_method='DITHERED';mats['leafCard']=leaf
+BlenderMCP addon registered
+Info: Saved as "city.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+15:35:35 | INFO: Starting glTF 2.0 export
+15:35:35 | INFO: Extracting primitive: regional_campus_boundaryRim
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_campus_bronze
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_campus_building
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_campus_campus
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_campus_glass
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_campus_grass
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_campus_roof
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_bridges_building
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_bridges_roof
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_buildings_building
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_buildings_buildingWarm
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_buildings_roof
+15:35:35 | INFO: Primitives created: 1
+15:35:35 | INFO: Extracting primitive: regional_context_building
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_context_greens_grass
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_context_greens_leaf
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_context_greens_leafLight
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_context_greens_trunk
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_context_roads_road
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_context_roof
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_lake_walks_marking
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_landscape_leaf
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_landscape_leafLight
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_landscape_trunk
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_roads_marking
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_roads_road
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_grass
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_ground
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_shore
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_water
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_waterDeep
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_zoneCyan
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_zoneGold
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Extracting primitive: regional_terrain_zoneGreen
+15:35:36 | INFO: Primitives created: 1
+15:35:36 | INFO: Finished glTF 2.0 export in 0.2427978515625 s
+
+CITY_BUILD_RESULT {"quality": "detailed", "planningSha256": "5dadd9982e2fe4004aa55fb1da2cb271c9a8203bdb8b53e353f044111938756e", "scriptSha256": "eaa363fe584721674daaea38232b216995f6dd5ca601dcf9ba505c8eb1bd4cf1", "asset": "city.glb", "assetSha256": "8ba8644cfe4268f4e23220d4a2ebd995b8ae8c3ad21397ef877b7a11ca832704", "bytes": 14480076, "triangles": 348231, "decorativeBuildings": 969, "trees": 6500, "contextBuildings": 2637, "bridgeSpans": 3, "regionObjectIds": ["PARK-DEMO", "INDUSTRY-DEMO", "SERVICE-DEMO"], "scope": "概念区域；装饰建筑不等于真实楼宇数据", "blender": "5.2.2 LTS"}
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

@@ -1,0 +1,37 @@
+{
+  "version": "v5",
+  "viewport": "1280×720，1920×1080画布等比缩放",
+  "conditions": "与确认基准并排；该版近景相机调整，未宣称精确拟合AI投影。",
+  "differences": [
+    {
+      "id": "V-03",
+      "expected": "天空不出现灰色三角形",
+      "actual": "AO法线缓冲把环境球当作实体，近景出现灰色片区",
+      "cause": "天空球参与GBuffer",
+      "sourceChange": "v6改用背景纹理而非天空实体球",
+      "evidence": "building-detailed-v5.jpg → building-detailed-v6.jpg",
+      "result": "下一版已修复",
+      "next": "检查旋转后背景"
+    },
+    {
+      "id": "V-04",
+      "expected": "古铜翼片之间可见玻璃",
+      "actual": "低角度下翼片近乎连成整面",
+      "cause": "翼片突出宽度大于投影缝隙",
+      "sourceChange": "v6将翼片突出宽度从1.3m改为0.65m，厚度0.18m",
+      "evidence": "building-detailed-v5.jpg → building-detailed-v6.jpg",
+      "result": "下一版已修复",
+      "next": "材质纹理另校验"
+    },
+    {
+      "id": "V-06",
+      "expected": "自然树冠与有层次屋顶花园",
+      "actual": "改为13簇较小树冠、补屋顶栏杆和三边种植；仍较简化",
+      "cause": "实时几何造型细节少于AI写实插图",
+      "sourceChange": "脚本增加树冠层次和屋顶实体",
+      "evidence": "campus-detailed-v5.jpg",
+      "result": "改善，仍有差距",
+      "next": "最终对照保留写实度差异"
+    }
+  ]
+}

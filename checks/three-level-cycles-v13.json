@@ -1,0 +1,434 @@
+[
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：234\n\n每帧提交三角形：96191\n\n几何：96 · 纹理：17\n\n帧间隔 P95： ms · 已渲染 1 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":0.1,\"count\":18,\"first\":{\"position\":[-193.20000000000005,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：156\n\n每帧提交三角形：62249\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 67 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":1.199,\"count\":18,\"first\":{\"position\":[-184.40640000000008,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17 ms · 已渲染 802 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":1.683,\"count\":18,\"first\":{\"position\":[-180.53279999999995,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：99\n\n每帧提交三角形：50897\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 98 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":1.784,\"count\":18,\"first\":{\"position\":[-179.7256,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 170 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":2.901,\"count\":18,\"first\":{\"position\":[-170.7911999999999,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17 ms · 已渲染 846 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":3.401,\"count\":18,\"first\":{\"position\":[-166.7911999999999,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：50753\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 202 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":3.502,\"count\":18,\"first\":{\"position\":[-165.98720000000003,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 274 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":4.618,\"count\":18,\"first\":{\"position\":[-157.05680000000007,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17 ms · 已渲染 891 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":5.119,\"count\":18,\"first\":{\"position\":[-153.04959999999983,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：50753\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 306 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":5.219,\"count\":18,\"first\":{\"position\":[-152.24479999999994,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 378 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":6.42,\"count\":18,\"first\":{\"position\":[-142.64159999999993,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17 ms · 已渲染 936 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":6.92,\"count\":18,\"first\":{\"position\":[-138.6407999999999,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：92\n\n每帧提交三角形：50513\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 415 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":7.019,\"count\":18,\"first\":{\"position\":[-137.84559999999988,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 488 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":8.237,\"count\":18,\"first\":{\"position\":[-128.10799999999972,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.2 ms · 已渲染 981 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":8.737,\"count\":18,\"first\":{\"position\":[-124.10799999999972,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：92\n\n每帧提交三角形：50513\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 525 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":8.838,\"count\":18,\"first\":{\"position\":[-123.29999999999973,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 597 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":9.954,\"count\":18,\"first\":{\"position\":[-114.36639999999989,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.3 ms · 已渲染 1026 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":10.454,\"count\":18,\"first\":{\"position\":[-110.36639999999989,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：50753\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 629 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":10.554,\"count\":18,\"first\":{\"position\":[-109.5648000000001,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 701 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":11.671,\"count\":18,\"first\":{\"position\":[-100.62800000000016,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.4 ms · 已渲染 1071 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":12.155,\"count\":18,\"first\":{\"position\":[-96.75840000000017,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：99\n\n每帧提交三角形：50897\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 732 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":12.255,\"count\":18,\"first\":{\"position\":[-95.96160000000032,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 805 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":13.472,\"count\":18,\"first\":{\"position\":[-86.22480000000019,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.5 ms · 已渲染 1116 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":13.972,\"count\":18,\"first\":{\"position\":[-82.22400000000039,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：92\n\n每帧提交三角形：50513\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 842 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":14.073,\"count\":18,\"first\":{\"position\":[-81.4160000000004,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 914 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":15.19,\"count\":18,\"first\":{\"position\":[-72.48320000000058,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.6 ms · 已渲染 1161 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":15.69,\"count\":18,\"first\":{\"position\":[-68.48240000000055,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：98\n\n每帧提交三角形：50753\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 946 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":15.79,\"count\":18,\"first\":{\"position\":[-67.6824000000006,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 1019 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":17.006,\"count\":18,\"first\":{\"position\":[-57.9488000000008,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.6 ms · 已渲染 1206 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":17.506,\"count\":18,\"first\":{\"position\":[-53.948000000001,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：92\n\n每帧提交三角形：50513\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 1056 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":17.606,\"count\":18,\"first\":{\"position\":[-53.14800000000105,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.8 ms · 已渲染 1128 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":18.723,\"count\":18,\"first\":{\"position\":[-44.213600000001406,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.6 ms · 已渲染 1251 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":19.207,\"count\":18,\"first\":{\"position\":[-40.34080000000131,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：99\n\n每帧提交三角形：50897\n\n几何：96 · 纹理：17\n\n帧间隔 P95：16.9 ms · 已渲染 1159 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":19.308,\"count\":18,\"first\":{\"position\":[-39.5384000000015,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.2 ms · 已渲染 1231 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":20.508,\"count\":18,\"first\":{\"position\":[-29.939200000001847,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvasCount": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.6 ms · 已渲染 1295 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "selection": "A1",
+    "traffic": "{\"seconds\":21.007,\"count\":18,\"first\":{\"position\":[-25.9408000000019,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  }
+]

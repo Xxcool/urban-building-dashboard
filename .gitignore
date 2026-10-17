@@ -1,0 +1,19 @@
+# Dependencies and build output
+node_modules/
+dist/
+work/
+
+# Local machine and temporary files
+.DS_Store
+__pycache__/
+*.py[cod]
+*.log
+!checks/*.log
+.env
+.env.*
+!.env.example
+*.blend1
+*.blend2
+
+# Downloaded research references (kept locally)
+references/*.gif

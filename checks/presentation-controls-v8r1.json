@@ -1,0 +1,21 @@
+{
+  "tour": {
+    "before": {
+      "x": 774.84375,
+      "y": 38.57255554199219
+    },
+    "during": {
+      "x": 775.911865234375,
+      "y": 38.57253646850586
+    },
+    "stopped": true
+  },
+  "fullscreen": {
+    "active": false,
+    "element": null
+  },
+  "afterEscape": {
+    "fullscreen": false,
+    "level": "campus"
+  }
+}

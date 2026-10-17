@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-16",
+  "purpose": "延续B方案概念修订，不代表用户批准或整屏设计完成",
+  "campus": {
+    "request": "design/concepts/generation-requests-B-v2.json#B-campus-v2",
+    "recovery": "上轮生图等待会话已不可查询；在该会话生成目录找到唯一新增PNG，并实际查看，内容与已保存请求的B修订版v2、八栋标签、产业方向及中性日光相符，遂归档。没有重复提交总览生成。",
+    "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-54871d45-5df0-4f27-a6c1-4c061a87da1f.png",
+    "archivedPath": "design/concepts/B-campus-v2.png"
+  },
+  "building": {
+    "request": "design/concepts/generation-requests-B-v2.json#B-building-v2",
+    "strategy": "以旧B楼宇图为编辑目标、修订总览图为建筑身份与光照参考，内置image_gen生成",
+    "approval": "pending",
+    "initialSourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-7a4d5174-7964-4294-adc8-d72100ba1fd8.png",
+    "initialArtifact": "design/concepts/B-building-v2.png",
+    "targetedRevision": {
+      "request": "design/concepts/generation-requests-B-v2.json#B-building-v2r1",
+      "finding": "面积与90%文字正确，但生图比例条未精确匹配90%",
+      "action": "仅将空间利用的比例条改为纯文字出租率行，其余图保持",
+      "result": "已查看实际输出：空间利用区移除比例条，改为90%文字行；三项面积保持正确",
+      "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-f5769c2c-6cfa-40b9-bf0a-fda1257f0a5e.png",
+      "artifact": "design/concepts/B-building-v2r1.png"
+    }
+  },
+  "unmodifiedInputs": "旧版四张概念图与旧版manifest-v1.json保留；不覆盖原图",
+  "manifest": "design/concepts/manifest-B-v2.json",
+  "presentedVersions": {
+    "campus": "design/concepts/B-campus-v2.png",
+    "building": "design/concepts/B-building-v2r1.png"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "entered": "展示设置\n\n当前为本地演示快照，未接入实时系统\n\n演示数据\n无数据状态\n自动巡览\n退出全屏\n显示场景信息",
+  "exited": "展示设置\n\n当前为本地演示快照，未接入实时系统\n\n演示数据\n无数据状态\n自动巡览\n全屏展示\n显示场景信息",
+  "observation": "应用fullscreenchange驱动的按钮文案表明全屏进入与退出；早版DOM镜像fullscreenElement值不作为判定证据。"
+}

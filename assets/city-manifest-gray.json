@@ -1,0 +1,18 @@
+{
+  "quality": "gray",
+  "planningSha256": "957b90725cd063ba676d0b1f4b2281dcf161b4170f656cf658c451bace1100ee",
+  "scriptSha256": "4e795135a2bc98711635bd0a980c1d79a43c0677b35417a9694087efad13bc6d",
+  "asset": "city-gray.glb",
+  "assetSha256": "909db873077f6a2554816df903102d404f8920d4a0cbe363d54113c8fd83a934",
+  "bytes": 272152,
+  "triangles": 5892,
+  "decorativeBuildings": 0,
+  "trees": 0,
+  "regionObjectIds": [
+    "PARK-DEMO",
+    "INDUSTRY-DEMO",
+    "SERVICE-DEMO"
+  ],
+  "scope": "概念区域；装饰建筑不等于真实楼宇数据",
+  "blender": "5.2.2 LTS"
+}

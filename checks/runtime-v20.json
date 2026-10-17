@@ -1,0 +1,228 @@
+{
+  "viewport": [
+    1920,
+    1080
+  ],
+  "cityZoomout": {
+    "camera": "[2034.1928296928545,5177.945384672721,5030.004087967786]"
+  },
+  "industry": {
+    "selection": "INDUSTRY-DEMO",
+    "card": "×\n\n产业空间 · 示范内容\n\n产业楼宇\n\n围绕示范园区组织的产业楼宇展示，点击园区可进一步查看逐栋空间与入驻指标。\n\n软件研发\n光电子信息\n企业服务\n园区楼宇\n8 栋\n建筑面积\n24 万㎡\n\n演示指标，进入园区查看逐栋详情",
+    "camera": "[1779.0632659954408,5177.945384672721,4979.915109863145]"
+  },
+  "service": {
+    "selection": "SERVICE-DEMO",
+    "card": "×\n\n园区配套 · 示范内容\n\n配套服务\n\n展示服务园区的公共配套方向，具体设施位置与服务能力待真实资料接入后核定。\n\n会议空间\n停车服务\n通勤配套\n\n示范配套，不表示真实交通或车位数据"
+  },
+  "escapeCloses": true,
+  "cityResources": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：96\n\n每帧提交三角形：749861\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 2826 帧\n\n层级：city · 选择：PARK-DEMO",
+  "trafficStart": {
+    "seconds": 35.514,
+    "count": 18,
+    "types": [
+      {
+        "type": "sedan",
+        "count": 9
+      },
+      {
+        "type": "suv",
+        "count": 6
+      },
+      {
+        "type": "truck",
+        "count": 3
+      }
+    ],
+    "colors": [
+      "#20282c",
+      "#ecece7",
+      "#983c39",
+      "#727d82"
+    ],
+    "first": {
+      "position": [
+        90.10800000000131,
+        -171.5,
+        0
+      ],
+      "heading": 0
+    }
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：34.1 ms · 已渲染 4012 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：34.1 ms · 已渲染 4045 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 3464 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 2,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：49.9 ms · 已渲染 4114 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：139\n\n每帧提交三角形：63617\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4151 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 3479 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 3,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：183\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4223 帧\n\n层级：campus · 选择：C1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4263 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 3495 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 4,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：143\n\n每帧提交三角形：65753\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4289 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4355 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 3514 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 5,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：169\n\n每帧提交三角形：69257\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4378 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4412 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 3530 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 6,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4494 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：139\n\n每帧提交三角形：63617\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4535 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 3546 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 7,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4585 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：143\n\n每帧提交三角形：65753\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4616 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 4114 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 8,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：183\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4673 帧\n\n层级：campus · 选择：C1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：131\n\n每帧提交三角形：61073\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4709 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 4129 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 9,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：183\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4772 帧\n\n层级：campus · 选择：C1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4809 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 4143 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 10,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：180\n\n每帧提交三角形：71897\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4835 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4870 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 4158 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 11,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4944 帧\n\n层级：campus · 选择：A1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：139\n\n每帧提交三角形：63617\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 4979 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 4173 帧\n\n层级：city · 选择：PARK-DEMO"
+    },
+    {
+      "cycle": 12,
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：183\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50.1 ms · 已渲染 5040 帧\n\n层级：campus · 选择：C1",
+      "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：129\n\n每帧提交三角形：60929\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50.1 ms · 已渲染 5075 帧\n\n层级：building · 选择：A1",
+      "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34 ms · 已渲染 4188 帧\n\n层级：city · 选择：PARK-DEMO"
+    }
+  ],
+  "fastSwitchAttempt": {
+    "completed": 9,
+    "issue": "第10轮镜头移动期间点击C1未命中；改为等待镜头停稳后复验",
+    "cycles": [
+      {
+        "cycle": 1,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：111 · 纹理：17\n\n帧间隔 P95：33.9 ms · 已渲染 1242 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：34 ms · 已渲染 1322 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 2851 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 2,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：173\n\n每帧提交三角形：71609\n\n几何：112 · 纹理：17\n\n帧间隔 P95：34 ms · 已渲染 1351 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：152\n\n每帧提交三角形：66161\n\n几何：112 · 纹理：17\n\n帧间隔 P95：34.2 ms · 已渲染 1385 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 2865 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 3,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：184\n\n每帧提交三角形：72161\n\n几何：112 · 纹理：17\n\n帧间隔 P95：34.2 ms · 已渲染 1411 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：145\n\n每帧提交三角形：65873\n\n几何：112 · 纹理：17\n\n帧间隔 P95：49.4 ms · 已渲染 1445 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 2880 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 4,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：180\n\n每帧提交三角形：71897\n\n几何：112 · 纹理：17\n\n帧间隔 P95：49.9 ms · 已渲染 1470 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：152\n\n每帧提交三角形：66161\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1503 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 2895 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 5,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1529 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：131\n\n每帧提交三角形：61073\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1565 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 2907 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 6,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：179\n\n每帧提交三角形：71753\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1590 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：139\n\n每帧提交三角形：63617\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1626 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：33.9 ms · 已渲染 2924 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 7,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：122\n\n每帧提交三角形：60545\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1633 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：113\n\n每帧提交三角形：60113\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1707 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 3423 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 8,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：162\n\n每帧提交三角形：68849\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1733 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：166\n\n每帧提交三角形：68969\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1767 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 3439 帧\n\n层级：city · 选择：PARK-DEMO"
+      },
+      {
+        "cycle": 9,
+        "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+        "rail": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+        "campus": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：186\n\n每帧提交三角形：72281\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1791 帧\n\n层级：campus · 选择：A1",
+        "building": "场景信息\n\n资产：campus.glb · detailed\n\n版本：b7a4b94631eb · 模型三角形：35698\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：143\n\n每帧提交三角形：65753\n\n几何：112 · 纹理：17\n\n帧间隔 P95：50 ms · 已渲染 1825 帧\n\n层级：building · 选择：A1",
+        "city": "场景信息\n\n资产：city.glb · detailed\n\n版本：071cf2d34b74 · 模型三角形：344825\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：54\n\n每帧提交三角形：377672\n\n几何：52 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 3452 帧\n\n层级：city · 选择：PARK-DEMO"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "result": "different",
+  "output": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/work/rebuild-v12-001",
+  "seconds": 6.62,
+  "steps": [
+    {
+      "step": "Blender从规划源生成",
+      "exitCode": 0,
+      "seconds": 3.35
+    },
+    {
+      "step": "生成网页配置",
+      "exitCode": 0,
+      "seconds": 0.05
+    },
+    {
+      "step": "安装锁定依赖",
+      "exitCode": 0,
+      "seconds": 1.49
+    },
+    {
+      "step": "业务契约测试",
+      "exitCode": 0,
+      "seconds": 0.26
+    },
+    {
+      "step": "生产构建",
+      "exitCode": 0,
+      "seconds": 1.38
+    },
+    {
+      "step": "实际资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.09
+    }
+  ],
+  "comparisons": {
+    "app/public/assets/campus.glb": {
+      "original": "3db95920cad89f55a43712f26d9397f139f9ffbb75dfa529c3ee6956b8ea19e5",
+      "rebuilt": "fe4835d83c984cd928f523a90b5f03501782ae49c0ba26718313719c8964957f",
+      "identical": false
+    },
+    "app/public/assets/runtime.json": {
+      "original": "d15a45812d0b204fe4584a652853b9924872acd49563afdb8220485d5a74d2ed",
+      "rebuilt": "d15a45812d0b204fe4584a652853b9924872acd49563afdb8220485d5a74d2ed",
+      "identical": true
+    }
+  },
+  "log": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/work/rebuild-v12-001/rebuild.log",
+  "notes": [
+    "未复制旧GLB、blend、runtime、node_modules或dist；只复制规划、脚本、固定图像输入和前端源码。",
+    "blend包含保存路径等本机元数据，不要求二进制相同；实际GLB和网页配置做哈希比对。",
+    "网页交互和视觉需继续从本次dist实际打开核对。"
+  ]
+}

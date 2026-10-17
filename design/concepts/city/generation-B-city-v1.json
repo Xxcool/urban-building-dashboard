@@ -1,0 +1,26 @@
+{
+  "version": "B-city-v1",
+  "status": "awaiting-user-concept-confirmation",
+  "scope": "新增区域层概念图，现有园区和楼宇确认稿保持不变；未开发城市层",
+  "tool": "built-in image_gen.imagegen",
+  "referenceRole": "已确认园区B图仅用于风格衔接",
+  "input": {
+    "path": "design/concepts/B-campus-v2.png",
+    "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+  },
+  "output": {
+    "path": "design/concepts/city/B-city-v1.png",
+    "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+  },
+  "originalOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-9ba0c055-ca6a-433c-a4cd-e1d5c3bf654f.png",
+  "geography": "区域轮廓、路网与点位为概念示意，非测绘成果；未采集真实边界",
+  "metrics": "8栋、24万㎡、84%、216家均属于既有虚构示范园区，不代表高新区汇总",
+  "review": {
+    "style": "已目视核对：暖白侧栏、青绿选择、日光区域沙盘，衔接已确认B方案",
+    "hierarchy": "区域模型为主体，示范园区为小尺度选中地块，显示区域→园区→楼宇导航",
+    "metrics": "24万㎡、84%、216家归于园区卡片；楼宇数量语义为8栋，后续整屏设计校对AI数量旁排版，规划源保持8栋",
+    "geography": "图底明确区域轮廓、路网与点位为概念示意，非测绘成果；不能作实际边界或点位来源",
+    "remaining": "待用户概念方向确认。若通过，整屏设计再核对园区8栋排布、边界表达和浏览器可实现细节，制作前验证相机构图。"
+  },
+  "promptPath": "design/concepts/city/prompt-B-city-v1.txt"
+}

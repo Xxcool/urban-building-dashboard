@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>B方案逐版对照 v8r2</title><style>
+body{margin:0;padding:28px;background:#f4f3ee;color:#123b40;font:15px/1.7 system-ui,sans-serif}h1{font-size:28px}h2{margin-top:32px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:white;border:1px solid #d7e1df;border-radius:8px;overflow:hidden}img{display:block;width:100%;height:auto}figcaption{padding:10px 14px}table{border-collapse:collapse;width:100%;background:#fffefa}th,td{padding:12px;border:1px solid #cfdbd7;vertical-align:top;min-width:100px}.table{overflow:auto}pre{white-space:pre-wrap;word-break:break-all;font-size:12px}@media(max-width:800px){.pair{grid-template-columns:1fr}}
+</style><h1>B方案 · v8r2 实际网页与确认基准</h1><p>锁定B-campus-v2与B-building-v2r1，不裁切、不拉伸基准；演示快照A1、巡览关闭，固定该版制作相机。新旧版本图片保留。</p><p>两图保留原始比例，AI图不具备测绘精度；对照不把AI不可数细节当作工程数据。浏览器截图是实际WebGL画面。</p><h2>园区总览</h2><div class="pair"><figure><img src="../design/concepts/B-campus-v2.png"><figcaption>已确认整屏基准 · B-campus-v2.png</figcaption></figure><figure><img src="campus-detailed-v8r2.jpg"><figcaption>实际网页 · v8r2 · 1280×720截图；1920×1080画布等比缩放</figcaption></figure></div><h2>重点楼宇</h2><div class="pair"><figure><img src="../design/concepts/B-building-v2r1.png"><figcaption>已确认整屏基准 · B-building-v2r1.png</figcaption></figure><figure><img src="building-detailed-v8r2.jpg"><figcaption>实际网页 · v8r2 · 1280×720截图；1920×1080画布等比缩放</figcaption></figure></div><h2>差异与复验</h2><div class="table"><table><tr><th>ID</th><th>预期</th><th>实际</th><th>原因假设</th><th>源修改</th><th>重建/复验证据</th><th>结果</th><th>后续</th></tr><tr><td>E-02</td><td>AO开启后绘制调用≤350</td><td>1920目标视口实测约203次、P95约33.4ms</td><td>静态阴影反复计算</td><td>只在模型载入后更新一次静态阴影</td><td>target-performance-v8r2.json</td><td>当前环境通过</td><td>目标硬件与长时运行未测</td></tr><tr><td>U-02</td><td>1080高画布底部至少28px安全距离</td><td>返回按钮边界由1058.8修正至1051.8，安全距离28.2px</td><td>组件纵向叠加占用略大</td><td>回到CSS减少按钮上下内边距和上边距</td><td>layout-1920-v8.json → layout-1920-v8r2.json</td><td>已修复</td><td>保留原截图审计</td></tr><tr><td>I-02</td><td>进入和退出全屏有可观察状态</td><td>应用fullscreenchange驱动文案退出全屏/全屏展示</td><td>旧UI没有明确状态，DOM镜像属性不适合作判据</td><td>添加全屏事件订阅、状态文案与不支持窗口提示</td><td>fullscreen-v8r2.json</td><td>已实际验证进出</td><td>不声称覆盖所有浏览器或显示器</td></tr></table></div><h2>输入哈希</h2><pre>[
+  {
+    &quot;level&quot;: &quot;campus&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-campus-v2.png&quot;,
+    &quot;baselineSha256&quot;: &quot;b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264&quot;,
+    &quot;actual&quot;: &quot;checks/campus-detailed-v8r2.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;a125c232e6bf028f74249d8e67550f55b034d1b979d9c71fceb0147a2431d19a&quot;
+  },
+  {
+    &quot;level&quot;: &quot;building&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-building-v2r1.png&quot;,
+    &quot;baselineSha256&quot;: &quot;1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4&quot;,
+    &quot;actual&quot;: &quot;checks/building-detailed-v8r2.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;298e908f0b343213022c5eb67de25b0df0fb0fcd09598cca9781ccb64cd8fe77&quot;
+  }
+]</pre></html>

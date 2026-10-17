@@ -1,0 +1,5 @@
+{
+  "url": "http://127.0.0.1:4174/",
+  "assetDiagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：634106d3f732 · 模型三角形：35946\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：85\n\n每帧提交三角形：50081\n\n几何：104 · 纹理：17\n\n帧间隔 P95：26.7 ms · 已渲染 20326 帧\n\n层级：campus · 选择：A1",
+  "entries": []
+}

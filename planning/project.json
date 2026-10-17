@@ -1,0 +1,2365 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "title": "高新区数字楼宇",
+    "context": "武汉东湖高新区（光谷）产业背景",
+    "siteType": "虚构示范园区",
+    "purpose": "招商展示与领导汇报",
+    "dataMode": "演示数据",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "levels": [
+    {
+      "id": "city",
+      "name": "区域总览",
+      "content": [
+        "概念区域空间与路网水系",
+        "产业楼宇分布示意",
+        "示范园区入口",
+        "园区级指标，非区域汇总"
+      ]
+    },
+    {
+      "id": "campus",
+      "name": "园区总览",
+      "content": [
+        "楼宇分布与空间关系",
+        "楼宇数与建筑面积",
+        "出租率与入驻企业",
+        "产业构成",
+        "重点楼宇入口"
+      ]
+    },
+    {
+      "id": "building",
+      "name": "重点楼宇",
+      "content": [
+        "建筑外观与楼宇档案",
+        "空间利用",
+        "入驻企业与产业",
+        "配套服务",
+        "返回园区"
+      ]
+    }
+  ],
+  "demoDesign": {
+    "status": "概念设计假设，非真实测绘或经营资料",
+    "campus": {
+      "buildings": 8,
+      "grossAreaM2": 240000,
+      "rentableAreaM2": 200000,
+      "rentedAreaM2": 168000,
+      "enterprises": 216
+    },
+    "focusBuilding": {
+      "id": "A1",
+      "name": "科创大厦",
+      "floors": 24,
+      "grossAreaM2": 48000,
+      "rentableAreaM2": 40000,
+      "rentedAreaM2": 36000,
+      "enterprises": 42,
+      "form": "修长矩形玻璃塔楼、三级退台裙房、右侧立面竖向古铜色翼片、内退屋顶花园",
+      "floorsDefinition": {
+        "total": 24,
+        "podium": 3,
+        "towerAbovePodium": 21
+      }
+    },
+    "layout": "矩形地块，八栋楼围合中央绿庭，后排三栋塔楼，侧翼和前排五栋研发办公楼，A1位于后排左侧",
+    "metricRules": {
+      "occupancy": "rentedAreaM2 / rentableAreaM2",
+      "vacantRentableAreaM2": "rentableAreaM2 - rentedAreaM2"
+    },
+    "buildingIdentities": [
+      {
+        "id": "A1",
+        "role": "重点楼宇",
+        "form": "24层总层数，其中3层退台裙房、21层塔楼；右立面古铜翼片、矩形蓝灰玻璃塔身、内退屋顶花园",
+        "conceptPlacement": "后排左侧"
+      },
+      {
+        "id": "B1",
+        "role": "次要塔楼",
+        "conceptPlacement": "后排中部"
+      },
+      {
+        "id": "B2",
+        "role": "次要塔楼",
+        "conceptPlacement": "后排右侧"
+      },
+      {
+        "id": "A2",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "中排左侧"
+      },
+      {
+        "id": "B3",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "中排右侧"
+      },
+      {
+        "id": "C1",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排左侧"
+      },
+      {
+        "id": "C2",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排中部"
+      },
+      {
+        "id": "C3",
+        "role": "低层研发办公楼",
+        "conceptPlacement": "前排右侧"
+      }
+    ],
+    "identityStatus": "概念修订设定；相对排布不等于已验证制作坐标，尺寸与相机在整屏基准后补齐",
+    "contentDefinitions": {
+      "industryDirections": {
+        "heading": "产业方向",
+        "labels": [
+          "软件研发",
+          "光电子信息",
+          "企业服务"
+        ],
+        "semantics": "示范产业方向，不表示企业统计占比"
+      },
+      "buildingIndustries": {
+        "heading": "入驻产业",
+        "labels": [
+          "软件研发",
+          "光电子信息",
+          "企业服务"
+        ],
+        "semantics": "产业类别展示，企业总数沿用重点楼宇的演示指标，不虚构真实企业名单"
+      },
+      "spaceUsage": {
+        "heading": "空间利用",
+        "labels": {
+          "rented": "已租面积",
+          "rentable": "可租面积",
+          "vacant": "可租空置面积",
+          "occupancy": "出租率"
+        },
+        "unit": "万㎡",
+        "precision": 1
+      },
+      "services": {
+        "heading": "配套服务",
+        "labels": [
+          "会议空间",
+          "停车服务",
+          "通勤配套"
+        ],
+        "semantics": "示范配套，不表示真实交通或车位数据"
+      }
+    },
+    "conceptRevision": {
+      "candidate": "B",
+      "version": "v2",
+      "status": "user_confirmed_visual",
+      "lighting": "柔和中性日光，灰白石材与蓝灰玻璃，弱暖反射，古铜翼片避免金黄自发光",
+      "campusLabelPolicy": "八栋主体均可辨识并一一标注稳定ID，A1追加名称；外围城市降为无标签低对比背景",
+      "buildingIdentityPolicy": "总览和近景沿用相同A1塔身、三级退台、古铜翼片与屋顶花园；不以AI可数楼层替代规格验证"
+    },
+    "region": {
+      "id": "REGION-DEMO",
+      "name": "东湖高新区产业空间",
+      "campusId": "PARK-DEMO",
+      "campusName": "光谷示范园区",
+      "quality": "schematic",
+      "disclaimer": "区域轮廓、路网与点位为概念示意，非测绘成果",
+      "scope": "武汉光谷产业背景；不声称真实行政边界、路网、湖泊或园区地理位置"
+    },
+    "buildingMetrics": {
+      "B1": {
+        "floors": 20,
+        "grossAreaM2": 42000,
+        "rentableAreaM2": 35000,
+        "rentedAreaM2": 30800,
+        "enterprises": 38
+      },
+      "B2": {
+        "floors": 18,
+        "grossAreaM2": 36000,
+        "rentableAreaM2": 30000,
+        "rentedAreaM2": 25800,
+        "enterprises": 32
+      },
+      "A2": {
+        "floors": 5,
+        "grossAreaM2": 22000,
+        "rentableAreaM2": 18000,
+        "rentedAreaM2": 14400,
+        "enterprises": 18
+      },
+      "B3": {
+        "floors": 5,
+        "grossAreaM2": 22000,
+        "rentableAreaM2": 18000,
+        "rentedAreaM2": 14760,
+        "enterprises": 18
+      },
+      "C1": {
+        "floors": 5,
+        "grossAreaM2": 24000,
+        "rentableAreaM2": 20000,
+        "rentedAreaM2": 16400,
+        "enterprises": 22
+      },
+      "C2": {
+        "floors": 5,
+        "grossAreaM2": 24000,
+        "rentableAreaM2": 20000,
+        "rentedAreaM2": 16800,
+        "enterprises": 24
+      },
+      "C3": {
+        "floors": 5,
+        "grossAreaM2": 22000,
+        "rentableAreaM2": 19000,
+        "rentedAreaM2": 13040,
+        "enterprises": 22
+      }
+    },
+    "dataDeclaration": "全部经营指标为虚构演示快照；园区指标由各栋汇总，campus保留为原确认总量校验约束。"
+  },
+  "visualCandidates": [
+    {
+      "id": "A",
+      "name": "深色建筑沙盘",
+      "layout": "中央大场景、精简双侧面板、顶部关键指标",
+      "palette": [
+        "#081522",
+        "#8BCFD0",
+        "#D8E3E8"
+      ],
+      "materials": "实体玻璃建筑、银灰构件、少量暖窗、克制青绿选中轮廓"
+    },
+    {
+      "id": "B",
+      "name": "浅色建筑展陈",
+      "layout": "左侧集中信息栏、右侧开放建筑场景",
+      "palette": [
+        "#F1F0EB",
+        "#277D78",
+        "#B29367"
+      ],
+      "materials": "珍珠灰石材、淡蓝玻璃、暖光、自然景观与柔和阴影"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D001",
+      "status": "user_confirmed",
+      "reply": "武汉；园区总览 → 重点楼宇；暂无，先做示范方案"
+    },
+    {
+      "id": "D002",
+      "status": "user_confirmed",
+      "reply": "招商展示与领导汇报（推荐）"
+    },
+    {
+      "id": "D003",
+      "status": "user_confirmed",
+      "reply": "希望先看两种方向的概念图"
+    },
+    {
+      "id": "D004",
+      "status": "user_confirmed",
+      "reply": "合适，按此开展概念设计（推荐）",
+      "covers": "武汉东湖高新区产业背景、虚构示范园区、演示标识、16:9 1920×1080"
+    },
+    {
+      "id": "D005",
+      "status": "user_instruction",
+      "reply": "那概念图是需要修正吗？那B方案修正后的图看看效果",
+      "covers": "授权修订和展示B方案两层概念图，尚不等于批准新图或开始整屏设计"
+    },
+    {
+      "id": "D006",
+      "status": "user_confirmed",
+      "reply": "可以",
+      "covers": "对前一条展示的B-campus-v2与B-building-v2r1两层概念视觉确认，继续整屏设计",
+      "evidence": "docs/B-concept-approval.md"
+    }
+  ],
+  "exclusions": [
+    "楼层与房间下钻",
+    "真实楼宇或地形精确复原",
+    "真实接口接入",
+    "设备远程控制",
+    "安防视频与告警处置"
+  ],
+  "nextGate": "概念两层已获确认；继续整屏设计及制作。改变已确认视觉方向时重新确认；按制作规格与逐版网页对照验证，不把概念批准当作几何或性能批准。",
+  "selectedVisual": {
+    "candidate": "B",
+    "concepts": {
+      "campus": {
+        "path": "design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264",
+        "decisionId": "D006"
+      },
+      "building": {
+        "path": "design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4",
+        "decisionId": "D006"
+      }
+    },
+    "approvalRecord": "docs/B-concept-approval.md"
+  },
+  "design": {
+    "baselineReuse": {
+      "campus": "selectedVisual.concepts.campus",
+      "building": "selectedVisual.concepts.building"
+    },
+    "layout": {
+      "railFraction": 0.28,
+      "sceneFraction": 0.72,
+      "paddingPx": 40,
+      "kpiColumns": 2,
+      "baseViewport": "project.viewport",
+      "safeBottomPx": 28
+    },
+    "typography": {
+      "family": "system-ui, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, sans-serif",
+      "titlePx": 54,
+      "headingPx": 28,
+      "metricPx": 40,
+      "bodyPx": 18,
+      "captionPx": 15
+    },
+    "palette": {
+      "background": "#f4f3ee",
+      "surface": "#fffefa",
+      "ink": "#123b40",
+      "muted": "#637e80",
+      "accent": "#197e83",
+      "line": "#d8e2df",
+      "glass": "#648497",
+      "bronze": "#9c7b50",
+      "grass": "#8d9e70"
+    },
+    "states": {
+      "campus": [
+        "selected-A1",
+        "no-data"
+      ],
+      "building": [
+        "selected-A1",
+        "no-data"
+      ],
+      "noData": {
+        "metricValue": null,
+        "formatted": "—",
+        "message": "暂无数据",
+        "geometry": "保留规划建筑，不把数据缺失渲染为故障或移除建筑"
+      }
+    },
+    "interactions": {
+      "initialLevel": "city",
+      "initialSelection": "A1",
+      "focusBuilding": "demoDesign.focusBuilding.id",
+      "focusTrigger": [
+        "点击A1标签或建筑",
+        "点击重点楼宇导航"
+      ],
+      "otherBuildingSelection": "保持园区镜头，选中高亮；场景信息卡和左侧楼宇摘要读取同一选中对象的演示快照，A1可下钻；无数据态统一显示—",
+      "return": "返回园区保留A1选择并恢复园区镜头",
+      "dataModes": [
+        "demo",
+        "no-data"
+      ],
+      "camera": "拖拽旋转、滚轮缩放、复位镜头",
+      "unrequestedStatesExcluded": [
+        "告警",
+        "回放",
+        "房间下钻"
+      ]
+    },
+    "data": {
+      "mode": "演示快照，非实时接入",
+      "campusMetrics": "demoDesign.campus",
+      "buildingMetrics": "demoDesign.focusBuilding",
+      "aggregates": "园区为独立定义的全园汇总；不以只有A1明细的部分数据假装全园逐栋汇总",
+      "missing": "数值null，格式化为—；已知身份和产业示范定位仍可显示"
+    },
+    "productionGate": "整屏稿、状态与布局锁定后补规格；先在网页验证简化模型的构图、锚点和标签，再深化。",
+    "baselines": {
+      "campus": {
+        "selected-A1": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        "no-data": {
+          "path": "design/screens/campus-no-data-design-v1.png",
+          "sha256": "c86ff0a54a91de0c7fe0294b3c8e7206c42b3f657cfb83cdb0d7ba395d205d39"
+        }
+      },
+      "building": {
+        "selected-A1": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        },
+        "no-data": {
+          "path": "design/screens/building-no-data-design-v1.png",
+          "sha256": "a8a1d81530bcc4361ea0da471f89c283f3d16f3f664e21e0e189ba5a4f73288e"
+        }
+      },
+      "city": {
+        "selected-A1": {
+          "path": "design/concepts/city/B-city-v1.png",
+          "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+        },
+        "no-data": {
+          "path": "design/screens/city-no-data-design-v1.png",
+          "sha256": "fdfdc01606df25c5d73d072a2851bb14dbf434ee2ab211c32861dcf33fd79300"
+        }
+      }
+    },
+    "motion": {
+      "cityEntrance": {
+        "duration": 3.2,
+        "returnDuration": 0.45,
+        "cameraDistanceFactor": 1.06,
+        "cityReveal": [
+          0,
+          0.6
+        ],
+        "materialReveal": [
+          0.4,
+          1.6
+        ],
+        "boundaryReveal": [
+          0.9,
+          2.3
+        ],
+        "parkReveal": [
+          2,
+          2.8
+        ],
+        "labelsReveal": [
+          2.3,
+          3.05
+        ],
+        "panelReveal": [
+          0.4,
+          3.2
+        ]
+      }
+    }
+  },
+  "production": {
+    "version": "v14-city-restoration",
+    "dimensionBasis": "全部为虚构示范的制作估计，不是实测；由同一几何解释两层投影，网页构图不通过则改源",
+    "coordinateSystem": {
+      "unit": "m",
+      "blender": "X向右、Y向园区后排、Z向上，原点为园区地面中心",
+      "threeConversion": "[x,y,z] -> [x,z,-y]，GLB默认Y向上导出",
+      "modelOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    "floorHeightM": 4.2,
+    "geometryById": {
+      "A1": {
+        "position": [
+          -125,
+          70,
+          0
+        ],
+        "podiumSizes": [
+          [
+            70,
+            58
+          ],
+          [
+            62,
+            50
+          ],
+          [
+            54,
+            42
+          ]
+        ],
+        "towerSize": [
+          36,
+          40
+        ],
+        "towerOffset": [
+          0,
+          5
+        ],
+        "bronzeFace": "positiveX"
+      },
+      "B1": {
+        "position": [
+          -6,
+          78,
+          0
+        ],
+        "size": [
+          43,
+          34,
+          84
+        ]
+      },
+      "B2": {
+        "position": [
+          104,
+          76,
+          0
+        ],
+        "size": [
+          43,
+          34,
+          76
+        ]
+      },
+      "A2": {
+        "position": [
+          -147,
+          -5,
+          0
+        ],
+        "size": [
+          59,
+          43,
+          21
+        ]
+      },
+      "B3": {
+        "position": [
+          170,
+          -5,
+          0
+        ],
+        "size": [
+          59,
+          43,
+          21
+        ]
+      },
+      "C1": {
+        "position": [
+          -50,
+          -98,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          21
+        ]
+      },
+      "C2": {
+        "position": [
+          55,
+          -100,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          21
+        ]
+      },
+      "C3": {
+        "position": [
+          160,
+          -98,
+          0
+        ],
+        "size": [
+          62,
+          44,
+          21
+        ]
+      }
+    },
+    "site": {
+      "parkSize": [
+        400,
+        320
+      ],
+      "roadWidth": 16,
+      "seed": 219,
+      "treeCount": 240,
+      "cityCount": 65,
+      "centralTreePositionsM": [
+        [
+          -55,
+          30
+        ],
+        [
+          -47,
+          -26
+        ],
+        [
+          52,
+          28
+        ],
+        [
+          45,
+          -30
+        ],
+        [
+          30,
+          38
+        ],
+        [
+          -18,
+          34
+        ]
+      ]
+    },
+    "cameras": {
+      "campus": {
+        "type": "perspective",
+        "eye": [
+          210,
+          -490,
+          330
+        ],
+        "target": [
+          20,
+          0,
+          25
+        ],
+        "fov": 32,
+        "near": 0.5,
+        "far": 2200
+      },
+      "building": {
+        "type": "perspective",
+        "eye": [
+          5,
+          -200,
+          85
+        ],
+        "target": [
+          -125,
+          70,
+          49
+        ],
+        "fov": 26,
+        "near": 0.2,
+        "far": 1800
+      }
+    },
+    "render": {
+      "lighting": "中性日光，环境反射与单主光；静态几何不烘入动态状态",
+      "sunPosition": [
+        -160,
+        -120,
+        280
+      ],
+      "exposure": 0.85,
+      "shadowMapSize": 2048,
+      "maxPixelRatio": 1.6,
+      "fogNear": 650,
+      "fogFar": 1900,
+      "baking": "本版不烘焙，先验证实时材质；如测得收益再评估静态光照贴图",
+      "hemisphereIntensity": 0.75,
+      "sunIntensity": 2.5,
+      "environmentIntensity": 0.65,
+      "selectionStyle": "由同一制作规格派生轻量轮廓线与标签，不执行全场景多次描边渲染",
+      "ambientOcclusion": {
+        "radius": 3,
+        "thickness": 2,
+        "scale": 0.65,
+        "blendIntensity": 0.65,
+        "samples": 8
+      },
+      "shadowUpdate": "静态几何与光源在模型载入后更新一次，巡览与数据模式不修改阴影",
+      "skyTopRgb": [
+        80,
+        154,
+        222
+      ],
+      "skyHorizonRgb": [
+        156,
+        209,
+        241
+      ]
+    },
+    "assets": {
+      "scene": "app/public/assets/campus.glb",
+      "sourceBlend": "assets/scene.blend",
+      "grayScene": "app/public/assets/campus-gray.glb",
+      "businessNodePrefix": "building_",
+      "loading": "单包一次加载，两层复用，同一业务根节点下按材质合批；不复制全场景"
+    },
+    "budget": {
+      "status": "待实测目标，非承诺目标硬件结果",
+      "triangles": 500000,
+      "drawCalls": 350,
+      "glbMegabytes": 25,
+      "frameTimeP95Ms": 40,
+      "resourceCycles": 12
+    },
+    "compositionGate": "网页目标1920×1080与缩小视口，核对八栋ID、A1全高、UI占位、标签与已知锚点；灰盒未通过前不深化",
+    "openItems": [
+      "P-01",
+      "P-02",
+      "P-03"
+    ],
+    "compositionRevision": "在v8实屏与锁定基准并排后，A1后排左侧偏右、前排偏左；校准同一园区坐标及两层眼点，不改业务ID、24总层数、视觉基准或主题。",
+    "materialInputs": {
+      "curtainWall": {
+        "path": "design/materials/curtain-wall-v1.png",
+        "sha256": "dcd3dba1ce867875792225a713a856ad39b69c2384787593f1e6557211477a4e",
+        "atlasColumns": 4,
+        "atlasRows": 4,
+        "provenance": "design/material-generation-v1.json",
+        "use": "预渲染窗内细节与反射，仅作幕墙表面；不代表室内空间或实时灯光"
+      },
+      "foliage": {
+        "path": "design/materials/foliage-cluster-v1.png",
+        "sha256": "58a272e5451f17de076d059f3fd59ab7609c17c8d969b26ae07abb4e88458b0e",
+        "cardsPerTree": 12,
+        "alphaCutoff": 0.48,
+        "provenance": "design/foliage-generation-v1.json",
+        "use": "静态交错双面叶簇，Alpha裁切、真实裁切阴影；不参与AO法线通道，无业务状态或风速含义",
+        "widthHeightRatioRange": [
+          0.55,
+          0.75
+        ],
+        "heightRatioRange": [
+          0.45,
+          0.65
+        ]
+      }
+    },
+    "traffic": {
+      "kind": "decorative-demo",
+      "vehicleCount": 18,
+      "speedMps": 8,
+      "laneOffsetM": 3.5,
+      "cornerRadiusM": 14,
+      "maxStepSeconds": 0.1,
+      "fleet": [
+        {
+          "type": "sedan",
+          "count": 9,
+          "lengthM": 4.6,
+          "widthM": 1.85,
+          "heightM": 1.48
+        },
+        {
+          "type": "suv",
+          "count": 6,
+          "lengthM": 4.8,
+          "widthM": 1.98,
+          "heightM": 1.85
+        },
+        {
+          "type": "truck",
+          "count": 3,
+          "lengthM": 6.4,
+          "widthM": 2.15,
+          "heightM": 2.9
+        }
+      ],
+      "colors": [
+        "#20282c",
+        "#ecece7",
+        "#983c39",
+        "#727d82"
+      ]
+    },
+    "city": {
+      "coordinateBasis": "局部米制视觉估计；Blender XYZ同园区，Three [x,z,-y]；无真实地理对应",
+      "seed": 318,
+      "extentM": [
+        4200,
+        3100
+      ],
+      "roads": {
+        "widthM": 20,
+        "spacingM": 260,
+        "rotationDeg": -9,
+        "originM": [
+          50,
+          20
+        ],
+        "laneMarkM": 2
+      },
+      "campusScale": 1.35,
+      "poi": [
+        {
+          "id": "PARK-DEMO",
+          "label": "光谷示范园区",
+          "action": "enter-campus",
+          "heightM": 120,
+          "content": {
+            "eyebrow": "园区配套",
+            "description": "展示服务园区的公共配套方向，具体设施位置与服务能力待真实资料接入后核定。"
+          }
+        },
+        {
+          "id": "INDUSTRY-DEMO",
+          "label": "产业楼宇",
+          "action": "show-info",
+          "heightM": 85,
+          "content": {
+            "eyebrow": "产业空间",
+            "description": "围绕示范园区组织的产业楼宇展示，点击园区可进一步查看逐栋空间与入驻指标。"
+          }
+        },
+        {
+          "id": "SERVICE-DEMO",
+          "label": "配套服务",
+          "action": "show-info",
+          "heightM": 70,
+          "content": {
+            "eyebrow": "园区配套",
+            "description": "展示服务园区的公共配套方向，具体设施位置与服务能力待真实资料接入后核定。"
+          }
+        }
+      ],
+      "camera": {
+        "eye": [
+          1100,
+          -2720,
+          2800
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "fov": 42,
+        "near": 20,
+        "far": 15000
+      },
+      "layoutAnchors": {
+        "regionFillWidthRange": [
+          0.72,
+          0.98
+        ],
+        "regionFillHeightRange": [
+          0.55,
+          0.9
+        ],
+        "campusWithinSceneXRange": [
+          0.45,
+          0.8
+        ],
+        "campusWithinSceneYRange": [
+          0.35,
+          0.75
+        ]
+      },
+      "assets": {
+        "scene": "app/public/assets/city.glb",
+        "grayScene": "app/public/assets/city-gray.glb",
+        "blend": "assets/city.blend"
+      },
+      "budget": {
+        "glbMegabytes": 15,
+        "triangles": 380000,
+        "drawCalls": 130
+      },
+      "buildings": {
+        "gridM": 72,
+        "jitterM": 9,
+        "widthM": [
+          30,
+          52
+        ],
+        "depthM": [
+          35,
+          65
+        ],
+        "heightM": [
+          20,
+          85
+        ],
+        "blockRows": 2,
+        "blockColumns": 3,
+        "pitchM": 68,
+        "lakeBufferM": 32
+      },
+      "trees": {
+        "count": 6500,
+        "heightM": [
+          15,
+          30
+        ],
+        "radiusM": [
+          10,
+          18
+        ]
+      },
+      "palette": {
+        "ground": "#c9d2bb",
+        "grass": "#b1c69b",
+        "water": "#459fc0",
+        "road": "#8e9b9d",
+        "marking": "#f5f3e9",
+        "building": "#e8ece5",
+        "buildingWarm": "#ede3cf",
+        "roof": "#c7d0c9",
+        "trunk": "#867c63",
+        "leaf": "#638246",
+        "leafLight": "#91a868",
+        "boundary": "#208b96",
+        "boundaryRim": "#effdfb",
+        "campus": "#d3b171",
+        "glass": "#7299a9",
+        "bronze": "#a88655",
+        "waterDeep": "#388caa",
+        "shore": "#bacb9d",
+        "zoneGreen": "#aec19a",
+        "zoneCyan": "#a6ccc7",
+        "zoneGold": "#dfc38e"
+      },
+      "render": {
+        "background": "#e6ede8",
+        "exposure": 0.85,
+        "sunIntensity": 2.3,
+        "hemisphereIntensity": 1.25,
+        "shadowMapSize": 4096,
+        "pixelRatioCap": 1.6,
+        "bloom": {
+          "strength": 0.85,
+          "radius": 0.18,
+          "threshold": 0.4
+        }
+      },
+      "grayGate": "简化区域边界、水系、8栋园区和3个锚点先网页核对；通过后再生成城市楼群与景观，不将简化模型当定稿",
+      "alignment": {
+        "imageSize": [
+          1672,
+          941
+        ],
+        "source": "design/concepts/city/B-city-v1.png",
+        "generator": "scripts/city_layout.py",
+        "generatorSha256": "60f1f6cfd13fe07c2a9f31c6f54276e49afd54d30f49c17ca8e97a28de0b0c57",
+        "outlinePixels": [
+          [
+            490,
+            392
+          ],
+          [
+            540,
+            370
+          ],
+          [
+            589,
+            346
+          ],
+          [
+            651,
+            329
+          ],
+          [
+            688,
+            304
+          ],
+          [
+            735,
+            287
+          ],
+          [
+            791,
+            264
+          ],
+          [
+            818,
+            247
+          ],
+          [
+            820,
+            216
+          ],
+          [
+            852,
+            198
+          ],
+          [
+            855,
+            172
+          ],
+          [
+            896,
+            154
+          ],
+          [
+            897,
+            141
+          ],
+          [
+            935,
+            139
+          ],
+          [
+            966,
+            153
+          ],
+          [
+            1016,
+            156
+          ],
+          [
+            1046,
+            177
+          ],
+          [
+            1051,
+            202
+          ],
+          [
+            1115,
+            214
+          ],
+          [
+            1167,
+            239
+          ],
+          [
+            1202,
+            239
+          ],
+          [
+            1218,
+            261
+          ],
+          [
+            1263,
+            281
+          ],
+          [
+            1260,
+            309
+          ],
+          [
+            1310,
+            333
+          ],
+          [
+            1315,
+            357
+          ],
+          [
+            1372,
+            374
+          ],
+          [
+            1375,
+            398
+          ],
+          [
+            1434,
+            418
+          ],
+          [
+            1461,
+            435
+          ],
+          [
+            1491,
+            427
+          ],
+          [
+            1508,
+            442
+          ],
+          [
+            1513,
+            478
+          ],
+          [
+            1550,
+            497
+          ],
+          [
+            1582,
+            497
+          ],
+          [
+            1589,
+            523
+          ],
+          [
+            1628,
+            539
+          ],
+          [
+            1622,
+            575
+          ],
+          [
+            1601,
+            595
+          ],
+          [
+            1625,
+            624
+          ],
+          [
+            1590,
+            643
+          ],
+          [
+            1582,
+            671
+          ],
+          [
+            1540,
+            674
+          ],
+          [
+            1522,
+            701
+          ],
+          [
+            1476,
+            704
+          ],
+          [
+            1470,
+            728
+          ],
+          [
+            1428,
+            790
+          ],
+          [
+            1393,
+            809
+          ],
+          [
+            1367,
+            817
+          ],
+          [
+            1312,
+            813
+          ],
+          [
+            1299,
+            820
+          ],
+          [
+            1270,
+            817
+          ],
+          [
+            1251,
+            840
+          ],
+          [
+            1203,
+            838
+          ],
+          [
+            1165,
+            813
+          ],
+          [
+            1115,
+            793
+          ],
+          [
+            1079,
+            782
+          ],
+          [
+            1037,
+            762
+          ],
+          [
+            996,
+            753
+          ],
+          [
+            957,
+            736
+          ],
+          [
+            918,
+            719
+          ],
+          [
+            881,
+            714
+          ],
+          [
+            846,
+            685
+          ],
+          [
+            811,
+            676
+          ],
+          [
+            784,
+            660
+          ],
+          [
+            748,
+            631
+          ],
+          [
+            707,
+            623
+          ],
+          [
+            679,
+            592
+          ],
+          [
+            666,
+            558
+          ],
+          [
+            633,
+            548
+          ],
+          [
+            623,
+            515
+          ],
+          [
+            584,
+            502
+          ],
+          [
+            568,
+            478
+          ],
+          [
+            536,
+            470
+          ],
+          [
+            522,
+            450
+          ],
+          [
+            501,
+            442
+          ]
+        ],
+        "waterPixels": [
+          [
+            [
+              350,
+              -200
+            ],
+            [
+              900,
+              -200
+            ],
+            [
+              935,
+              10
+            ],
+            [
+              905,
+              44
+            ],
+            [
+              862,
+              89
+            ],
+            [
+              886,
+              129
+            ],
+            [
+              842,
+              154
+            ],
+            [
+              833,
+              196
+            ],
+            [
+              798,
+              232
+            ],
+            [
+              713,
+              258
+            ],
+            [
+              659,
+              244
+            ],
+            [
+              646,
+              212
+            ],
+            [
+              570,
+              215
+            ],
+            [
+              526,
+              184
+            ],
+            [
+              350,
+              193
+            ]
+          ],
+          [
+            [
+              1000,
+              -80
+            ],
+            [
+              1280,
+              -80
+            ],
+            [
+              1300,
+              78
+            ],
+            [
+              1393,
+              81
+            ],
+            [
+              1450,
+              145
+            ],
+            [
+              1422,
+              201
+            ],
+            [
+              1356,
+              220
+            ],
+            [
+              1318,
+              196
+            ],
+            [
+              1200,
+              175
+            ],
+            [
+              1153,
+              199
+            ],
+            [
+              1060,
+              175
+            ],
+            [
+              1027,
+              127
+            ],
+            [
+              1001,
+              102
+            ]
+          ],
+          [
+            [
+              922,
+              237
+            ],
+            [
+              971,
+              234
+            ],
+            [
+              1001,
+              260
+            ],
+            [
+              1060,
+              267
+            ],
+            [
+              1090,
+              296
+            ],
+            [
+              1044,
+              315
+            ],
+            [
+              1014,
+              348
+            ],
+            [
+              948,
+              350
+            ],
+            [
+              911,
+              321
+            ],
+            [
+              917,
+              282
+            ]
+          ],
+          [
+            [
+              804,
+              596
+            ],
+            [
+              850,
+              591
+            ],
+            [
+              884,
+              603
+            ],
+            [
+              925,
+              611
+            ],
+            [
+              969,
+              630
+            ],
+            [
+              985,
+              650
+            ],
+            [
+              955,
+              671
+            ],
+            [
+              911,
+              680
+            ],
+            [
+              868,
+              677
+            ],
+            [
+              838,
+              664
+            ],
+            [
+              799,
+              660
+            ],
+            [
+              781,
+              641
+            ],
+            [
+              783,
+              615
+            ]
+          ],
+          [
+            [
+              1499,
+              358
+            ],
+            [
+              1750,
+              355
+            ],
+            [
+              1850,
+              490
+            ],
+            [
+              1620,
+              489
+            ],
+            [
+              1563,
+              440
+            ],
+            [
+              1541,
+              395
+            ]
+          ],
+          [
+            [
+              1486,
+              714
+            ],
+            [
+              1553,
+              692
+            ],
+            [
+              1850,
+              699
+            ],
+            [
+              1850,
+              855
+            ],
+            [
+              1574,
+              820
+            ],
+            [
+              1522,
+              780
+            ]
+          ],
+          [
+            [
+              1034,
+              687
+            ],
+            [
+              1084,
+              675
+            ],
+            [
+              1126,
+              685
+            ],
+            [
+              1163,
+              695
+            ],
+            [
+              1202,
+              698
+            ],
+            [
+              1243,
+              706
+            ],
+            [
+              1279,
+              721
+            ],
+            [
+              1320,
+              727
+            ],
+            [
+              1364,
+              742
+            ],
+            [
+              1395,
+              763
+            ],
+            [
+              1360,
+              786
+            ],
+            [
+              1318,
+              792
+            ],
+            [
+              1285,
+              780
+            ],
+            [
+              1248,
+              790
+            ],
+            [
+              1197,
+              784
+            ],
+            [
+              1152,
+              766
+            ],
+            [
+              1110,
+              754
+            ],
+            [
+              1070,
+              731
+            ],
+            [
+              1033,
+              730
+            ],
+            [
+              1019,
+              711
+            ]
+          ]
+        ],
+        "zones": [
+          {
+            "id": "REGION-TINT",
+            "material": "zoneGreen",
+            "pixels": [
+              [
+                490,
+                392
+              ],
+              [
+                735,
+                287
+              ],
+              [
+                896,
+                154
+              ],
+              [
+                1046,
+                177
+              ],
+              [
+                1263,
+                281
+              ],
+              [
+                1434,
+                418
+              ],
+              [
+                1628,
+                539
+              ],
+              [
+                1582,
+                671
+              ],
+              [
+                1251,
+                826
+              ],
+              [
+                881,
+                714
+              ],
+              [
+                679,
+                592
+              ],
+              [
+                568,
+                478
+              ]
+            ]
+          },
+          {
+            "id": "CYAN-SECTOR",
+            "material": "zoneCyan",
+            "pixels": [
+              [
+                850,
+                201
+              ],
+              [
+                955,
+                163
+              ],
+              [
+                1045,
+                189
+              ],
+              [
+                1165,
+                243
+              ],
+              [
+                1260,
+                297
+              ],
+              [
+                1332,
+                377
+              ],
+              [
+                1392,
+                420
+              ],
+              [
+                1340,
+                477
+              ],
+              [
+                1210,
+                405
+              ],
+              [
+                1035,
+                403
+              ],
+              [
+                956,
+                320
+              ],
+              [
+                877,
+                287
+              ]
+            ]
+          },
+          {
+            "id": "DEMO-SECTOR",
+            "material": "zoneGold",
+            "pixels": [
+              [
+                1035,
+                403
+              ],
+              [
+                1210,
+                405
+              ],
+              [
+                1358,
+                490
+              ],
+              [
+                1398,
+                591
+              ],
+              [
+                1276,
+                679
+              ],
+              [
+                1120,
+                621
+              ],
+              [
+                1010,
+                559
+              ],
+              [
+                956,
+                469
+              ]
+            ]
+          }
+        ],
+        "islands": [
+          [
+            554,
+            114,
+            45,
+            16
+          ],
+          [
+            637,
+            91,
+            37,
+            14
+          ],
+          [
+            717,
+            147,
+            48,
+            19
+          ],
+          [
+            801,
+            119,
+            23,
+            14
+          ],
+          [
+            751,
+            67,
+            37,
+            12
+          ],
+          [
+            858,
+            67,
+            22,
+            9
+          ],
+          [
+            944,
+            287,
+            18,
+            10
+          ],
+          [
+            992,
+            301,
+            22,
+            9
+          ],
+          [
+            1080,
+            714,
+            18,
+            10
+          ],
+          [
+            1208,
+            749,
+            25,
+            12
+          ],
+          [
+            1534,
+            737,
+            26,
+            11
+          ],
+          [
+            1650,
+            752,
+            39,
+            20
+          ],
+          [
+            1292,
+            752,
+            14,
+            8
+          ]
+        ],
+        "roads": [
+          {
+            "pixels": [
+              [
+                350,
+                375
+              ],
+              [
+                650,
+                305
+              ],
+              [
+                910,
+                222
+              ],
+              [
+                1000,
+                220
+              ],
+              [
+                1110,
+                240
+              ],
+              [
+                1250,
+                309
+              ],
+              [
+                1700,
+                260
+              ]
+            ],
+            "width": 22
+          },
+          {
+            "pixels": [
+              [
+                520,
+                1030
+              ],
+              [
+                710,
+                670
+              ],
+              [
+                866,
+                428
+              ],
+              [
+                960,
+                190
+              ],
+              [
+                1040,
+                -120
+              ]
+            ],
+            "width": 24,
+            "bridge": true
+          },
+          {
+            "pixels": [
+              [
+                650,
+                450
+              ],
+              [
+                920,
+                488
+              ],
+              [
+                1160,
+                566
+              ],
+              [
+                1490,
+                681
+              ],
+              [
+                1550,
+                650
+              ],
+              [
+                1750,
+                650
+              ],
+              [
+                1800,
+                675
+              ]
+            ],
+            "width": 20
+          },
+          {
+            "pixels": [
+              [
+                1000,
+                1030
+              ],
+              [
+                1150,
+                776
+              ],
+              [
+                1280,
+                563
+              ],
+              [
+                1410,
+                351
+              ],
+              [
+                1520,
+                90
+              ]
+            ],
+            "width": 22,
+            "bridge": true
+          }
+        ],
+        "campusPixel": [
+          1114,
+          513
+        ],
+        "poiPixels": {
+          "PARK-DEMO": [
+            1170,
+            416
+          ],
+          "INDUSTRY-DEMO": [
+            834,
+            347
+          ],
+          "SERVICE-DEMO": [
+            1480,
+            530
+          ]
+        },
+        "containedWaterIndices": [
+          3,
+          6
+        ],
+        "buildingGridPx": [
+          90,
+          88
+        ],
+        "greenPixels": [
+          [
+            [
+              701,
+              555
+            ],
+            [
+              810,
+              561
+            ],
+            [
+              1030,
+              640
+            ],
+            [
+              1030,
+              710
+            ],
+            [
+              880,
+              701
+            ],
+            [
+              730,
+              630
+            ]
+          ],
+          [
+            [
+              1005,
+              661
+            ],
+            [
+              1090,
+              653
+            ],
+            [
+              1350,
+              702
+            ],
+            [
+              1428,
+              756
+            ],
+            [
+              1355,
+              807
+            ],
+            [
+              1155,
+              786
+            ],
+            [
+              1010,
+              733
+            ]
+          ],
+          [
+            [
+              525,
+              376
+            ],
+            [
+              675,
+              332
+            ],
+            [
+              752,
+              361
+            ],
+            [
+              735,
+              418
+            ],
+            [
+              630,
+              466
+            ],
+            [
+              528,
+              434
+            ]
+          ],
+          [
+            [
+              819,
+              332
+            ],
+            [
+              950,
+              316
+            ],
+            [
+              1070,
+              365
+            ],
+            [
+              1015,
+              432
+            ],
+            [
+              874,
+              400
+            ]
+          ],
+          [
+            [
+              889,
+              163
+            ],
+            [
+              1027,
+              169
+            ],
+            [
+              1081,
+              217
+            ],
+            [
+              970,
+              245
+            ],
+            [
+              884,
+              220
+            ]
+          ],
+          [
+            [
+              552,
+              676
+            ],
+            [
+              673,
+              700
+            ],
+            [
+              733,
+              765
+            ],
+            [
+              660,
+              839
+            ],
+            [
+              522,
+              810
+            ]
+          ]
+        ],
+        "localRoadPixels": [
+          [
+            [
+              470,
+              490
+            ],
+            [
+              650,
+              450
+            ],
+            [
+              870,
+              460
+            ],
+            [
+              1035,
+              403
+            ]
+          ],
+          [
+            [
+              710,
+              670
+            ],
+            [
+              838,
+              560
+            ],
+            [
+              920,
+              488
+            ]
+          ],
+          [
+            [
+              920,
+              488
+            ],
+            [
+              956,
+              400
+            ],
+            [
+              1070,
+              365
+            ],
+            [
+              1250,
+              309
+            ]
+          ],
+          [
+            [
+              866,
+              428
+            ],
+            [
+              760,
+              385
+            ],
+            [
+              650,
+              305
+            ]
+          ],
+          [
+            [
+              1160,
+              566
+            ],
+            [
+              1210,
+              405
+            ],
+            [
+              1332,
+              377
+            ],
+            [
+              1410,
+              351
+            ]
+          ],
+          [
+            [
+              1280,
+              563
+            ],
+            [
+              1435,
+              555
+            ],
+            [
+              1600,
+              570
+            ]
+          ],
+          [
+            [
+              1134,
+              805
+            ],
+            [
+              1040,
+              780
+            ],
+            [
+              945,
+              730
+            ],
+            [
+              710,
+              670
+            ]
+          ],
+          [
+            [
+              1490,
+              681
+            ],
+            [
+              1560,
+              620
+            ],
+            [
+              1600,
+              570
+            ]
+          ]
+        ]
+      },
+      "geometryBudgetReason": "用户指出v13明显未还原设计；扩展连续城市覆盖并增加自然岸线、岛屿、分组楼宇与叶簇。预算随实际场景范围重新制定，仍须实测。",
+      "boundary": {
+        "bloomMix": 0.16,
+        "layers": [
+          {
+            "radius": 20,
+            "color": "#2aa7c1",
+            "opacity": 0.045,
+            "order": 1
+          },
+          {
+            "radius": 13,
+            "color": "#2aa7c1",
+            "opacity": 0.075,
+            "order": 2
+          },
+          {
+            "radius": 8,
+            "color": "#2aa7c1",
+            "opacity": 0.12,
+            "order": 3
+          },
+          {
+            "radius": 5.1,
+            "color": "#e2ffff",
+            "opacity": 1,
+            "order": 4
+          },
+          {
+            "radius": 3.3,
+            "color": "#007fa8",
+            "opacity": 1,
+            "order": 5
+          },
+          {
+            "radius": 3.1,
+            "color": "#44cfea",
+            "opacity": 1,
+            "emission": 4,
+            "glow": true,
+            "order": 4
+          }
+        ]
+      },
+      "context": {
+        "radiusM": 13000,
+        "districtPitchM": 1250,
+        "buildingsPerDistrict": 6,
+        "seed": 20201017,
+        "fogNearDistanceFactor": 1.5,
+        "fogDepthM": 11000,
+        "innerRadiusM": 1800,
+        "middleRadiusM": 6000,
+        "middleBuildingsPerDistrict": 24,
+        "middleTreesPerDistrict": 12
+      }
+    },
+    "campusEntry": {
+      "duration": 2.8,
+      "repeatDuration": 1.1,
+      "returnDuration": 0.6,
+      "reducedDuration": 0.15,
+      "maxStepSeconds": 0.1,
+      "locate": [
+        0,
+        0.25
+      ],
+      "approach": [
+        0.25,
+        1.05
+      ],
+      "handoff": [
+        1.05,
+        1.65
+      ],
+      "settle": [
+        1.05,
+        2.3
+      ],
+      "material": [
+        1.45,
+        2.3
+      ],
+      "panel": [
+        2.1,
+        2.8
+      ],
+      "cityPanel": [
+        0.25,
+        1.05
+      ],
+      "labels": [
+        [
+          2.05,
+          2.35
+        ],
+        [
+          2.2,
+          2.6
+        ],
+        [
+          2.35,
+          2.8
+        ]
+      ],
+      "kpiStagger": 0.12,
+      "targetHeightM": 25,
+      "handoffDistanceM": 950
+    }
+  }
+}

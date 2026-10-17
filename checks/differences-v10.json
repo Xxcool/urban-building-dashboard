@@ -1,0 +1,57 @@
+{
+  "version": "v10",
+  "viewport": "1280×720实际截图；1920×1080设计画布等比显示",
+  "conditions": "确认的两层B图保留原比例，不裁切、不修改。实际WebGL演示快照，A1选中、巡览关闭、该版固定相机。最终目标画布性能另见1920×1080有效实测记录；不将AI图当作测绘数据。",
+  "differences": [
+    {
+      "id": "V-08",
+      "expected": "园区后排三塔与前排五栋构图清晰，两层同一A1",
+      "actual": "八栋可见，A1三级退台裙房、21层塔楼，共24层；近景同一GLB",
+      "cause": "初版坐标与相机偏移",
+      "sourceChange": "v9调整唯一规划坐标和相机；当前保持",
+      "evidence": "production-spec-v11-landscape.md；assets-contract-v11.json；两层实际截图",
+      "result": "主要位置与结构问题已修复",
+      "next": "保持现有业务和模型身份"
+    },
+    {
+      "id": "V-05",
+      "expected": "蓝灰玻璃、青铜竖向构件、窗内层次",
+      "actual": "固定窗图集与真实竖向几何；近景仍有重复和静态反射",
+      "cause": "实时材质与固定图集的表现范围",
+      "sourceChange": "可重建的幕墙贴图输入及几何生成脚本",
+      "evidence": "design/material-generation-v1.json；building-detailed-v11-final.jpg",
+      "result": "主要材料特征具备；静态反射与重复作为表现限制保留",
+      "next": "不宣称照片级或像素级匹配"
+    },
+    {
+      "id": "V-06",
+      "expected": "自然叶簇代替粗球树冠",
+      "actual": "已替换透明叶簇，但树冠仍偏稀，中央景观略空",
+      "cause": "粗球树冠影响真实感；初版叶簇过稀",
+      "sourceChange": "固定透明叶簇输入、12片交叉卡、尺寸比例和中央6株；分层排除AO矩形投影",
+      "evidence": "design/foliage-generation-v1.json；foliage-orbit-v11.jpg；v10/v11截图",
+      "result": "需继续修复，下一版v11已扩大叶簇并补树",
+      "next": "见v11同相机对照，保留本版不足"
+    },
+    {
+      "id": "V-03",
+      "expected": "天空及叶簇无错误AO色块",
+      "actual": "天空使用背景纹理，透明植被不进入AO法线通道；保留正常阴影",
+      "cause": "天空几何和透明卡片进入GBuffer",
+      "sourceChange": "SceneView.js背景与GTAO渲染层控制",
+      "evidence": "两层v11-final截图；foliage-orbit-v11.jpg",
+      "result": "已修复已见伪影",
+      "next": "后续改材质时按相同相机复核"
+    },
+    {
+      "id": "U-02/P-03",
+      "expected": "底部安全区、缺失数据态、切换稳定",
+      "actual": "底部28.203125px；实际1920×1080同实例12轮切换，104几何/17纹理稳定，末次P95 32.4ms",
+      "cause": "初期底部拥挤、重复阴影更新及后台视口未生效",
+      "sourceChange": "布局安全区、静态阴影一次更新、同实例实际尺寸重新采证",
+      "evidence": "runtime-verification-v11-verified.json；layout-1920-v11-verified.json；viewport-diagnosis-v11.json",
+      "result": "当前环境检查通过；不外推展厅硬件和长时性能",
+      "next": "部署目标环境后再测硬件与长时运行"
+    }
+  ]
+}

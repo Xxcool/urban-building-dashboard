@@ -1,0 +1,39 @@
+{
+  "result": "passed",
+  "errors": [],
+  "planningSha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152",
+  "objects": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "B3",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "pickingPassed": 8,
+  "cycles": 12,
+  "resources": {
+    "geometries": 104.0,
+    "textures": 17.0,
+    "calls": 158.0,
+    "frameP95": 17.7,
+    "frames": 13764.0
+  },
+  "targetViewport": {
+    "height": 1080,
+    "width": 1920
+  },
+  "targetFinalStats": {
+    "geometries": 104.0,
+    "textures": 17.0,
+    "calls": 117.0,
+    "frameP95": 32.4,
+    "frames": 25394.0
+  },
+  "safeBottomPx": 28.203125,
+  "glbBytes": 6983532,
+  "modelTriangles": 35946,
+  "scope": "浏览器实际采集证据核对；不代替审美、目标硬件、长时运行或独立显存分析"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "path": "design/concepts/city/B-city-v1.png",
+    "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+  },
+  {
+    "path": "checks/city-final-v21.png",
+    "sha256": "7b46ee559f33a848ce4932e59175b2fb668f4008555dc0748366c4a18068ed67"
+  },
+  {
+    "path": "design/concepts/B-campus-v2.png",
+    "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+  },
+  {
+    "path": "checks/campus-final-v21.png",
+    "sha256": "2f3783f31d1f5d3d4a37f07122cf2e06f32ae1091853a97f94c3b69672373377"
+  },
+  {
+    "path": "design/concepts/B-building-v2r1.png",
+    "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+  },
+  {
+    "path": "checks/building-final-v21.png",
+    "sha256": "d1a5cc9d9b6bd68f0d7db1374ca7165a4b98a4494f6e1a01ee479bac97a33cf0"
+  },
+  {
+    "path": "checks/campus-C1-v19.png",
+    "sha256": "2bd2606195aab802c7c1411f0b9d9b4775b61abeda3911dbcaa29e3383785bc0"
+  },
+  {
+    "path": "checks/campus-C1-final-v21.png",
+    "sha256": "9d4b388de831cb55f52257c75c9abcfa95ba92bb3dc9b6b4656e81313d622fed"
+  },
+  {
+    "path": "checks/city-industry-final-v21.png",
+    "sha256": "a7e0f3e260b2825ec981fa172d44bd2f7e6d00b9d36e8b2b75c1d43dc910d440"
+  },
+  {
+    "path": "checks/city-services-final-v21.png",
+    "sha256": "4f5af37d9b03c88fc1e936a65d30436097b42331155fa11ed880f544b872acc4"
+  },
+  {
+    "path": "checks/city-zoomout-v20.png",
+    "sha256": "493f2b5b12fa851df7b4bcc691ae974b6f8cbcb2acdf20b4d13bbc681fc33961"
+  },
+  {
+    "path": "checks/campus-C1-empty-v21.png",
+    "sha256": "2929f40c677ee5c6cc7e5e02735ae0a198eefd9940e58a7a422e10e2e9d51b1f"
+  },
+  {
+    "path": "checks/campus-card-wide-v21.png",
+    "sha256": "c9479a867bc77070457a1c962d78893d5c701840da5c3b219047ad7d30cf4509"
+  },
+  {
+    "path": "checks/campus-card-small-v21.png",
+    "sha256": "7764013efb477a0813a156a002d28ce0eb6db89e7bc64f7f98e1c905f6c38a4d"
+  }
+]

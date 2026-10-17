@@ -1,0 +1,37 @@
+{
+  "version": "v8r2",
+  "viewport": "1280×720截图；1920×1080画布等比缩放",
+  "conditions": "锁定B-campus-v2与B-building-v2r1，不裁切、不拉伸基准；演示快照A1、巡览关闭，固定该版制作相机。新旧版本图片保留。",
+  "differences": [
+    {
+      "id": "E-02",
+      "expected": "AO开启后绘制调用≤350",
+      "actual": "1920目标视口实测约203次、P95约33.4ms",
+      "cause": "静态阴影反复计算",
+      "sourceChange": "只在模型载入后更新一次静态阴影",
+      "evidence": "target-performance-v8r2.json",
+      "result": "当前环境通过",
+      "next": "目标硬件与长时运行未测"
+    },
+    {
+      "id": "U-02",
+      "expected": "1080高画布底部至少28px安全距离",
+      "actual": "返回按钮边界由1058.8修正至1051.8，安全距离28.2px",
+      "cause": "组件纵向叠加占用略大",
+      "sourceChange": "回到CSS减少按钮上下内边距和上边距",
+      "evidence": "layout-1920-v8.json → layout-1920-v8r2.json",
+      "result": "已修复",
+      "next": "保留原截图审计"
+    },
+    {
+      "id": "I-02",
+      "expected": "进入和退出全屏有可观察状态",
+      "actual": "应用fullscreenchange驱动文案退出全屏/全屏展示",
+      "cause": "旧UI没有明确状态，DOM镜像属性不适合作判据",
+      "sourceChange": "添加全屏事件订阅、状态文案与不支持窗口提示",
+      "evidence": "fullscreen-v8r2.json",
+      "result": "已实际验证进出",
+      "next": "不声称覆盖所有浏览器或显示器"
+    }
+  ]
+}

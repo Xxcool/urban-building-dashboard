@@ -1,0 +1,47 @@
+{
+  "version": "v13-final",
+  "viewport": "1280×720完整网页截图；目标1920×1080投影/资源另采样",
+  "conditions": "沿用三个已确认B层级图，不裁切或更改基准。演示快照、默认相机；区域轮廓和点位为概念示意。v13a为优化前首版，最终版与历史不足分开。",
+  "differences": [
+    {
+      "id": "CITY-01",
+      "expected": "B-city-v1区域尺度，园区占小块，可逐层进入",
+      "actual": "独立区域LOD，同一8栋简化园区在区域中定位，地块/浮签/侧栏均可进入；原园区和A1详细GLB继续复用",
+      "cause": "原项目仅两层，需新增区域叙事",
+      "sourceChange": "planning/project.json production.city、build_city.py、CityView.js和三层统一level/mode",
+      "evidence": "city-gray-gate-v3.md；city-runtime-v13.json；三层最终截图",
+      "result": "范围与导航实现；不是实际武汉地理模型",
+      "next": "真实边界必须另用可核查数据，不从概念轮廓推导"
+    },
+    {
+      "id": "CITY-02",
+      "expected": "区域边界完整入镜，标签/指标不挤压",
+      "actual": "边界宽85.5%、高55.85%；3标签可见；1920×1080园区卡片底部正常32.20px、无数据31.20px",
+      "cause": "简化首版过挤，水面层高差不足",
+      "sourceChange": "相机距离、卡片纵向间距和地表深度间隔",
+      "evidence": "city-gray-v1/v2/v3.jpg；city-gray-target-v3.json；city-runtime-verification-v13.json",
+      "result": "主要构图和深度闪烁已修复",
+      "next": "新版本继续同条件复验"
+    },
+    {
+      "id": "CITY-03",
+      "expected": "暖白城市体块、低饱和景观、水系与青绿轮廓",
+      "actual": "实时模型具备道路、水面、建筑群、树林和园区金色地块；建筑/水面细节比AI简化，路网更规整，缺少AI自然岸线岛屿与反射层次",
+      "cause": "程序化示意资产和实时渲染细节规模",
+      "sourceChange": "平面道路合批、树冠共享顶点；不以图片代替三维",
+      "evidence": "city-detailed-v13a.jpg → city-detailed-v13-final.jpg；city-assets-contract-v13a/v13b/v13.json",
+      "result": "112822三角形，3.79MB满足8MB预算，19次绘制调用；保留视觉差异，不宣称照片级/像素级匹配",
+      "next": "后续如追求更高还原度，继续细化道路布局、岸线与景观，不改确认图"
+    },
+    {
+      "id": "CITY-04",
+      "expected": "三层相同数据模式、正确数据归属及运动生命周期",
+      "actual": "园区指标只取既有campus快照；缺失跨层保持，入口可用；隐藏园区车辆暂停，返回继续；12轮资源稳定",
+      "cause": "独立LOD不能产生第二套经营数据与对象状态",
+      "sourceChange": "单一level/mode驱动两渲染组件，场景只初次进入时加载；隐藏不绘制、不累积dt",
+      "evidence": "three-level-cycles-v13.json；city-runtime-verification-v13.json",
+      "result": "当前执行环境实测通过，目标设备和长时未覆盖",
+      "next": "部署后在目标展厅硬件测试"
+    }
+  ]
+}

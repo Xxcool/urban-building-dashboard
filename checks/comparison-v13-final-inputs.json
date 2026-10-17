@@ -1,0 +1,23 @@
+[
+  {
+    "level": "city",
+    "baseline": "design/concepts/city/B-city-v1.png",
+    "baselineSha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170",
+    "actual": "checks/city-detailed-v13-final.jpg",
+    "actualSha256": "56d71d35f87bc6778d103c5b5324537fc8e81c3d48c904d631131b3a434225bb"
+  },
+  {
+    "level": "campus",
+    "baseline": "design/concepts/B-campus-v2.png",
+    "baselineSha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264",
+    "actual": "checks/campus-detailed-v13-final.jpg",
+    "actualSha256": "723e4500521db357396d49445aa9123f9ebcc87b08f8caa6268babeadfd29efa"
+  },
+  {
+    "level": "building",
+    "baseline": "design/concepts/B-building-v2r1.png",
+    "baselineSha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4",
+    "actual": "checks/building-detailed-v13-final.jpg",
+    "actualSha256": "436cfcd1cb6dab034ec8855adeb03bab8dd76092d87e503ff2aa609292618337"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "result": "passed",
+  "errors": [],
+  "planningSha256": "b8fc99610edca0cf7251b499cfd0fccb6051d29d31bd30f6ddfffb49e35a63a3",
+  "levels": {
+    "city": {
+      "cycles": 12,
+      "geometries": 19,
+      "textures": 3,
+      "observedCallsRange": [
+        19,
+        19
+      ],
+      "observedP95RangeMs": [
+        17.0,
+        17.6
+      ]
+    },
+    "campus": {
+      "cycles": 12,
+      "geometries": 96,
+      "textures": 17,
+      "observedCallsRange": [
+        92,
+        234
+      ],
+      "observedP95RangeMs": [
+        16.8,
+        16.9
+      ]
+    },
+    "building": {
+      "cycles": 12,
+      "geometries": 96,
+      "textures": 17,
+      "observedCallsRange": [
+        154,
+        156
+      ],
+      "observedP95RangeMs": [
+        16.8,
+        17.2
+      ]
+    }
+  },
+  "safeBottomPx": {
+    "normal": 32.203125,
+    "missing": 31.203125
+  },
+  "cameraResetNormalizedError": 0.0,
+  "scope": "目标画布短时浏览器检查；首个园区样本含一次阴影冷启动234次调用，稳态调用另见原始记录；未覆盖硬件、长时或独立显存卸载分析"
+}

@@ -1,0 +1,2833 @@
+{
+  "schemaVersion": 3,
+  "workflow": "build-3d-visual-dashboard",
+  "stages": [
+    "research",
+    "concept",
+    "design",
+    "production",
+    "scene-check",
+    "runtime",
+    "review"
+  ],
+  "levels": [
+    "campus",
+    "building"
+  ],
+  "source": {
+    "path": "planning/project.json",
+    "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+  },
+  "currentStage": "done",
+  "records": {
+    "research": {
+      "status": "completed",
+      "levels": {},
+      "evidence": [
+        {
+          "path": "docs/research-and-brief-v1.md",
+          "sha256": "6cb0e8b7fa88f124926cca670878690fbb856cebb267b67278e7ef2d97a9ecda"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        }
+      ],
+      "summary": "复用既有调研与范围确认，无重新开展研究"
+    },
+    "concept": {
+      "status": "completed",
+      "levels": {
+        "campus": {
+          "artifact": {
+            "path": "design/concepts/B-campus-v2.png",
+            "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+          },
+          "evidence": [
+            {
+              "path": "docs/B-concept-approval.md",
+              "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+            },
+            {
+              "path": "docs/B-v2-review.md",
+              "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {},
+          "result": "passed",
+          "summary": "原图片哈希不变，复用真实两层概念确认",
+          "next": null,
+          "userDecision": "用户回复“可以”，覆盖前条两层B修订图；原始范围记录见docs/B-concept-approval.md；不代表最终页面验收",
+          "time": "2026-10-17T01:51:39.922152+00:00"
+        },
+        "building": {
+          "artifact": {
+            "path": "design/concepts/B-building-v2r1.png",
+            "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+          },
+          "evidence": [
+            {
+              "path": "docs/B-concept-approval.md",
+              "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+            },
+            {
+              "path": "docs/B-v2-review.md",
+              "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {},
+          "result": "passed",
+          "summary": "原图片哈希不变，复用真实两层概念确认",
+          "next": null,
+          "userDecision": "用户回复“可以”，覆盖前条两层B修订图；原始范围记录见docs/B-concept-approval.md；不代表最终页面验收",
+          "time": "2026-10-17T01:51:39.965402+00:00"
+        }
+      },
+      "evidence": [
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        }
+      ],
+      "summary": "两层原概念确认仍有效"
+    },
+    "design": {
+      "status": "completed",
+      "levels": {
+        "campus": {
+          "artifact": {
+            "path": "design/concepts/B-campus-v2.png",
+            "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+          },
+          "evidence": [
+            {
+              "path": "docs/design-review-v1.md",
+              "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+            },
+            {
+              "path": "design/screens/campus-no-data-design-v1.png",
+              "sha256": "c86ff0a54a91de0c7fe0294b3c8e7206c42b3f657cfb83cdb0d7ba395d205d39"
+            },
+            {
+              "path": "docs/production-spec-v11-landscape.md",
+              "sha256": "8bf69cd148b2183a5ef69e56a396cd4148e5e14d8fa64b3d91b4439f13b46870"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            }
+          },
+          "result": "passed",
+          "summary": "正常整屏复用已确认稿，补齐无数据态与制作契约；无新增用户批准声明",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.055943+00:00"
+        },
+        "building": {
+          "artifact": {
+            "path": "design/concepts/B-building-v2r1.png",
+            "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+          },
+          "evidence": [
+            {
+              "path": "docs/design-review-v1.md",
+              "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+            },
+            {
+              "path": "design/screens/building-no-data-design-v1.png",
+              "sha256": "a8a1d81530bcc4361ea0da471f89c283f3d16f3f664e21e0e189ba5a4f73288e"
+            },
+            {
+              "path": "docs/production-spec-v11-landscape.md",
+              "sha256": "8bf69cd148b2183a5ef69e56a396cd4148e5e14d8fa64b3d91b4439f13b46870"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            }
+          },
+          "result": "passed",
+          "summary": "正常整屏复用已确认稿，补齐无数据态与制作契约；无新增用户批准声明",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.106112+00:00"
+        }
+      },
+      "evidence": [
+        {
+          "path": "docs/design-review-v1.md",
+          "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+        },
+        {
+          "path": "docs/production-spec-v11-landscape.md",
+          "sha256": "8bf69cd148b2183a5ef69e56a396cd4148e5e14d8fa64b3d91b4439f13b46870"
+        }
+      ],
+      "summary": "两层整屏与主要状态已检查，保留原基准"
+    },
+    "production": {
+      "status": "completed",
+      "levels": {
+        "campus": {
+          "artifact": {
+            "path": "app/public/assets/campus.glb",
+            "sha256": "634106d3f732647b87f607708ef480d74f42bf53147b0f2a9ce5a029bae6cf10"
+          },
+          "evidence": [
+            {
+              "path": "assets/manifest.json",
+              "sha256": "4c0e388e0cc6eec6004829845552f5c225cae626107e9740c2b48926e8f32aff"
+            },
+            {
+              "path": "checks/campus-detailed-v11-final.jpg",
+              "sha256": "5c80e64c3d90dd1cfd8ae5ad4ca2e9a3ff6e5ea1472e8444f244023269eceae5"
+            },
+            {
+              "path": "checks/comparison-v11-final.html",
+              "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+            },
+            {
+              "path": "docs/production-verification-v11.md",
+              "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            },
+            "design": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            }
+          },
+          "result": "passed",
+          "summary": "两层同GLB、真实层数结构和材料已导出；实时渲染差异保留于对照",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.369727+00:00"
+        },
+        "building": {
+          "artifact": {
+            "path": "app/public/assets/campus.glb",
+            "sha256": "634106d3f732647b87f607708ef480d74f42bf53147b0f2a9ce5a029bae6cf10"
+          },
+          "evidence": [
+            {
+              "path": "assets/manifest.json",
+              "sha256": "4c0e388e0cc6eec6004829845552f5c225cae626107e9740c2b48926e8f32aff"
+            },
+            {
+              "path": "checks/building-detailed-v11-final.jpg",
+              "sha256": "ab28ba6716182f87c0daf09aa7193f1177b6454d53b7564d71bdba9f9fa151f7"
+            },
+            {
+              "path": "checks/comparison-v11-final.html",
+              "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+            },
+            {
+              "path": "docs/production-verification-v11.md",
+              "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            },
+            "design": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            }
+          },
+          "result": "passed",
+          "summary": "两层同GLB、真实层数结构和材料已导出；实时渲染差异保留于对照",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.429302+00:00"
+        }
+      },
+      "evidence": [
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        },
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        }
+      ],
+      "summary": "制作与导出复验完成，实际模型可重建"
+    },
+    "scene-check": {
+      "status": "completed",
+      "levels": {
+        "campus": {
+          "artifact": {
+            "path": "checks/campus-detailed-v11-final.jpg",
+            "sha256": "5c80e64c3d90dd1cfd8ae5ad4ca2e9a3ff6e5ea1472e8444f244023269eceae5"
+          },
+          "evidence": [
+            {
+              "path": "checks/assets-contract-v11.json",
+              "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+            },
+            {
+              "path": "checks/mesh-picking-v11-final.json",
+              "sha256": "7e8b24d875dd152c013de9ea5c4408d55ae44bf30b6d2a055dd2ad366c295d6f"
+            },
+            {
+              "path": "checks/comparison-v11-final.html",
+              "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            },
+            "design": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            }
+          },
+          "result": "passed",
+          "summary": "实际网页加载、绑定、材料构图逐版对照完成，简化远景差异明确",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.549751+00:00"
+        },
+        "building": {
+          "artifact": {
+            "path": "checks/building-detailed-v11-final.jpg",
+            "sha256": "ab28ba6716182f87c0daf09aa7193f1177b6454d53b7564d71bdba9f9fa151f7"
+          },
+          "evidence": [
+            {
+              "path": "checks/assets-contract-v11.json",
+              "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+            },
+            {
+              "path": "checks/mesh-picking-v11-final.json",
+              "sha256": "7e8b24d875dd152c013de9ea5c4408d55ae44bf30b6d2a055dd2ad366c295d6f"
+            },
+            {
+              "path": "checks/comparison-v11-final.html",
+              "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            },
+            "design": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            }
+          },
+          "result": "passed",
+          "summary": "实际网页加载、绑定、材料构图逐版对照完成，简化远景差异明确",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.609646+00:00"
+        }
+      },
+      "evidence": [
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        },
+        {
+          "path": "checks/comparison-v11-final.html",
+          "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+        }
+      ],
+      "summary": "两层网页加载与实体绑定通过"
+    },
+    "runtime": {
+      "status": "completed",
+      "levels": {
+        "campus": {
+          "artifact": {
+            "path": "checks/campus-no-data-v11-final.jpg",
+            "sha256": "014b89d2cb27bfd4fbd55eec886c61ca6e06a7cbbd79f9a29d810b99d63c2181"
+          },
+          "evidence": [
+            {
+              "path": "checks/no-data-v11-final.json",
+              "sha256": "05f257cd95e70e8d0bb5e5fc2a6601160a23de159ff95ea7c08354d42593a279"
+            },
+            {
+              "path": "checks/cycles-performance-v11-verified.json",
+              "sha256": "3b980c1d3a5a0295041bd9ff1b9f71a1a9e2950b5b46777dd0a7b16a496785fc"
+            },
+            {
+              "path": "checks/layout-1920-v11-verified.json",
+              "sha256": "06711fc95aba63678494d16f4b20a9e83d51ac68a90ba5322f5447ae5cdb2dcc"
+            },
+            {
+              "path": "docs/runtime-review-v11.md",
+              "sha256": "9eac79dd0b9126183475cf9948997313c4fb994cd807961f295f18ce9f630890"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            },
+            "design": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            }
+          },
+          "result": "passed",
+          "summary": "同状态源驱动，缺失值与已知身份分离，目标尺寸同实例12轮切换实测",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.732290+00:00"
+        },
+        "building": {
+          "artifact": {
+            "path": "checks/building-no-data-v11-final.jpg",
+            "sha256": "5aab420f512e611f11b76a649aead8c932fe1218ff180c790ec3d030d8114680"
+          },
+          "evidence": [
+            {
+              "path": "checks/no-data-v11-final.json",
+              "sha256": "05f257cd95e70e8d0bb5e5fc2a6601160a23de159ff95ea7c08354d42593a279"
+            },
+            {
+              "path": "checks/cycles-performance-v11-verified.json",
+              "sha256": "3b980c1d3a5a0295041bd9ff1b9f71a1a9e2950b5b46777dd0a7b16a496785fc"
+            },
+            {
+              "path": "checks/layout-1920-v11-verified.json",
+              "sha256": "06711fc95aba63678494d16f4b20a9e83d51ac68a90ba5322f5447ae5cdb2dcc"
+            },
+            {
+              "path": "docs/runtime-review-v11.md",
+              "sha256": "9eac79dd0b9126183475cf9948997313c4fb994cd807961f295f18ce9f630890"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            },
+            "design": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            }
+          },
+          "result": "passed",
+          "summary": "同状态源驱动，缺失值与已知身份分离，目标尺寸同实例12轮切换实测",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.794283+00:00"
+        }
+      },
+      "evidence": [
+        {
+          "path": "docs/runtime-review-v11.md",
+          "sha256": "9eac79dd0b9126183475cf9948997313c4fb994cd807961f295f18ce9f630890"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "summary": "约定演示范围联调完成；硬件长时和显存独立分析未覆盖"
+    },
+    "review": {
+      "status": "completed",
+      "levels": {
+        "campus": {
+          "artifact": {
+            "path": "docs/campus-review-v11.md",
+            "sha256": "208d08a5b27ea4d2b3dc7749d42df8b3ac851fec3b078c8492dd9de5db12aa20"
+          },
+          "evidence": [
+            {
+              "path": "checks/campus-detailed-v11-final.jpg",
+              "sha256": "5c80e64c3d90dd1cfd8ae5ad4ca2e9a3ff6e5ea1472e8444f244023269eceae5"
+            },
+            {
+              "path": "checks/comparison-v11-final.html",
+              "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+            },
+            {
+              "path": "checks/rebuild-v11.json",
+              "sha256": "a7bb126c002f960921c6a8b9ac497e5245faccd952606da8eaf9d8eb04acd37c"
+            },
+            {
+              "path": "checks/runtime-verification-v11-verified.json",
+              "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+            },
+            {
+              "path": "docs/verification-v11.md",
+              "sha256": "025e89601a5d6bbadeffc1f6a9c36fe15ca6e83fa8390ef350158ff76fd6596b"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            },
+            "design": {
+              "path": "design/concepts/B-campus-v2.png",
+              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            }
+          },
+          "result": "passed",
+          "summary": "可运行示范交付检查完成；保留AI与实时画面差异，不等于用户最终审美验收",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.918158+00:00"
+        },
+        "building": {
+          "artifact": {
+            "path": "docs/building-review-v11.md",
+            "sha256": "457b714e97a46ff826fc51e8383ba92315fd75865a9d1baad6cff8a15e5f1dc1"
+          },
+          "evidence": [
+            {
+              "path": "checks/building-detailed-v11-final.jpg",
+              "sha256": "ab28ba6716182f87c0daf09aa7193f1177b6454d53b7564d71bdba9f9fa151f7"
+            },
+            {
+              "path": "checks/comparison-v11-final.html",
+              "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+            },
+            {
+              "path": "checks/rebuild-v11.json",
+              "sha256": "a7bb126c002f960921c6a8b9ac497e5245faccd952606da8eaf9d8eb04acd37c"
+            },
+            {
+              "path": "checks/runtime-verification-v11-verified.json",
+              "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+            },
+            {
+              "path": "docs/verification-v11.md",
+              "sha256": "025e89601a5d6bbadeffc1f6a9c36fe15ca6e83fa8390ef350158ff76fd6596b"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            },
+            "design": {
+              "path": "design/concepts/B-building-v2r1.png",
+              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            }
+          },
+          "result": "passed",
+          "summary": "可运行示范交付检查完成；保留AI与实时画面差异，不等于用户最终审美验收",
+          "next": null,
+          "userDecision": null,
+          "time": "2026-10-17T01:51:40.981337+00:00"
+        }
+      },
+      "evidence": [
+        {
+          "path": "docs/verification-v11.md",
+          "sha256": "025e89601a5d6bbadeffc1f6a9c36fe15ca6e83fa8390ef350158ff76fd6596b"
+        },
+        {
+          "path": "checks/rebuild-v11.json",
+          "sha256": "a7bb126c002f960921c6a8b9ac497e5245faccd952606da8eaf9d8eb04acd37c"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "summary": "本次可运行示范版阶段范围完成；源码重建通过，照片级还原、用户最终视觉验收、目标硬件与长时测试不在通过声明中"
+    }
+  },
+  "issues": {
+    "C-01": {
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.686594+00:00"
+    },
+    "C-03": {
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.763294+00:00"
+    },
+    "C-02": {
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.724992+00:00"
+    },
+    "C-04": {
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.801748+00:00"
+    },
+    "C-06": {
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.840447+00:00"
+    },
+    "C-07": {
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.879883+00:00"
+    },
+    "P-01": {
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "简化模型先验证构图；最终模型、八栋拾取与当前环境12轮切换复验，未覆盖硬件和长时范围见报告",
+      "evidence": [
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        },
+        {
+          "path": "checks/gray-composition-review-v2.md",
+          "sha256": "024b6c29468f32f90db5e5d0e2a05f06c5c712c3df05d8abb510bfffcfdd9ca8"
+        },
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:40.205684+00:00"
+    },
+    "P-02": {
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "简化模型先验证构图；最终模型、八栋拾取与当前环境12轮切换复验，未覆盖硬件和长时范围见报告",
+      "evidence": [
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        },
+        {
+          "path": "checks/gray-composition-review-v2.md",
+          "sha256": "024b6c29468f32f90db5e5d0e2a05f06c5c712c3df05d8abb510bfffcfdd9ca8"
+        },
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:40.255070+00:00"
+    },
+    "P-03": {
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "简化模型先验证构图；最终模型、八栋拾取与当前环境12轮切换复验，未覆盖硬件和长时范围见报告",
+      "evidence": [
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        },
+        {
+          "path": "checks/gray-composition-review-v2.md",
+          "sha256": "024b6c29468f32f90db5e5d0e2a05f06c5c712c3df05d8abb510bfffcfdd9ca8"
+        },
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:40.305948+00:00"
+    }
+  },
+  "history": [
+    {
+      "event": "initialized",
+      "time": "2026-10-15T06:23:52.462700+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-15T06:23:59.207405+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-01",
+      "stage": "concept",
+      "level": "campus",
+      "result": "failed",
+      "change": "概念图中第八栋身份未清楚呈现，产业比例和部分楼宇属性由AI补出，尚未纳入规划口径",
+      "evidence": [
+        {
+          "path": "docs/concept-review-v1.md",
+          "sha256": "372920c7025a6aeafce2363352345989f9928c78fcf4b906389d676c41326de9"
+        },
+        {
+          "path": "design/concepts/A-campus-v1.png",
+          "sha256": "f410d4b194f0e92badf3b0354cb6ec2f2f2b498fafcb519f3717de5d44a739e5"
+        },
+        {
+          "path": "design/concepts/B-campus-v1.png",
+          "sha256": "5a476027be08a65d0c432ff854250be733aeea9ca0087caff661b711804b0ade"
+        }
+      ],
+      "next": "用户选择视觉方向后修订对象构图与数据定义，再生成并核对设计基准",
+      "time": "2026-10-15T06:29:49.263141+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-03",
+      "stage": "concept",
+      "level": "building",
+      "result": "failed",
+      "change": "深色近景建筑高度字段误用层数且补出了竣工年份，跨图楼层与裙房形态仍有漂移",
+      "evidence": [
+        {
+          "path": "docs/concept-review-v1.md",
+          "sha256": "372920c7025a6aeafce2363352345989f9928c78fcf4b906389d676c41326de9"
+        },
+        {
+          "path": "design/concepts/A-building-v1.png",
+          "sha256": "6c175a7e33c0d0c4fcfcc297d7c7bfadaae261c875c9de66cfb70d72b0b7e394"
+        },
+        {
+          "path": "design/concepts/B-building-v1.png",
+          "sha256": "290750c727f4bb6c4b2a8d65244857d3ec22e09d431b86f2a6a09af057190ab2"
+        }
+      ],
+      "next": "确认风格后修订文字与建筑固定形态，复验同一对象的跨层一致性",
+      "time": "2026-10-15T06:29:49.308092+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-01",
+      "stage": "concept",
+      "level": "campus",
+      "result": "failed",
+      "change": "重新查看原图后，八栋指标与场景中可明确核对的七个标签未对齐；实体缺失还是遮挡仍待验证",
+      "evidence": [
+        {
+          "path": "docs/concept-review-v2.md",
+          "sha256": "9b7056c19be3179181802871ab99fa2a23723e19516296cdd485f047044ed8c7"
+        }
+      ],
+      "next": "选定风格后统一对象关系与构图，逐栋核对实体、标签和面板",
+      "time": "2026-10-15T06:36:55.023889+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-02",
+      "stage": "concept",
+      "level": "campus",
+      "result": "failed",
+      "change": "总览产业比例和部分楼宇属性由AI补出，尚无统一定义",
+      "evidence": [
+        {
+          "path": "docs/concept-review-v2.md",
+          "sha256": "9b7056c19be3179181802871ab99fa2a23723e19516296cdd485f047044ed8c7"
+        }
+      ],
+      "next": "补齐统计口径与演示对象定义后修订提示词重新生成并核对",
+      "time": "2026-10-15T06:36:55.065753+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-03",
+      "stage": "concept",
+      "level": "building",
+      "result": "failed",
+      "change": "A近景建筑高度误用层数并补出未定义年份，空间利用条的标题和单位不匹配",
+      "evidence": [
+        {
+          "path": "docs/concept-review-v2.md",
+          "sha256": "9b7056c19be3179181802871ab99fa2a23723e19516296cdd485f047044ed8c7"
+        }
+      ],
+      "next": "按规划口径修正文案、面积与比例，重生成后核对",
+      "time": "2026-10-15T06:36:55.105181+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-04",
+      "stage": "concept",
+      "level": "building",
+      "result": "failed",
+      "change": "A1在总览与近景的宽高比、立面分格、退台及邻接关系尚未统一",
+      "evidence": [
+        {
+          "path": "docs/concept-review-v2.md",
+          "sha256": "9b7056c19be3179181802871ab99fa2a23723e19516296cdd485f047044ed8c7"
+        }
+      ],
+      "next": "风格确认后收敛同一建筑身份，建模前用规格和逐层相机验证一致空间解释",
+      "time": "2026-10-15T06:36:55.142391+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-06",
+      "stage": "concept",
+      "level": "building",
+      "result": "failed",
+      "change": "入驻企业面板仅展示产业类别，标题与内容粒度尚未对齐",
+      "evidence": [
+        {
+          "path": "docs/concept-review-v2.md",
+          "sha256": "9b7056c19be3179181802871ab99fa2a23723e19516296cdd485f047044ed8c7"
+        }
+      ],
+      "next": "整屏设计时匹配标题与实际内容，演示对象仅从规划源派生",
+      "time": "2026-10-15T06:36:55.179748+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "c72b741f00b299acde7436d707e65737d138d469e8b75500e3f4620b64b0d445"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "f1f95fb3e01cc8b1ab1fdf0b8385db68b088a56349ff2ff71e6b24c025c61093"
+      },
+      "time": "2026-10-15T06:41:58.153487+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "用户授权修订B方案概念图；补齐示范对象身份、文字口径和同一建筑约束，不改变已确认项目范围",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/research-and-brief-v1.md",
+              "sha256": "6cb0e8b7fa88f124926cca670878690fbb856cebb267b67278e7ef2d97a9ecda"
+            }
+          ],
+          "summary": "用户已确认地域背景、示范方案、两层范围、招商汇报用途、1080p画布，并要求比较两个概念方向"
+        },
+        "concept": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "design": {
+          "status": "pending",
+          "levels": {}
+        },
+        "production": {
+          "status": "pending",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        },
+        "review": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-15T06:41:58.153572+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-15T06:41:58.300136+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-01",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "B总览v2实际可核对八栋独立主体及对应ID，关闭本概念分支的数量与可见性问题",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T02:59:27.337201+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-02",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "B总览v2移除未定义产业统计占比，按规划展示三类示范产业方向",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T02:59:27.384910+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-03",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "B近景v2r1字段与单位正确，24层及已租3.6/可租4.0/空置0.4万㎡与90%一致",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T02:59:27.431890+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-04",
+      "stage": "concept",
+      "level": "building",
+      "result": "failed",
+      "change": "B修订两层保有共同A1建筑特征，但精确层数、立面与裙房几何及相机关系尚未经统一三维验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      ],
+      "next": "用户确认后在整屏基准与制作规格中固定几何，网页简化模型验证相机、锚点和UI占位后复验",
+      "time": "2026-10-16T02:59:27.481926+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-06",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "B近景v2r1产业类别模块改为入驻产业，与企业总数KPI区分",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T02:59:27.534796+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-07",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "B近景v2比例条不精确，已通过内置生图局部修订为v2r1的纯文字出租率行，面积与其他模块保持",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T02:59:27.590924+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "f1f95fb3e01cc8b1ab1fdf0b8385db68b088a56349ff2ff71e6b24c025c61093"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d"
+      },
+      "time": "2026-10-16T03:22:12.216804+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "记录用户对B两层实际图片的确认并补整屏布局与状态契约，已有图像及范围保持",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/revision-B-v2-scope.md",
+              "sha256": "7f85610d6d5100b2eb95fa919f7429599a4d825a27b6f23449f5eeb22d9f7a2a"
+            },
+            {
+              "path": "docs/research-and-brief-v1.md",
+              "sha256": "6cb0e8b7fa88f124926cca670878690fbb856cebb267b67278e7ef2d97a9ecda"
+            }
+          ],
+          "summary": "按用户要求沿用已有研究与范围确认，仅补B概念修订设定；未重做调研，未批准视觉"
+        },
+        "concept": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "design": {
+          "status": "pending",
+          "levels": {}
+        },
+        "production": {
+          "status": "pending",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        },
+        "review": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-16T03:22:12.216880+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-16T03:22:12.256466+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-01",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "复核B总览八栋及标签仍正确",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T03:49:21.023819+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-02",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "复核产业方向无未定义占比",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T03:49:21.067859+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-03",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "复核已确认B近景字段、面积与比例口径正确",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T03:49:21.107283+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-06",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "复核入驻产业标题与内容对应",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T03:49:21.146539+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-07",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "复核最终近景没有误差比例条",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T03:49:21.184636+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-04",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "用户已确认两层概念身份；精确几何与相机验证移交production-open-items.md的P-01，本条仅关闭概念阻塞，不声称工程验证通过",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T03:49:21.222404+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+      },
+      "evidence": [
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "已展示实际图片，用户确认本层B视觉；工程问题按制作交接验证",
+      "next": null,
+      "userDecision": "用户在两层B修订图展示与确认问题后回复：可以。见docs/B-concept-approval.md",
+      "time": "2026-10-16T03:49:21.313565+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+      },
+      "evidence": [
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "已展示实际图片，用户确认本层B视觉；工程问题按制作交接验证",
+      "next": null,
+      "userDecision": "用户在两层B修订图展示与确认问题后回复：可以。见docs/B-concept-approval.md",
+      "time": "2026-10-16T03:49:21.358298+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-16T03:49:21.401631+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+      },
+      "time": "2026-10-16T04:08:40.465838+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "锁定正常/无数据整屏基准并补制作估计规格，既有用户确认继续有效",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/research-and-brief-v1.md",
+              "sha256": "6cb0e8b7fa88f124926cca670878690fbb856cebb267b67278e7ef2d97a9ecda"
+            },
+            {
+              "path": "docs/revision-B-v2-scope.md",
+              "sha256": "7f85610d6d5100b2eb95fa919f7429599a4d825a27b6f23449f5eeb22d9f7a2a"
+            },
+            {
+              "path": "docs/B-concept-approval.md",
+              "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+            }
+          ],
+          "summary": "沿用既有业务范围与调研，用户已确认B两层方向；不重复调研"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "campus": {
+              "artifact": {
+                "path": "design/concepts/B-campus-v2.png",
+                "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+              },
+              "evidence": [
+                {
+                  "path": "docs/B-concept-approval.md",
+                  "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+                },
+                {
+                  "path": "docs/B-v2-review.md",
+                  "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "已展示实际图片，用户确认本层B视觉；工程问题按制作交接验证",
+              "next": null,
+              "userDecision": "用户在两层B修订图展示与确认问题后回复：可以。见docs/B-concept-approval.md",
+              "time": "2026-10-16T03:49:21.313565+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/concepts/B-building-v2r1.png",
+                "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+              },
+              "evidence": [
+                {
+                  "path": "docs/B-concept-approval.md",
+                  "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+                },
+                {
+                  "path": "docs/B-v2-review.md",
+                  "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "已展示实际图片，用户确认本层B视觉；工程问题按制作交接验证",
+              "next": null,
+              "userDecision": "用户在两层B修订图展示与确认问题后回复：可以。见docs/B-concept-approval.md",
+              "time": "2026-10-16T03:49:21.358298+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/B-concept-approval.md",
+              "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+            },
+            {
+              "path": "docs/B-v2-review.md",
+              "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+            }
+          ],
+          "summary": "B两层实际图片获用户确认，固定哈希，进入整屏设计"
+        },
+        "design": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "production": {
+          "status": "pending",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        },
+        "review": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-16T04:08:40.465919+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-16T04:08:40.506918+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-01",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "原确认图片与修订事实复核仍有效；C-04工程部分移交P-01，本条不证明模型或投影通过",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T04:08:40.544022+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-02",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "原确认图片与修订事实复核仍有效；C-04工程部分移交P-01，本条不证明模型或投影通过",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T04:08:40.580715+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-03",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "原确认图片与修订事实复核仍有效；C-04工程部分移交P-01，本条不证明模型或投影通过",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T04:08:40.617642+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-04",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "原确认图片与修订事实复核仍有效；C-04工程部分移交P-01，本条不证明模型或投影通过",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T04:08:40.654831+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-06",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "原确认图片与修订事实复核仍有效；C-04工程部分移交P-01，本条不证明模型或投影通过",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T04:08:40.692224+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-07",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "原确认图片与修订事实复核仍有效；C-04工程部分移交P-01，本条不证明模型或投影通过",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-16T04:08:40.729540+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+      },
+      "evidence": [
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "同一图片哈希，真实概念确认继续有效",
+      "next": null,
+      "userDecision": "用户回复可以，覆盖前条两层B修订图；见B-concept-approval.md",
+      "time": "2026-10-16T04:08:40.769571+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+      },
+      "evidence": [
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "同一图片哈希，真实概念确认继续有效",
+      "next": null,
+      "userDecision": "用户回复可以，覆盖前条两层B修订图；见B-concept-approval.md",
+      "time": "2026-10-16T04:08:40.811767+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-16T04:08:40.852925+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+      },
+      "evidence": [
+        {
+          "path": "docs/design-review-v1.md",
+          "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+        },
+        {
+          "path": "design/screens/campus-no-data-design-v1.png",
+          "sha256": "c86ff0a54a91de0c7fe0294b3c8e7206c42b3f657cfb83cdb0d7ba395d205d39"
+        },
+        {
+          "path": "docs/production-spec-v1.md",
+          "sha256": "b5c202f1a7d28ec493863de246117605ef379f243d0f73678616340c88685295"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        }
+      },
+      "result": "passed",
+      "summary": "复用确认正常画面，已实际查看无数据态，布局与状态契约可用于制作",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-16T04:08:40.899020+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+      },
+      "evidence": [
+        {
+          "path": "docs/design-review-v1.md",
+          "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+        },
+        {
+          "path": "design/screens/building-no-data-design-v1.png",
+          "sha256": "a8a1d81530bcc4361ea0da471f89c283f3d16f3f664e21e0e189ba5a4f73288e"
+        },
+        {
+          "path": "docs/production-spec-v1.md",
+          "sha256": "b5c202f1a7d28ec493863de246117605ef379f243d0f73678616340c88685295"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      },
+      "result": "passed",
+      "summary": "复用确认正常画面，已实际查看无数据态，布局与状态契约可用于制作",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-16T04:08:40.949150+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-16T04:08:40.996715+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "P-01",
+      "stage": "production",
+      "level": "campus",
+      "result": "failed",
+      "change": "相机与尺寸为制作估计，八栋和UI占位尚需网页简化模型实测",
+      "evidence": [
+        {
+          "path": "docs/production-spec-v1.md",
+          "sha256": "b5c202f1a7d28ec493863de246117605ef379f243d0f73678616340c88685295"
+        },
+        {
+          "path": "docs/production-open-items.md",
+          "sha256": "163998a1b5df28cdcd2574e79b9c345c4ca349b69c279b50fccfcab6605ba101"
+        }
+      ],
+      "next": "生成简化GLB，在1920x1080及缩小视口核对投影与标签",
+      "time": "2026-10-16T04:08:41.044521+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "time": "2026-10-17T01:51:39.598698+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "确认后的制作规格、相机、材质及运行联调已迭代到v11；既有调研和用户概念决定保持，现按实际证据重新登记",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/research-and-brief-v1.md",
+              "sha256": "6cb0e8b7fa88f124926cca670878690fbb856cebb267b67278e7ef2d97a9ecda"
+            },
+            {
+              "path": "docs/B-concept-approval.md",
+              "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+            }
+          ],
+          "summary": "复用既有调研与有效范围确认"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "campus": {
+              "artifact": {
+                "path": "design/concepts/B-campus-v2.png",
+                "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+              },
+              "evidence": [
+                {
+                  "path": "docs/B-concept-approval.md",
+                  "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+                },
+                {
+                  "path": "docs/B-v2-review.md",
+                  "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "同一图片哈希，真实概念确认继续有效",
+              "next": null,
+              "userDecision": "用户回复可以，覆盖前条两层B修订图；见B-concept-approval.md",
+              "time": "2026-10-16T04:08:40.769571+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/concepts/B-building-v2r1.png",
+                "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+              },
+              "evidence": [
+                {
+                  "path": "docs/B-concept-approval.md",
+                  "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+                },
+                {
+                  "path": "docs/B-v2-review.md",
+                  "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "同一图片哈希，真实概念确认继续有效",
+              "next": null,
+              "userDecision": "用户回复可以，覆盖前条两层B修订图；见B-concept-approval.md",
+              "time": "2026-10-16T04:08:40.811767+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/B-concept-approval.md",
+              "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+            }
+          ],
+          "summary": "两层B概念已确认，进入整屏设计"
+        },
+        "design": {
+          "status": "completed",
+          "levels": {
+            "campus": {
+              "artifact": {
+                "path": "design/concepts/B-campus-v2.png",
+                "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+              },
+              "evidence": [
+                {
+                  "path": "docs/design-review-v1.md",
+                  "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+                },
+                {
+                  "path": "design/screens/campus-no-data-design-v1.png",
+                  "sha256": "c86ff0a54a91de0c7fe0294b3c8e7206c42b3f657cfb83cdb0d7ba395d205d39"
+                },
+                {
+                  "path": "docs/production-spec-v1.md",
+                  "sha256": "b5c202f1a7d28ec493863de246117605ef379f243d0f73678616340c88685295"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                }
+              },
+              "result": "passed",
+              "summary": "复用确认正常画面，已实际查看无数据态，布局与状态契约可用于制作",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-16T04:08:40.899020+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/concepts/B-building-v2r1.png",
+                "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+              },
+              "evidence": [
+                {
+                  "path": "docs/design-review-v1.md",
+                  "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+                },
+                {
+                  "path": "design/screens/building-no-data-design-v1.png",
+                  "sha256": "a8a1d81530bcc4361ea0da471f89c283f3d16f3f664e21e0e189ba5a4f73288e"
+                },
+                {
+                  "path": "docs/production-spec-v1.md",
+                  "sha256": "b5c202f1a7d28ec493863de246117605ef379f243d0f73678616340c88685295"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a8d612858f99aba501f336ed27804ee63e2cde071c771ac849329a417e4a3a6"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                }
+              },
+              "result": "passed",
+              "summary": "复用确认正常画面，已实际查看无数据态，布局与状态契约可用于制作",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-16T04:08:40.949150+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/design-review-v1.md",
+              "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+            },
+            {
+              "path": "docs/production-spec-v1.md",
+              "sha256": "b5c202f1a7d28ec493863de246117605ef379f243d0f73678616340c88685295"
+            }
+          ],
+          "summary": "两层整屏基准、无数据状态、交互与制作估计规格已固定；开始简化模型构图验证"
+        },
+        "production": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        },
+        "review": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-17T01:51:39.598791+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-17T01:51:39.646408+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-01",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.686594+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-02",
+      "stage": "concept",
+      "level": "campus",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.724992+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-03",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.763294+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-04",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.801748+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-06",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.840447+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C-07",
+      "stage": "concept",
+      "level": "building",
+      "result": "passed",
+      "change": "确认图片和用户概念决定保持；工程结构、相机与性能由制作复验独立验证",
+      "evidence": [
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        },
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:39.879883+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+      },
+      "evidence": [
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "原图片哈希不变，复用真实两层概念确认",
+      "next": null,
+      "userDecision": "用户回复“可以”，覆盖前条两层B修订图；原始范围记录见docs/B-concept-approval.md；不代表最终页面验收",
+      "time": "2026-10-17T01:51:39.922152+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+      },
+      "evidence": [
+        {
+          "path": "docs/B-concept-approval.md",
+          "sha256": "1453d6eb4e837060691c2b46bc8abbbd83961a572abfab83c87e591d63a59364"
+        },
+        {
+          "path": "docs/B-v2-review.md",
+          "sha256": "e93d7fdd6beac1adc3eeddc448761830affab064b30db168ed61f95edc8b7cc4"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "原图片哈希不变，复用真实两层概念确认",
+      "next": null,
+      "userDecision": "用户回复“可以”，覆盖前条两层B修订图；原始范围记录见docs/B-concept-approval.md；不代表最终页面验收",
+      "time": "2026-10-17T01:51:39.965402+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-17T01:51:40.007993+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+      },
+      "evidence": [
+        {
+          "path": "docs/design-review-v1.md",
+          "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+        },
+        {
+          "path": "design/screens/campus-no-data-design-v1.png",
+          "sha256": "c86ff0a54a91de0c7fe0294b3c8e7206c42b3f657cfb83cdb0d7ba395d205d39"
+        },
+        {
+          "path": "docs/production-spec-v11-landscape.md",
+          "sha256": "8bf69cd148b2183a5ef69e56a396cd4148e5e14d8fa64b3d91b4439f13b46870"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        }
+      },
+      "result": "passed",
+      "summary": "正常整屏复用已确认稿，补齐无数据态与制作契约；无新增用户批准声明",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.055943+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+      },
+      "evidence": [
+        {
+          "path": "docs/design-review-v1.md",
+          "sha256": "6c21b473de3f90d45bed4ffe2e4ec44293af0dee4ff6f240caf712daeab199bb"
+        },
+        {
+          "path": "design/screens/building-no-data-design-v1.png",
+          "sha256": "a8a1d81530bcc4361ea0da471f89c283f3d16f3f664e21e0e189ba5a4f73288e"
+        },
+        {
+          "path": "docs/production-spec-v11-landscape.md",
+          "sha256": "8bf69cd148b2183a5ef69e56a396cd4148e5e14d8fa64b3d91b4439f13b46870"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      },
+      "result": "passed",
+      "summary": "正常整屏复用已确认稿，补齐无数据态与制作契约；无新增用户批准声明",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.106112+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-17T01:51:40.155154+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "P-01",
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "简化模型先验证构图；最终模型、八栋拾取与当前环境12轮切换复验，未覆盖硬件和长时范围见报告",
+      "evidence": [
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        },
+        {
+          "path": "checks/gray-composition-review-v2.md",
+          "sha256": "024b6c29468f32f90db5e5d0e2a05f06c5c712c3df05d8abb510bfffcfdd9ca8"
+        },
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:40.205684+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "P-02",
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "简化模型先验证构图；最终模型、八栋拾取与当前环境12轮切换复验，未覆盖硬件和长时范围见报告",
+      "evidence": [
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        },
+        {
+          "path": "checks/gray-composition-review-v2.md",
+          "sha256": "024b6c29468f32f90db5e5d0e2a05f06c5c712c3df05d8abb510bfffcfdd9ca8"
+        },
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:40.255070+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "P-03",
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "简化模型先验证构图；最终模型、八栋拾取与当前环境12轮切换复验，未覆盖硬件和长时范围见报告",
+      "evidence": [
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        },
+        {
+          "path": "checks/gray-composition-review-v2.md",
+          "sha256": "024b6c29468f32f90db5e5d0e2a05f06c5c712c3df05d8abb510bfffcfdd9ca8"
+        },
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T01:51:40.305948+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "campus",
+      "artifact": {
+        "path": "app/public/assets/campus.glb",
+        "sha256": "634106d3f732647b87f607708ef480d74f42bf53147b0f2a9ce5a029bae6cf10"
+      },
+      "evidence": [
+        {
+          "path": "assets/manifest.json",
+          "sha256": "4c0e388e0cc6eec6004829845552f5c225cae626107e9740c2b48926e8f32aff"
+        },
+        {
+          "path": "checks/campus-detailed-v11-final.jpg",
+          "sha256": "5c80e64c3d90dd1cfd8ae5ad4ca2e9a3ff6e5ea1472e8444f244023269eceae5"
+        },
+        {
+          "path": "checks/comparison-v11-final.html",
+          "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        "design": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        }
+      },
+      "result": "passed",
+      "summary": "两层同GLB、真实层数结构和材料已导出；实时渲染差异保留于对照",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.369727+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "building",
+      "artifact": {
+        "path": "app/public/assets/campus.glb",
+        "sha256": "634106d3f732647b87f607708ef480d74f42bf53147b0f2a9ce5a029bae6cf10"
+      },
+      "evidence": [
+        {
+          "path": "assets/manifest.json",
+          "sha256": "4c0e388e0cc6eec6004829845552f5c225cae626107e9740c2b48926e8f32aff"
+        },
+        {
+          "path": "checks/building-detailed-v11-final.jpg",
+          "sha256": "ab28ba6716182f87c0daf09aa7193f1177b6454d53b7564d71bdba9f9fa151f7"
+        },
+        {
+          "path": "checks/comparison-v11-final.html",
+          "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+        },
+        {
+          "path": "docs/production-verification-v11.md",
+          "sha256": "dca1ec20552baa607c061d435baafe7e838e69cb1b21101a74a3d12544748c58"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        },
+        "design": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      },
+      "result": "passed",
+      "summary": "两层同GLB、真实层数结构和材料已导出；实时渲染差异保留于对照",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.429302+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "production",
+      "time": "2026-10-17T01:51:40.488759+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "scene-check",
+      "level": "campus",
+      "artifact": {
+        "path": "checks/campus-detailed-v11-final.jpg",
+        "sha256": "5c80e64c3d90dd1cfd8ae5ad4ca2e9a3ff6e5ea1472e8444f244023269eceae5"
+      },
+      "evidence": [
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/mesh-picking-v11-final.json",
+          "sha256": "7e8b24d875dd152c013de9ea5c4408d55ae44bf30b6d2a055dd2ad366c295d6f"
+        },
+        {
+          "path": "checks/comparison-v11-final.html",
+          "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        "design": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        }
+      },
+      "result": "passed",
+      "summary": "实际网页加载、绑定、材料构图逐版对照完成，简化远景差异明确",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.549751+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "scene-check",
+      "level": "building",
+      "artifact": {
+        "path": "checks/building-detailed-v11-final.jpg",
+        "sha256": "ab28ba6716182f87c0daf09aa7193f1177b6454d53b7564d71bdba9f9fa151f7"
+      },
+      "evidence": [
+        {
+          "path": "checks/assets-contract-v11.json",
+          "sha256": "756a5617fa3b38b2b55acc49a28f0837f905aaf79af2ee95761a35d59bcf2aed"
+        },
+        {
+          "path": "checks/mesh-picking-v11-final.json",
+          "sha256": "7e8b24d875dd152c013de9ea5c4408d55ae44bf30b6d2a055dd2ad366c295d6f"
+        },
+        {
+          "path": "checks/comparison-v11-final.html",
+          "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        },
+        "design": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      },
+      "result": "passed",
+      "summary": "实际网页加载、绑定、材料构图逐版对照完成，简化远景差异明确",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.609646+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "scene-check",
+      "time": "2026-10-17T01:51:40.669955+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "runtime",
+      "level": "campus",
+      "artifact": {
+        "path": "checks/campus-no-data-v11-final.jpg",
+        "sha256": "014b89d2cb27bfd4fbd55eec886c61ca6e06a7cbbd79f9a29d810b99d63c2181"
+      },
+      "evidence": [
+        {
+          "path": "checks/no-data-v11-final.json",
+          "sha256": "05f257cd95e70e8d0bb5e5fc2a6601160a23de159ff95ea7c08354d42593a279"
+        },
+        {
+          "path": "checks/cycles-performance-v11-verified.json",
+          "sha256": "3b980c1d3a5a0295041bd9ff1b9f71a1a9e2950b5b46777dd0a7b16a496785fc"
+        },
+        {
+          "path": "checks/layout-1920-v11-verified.json",
+          "sha256": "06711fc95aba63678494d16f4b20a9e83d51ac68a90ba5322f5447ae5cdb2dcc"
+        },
+        {
+          "path": "docs/runtime-review-v11.md",
+          "sha256": "9eac79dd0b9126183475cf9948997313c4fb994cd807961f295f18ce9f630890"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        "design": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        }
+      },
+      "result": "passed",
+      "summary": "同状态源驱动，缺失值与已知身份分离，目标尺寸同实例12轮切换实测",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.732290+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "runtime",
+      "level": "building",
+      "artifact": {
+        "path": "checks/building-no-data-v11-final.jpg",
+        "sha256": "5aab420f512e611f11b76a649aead8c932fe1218ff180c790ec3d030d8114680"
+      },
+      "evidence": [
+        {
+          "path": "checks/no-data-v11-final.json",
+          "sha256": "05f257cd95e70e8d0bb5e5fc2a6601160a23de159ff95ea7c08354d42593a279"
+        },
+        {
+          "path": "checks/cycles-performance-v11-verified.json",
+          "sha256": "3b980c1d3a5a0295041bd9ff1b9f71a1a9e2950b5b46777dd0a7b16a496785fc"
+        },
+        {
+          "path": "checks/layout-1920-v11-verified.json",
+          "sha256": "06711fc95aba63678494d16f4b20a9e83d51ac68a90ba5322f5447ae5cdb2dcc"
+        },
+        {
+          "path": "docs/runtime-review-v11.md",
+          "sha256": "9eac79dd0b9126183475cf9948997313c4fb994cd807961f295f18ce9f630890"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        },
+        "design": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      },
+      "result": "passed",
+      "summary": "同状态源驱动，缺失值与已知身份分离，目标尺寸同实例12轮切换实测",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.794283+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "runtime",
+      "time": "2026-10-17T01:51:40.855275+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "review",
+      "level": "campus",
+      "artifact": {
+        "path": "docs/campus-review-v11.md",
+        "sha256": "208d08a5b27ea4d2b3dc7749d42df8b3ac851fec3b078c8492dd9de5db12aa20"
+      },
+      "evidence": [
+        {
+          "path": "checks/campus-detailed-v11-final.jpg",
+          "sha256": "5c80e64c3d90dd1cfd8ae5ad4ca2e9a3ff6e5ea1472e8444f244023269eceae5"
+        },
+        {
+          "path": "checks/comparison-v11-final.html",
+          "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+        },
+        {
+          "path": "checks/rebuild-v11.json",
+          "sha256": "a7bb126c002f960921c6a8b9ac497e5245faccd952606da8eaf9d8eb04acd37c"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        },
+        {
+          "path": "docs/verification-v11.md",
+          "sha256": "025e89601a5d6bbadeffc1f6a9c36fe15ca6e83fa8390ef350158ff76fd6596b"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        },
+        "design": {
+          "path": "design/concepts/B-campus-v2.png",
+          "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+        }
+      },
+      "result": "passed",
+      "summary": "可运行示范交付检查完成；保留AI与实时画面差异，不等于用户最终审美验收",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.918158+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "review",
+      "level": "building",
+      "artifact": {
+        "path": "docs/building-review-v11.md",
+        "sha256": "457b714e97a46ff826fc51e8383ba92315fd75865a9d1baad6cff8a15e5f1dc1"
+      },
+      "evidence": [
+        {
+          "path": "checks/building-detailed-v11-final.jpg",
+          "sha256": "ab28ba6716182f87c0daf09aa7193f1177b6454d53b7564d71bdba9f9fa151f7"
+        },
+        {
+          "path": "checks/comparison-v11-final.html",
+          "sha256": "6514a89393b9093f82ec3e8baeba7325a24022ed617dd5e11e9f9c917d9e3f38"
+        },
+        {
+          "path": "checks/rebuild-v11.json",
+          "sha256": "a7bb126c002f960921c6a8b9ac497e5245faccd952606da8eaf9d8eb04acd37c"
+        },
+        {
+          "path": "checks/runtime-verification-v11-verified.json",
+          "sha256": "4769b185194933c6874503d99c5b50774bcc743ded7c269a6e2b967b38f17039"
+        },
+        {
+          "path": "docs/verification-v11.md",
+          "sha256": "025e89601a5d6bbadeffc1f6a9c36fe15ca6e83fa8390ef350158ff76fd6596b"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        },
+        "design": {
+          "path": "design/concepts/B-building-v2r1.png",
+          "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+        }
+      },
+      "result": "passed",
+      "summary": "可运行示范交付检查完成；保留AI与实时画面差异，不等于用户最终审美验收",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T01:51:40.981337+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "review",
+      "time": "2026-10-17T01:51:41.044189+00:00"
+    }
+  ]
+}

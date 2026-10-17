@@ -1,0 +1,42 @@
+{
+  "result": "failed",
+  "errors": [
+    "画布尺寸不匹配",
+    "画布尺寸不匹配"
+  ],
+  "planningSha256": "621e73d39886ea16ca9bd7608c0dcf530940ec5b16c1429bd4ecb6a122e97152",
+  "objects": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "B3",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "pickingPassed": 8,
+  "cycles": 12,
+  "resources": {
+    "geometries": 104.0,
+    "textures": 17.0,
+    "calls": 158.0,
+    "frameP95": 26.7,
+    "frames": 14849.0
+  },
+  "targetViewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "targetFinalStats": {
+    "geometries": 104.0,
+    "textures": 17.0,
+    "calls": 85.0,
+    "frameP95": 26.7,
+    "frames": 20326.0
+  },
+  "safeBottomPx": 380.46875,
+  "glbBytes": 6983532,
+  "modelTriangles": 35946,
+  "scope": "浏览器实际采集证据核对；不代替审美、目标硬件、长时运行或独立显存分析"
+}

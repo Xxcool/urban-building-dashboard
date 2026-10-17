@@ -1,0 +1,89 @@
+{
+  "A-campus-v1": {
+    "path": "design/concepts/A-campus-v1.png",
+    "sha256": "f410d4b194f0e92badf3b0354cb6ec2f2f2b498fafcb519f3717de5d44a739e5",
+    "actualPixelSize": [
+      1672,
+      941
+    ],
+    "targetViewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-648edff3-f7c8-47b4-807a-34aa1a2352a9.png",
+    "tool": "image_gen.imagegen",
+    "requestFile": "design/concepts/generation-requests-v1.json",
+    "userApproval": "pending",
+    "referenceInputs": []
+  },
+  "B-campus-v1": {
+    "path": "design/concepts/B-campus-v1.png",
+    "sha256": "5a476027be08a65d0c432ff854250be733aeea9ca0087caff661b711804b0ade",
+    "actualPixelSize": [
+      1672,
+      941
+    ],
+    "targetViewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-2f270521-9a33-45d9-9765-34d692ef9126.png",
+    "tool": "image_gen.imagegen",
+    "requestFile": "design/concepts/generation-requests-v1.json",
+    "userApproval": "pending",
+    "referenceInputs": [
+      {
+        "path": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/design/concepts/A-campus-v1.png",
+        "sha256": "f410d4b194f0e92badf3b0354cb6ec2f2f2b498fafcb519f3717de5d44a739e5"
+      }
+    ]
+  },
+  "A-building-v1": {
+    "path": "design/concepts/A-building-v1.png",
+    "sha256": "6c175a7e33c0d0c4fcfcc297d7c7bfadaae261c875c9de66cfb70d72b0b7e394",
+    "actualPixelSize": [
+      1672,
+      941
+    ],
+    "targetViewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-311c094e-ee29-4308-9f3d-febc3659ce27.png",
+    "tool": "image_gen.imagegen",
+    "requestFile": "design/concepts/generation-requests-v1.json",
+    "userApproval": "pending",
+    "referenceInputs": [
+      {
+        "path": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/design/concepts/A-campus-v1.png",
+        "sha256": "f410d4b194f0e92badf3b0354cb6ec2f2f2b498fafcb519f3717de5d44a739e5"
+      }
+    ]
+  },
+  "B-building-v1": {
+    "path": "design/concepts/B-building-v1.png",
+    "sha256": "290750c727f4bb6c4b2a8d65244857d3ec22e09d431b86f2a6a09af057190ab2",
+    "actualPixelSize": [
+      1672,
+      941
+    ],
+    "targetViewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-10d8a7e8-72d5-4103-9a49-006b1fc948b7.png",
+    "tool": "image_gen.imagegen",
+    "requestFile": "design/concepts/generation-requests-v1.json",
+    "userApproval": "pending",
+    "referenceInputs": [
+      {
+        "path": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/design/concepts/B-campus-v1.png",
+        "sha256": "5a476027be08a65d0c432ff854250be733aeea9ca0087caff661b711804b0ade"
+      },
+      {
+        "path": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/design/concepts/A-building-v1.png",
+        "sha256": "6c175a7e33c0d0c4fcfcc297d7c7bfadaae261c875c9de66cfb70d72b0b7e394"
+      }
+    ]
+  }
+}

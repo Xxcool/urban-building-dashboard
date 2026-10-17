@@ -1,0 +1,37 @@
+{
+  "version": "v4",
+  "viewport": "1280×720，1920×1080画布等比缩放",
+  "conditions": "初次细化后复核，默认园区/A1近景，演示快照；使用该版制作相机，无自动巡览。",
+  "differences": [
+    {
+      "id": "V-01",
+      "expected": "中性日光下建筑、景观清楚",
+      "actual": "v1偏白，v4减曝光并补180棵庭院树；蓝灰幕墙层次仍少",
+      "cause": "环境反射偏平、材质缺纹理",
+      "sourceChange": "降低曝光，增加冠层簇和屋顶种植",
+      "evidence": "campus-detailed-v1.jpg → campus-detailed-v4.jpg",
+      "result": "局部改善",
+      "next": "继续补材质细节"
+    },
+    {
+      "id": "V-02",
+      "expected": "近景低视点完整展示三级退台",
+      "actual": "近景俯视偏高",
+      "cause": "相机高度/目标点偏离基准",
+      "sourceChange": "后续v5/v6降低眼点，缩小翼片厚度",
+      "evidence": "building-detailed-v4.jpg",
+      "result": "待后版复验",
+      "next": "保持同一几何校准相机"
+    },
+    {
+      "id": "E-01",
+      "expected": "绘制调用≤350",
+      "actual": "454次描边渲染变为167次",
+      "cause": "全场景描边额外绘制过多",
+      "sourceChange": "按同源规格创建少量EdgesGeometry",
+      "evidence": "performance-v6.txt及后续性能记录",
+      "result": "v4技术优化已实测",
+      "next": "新增AO后重新测量"
+    }
+  ]
+}

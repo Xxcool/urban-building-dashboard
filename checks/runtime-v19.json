@@ -1,0 +1,208 @@
+{
+  "version": "v19",
+  "metrics": [
+    {
+      "card": "×\n\n楼宇概览\n\nB1 次要塔楼\n模型高度\n84 m\n建筑面积\n4.2 万㎡\n出租率\n88 %\n入驻企业\n38 家",
+      "left": "B1 次要塔楼\n已选楼宇\n\n20 层 · 4.2 万㎡\n\n出租率 88% · 入驻企业 38 家",
+      "level": "campus",
+      "selected": "B1"
+    },
+    {
+      "card": "×\n\n楼宇概览\n\nB2 次要塔楼\n模型高度\n76 m\n建筑面积\n3.6 万㎡\n出租率\n86 %\n入驻企业\n32 家",
+      "left": "B2 次要塔楼\n已选楼宇\n\n18 层 · 3.6 万㎡\n\n出租率 86% · 入驻企业 32 家",
+      "level": "campus",
+      "selected": "B2"
+    },
+    {
+      "card": "×\n\n楼宇概览\n\nA2 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.2 万㎡\n出租率\n80 %\n入驻企业\n18 家",
+      "left": "A2 低层研发办公楼\n已选楼宇\n\n5 层 · 2.2 万㎡\n\n出租率 80% · 入驻企业 18 家",
+      "level": "campus",
+      "selected": "A2"
+    },
+    {
+      "card": "×\n\n楼宇概览\n\nB3 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.2 万㎡\n出租率\n82 %\n入驻企业\n18 家",
+      "left": "B3 低层研发办公楼\n已选楼宇\n\n5 层 · 2.2 万㎡\n\n出租率 82% · 入驻企业 18 家",
+      "level": "campus",
+      "selected": "B3"
+    },
+    {
+      "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n82 %\n入驻企业\n22 家",
+      "left": "C1 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 82% · 入驻企业 22 家",
+      "level": "campus",
+      "selected": "C1"
+    },
+    {
+      "card": "×\n\n楼宇概览\n\nC2 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.4 万㎡\n出租率\n84 %\n入驻企业\n24 家",
+      "left": "C2 低层研发办公楼\n已选楼宇\n\n5 层 · 2.4 万㎡\n\n出租率 84% · 入驻企业 24 家",
+      "level": "campus",
+      "selected": "C2"
+    },
+    {
+      "card": "×\n\n楼宇概览\n\nC3 低层研发办公楼\n模型高度\n21 m\n建筑面积\n2.2 万㎡\n出租率\n69 %\n入驻企业\n22 家",
+      "left": "C3 低层研发办公楼\n已选楼宇\n\n5 层 · 2.2 万㎡\n\n出租率 69% · 入驻企业 22 家",
+      "level": "campus",
+      "selected": "C3"
+    }
+  ],
+  "missing": {
+    "card": "×\n\n楼宇概览\n\nC1 低层研发办公楼\n模型高度\n21 m\n建筑面积\n—\n出租率\n—\n入驻企业\n—",
+    "left": "C1 低层研发办公楼\n已选楼宇\n\n— 层 · — 万㎡\n\n出租率 — · 入驻企业 — 家",
+    "mode": "no-data"
+  },
+  "a1": {
+    "level": "building",
+    "metrics": "24\n层\n\n楼层数\n\n4.8\n万㎡\n\n建筑面积\n\n90\n%\n\n出租率\n\n42\n家\n\n入驻企业",
+    "selected": "A1"
+  },
+  "returning": {
+    "boundary": 1,
+    "camera": [
+      1100,
+      2800,
+      2720
+    ],
+    "cameraProgress": 1,
+    "city": 0.7422209849108367,
+    "done": false,
+    "elapsed": 0.3,
+    "labels": 0.7422209849108367,
+    "material": 1,
+    "panel": 1,
+    "park": 1,
+    "playing": true,
+    "pulse": 0,
+    "returning": true
+  },
+  "entrance": [
+    {
+      "phase": "city",
+      "boundary": 0,
+      "camera": [
+        1165.3751430846826,
+        2966.4094551246467,
+        2881.6548992639423
+      ],
+      "cameraProgress": 0.009467529019958051,
+      "city": 0.2229659672499907,
+      "done": false,
+      "elapsed": 0.183,
+      "labels": 0,
+      "material": 0,
+      "panel": 0,
+      "park": 0,
+      "playing": true,
+      "pulse": 0,
+      "returning": false
+    },
+    {
+      "phase": "boundary",
+      "boundary": 0.001660429760932648,
+      "camera": [
+        1152.4348323220393,
+        2933.4704822742815,
+        2849.657039923588
+      ],
+      "cameraProgress": 0.2055328436054676,
+      "city": 1,
+      "done": false,
+      "elapsed": 0.933,
+      "labels": 0,
+      "material": 0.4168449972592554,
+      "panel": 0.0949780843323605,
+      "park": 0,
+      "playing": true,
+      "pulse": 0,
+      "returning": false
+    },
+    {
+      "phase": "park",
+      "boundary": 0.9156623443884804,
+      "camera": [
+        1119.448054772396,
+        2849.5041394206446,
+        2768.0897354371978
+      ],
+      "cameraProgress": 0.7053325034485448,
+      "city": 1,
+      "done": false,
+      "elapsed": 2.05,
+      "labels": 0,
+      "material": 1,
+      "panel": 0.632453147093747,
+      "park": 0.011186564457028746,
+      "playing": true,
+      "pulse": 0.06237499999999287,
+      "returning": false
+    },
+    {
+      "phase": "complete",
+      "boundary": 1,
+      "camera": [
+        1100,
+        2800,
+        2720
+      ],
+      "cameraProgress": 1,
+      "city": 1,
+      "done": true,
+      "elapsed": 3.233,
+      "labels": 1,
+      "material": 1,
+      "panel": 1,
+      "park": 1,
+      "playing": false,
+      "pulse": 0,
+      "returning": false
+    }
+  ],
+  "resourcesBeforeOptimization": [
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：78\n\n每帧提交三角形：775709\n\n几何：41 · 纹理：27\n\n帧间隔 P95：50.1 ms · 已渲染 2352 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：81\n\n每帧提交三角形：776093\n\n几何：41 · 纹理：27\n\n帧间隔 P95：50.2 ms · 已渲染 2442 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：78\n\n每帧提交三角形：775709\n\n几何：41 · 纹理：27\n\n帧间隔 P95：50.3 ms · 已渲染 2557 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：78\n\n每帧提交三角形：775709\n\n几何：41 · 纹理：27\n\n帧间隔 P95：50.3 ms · 已渲染 2641 帧\n\n层级：city · 选择：PARK-DEMO"
+  ],
+  "resourcesAfterHalfAo": [
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：78\n\n每帧提交三角形：775709\n\n几何：41 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 1564 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：81\n\n每帧提交三角形：776093\n\n几何：41 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 2262 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：81\n\n每帧提交三角形：776093\n\n几何：41 · 纹理：27\n\n帧间隔 P95：49.9 ms · 已渲染 2373 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：81\n\n每帧提交三角形：776093\n\n几何：41 · 纹理：27\n\n帧间隔 P95：50 ms · 已渲染 2477 帧\n\n层级：city · 选择：PARK-DEMO"
+  ],
+  "resourcesFinal": [
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：47\n\n每帧提交三角形：390852\n\n几何：41 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 1732 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：47\n\n每帧提交三角形：390852\n\n几何：41 · 纹理：27\n\n帧间隔 P95：34.2 ms · 已渲染 1862 帧\n\n层级：city · 选择：PARK-DEMO",
+    "场景信息\n\n资产：city.glb · detailed\n\n版本：c528c5618781 · 模型三角形：357749\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：47\n\n每帧提交三角形：390852\n\n几何：41 · 纹理：27\n\n帧间隔 P95：34.1 ms · 已渲染 1991 帧\n\n层级：city · 选择：PARK-DEMO"
+  ],
+  "viewport": {
+    "bounds": {
+      "bottom": 0.8926673888595404,
+      "left": 0.12764729180834378,
+      "right": 0.8581282278041582,
+      "top": 0.1477151933551597
+    },
+    "camera": [
+      1100,
+      2800,
+      2720
+    ],
+    "rect": {
+      "bottom": 951,
+      "height": 951,
+      "left": 0.0032958984375,
+      "right": 2047.9967041015625,
+      "top": 0,
+      "width": 2047.993408203125,
+      "x": 0.0032958984375,
+      "y": 0
+    },
+    "viewport": {
+      "height": 951,
+      "width": 2048
+    }
+  },
+  "console": [],
+  "notCovered": [
+    "实际系统减少动态效果设置切换",
+    "目标大屏硬件",
+    "长时压力测试"
+  ]
+}

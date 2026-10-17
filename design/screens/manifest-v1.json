@@ -1,0 +1,50 @@
+{
+  "campus-no-data-design-v1": {
+    "path": "design/screens/campus-no-data-design-v1.png",
+    "sha256": "c86ff0a54a91de0c7fe0294b3c8e7206c42b3f657cfb83cdb0d7ba395d205d39",
+    "actualPixelSize": [
+      1672,
+      941
+    ],
+    "targetViewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-d2c66599-6e99-47b7-a0eb-1409991f93a6.png",
+    "tool": "image_gen.imagegen",
+    "requestFile": "design/screens/generation-requests-v1.json",
+    "requestSha256": "31b30a8eeb1dbcd67852f6b1175df2cc6a20cb7e5645c26d7b174500d7f26bcb",
+    "planningSha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d",
+    "userApproval": "pending",
+    "referenceInputs": [
+      {
+        "path": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/design/concepts/B-campus-v2.png",
+        "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+      }
+    ]
+  },
+  "building-no-data-design-v1": {
+    "path": "design/screens/building-no-data-design-v1.png",
+    "sha256": "a8a1d81530bcc4361ea0da471f89c283f3d16f3f664e21e0e189ba5a4f73288e",
+    "actualPixelSize": [
+      1672,
+      941
+    ],
+    "targetViewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourceOutput": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-b6e92f3c-8a38-4d36-b53a-5db54a45d3e4.png",
+    "tool": "image_gen.imagegen",
+    "requestFile": "design/screens/generation-requests-v1.json",
+    "requestSha256": "dc0b0142d3c17a7fc49d40ab2e54b062aa1fd1ee36e566016c6c5a33e7631f0b",
+    "planningSha256": "de20a56d01c5a5820c407ec19dc717c9fc1f9c8dd31c91792d1445181d26292d",
+    "userApproval": "pending",
+    "referenceInputs": [
+      {
+        "path": "/Users/xiabin/Documents/Codex/2026-10-15/new-chat-2/outputs/gaoxin-digital-building/design/concepts/B-building-v2r1.png",
+        "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+      }
+    ]
+  }
+}

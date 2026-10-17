@@ -1,0 +1,67 @@
+{
+  "cityStats": "场景信息\n\n资产：city.glb · detailed\n\n版本：b3d6b606264d · 模型三角形：112822\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：19\n\n每帧提交三角形：112822\n\n几何：19 · 纹理：3\n\n帧间隔 P95：17.6 ms · 已渲染 1736 帧\n\n层级：city · 选择：PARK-DEMO",
+  "meshPick": {
+    "canvases": 2,
+    "level": "campus",
+    "selection": "A1",
+    "traffic": {
+      "count": 18,
+      "first": {
+        "heading": 0,
+        "position": [
+          -112.52879999999982,
+          -171.5,
+          0
+        ]
+      },
+      "seconds": 10.184
+    }
+  },
+  "cityNoData": {
+    "disclaimer": "区域轮廓、路网与点位为概念示意，非测绘成果",
+    "entryEnabled": true,
+    "level": "city",
+    "metrics": "—\n\n楼宇数\n\n—\n\n建筑面积\n\n—\n\n出租率\n\n—\n\n入驻企业",
+    "mode": "no-data"
+  },
+  "targetNormal": {
+    "bounds": {
+      "bottom": 0.8624869587319961,
+      "left": 0.04663108968121521,
+      "right": 0.901587155298317,
+      "top": 0.30403281039025976
+    },
+    "safeBottom": 32.203125,
+    "trafficPausedSample": "{\"seconds\":21.007,\"count\":18,\"first\":{\"position\":[-25.9408000000019,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  "targetMissing": {
+    "metrics": "—\n\n楼宇数\n\n—\n\n建筑面积\n\n—\n\n出租率\n\n—\n\n入驻企业",
+    "mode": "no-data",
+    "safeBottom": 31.203125,
+    "trafficPausedSample": "{\"seconds\":21.007,\"count\":18,\"first\":{\"position\":[-25.9408000000019,-171.5,0],\"heading\":0}}",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  "missingPersistsToCampus": {
+    "kpis": "—\n\n楼宇总数\n\n—\n\n建筑面积\n\n—\n\n出租率\n\n—\n\n入驻企业",
+    "level": "campus",
+    "mode": "no-data"
+  },
+  "missingPersistsToBuilding": {
+    "kpis": "—\n\n楼层数\n\n—\n\n建筑面积\n\n—\n\n出租率\n\n—\n\n入驻企业",
+    "level": "building",
+    "mode": "no-data"
+  },
+  "buildingReturn": "campus",
+  "controls": {
+    "before": "{\"INDUSTRY-DEMO\":{\"x\":0.3239993627612765,\"y\":0.3807931396077815,\"visible\":true},\"PARK-DEMO\":{\"x\":0.595340754218337,\"y\":0.5349438344080688,\"visible\":true},\"SERVICE-DEMO\":{\"x\":0.7908161791469097,\"y\":0.7106189353397677,\"visible\":true}}",
+    "rotated": "{\"INDUSTRY-DEMO\":{\"x\":0.2766265356514067,\"y\":0.4828833992291383,\"visible\":true},\"PARK-DEMO\":{\"x\":0.6203539567698511,\"y\":0.4624967398965637,\"visible\":true},\"SERVICE-DEMO\":{\"x\":0.8413834259376081,\"y\":0.4925332331387297,\"visible\":true}}",
+    "reset": "{\"INDUSTRY-DEMO\":{\"x\":0.32376790843728,\"y\":0.3812561949314122,\"visible\":true},\"PARK-DEMO\":{\"x\":0.595807678350605,\"y\":0.534364412472534,\"visible\":true},\"SERVICE-DEMO\":{\"x\":0.7918173819646326,\"y\":0.7091284674559184,\"visible\":true}}"
+  }
+}

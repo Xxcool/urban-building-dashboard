@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>B方案逐版对照 v9</title><style>
+body{margin:0;padding:28px;background:#f4f3ee;color:#123b40;font:15px/1.7 system-ui,sans-serif}h1{font-size:28px}h2{margin-top:32px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:white;border:1px solid #d7e1df;border-radius:8px;overflow:hidden}img{display:block;width:100%;height:auto}figcaption{padding:10px 14px}table{border-collapse:collapse;width:100%;background:#fffefa}th,td{padding:12px;border:1px solid #cfdbd7;vertical-align:top;min-width:100px}.table{overflow:auto}pre{white-space:pre-wrap;word-break:break-all;font-size:12px}@media(max-width:800px){.pair{grid-template-columns:1fr}}
+</style><h1>B方案 · v9 实际网页与确认基准</h1><p>锁定B-campus-v2与B-building-v2r1，不裁切、不拉伸基准；演示快照A1、巡览关闭，固定该版制作相机。新旧版本图片保留。</p><p>两图保留原始比例，AI图不具备测绘精度；对照不把AI不可数细节当作工程数据。浏览器截图是实际WebGL画面。</p><h2>园区总览</h2><div class="pair"><figure><img src="../design/concepts/B-campus-v2.png"><figcaption>已确认整屏基准 · B-campus-v2.png</figcaption></figure><figure><img src="campus-detailed-v9.jpg"><figcaption>实际网页 · v9 · 1280×720截图；1920×1080画布等比缩放</figcaption></figure></div><h2>重点楼宇</h2><div class="pair"><figure><img src="../design/concepts/B-building-v2r1.png"><figcaption>已确认整屏基准 · B-building-v2r1.png</figcaption></figure><figure><img src="building-detailed-v9.jpg"><figcaption>实际网页 · v9 · 1280×720截图；1920×1080画布等比缩放</figcaption></figure></div><h2>差异与复验</h2><div class="table"><table><tr><th>ID</th><th>预期</th><th>实际</th><th>原因假设</th><th>源修改</th><th>重建/复验证据</th><th>结果</th><th>后续</th></tr><tr><td>V-08</td><td>园区后排A1与前排相对位置接近确认图</td><td>A1移向左后排，前排改为错位排布；八栋均可见</td><td>原制作坐标并非对AI真实空间的唯一解</td><td>唯一规划源geometryById及两个相机；稳定ID与24层定义未变</td><td>production-spec-v9-composition.md；campus-detailed-v8r2.jpg → campus-detailed-v9.jpg</td><td>主要构图偏移已修正；不宣称像素级拟合</td><td>继续使用当前基准，不改图</td></tr><tr><td>V-06</td><td>自然景观与建筑细节具有展陈真实感</td><td>树冠、道路家具和远景仍比AI图简化；幕墙贴图有可见重复</td><td>脚本化实时资产的细节规模、固定贴图和简化背景</td><td>已增加13簇树冠、屋顶种植栏杆及幕墙图集；未以辉光遮盖结构差异</td><td>campus-detailed-v9.jpg；building-detailed-v9.jpg</td><td>保留视觉差异；未登记为最终视觉验收通过</td><td>若继续做照片级细化，应改用透明叶簇资产、增加街景设施和局部反射，逐项做局部对照</td></tr><tr><td>P-01</td><td>两层复用同一A1实体、三级裙房、总24层</td><td>同一GLB切镜头，3层裙房+21层塔楼；真实顶点验证22道塔楼横梁</td><td>由同一规划驱动生成</td><td>同源规格、稳定根节点与锚点，未复制第二套近景模型</td><td>assets-contract-v9.json；两层实际网页截图</td><td>结构检查通过，非BIM测绘或AI楼层肉眼计数</td><td>浏览器绑定和最终重建另行核对</td></tr></table></div><h2>输入哈希</h2><pre>[
+  {
+    &quot;level&quot;: &quot;campus&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-campus-v2.png&quot;,
+    &quot;baselineSha256&quot;: &quot;b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264&quot;,
+    &quot;actual&quot;: &quot;checks/campus-detailed-v9.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;ebd81fb0ead3eb003f4cb5b38bc753785435c75d8e10e0abe4d4765e87b41b9d&quot;
+  },
+  {
+    &quot;level&quot;: &quot;building&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-building-v2r1.png&quot;,
+    &quot;baselineSha256&quot;: &quot;1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4&quot;,
+    &quot;actual&quot;: &quot;checks/building-detailed-v9.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;9faca2e0b15d038064fb76fafde40d21826a6eb2e617c192fffaf65bb9d8c3ea&quot;
+  }
+]</pre></html>

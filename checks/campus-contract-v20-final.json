@@ -1,0 +1,50 @@
+{
+  "result": "passed",
+  "errors": [],
+  "planningSha256": "25927de28d10c1e995cc1c56ff97becd299c2ee0dc7437be2a3232e69e102822",
+  "glbSha256": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca",
+  "glbBytes": 6966364,
+  "modelTriangles": 35698,
+  "objects": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "B3",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "vehicleTemplates": {
+    "sedan": {
+      "sizeXYZ": [
+        4.619999885559082,
+        1.4200000278651714,
+        2.0460000038146973
+      ],
+      "parts": 6,
+      "instances": 9
+    },
+    "suv": {
+      "sizeXYZ": [
+        4.820000171661377,
+        1.790000032633543,
+        2.170799970626831
+      ],
+      "parts": 6,
+      "instances": 6
+    },
+    "truck": {
+      "sizeXYZ": [
+        6.420000076293945,
+        2.8400001041591167,
+        2.3340001106262207
+      ],
+      "parts": 6,
+      "instances": 3
+    }
+  },
+  "verifiedTowerBeams": 22,
+  "embeddedImages": 2,
+  "scope": "结构和固定输入核对；视觉、拾取和性能另需网页实测"
+}

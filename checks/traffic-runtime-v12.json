@@ -1,0 +1,133 @@
+{
+  "viewport": [
+    1920,
+    1080
+  ],
+  "canvas": {
+    "bottom": 1080,
+    "height": 1080,
+    "left": 0,
+    "right": 1920,
+    "top": 0,
+    "width": 1920,
+    "x": 0,
+    "y": 0
+  },
+  "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：156\n\n每帧提交三角形：62249\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.4 ms · 已渲染 1987 帧\n\n层级：campus · 选择：A1",
+  "motionSamples": [
+    {
+      "count": 18,
+      "first": {
+        "heading": 0,
+        "position": [
+          -83.20560000000023,
+          -171.5,
+          0
+        ]
+      },
+      "seconds": 13.849
+    },
+    {
+      "count": 18,
+      "first": {
+        "heading": 0,
+        "position": [
+          80.2631999999976,
+          -171.5,
+          0
+        ]
+      },
+      "seconds": 34.283
+    },
+    {
+      "count": 18,
+      "first": {
+        "heading": 1.5707963267948966,
+        "position": [
+          211.5,
+          -105.2313357189026,
+          0
+        ]
+      },
+      "seconds": 58.032
+    }
+  ],
+  "cycleTraffic": [
+    {
+      "level": "building",
+      "traffic": {
+        "count": 18,
+        "first": {
+          "heading": 1.5707963267948966,
+          "position": [
+            211.5,
+            -99.09693571890244,
+            0
+          ]
+        },
+        "seconds": 58.799
+      }
+    },
+    {
+      "level": "building",
+      "traffic": {
+        "count": 18,
+        "first": {
+          "heading": 1.5707963267948966,
+          "position": [
+            211.5,
+            -94.16413571890264,
+            0
+          ]
+        },
+        "seconds": 59.416
+      }
+    },
+    {
+      "level": "building",
+      "traffic": {
+        "count": 18,
+        "first": {
+          "heading": 1.5707963267948966,
+          "position": [
+            211.5,
+            -89.36413571890245,
+            0
+          ]
+        },
+        "seconds": 60.016
+      }
+    },
+    {
+      "level": "building",
+      "traffic": {
+        "count": 18,
+        "first": {
+          "heading": 1.5707963267948966,
+          "position": [
+            211.5,
+            -84.29773571890229,
+            0
+          ]
+        },
+        "seconds": 60.649
+      }
+    }
+  ],
+  "currentUrl": "http://127.0.0.1:4175/",
+  "oldPreviewError": "4174原服务资源版本混用；当前4175独立生产目录已加载正确版本",
+  "logs": [
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'laneOffsetM')\n    at JO (http://127.0.0.1:4174/assets/index-FZONOMZq.js:4710:15626)\n    at http://127.0.0.1:4174/assets/index-FZONOMZq.js:4710:21722",
+      "timestamp": "2026-10-17T01:57:28.150Z",
+      "url": "http://127.0.0.1:4174/assets/index-FZONOMZq.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'laneOffsetM')\n    at JO (http://127.0.0.1:4174/assets/index-FZONOMZq.js:4710:15626)\n    at http://127.0.0.1:4174/assets/index-FZONOMZq.js:4710:21722",
+      "timestamp": "2026-10-17T01:58:08.301Z",
+      "url": "http://127.0.0.1:4174/assets/index-FZONOMZq.js"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v9",
+  "viewport": "1280×720截图；1920×1080画布等比缩放",
+  "conditions": "锁定B-campus-v2与B-building-v2r1，不裁切、不拉伸基准；演示快照A1、巡览关闭，固定该版制作相机。新旧版本图片保留。",
+  "differences": [
+    {
+      "id": "V-08",
+      "expected": "园区后排A1与前排相对位置接近确认图",
+      "actual": "A1移向左后排，前排改为错位排布；八栋均可见",
+      "cause": "原制作坐标并非对AI真实空间的唯一解",
+      "sourceChange": "唯一规划源geometryById及两个相机；稳定ID与24层定义未变",
+      "evidence": "production-spec-v9-composition.md；campus-detailed-v8r2.jpg → campus-detailed-v9.jpg",
+      "result": "主要构图偏移已修正；不宣称像素级拟合",
+      "next": "继续使用当前基准，不改图"
+    },
+    {
+      "id": "V-06",
+      "expected": "自然景观与建筑细节具有展陈真实感",
+      "actual": "树冠、道路家具和远景仍比AI图简化；幕墙贴图有可见重复",
+      "cause": "脚本化实时资产的细节规模、固定贴图和简化背景",
+      "sourceChange": "已增加13簇树冠、屋顶种植栏杆及幕墙图集；未以辉光遮盖结构差异",
+      "evidence": "campus-detailed-v9.jpg；building-detailed-v9.jpg",
+      "result": "保留视觉差异；未登记为最终视觉验收通过",
+      "next": "若继续做照片级细化，应改用透明叶簇资产、增加街景设施和局部反射，逐项做局部对照"
+    },
+    {
+      "id": "P-01",
+      "expected": "两层复用同一A1实体、三级裙房、总24层",
+      "actual": "同一GLB切镜头，3层裙房+21层塔楼；真实顶点验证22道塔楼横梁",
+      "cause": "由同一规划驱动生成",
+      "sourceChange": "同源规格、稳定根节点与锚点，未复制第二套近景模型",
+      "evidence": "assets-contract-v9.json；两层实际网页截图",
+      "result": "结构检查通过，非BIM测绘或AI楼层肉眼计数",
+      "next": "浏览器绑定和最终重建另行核对"
+    }
+  ]
+}

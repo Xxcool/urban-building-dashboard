@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>B方案逐版对照 v7</title><style>
+body{margin:0;padding:28px;background:#f4f3ee;color:#123b40;font:15px/1.7 system-ui,sans-serif}h1{font-size:28px}h2{margin-top:32px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:white;border:1px solid #d7e1df;border-radius:8px;overflow:hidden}img{display:block;width:100%;height:auto}figcaption{padding:10px 14px}table{border-collapse:collapse;width:100%;background:#fffefa}th,td{padding:12px;border:1px solid #cfdbd7;vertical-align:top;min-width:100px}.table{overflow:auto}pre{white-space:pre-wrap;word-break:break-all;font-size:12px}@media(max-width:800px){.pair{grid-template-columns:1fr}}
+</style><h1>B方案 · v7 实际网页与确认基准</h1><p>锁定B-campus-v2与B-building-v2r1，不裁切、不拉伸基准；演示快照A1、巡览关闭，固定该版制作相机。新旧版本图片保留。</p><p>两图保留原始比例，AI图不具备测绘精度；对照不把AI不可数细节当作工程数据。浏览器截图是实际WebGL画面。</p><h2>园区总览</h2><div class="pair"><figure><img src="../design/concepts/B-campus-v2.png"><figcaption>已确认整屏基准 · B-campus-v2.png</figcaption></figure><figure><img src="campus-detailed-v7.jpg"><figcaption>实际网页 · v7 · 1280×720截图；1920×1080画布等比缩放</figcaption></figure></div><h2>重点楼宇</h2><div class="pair"><figure><img src="../design/concepts/B-building-v2r1.png"><figcaption>已确认整屏基准 · B-building-v2r1.png</figcaption></figure><figure><img src="building-detailed-v7.jpg"><figcaption>实际网页 · v7 · 1280×720截图；1920×1080画布等比缩放</figcaption></figure></div><h2>差异与复验</h2><div class="table"><table><tr><th>ID</th><th>预期</th><th>实际</th><th>原因假设</th><th>源修改</th><th>重建/复验证据</th><th>结果</th><th>后续</th></tr><tr><td>V-05</td><td>蓝灰玻璃有窗内层次</td><td>幕墙已使用规则4×4固定输入贴图，并按层高铺UV</td><td>此前统一PBR颜色缺少细节</td><td>build_scene.py材质节点及按真实分格UV；固定图像哈希进入唯一规划源</td><td>building-detailed-v6.jpg → building-detailed-v7.jpg；design/material-generation-v1.json</td><td>已改善；图中反射为材质细节，不宣称动态实景反射</td><td>继续以锁定基准比对色彩和尺度</td></tr><tr><td>V-08</td><td>总览A1位于左后排、前排对应布局接近基准</td><td>A1仍偏右，前排整体偏左</td><td>初始制作坐标与AI投影不吻合</td><td>v9校准同一空间中的楼栋坐标与两层镜头</td><td>campus-detailed-v7.jpg → campus-detailed-v9.jpg</td><td>后续已修正主要偏移</td><td>不通过修改设计图片掩盖误差</td></tr></table></div><h2>输入哈希</h2><pre>[
+  {
+    &quot;level&quot;: &quot;campus&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-campus-v2.png&quot;,
+    &quot;baselineSha256&quot;: &quot;b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264&quot;,
+    &quot;actual&quot;: &quot;checks/campus-detailed-v7.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;2db1f858d38b288d01e1a4f3d82a0afde9e017290a6d58a1d59100dacea4641f&quot;
+  },
+  {
+    &quot;level&quot;: &quot;building&quot;,
+    &quot;baseline&quot;: &quot;design/concepts/B-building-v2r1.png&quot;,
+    &quot;baselineSha256&quot;: &quot;1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4&quot;,
+    &quot;actual&quot;: &quot;checks/building-detailed-v7.jpg&quot;,
+    &quot;actualSha256&quot;: &quot;ec294d41986a02458b7b58481664010587cada3d2d9e346eefe3c4badbd4ead5&quot;
+  }
+]</pre></html>

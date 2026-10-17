@@ -1,0 +1,21 @@
+{
+  "result": "passed",
+  "errors": [],
+  "planningSha256": "6e69dcc77f660d87ae6a172581cfed13ee6f6de0c2e78fbf0b63e2d44cace681",
+  "glbSha256": "6f03bb2aa93f798c2595cfb3a76c1211d4f06bbb2f8fc23f11ebc67de40cb057",
+  "glbBytes": 10840704,
+  "modelTriangles": 356506,
+  "objects": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "B3",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "verifiedTowerBeams": 22,
+  "embeddedImages": 1,
+  "scope": "结构和固定输入核对；视觉、拾取和性能另需网页实测"
+}

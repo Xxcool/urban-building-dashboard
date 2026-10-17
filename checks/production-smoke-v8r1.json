@@ -1,0 +1,10 @@
+{
+  "campusLabelCount": 8,
+  "building": {
+    "level": "building",
+    "selection": "A1",
+    "metrics": "24\n层\n\n楼层数\n\n4.8\n万㎡\n\n建筑面积\n\n90\n%\n\n出租率\n\n42\n家\n\n入驻企业",
+    "space": "空间利用\n出租率\n90%\n已租面积\n3.6 万㎡\n可租面积\n4.0 万㎡\n可租空置面积\n0.4 万㎡"
+  },
+  "console": []
+}

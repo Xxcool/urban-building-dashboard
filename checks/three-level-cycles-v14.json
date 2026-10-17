@@ -1,0 +1,182 @@
+[
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：234\n\n每帧提交三角形：96191\n\n几何：96 · 纹理：17\n\n帧间隔 P95： ms · 已渲染 1 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：85\n\n每帧提交三角形：50105\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17 ms · 已渲染 65 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：7da8e7431320 · 模型三角形：160688\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：69\n\n每帧提交三角形：302643\n\n几何：34 · 纹理：28\n\n帧间隔 P95：17.6 ms · 已渲染 4833 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17 ms · 已渲染 119 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：83\n\n每帧提交三角形：50081\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.2 ms · 已渲染 191 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：7da8e7431320 · 模型三角形：160688\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：69\n\n每帧提交三角形：302643\n\n几何：34 · 纹理：28\n\n帧间隔 P95：17.6 ms · 已渲染 4852 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：156\n\n每帧提交三角形：62249\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.4 ms · 已渲染 246 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：83\n\n每帧提交三角形：50081\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.5 ms · 已渲染 317 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：7da8e7431320 · 模型三角形：160688\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：69\n\n每帧提交三角形：302643\n\n几何：34 · 纹理：28\n\n帧间隔 P95：17.6 ms · 已渲染 4870 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：154\n\n每帧提交三角形：62129\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.4 ms · 已渲染 370 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：83\n\n每帧提交三角形：50081\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.5 ms · 已渲染 443 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：7da8e7431320 · 模型三角形：160688\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：69\n\n每帧提交三角形：302643\n\n几何：34 · 纹理：28\n\n帧间隔 P95：17.6 ms · 已渲染 4889 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：156\n\n每帧提交三角形：62249\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.5 ms · 已渲染 497 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：83\n\n每帧提交三角形：50081\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.5 ms · 已渲染 570 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：7da8e7431320 · 模型三角形：160688\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：69\n\n每帧提交三角形：302643\n\n几何：34 · 纹理：28\n\n帧间隔 P95：17.6 ms · 已渲染 4907 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：156\n\n每帧提交三角形：62249\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.5 ms · 已渲染 625 帧\n\n层级：campus · 选择：A1",
+    "level": "campus",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：fe4835d83c98 · 模型三角形：34722\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：83\n\n每帧提交三角形：50081\n\n几何：96 · 纹理：17\n\n帧间隔 P95：17.5 ms · 已渲染 698 帧\n\n层级：building · 选择：A1",
+    "level": "building",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "canvases": 2,
+    "diagnostics": "场景信息\n\n资产：city.glb · detailed\n\n版本：7da8e7431320 · 模型三角形：160688\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：69\n\n每帧提交三角形：302643\n\n几何：34 · 纹理：28\n\n帧间隔 P95：17.6 ms · 已渲染 4925 帧\n\n层级：city · 选择：PARK-DEMO",
+    "level": "city",
+    "mode": "demo",
+    "viewport": [
+      1920,
+      1080
+    ]
+  }
+]

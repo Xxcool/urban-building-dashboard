@@ -1,0 +1,15 @@
+{
+  "finding": "最初viewport.set未作用到后台目标页；实际DOM保持1280×720，边界核对如实失败，不是页面代码缺陷。",
+  "invalidFor1920": [
+    "checks/layout-1920-v11-final.json",
+    "checks/cycles-performance-v11-final.json",
+    "checks/runtime-verification-v11-final.json"
+  ],
+  "resolution": "创建并显示当前预览页后，viewport.set作用到活动页；循环前后实际document与dashboard均为1920×1080，同一实例重做12轮。",
+  "validEvidence": [
+    "checks/layout-1920-v11-verified.json",
+    "checks/cycles-performance-v11-verified.json",
+    "checks/runtime-verification-v11-verified.json"
+  ],
+  "retention": "保留早期记录，不改写原测量、截图或设计基准。"
+}

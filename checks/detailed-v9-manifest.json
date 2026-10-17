@@ -1,0 +1,68 @@
+{
+  "quality": "detailed",
+  "planningSha256": "6e69dcc77f660d87ae6a172581cfed13ee6f6de0c2e78fbf0b63e2d44cace681",
+  "scriptSha256": "62a948ce0643a227fdd23b185006d1f08302795c6044e7847e14e7855f87f11d",
+  "blender": "5.2.2 LTS",
+  "seed": 219,
+  "objects": [
+    {
+      "objectId": "A1",
+      "rootNode": "building_A1",
+      "anchorNode": "anchor_A1",
+      "heightM": 100.80000000000001
+    },
+    {
+      "objectId": "B1",
+      "rootNode": "building_B1",
+      "anchorNode": "anchor_B1",
+      "heightM": 84
+    },
+    {
+      "objectId": "B2",
+      "rootNode": "building_B2",
+      "anchorNode": "anchor_B2",
+      "heightM": 76
+    },
+    {
+      "objectId": "A2",
+      "rootNode": "building_A2",
+      "anchorNode": "anchor_A2",
+      "heightM": 21
+    },
+    {
+      "objectId": "B3",
+      "rootNode": "building_B3",
+      "anchorNode": "anchor_B3",
+      "heightM": 21
+    },
+    {
+      "objectId": "C1",
+      "rootNode": "building_C1",
+      "anchorNode": "anchor_C1",
+      "heightM": 21
+    },
+    {
+      "objectId": "C2",
+      "rootNode": "building_C2",
+      "anchorNode": "anchor_C2",
+      "heightM": 21
+    },
+    {
+      "objectId": "C3",
+      "rootNode": "building_C3",
+      "anchorNode": "anchor_C3",
+      "heightM": 21
+    }
+  ],
+  "files": {
+    "assets/scene.blend": {
+      "sha256": "35447dd9b4752d13ba69a1939085b844c1b67378f6054c63a58ab95beb6a7417",
+      "bytes": 6387709
+    },
+    "app/public/assets/campus.glb": {
+      "sha256": "6f03bb2aa93f798c2595cfb3a76c1211d4f06bbb2f8fc23f11ebc67de40cb057",
+      "bytes": 10840704
+    }
+  },
+  "triangles": 356506
+}
