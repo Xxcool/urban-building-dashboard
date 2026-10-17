@@ -19,6 +19,7 @@
 ![园区总览](checks/campus-final-v22.png)
 
 <details>
+
 <summary>查看进入园区动效实拍（GIF）</summary>
 
 ![进入园区动画](checks/campus-entry-v22.gif)
@@ -92,8 +93,4 @@ v22 已通过 14 项 Node 测试、3 项道路边界测试及独立目录完整�
 
 当前城市建筑、街区和湖岸水面的写实程度仍与 AI 概念图有差异（R-05-REALISM），尚未作为最终视觉验收。目标展厅硬件、长时运行、完整跨浏览器矩阵和真实接口未验证。
 
-依赖与第三方声明见 [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt)。
-
-## GitHub Pages
-
-推送至 `main` 后，GitHub Actions 自动执行依赖安装、测试、生产构建与 Pages 部署。站点从 `app/dist` 发布，使用相对资源路径，兼容仓库子目录。无需在线运行 Blender；模型变更应先本地重建并提交更新后的资产与配置。
+依赖与第三方声明见 [THIRD\_PARTY\_NOTICES.txt](THIRD_PARTY_NOTICES.txt)。
