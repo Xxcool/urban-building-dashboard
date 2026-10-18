@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "8fdf12001fb73f1065c881a7330994d39415ded0782de7a50c4934b9fc7f1ad2",
+  "argumentsSha256": "4aaeb588aefb8517e6e3c5fa062738d873fbec68ca145179341df720f68ce565",
+  "at": "2026-10-18T03:03:18.805642+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: /Users/xiabin/Documents/urban-building-dashboard/assets/city.blend\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: /Users/xiabin/Documents/urban-building-dashboard/assets/city.blend\n"
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "planningSha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e",
+  "assetSha256": "bd10f9d3539bb8367e08a462bcaf1759fa0df22a7f68c3ed3670a8025c59e09c",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "data": "演示快照，非实时数据",
+  "southRoadInnerEdgeDistanceM": 160.0,
+  "entranceVertexBounds": [
+    {
+      "node": "correction_v26_paverJoint.001",
+      "maximumSouthDistanceM": 159.5
+    },
+    {
+      "node": "correction_v26_paving.001",
+      "maximumSouthDistanceM": 159.5
+    }
+  ],
+  "checked": [
+    "进入园区动画",
+    "C1选择同时更新浮卡与左侧2.4万㎡/82%/22家",
+    "A1进入重点楼宇",
+    "产业楼宇与配套服务卡片",
+    "无数据保留空值",
+    "浏览器无控制台错误"
+  ],
+  "performanceFiles": [
+    "checks/v26-building-performance-resume.json",
+    "checks/v26-campus-performance-resume.json"
+  ],
+  "visualStatus": "本轮入口/树色/路外建筑/界面修正已实现，整体写实程度尚未按终稿通过",
+  "scopeLimits": [
+    "目标展厅硬件未测",
+    "长时运行未测",
+    "真实接口未接入",
+    "城市与近景材质、绿化自然度及细节仍待深化"
+  ]
+}

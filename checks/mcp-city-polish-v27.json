@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "d9b89a06b5aa19f39d7c5f91abeb90c591b19fbc4b065f25ffbe89133eb105b6",
+  "argumentsSha256": "41711866fb006bb55820d5fea4378689e1a73f93dceb0a98d348ba86379c9487",
+  "at": "2026-10-18T03:03:46.457777+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"city-v27.blend\"\n{\"trees\": 7769, \"planningSha256\": \"d89f22721ac087c1489df7f2e567ee5f5ed572414068d26919523a4a50d8ee65\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"city-v27.blend\"\n{\"trees\": 7769, \"planningSha256\": \"d89f22721ac087c1489df7f2e567ee5f5ed572414068d26919523a4a50d8ee65\"}\n"
+    },
+    "isError": false
+  }
+}

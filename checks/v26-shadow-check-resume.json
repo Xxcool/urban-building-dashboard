@@ -1,0 +1,34 @@
+{
+  "scope": "实际GPU阴影深度附件诊断；不评价整体光照审美",
+  "samples": [
+    {
+      "worldPoint": [
+        -85,
+        0.3,
+        -100
+      ],
+      "receiverDepth": 0.3983498057604125,
+      "shadowMapDepth": 0.25098039215686274
+    },
+    {
+      "worldPoint": [
+        -100,
+        0.3,
+        -85
+      ],
+      "receiverDepth": 0.38397288930799667,
+      "shadowMapDepth": 0.2823529411764706
+    },
+    {
+      "worldPoint": [
+        100,
+        0.3,
+        0
+      ],
+      "receiverDepth": 0.45859593184672637,
+      "shadowMapDepth": 0.4588235294117647
+    }
+  ],
+  "finding": "前两个地面点被建筑遮挡，第三点未被遮挡；阴影深度并非空图",
+  "temporaryInstrumentation": "已移除"
+}

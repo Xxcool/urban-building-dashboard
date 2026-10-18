@@ -13,10 +13,14 @@ from mathutils import Vector
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--gray', action='store_true')
+parser.add_argument('--landscape-layout', action='store_true', help='仅生成景观构图简模，必须使用独立output-root')
 parser.add_argument('--output-root', type=Path)
 args = parser.parse_args(sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else [])
 SOURCE_ROOT = Path(__file__).resolve().parents[1]
 OUT = args.output_root.resolve() if args.output_root else SOURCE_ROOT
+if args.landscape_layout and not args.output_root:raise SystemExit('景观简模必须指定独立输出目录')
+sys.path.insert(0,str(SOURCE_ROOT/'scripts'))
+from campus_landscape import build_landscape,clipped_path,is_facility_clear
 raw = (SOURCE_ROOT / 'planning/project.json').read_bytes()
 plan = json.loads(raw)
 spec = plan['production']
@@ -32,6 +36,7 @@ def color(value):
     srgb = [int(value[i:i+2], 16) / 255 for i in (0, 2, 4)]
     return tuple(v / 12.92 if v <= 0.04045 else ((v + 0.055) / 1.055) ** 2.4 for v in srgb)
 
+landscape_spec=spec.get('landscape')
 materials = {}
 wall_input=spec.get('materialInputs',{}).get('curtainWall')
 wall_image=None
@@ -78,6 +83,10 @@ for name, hex_color, metal, rough in [
         mat.node_tree.links.new(tex.outputs['Alpha'],bsdf.inputs['Alpha'])
         mat.use_backface_culling=False;mat.surface_render_method='DITHERED'
     materials[name] = mat
+
+if landscape_spec:
+    for name,value in {**landscape_spec['palette'],'skin':'#bca38b'}.items():
+        mat=bpy.data.materials.new(name);mat.use_nodes=True;bsdf=mat.node_tree.nodes.get('Principled BSDF');bsdf.inputs['Base Color'].default_value=(*color(value),1);bsdf.inputs['Roughness'].default_value=.24 if name=='water' else .82;bsdf.inputs['Metallic'].default_value=.22 if name in ['metal','water'] else .0;materials[name]=mat
 
 class Batch:
     # 同一业务对象内按材质合批；不合并不同楼栋的可拾取身份。
@@ -257,12 +266,11 @@ if not args.gray:
     for key,g in spec['geometryById'].items():
         w,d=g['podiumSizes'][0] if 'podiumSizes' in g else g['size'][:2]
         env.box((g['position'][0],g['position'][1],.29),(w+8,d+8,.18),'grass')
-    for y in (-39,-16,12,37):env.segment((-77,y-6),(83,y+5),4.2,.49,'path')
-    env.segment((-5,-69),(8,54),7,.51,'path')
-    env.disc(1,-7,.52,13,13,'paving')
-    for i in range(20):
-        a=i*math.pi*2/20;x,y=math.cos(a)*17,math.sin(a)*17-7
-        env.box((x,y,.8),(3,.8,.6),'stone')
+    paths=landscape_spec['paths'];fountain=landscape_spec['fountain']
+    for y in paths['crossRowsM']:
+        a,b=([paths['crossEndpointsM'][0],y-6],[paths['crossEndpointsM'][1],y+5])
+        for start,end in clipped_path(a,b,fountain['centerM'],fountain['pathClearanceM']):env.segment(start,end,paths['crossWidthM'],.49,'path')
+    for start,end in clipped_path(*paths['spineM'],fountain['centerM'],fountain['pathClearanceM']):env.segment(start,end,paths['spineWidthM'],.51,'path')
     def outside_buildings(x,y,pad=4):
         for k,g in spec['geometryById'].items():
             w,d=g['podiumSizes'][0] if 'podiumSizes' in g else g['size'][:2]
@@ -271,13 +279,14 @@ if not args.gray:
     n=0
     for _ in range(5000):
         x,y=rng.uniform(-pw/2+4,pw/2-4),rng.uniform(-pd/2+5,pd/2-5)
-        if not outside_buildings(x,y) or (x/64)**2+(y/35)**2<1:continue
+        if not outside_buildings(x,y) or not is_facility_clear(x,y,landscape_spec) or (x/64)**2+(y/35)**2<1:continue
         env.disc(x,y,.41,3.3,3.1,'grass',segments=12)
         tree(env,x,y,.3,rng.uniform(.8,1.2));n+=1
         if n>=spec['site']['treeCount']:break
     for x in range(-180,190,26):
         for y in (-pd/2-20,pd/2+20):tree(env,x,y,0,.9)
-    for x,y in spec['site'].get('centralTreePositionsM',[]):tree(env,x,y,.3,1.0)
+    for x,y in spec['site'].get('centralTreePositionsM',[]):
+        if is_facility_clear(x,y,landscape_spec,3):tree(env,x,y,.3,1.0)
     for x in range(-340,341,24):
         for y in (220,260):tree(env,x+rng.uniform(-4,4),y+rng.uniform(-8,8),0,.9)
     # 独立车辆模板供网页实例化，避免静态环境内留下重复车辆或固定车影。
@@ -323,6 +332,7 @@ if not args.gray:
         w,d,h=rng.uniform(22,55),rng.uniform(24,52),rng.uniform(18,85)
         env.box((x,y,h/2),(w,d,h),'city' if rng.random()<.5 else 'cityLight')
 env.finish()
+if not args.gray:build_landscape(Batch,landscape_spec,tree,args.landscape_layout,spec['geometryById'])
 
 for name,cs in spec['cameras'].items():
     data=bpy.data.cameras.new(name);obj=bpy.data.objects.new('camera_'+name,data);bpy.context.collection.objects.link(obj)
@@ -343,6 +353,7 @@ pending_glb=glb.with_name('.'+glb.stem+'-pending.glb')
 bpy.ops.export_scene.gltf(filepath=str(pending_glb),export_format='GLB',export_yup=True,export_extras=True,export_cameras=False,export_lights=False,export_apply=True)
 pending_glb.replace(glb)
 manifest={'quality':quality,'planningSha256':hashlib.sha256(raw).hexdigest(),'scriptSha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+          'landscapePhase':'layout' if args.landscape_layout else 'detailed','landscapeGeneratorSha256':hashlib.sha256((SOURCE_ROOT/'scripts/campus_landscape.py').read_bytes()).hexdigest(),
           'blender':bpy.app.version_string,'seed':spec['site']['seed'],'objects':mapping,
           'files':{str(path.relative_to(OUT)):{'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'bytes':path.stat().st_size} for path in [blend,glb]},
           'triangles':sum(len(poly.vertices)-2 for obj in bpy.data.objects if obj.type=='MESH' for poly in obj.data.polygons)}

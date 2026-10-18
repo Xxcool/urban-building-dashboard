@@ -1,0 +1,28 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "argumentsSha256": "d21a945102c189611748fc87e796beefef43cae5f1dd6edb7103c47a7127ab29",
+  "at": "2026-10-17T13:52:03.375987+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: STATIC_PEOPLE_SHIRTS_EXCLUDED 126\n{\"stage\": \"baking_ao\", \"planningSha256\": \"1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5\"}\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Saved as \"pilot-ao.blend\"\n{\"stage\": \"ao_done\", \"planningSha256\": \"1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5\", \"seconds\": 9.45, \"file\": \"/Users/xiabin/Documents/urban-building-dashboard/work/bake-pilot-v25/ao.png\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: STATIC_PEOPLE_SHIRTS_EXCLUDED 126\n{\"stage\": \"baking_ao\", \"planningSha256\": \"1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5\"}\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Saved as \"pilot-ao.blend\"\n{\"stage\": \"ao_done\", \"planningSha256\": \"1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5\", \"seconds\": 9.45, \"file\": \"/Users/xiabin/Documents/urban-building-dashboard/work/bake-pilot-v25/ao.png\"}\n"
+    },
+    "isError": false
+  }
+}

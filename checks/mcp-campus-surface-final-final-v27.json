@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "8bb92c89657d80cb6cdb34054d796106f376d83227e0a2d3949f065862b77c04",
+  "argumentsSha256": "37b2ef5fe2dd162654b150e1ce46585942d43fe3ffb841ca13fb561defd8b232",
+  "at": "2026-10-18T03:35:57.687225+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"campus-v27-surface.blend\"\n透明玻璃粗糙度与金属反照率已修正\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"campus-v27-surface.blend\"\n透明玻璃粗糙度与金属反照率已修正\n"
+    },
+    "isError": false
+  }
+}

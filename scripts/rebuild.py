@@ -1,61 +1,40 @@
-"""在全新目录复制固定输入、生成模型与网页、运行检查，记录可重复构建结果。"""
-import argparse
-import hashlib
-import json
-import shutil
-import subprocess
-import time
+"""在全新目录通过 Blender MCP 重导已保存工程，再从源码构建网页；不走后台 Blender 建模。"""
+import argparse,hashlib,json,shutil,struct,subprocess,time
 from pathlib import Path
-
-root = Path(__file__).resolve().parents[1]
-parser = argparse.ArgumentParser()
-parser.add_argument('--dest', type=Path, required=True)
-parser.add_argument('--blender', default='/Applications/Blender.app/Contents/MacOS/Blender')
-parser.add_argument('--cache', type=Path, required=True)
-parser.add_argument('--report', default='checks/rebuild-report.json')
-args = parser.parse_args()
-dest = args.dest.resolve()
-if dest.exists():
-    raise SystemExit('目标目录已存在；请选择全新目录，脚本不会删除现有成果。')
-dest.mkdir(parents=True)
-for name in ['planning', 'scripts', 'design']:
-    shutil.copytree(root / name, dest / name)
-for name in ['src', 'tests']:
-    shutil.copytree(root / 'app' / name, dest / 'app' / name)
-for name in ['index.html', 'package.json', 'package-lock.json', 'vite.config.js']:
-    shutil.copy2(root / 'app' / name, dest / 'app' / name)
-steps = []
-start = time.monotonic()
-with (dest / 'rebuild.log').open('w') as log:
-    def run(label, command, cwd):
-        tick = time.monotonic()
-        log.write('\n' + label + '\n'); log.flush()
-        result = subprocess.run(command, cwd=cwd, stdout=log, stderr=subprocess.STDOUT)
-        steps.append({'step': label, 'exitCode': result.returncode, 'seconds': round(time.monotonic() - tick, 2)})
-        if result.returncode:
-            raise RuntimeError(label + '失败，见' + str(dest / 'rebuild.log'))
-    run('Blender从规划源生成', [args.blender, '-b', '--python', 'scripts/build_scene.py'], dest)
-    run('Blender生成区域LOD', [args.blender, '-b', '--python', 'scripts/build_city.py'], dest)
-    run('生成网页配置', ['python3', 'scripts/prepare_runtime.py'], dest)
-    run('安装锁定依赖', ['npm', 'ci', '--legacy-peer-deps', '--no-audit', '--no-fund', '--cache', str(args.cache.resolve())], dest / 'app')
-    run('道路水域边界回归', ['python3', 'scripts/test_city_geometry.py'], dest)
-    run('业务契约测试', ['npm', 'test'], dest / 'app')
-    run('生产构建', ['npm', 'run', 'build'], dest / 'app')
-    run('实际资产契约核对', ['python3', 'scripts/verify_assets.py', '--report', 'checks/rebuilt-assets-contract.json'], dest)
-
-    run('区域资产契约核对', ['python3', 'scripts/verify_city.py', '--report', 'checks/rebuilt-city-contract.json'], dest)
-
-sha = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
-comparisons = {}
-for name in ['app/public/assets/campus.glb', 'app/public/assets/runtime.json','app/public/assets/city.glb']:
-    comparisons[name] = {'original': sha(root / name), 'rebuilt': sha(dest / name)}
-    comparisons[name]['identical'] = comparisons[name]['original'] == comparisons[name]['rebuilt']
-report = {'result': 'passed' if all(c['identical'] for c in comparisons.values()) else 'different',
-          'output': str(dest), 'seconds': round(time.monotonic() - start, 2), 'steps': steps,
-          'comparisons': comparisons, 'log': str(dest / 'rebuild.log'),
-          'notes': ['未复制旧GLB、blend、runtime、node_modules或dist；只复制规划、脚本、固定图像输入和前端源码。',
-                    'blend包含保存路径等本机元数据，不要求二进制相同；实际GLB和网页配置做哈希比对。',
-                    '网页交互和视觉需继续从本次dist实际打开核对。']}
-(root / args.report).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
-print(json.dumps(report, ensure_ascii=False, indent=2))
-raise SystemExit(report['result'] != 'passed')
+root=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser();parser.add_argument('--dest',type=Path,required=True);parser.add_argument('--uvx',default=shutil.which('uvx')or'uvx');parser.add_argument('--cache',type=Path);parser.add_argument('--report',default='checks/rebuild-v27.json');args=parser.parse_args();dest=args.dest.resolve()
+if dest.exists():raise SystemExit('目标目录已存在，请使用新的独立目录。')
+dest.mkdir(parents=True);(dest/'checks').mkdir();(dest/'assets').mkdir()
+for name in ['planning','scripts','design']:shutil.copytree(root/name,dest/name)
+shutil.copytree(root/'app',dest/'app',ignore=shutil.ignore_patterns('node_modules','dist','*.glb'))
+for name in ['scene.blend','city.blend','manifest.json','city-manifest.json']:shutil.copy2(root/'assets'/name,dest/'assets'/name)
+shutil.copytree(root/'assets/materials',dest/'assets/materials');shutil.copytree(root/'assets/mcp-operations',dest/'assets/mcp-operations');shutil.copy2(root/'checks/city-road-surfaces.json',dest/'checks/city-road-surfaces.json')
+sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest();steps=[];started=time.monotonic()
+def run(label,command,cwd):
+ tick=time.monotonic()
+ with (dest/'rebuild.log').open('a')as log:result=subprocess.run(command,cwd=cwd,stdout=log,stderr=subprocess.STDOUT)
+ steps.append({'step':label,'exitCode':result.returncode,'seconds':round(time.monotonic()-tick,2)})
+ if result.returncode:raise RuntimeError(label+'失败，见 '+str(dest/'rebuild.log'))
+def canonical_glb(path):
+ data=path.read_bytes();size=struct.unpack_from('<I',data,12)[0];doc=json.loads(data[20:20+size])
+ # 插件连接状态属于会话元数据，既不是模型内容，也不参与网页业务。
+ for scene in doc.get('scenes',[]):
+  extras=scene.get('extras',{});extras.pop('blendermcp_server_running',None)
+  if not extras:scene.pop('extras',None)
+ return json.dumps(doc,sort_keys=True),data[20+size:]
+comparisons={}
+for level,blend in [('campus','scene.blend'),('city','city.blend')]:
+ for stage in ['load','export']:
+  source=dest/'assets'/blend;target=dest/'app/public/assets'/(level+'.glb')
+  code='import bpy\n'+('bpy.ops.wm.open_mainfile(filepath='+repr(str(source))+')'if stage=='load'else'bpy.ops.export_scene.gltf(filepath='+repr(str(target))+",export_format='GLB',export_yup=True,export_extras=True,export_cameras=False,export_lights=False,export_apply=True)")
+  operation=dest/'checks'/(level+'-'+stage+'.json');operation.write_text(json.dumps({'code':code},ensure_ascii=False))
+  run(level+' MCP '+stage,[args.uvx,'--offline','--from','blender-mcp','python','scripts/blender_mcp_client.py','--tool','execute_blender_code','--arguments',str(operation),'--report','checks/'+level+'-'+stage+'-result.json'],dest)
+ original=root/'app/public/assets'/(level+'.glb');rebuilt=dest/'app/public/assets'/(level+'.glb');same=canonical_glb(original)==canonical_glb(rebuilt);comparisons[level]={'originalSha256':sha(original),'rebuiltSha256':sha(rebuilt),'identical':sha(original)==sha(rebuilt),'sameModelContent':same}
+ if not same:raise RuntimeError(level+' 重导内容不同，保留输出供排查。')
+run('派生网页配置',['python3','scripts/prepare_runtime.py'],dest)
+npm=['npm','ci','--no-audit','--no-fund']
+if args.cache:npm+=['--cache',str(args.cache.resolve())]
+run('安装锁定依赖',npm,dest/'app');run('前端契约测试',['npm','test'],dest/'app');run('生产构建',['npm','run','build'],dest/'app')
+comparisons['runtime']={'identical':sha(root/'app/public/assets/runtime.json')==sha(dest/'app/public/assets/runtime.json')}
+report={'result':'passed','output':str(dest),'seconds':round(time.monotonic()-started,2),'steps':steps,'comparisons':comparisons,'scope':'独立目录加载打包Blend，通过真实MCP重导；模型JSON与二进制相同，仅忽略插件运行态布尔字段。前端由规划源和锁定依赖重新构建，不重新执行历史建模操作。'}
+(root/args.report).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False))

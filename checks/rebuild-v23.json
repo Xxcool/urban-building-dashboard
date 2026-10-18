@@ -1,0 +1,80 @@
+{
+  "result": "passed",
+  "output": "/Users/xiabin/Documents/urban-building-dashboard/work/rebuild-v23-001",
+  "seconds": 14.61,
+  "steps": [
+    {
+      "step": "Blender从规划源生成",
+      "exitCode": 0,
+      "seconds": 4.32
+    },
+    {
+      "step": "Blender生成区域LOD",
+      "exitCode": 0,
+      "seconds": 6.11
+    },
+    {
+      "step": "生成网页配置",
+      "exitCode": 0,
+      "seconds": 0.06
+    },
+    {
+      "step": "安装锁定依赖",
+      "exitCode": 0,
+      "seconds": 1.15
+    },
+    {
+      "step": "景观步道与净空回归",
+      "exitCode": 0,
+      "seconds": 0.1
+    },
+    {
+      "step": "道路水域边界回归",
+      "exitCode": 0,
+      "seconds": 0.06
+    },
+    {
+      "step": "业务契约测试",
+      "exitCode": 0,
+      "seconds": 0.42
+    },
+    {
+      "step": "生产构建",
+      "exitCode": 0,
+      "seconds": 1.45
+    },
+    {
+      "step": "实际资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.11
+    },
+    {
+      "step": "区域资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.77
+    }
+  ],
+  "comparisons": {
+    "app/public/assets/campus.glb": {
+      "original": "6c531c18eb0b227f310838e89f4850eeb93a21d6a28c0f3746ae5713080637eb",
+      "rebuilt": "6c531c18eb0b227f310838e89f4850eeb93a21d6a28c0f3746ae5713080637eb",
+      "identical": true
+    },
+    "app/public/assets/runtime.json": {
+      "original": "ba77c3a617a9363aae693d181d150f97799c907245e2925be82cec18360f5d42",
+      "rebuilt": "ba77c3a617a9363aae693d181d150f97799c907245e2925be82cec18360f5d42",
+      "identical": true
+    },
+    "app/public/assets/city.glb": {
+      "original": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58",
+      "rebuilt": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58",
+      "identical": true
+    }
+  },
+  "log": "/Users/xiabin/Documents/urban-building-dashboard/work/rebuild-v23-001/rebuild.log",
+  "notes": [
+    "未复制旧GLB、blend、runtime、node_modules或dist；只复制规划、脚本、固定图像输入和前端源码。",
+    "blend包含保存路径等本机元数据，不要求二进制相同；实际GLB和网页配置做哈希比对。",
+    "网页交互和视觉需继续从本次dist实际打开核对。"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "5f22435cb4502d84e8e346b3750bf81544e17e262e33effde93aae93ac289544",
+  "argumentsSha256": "bc928c903bf5980913b5b34a5f2b05d6fe0df50ead5e35a4cca1d71b9a591aa8",
+  "at": "2026-10-17T14:58:21.036463+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: baking-ao {}\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Saved as \"campus-v26-ao.blend\"\nao-done {'seconds': 15.13}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: baking-ao {}\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Saved as \"campus-v26-ao.blend\"\nao-done {'seconds': 15.13}\n"
+    },
+    "isError": false
+  }
+}

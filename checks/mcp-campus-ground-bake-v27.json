@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "744565c2112e3b3b86ef4206823018a2e91bdea8e3e332bce2c608e2992d8b4c",
+  "argumentsSha256": "a788ca1eef5b78aa527e957305eea77a6b94ac2ed7d11bee67f72dd685d244da",
+  "at": "2026-10-18T02:58:07.662072+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Saved as \"campus-v27-ground.blend\"\n{\"stage\": \"complete\", \"seconds\": 104.45, \"receivers\": [\"environment_path\", \"environment_grass\"], \"image\": \"campus-ground-v27.png\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Baking map saved to internal image, save it externally or pack it\nInfo: Baking map saved to internal image, save it externally or pack it\nInfo: Saved as \"campus-v27-ground.blend\"\n{\"stage\": \"complete\", \"seconds\": 104.45, \"receivers\": [\"environment_path\", \"environment_grass\"], \"image\": \"campus-ground-v27.png\"}\n"
+    },
+    "isError": false
+  }
+}

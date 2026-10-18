@@ -6,7 +6,8 @@ from city_geometry import clear_surface
 p=argparse.ArgumentParser();p.add_argument('--report',default='checks/city-assets-contract.json');a=p.parse_args();r=Path(__file__).resolve().parents[1];raw=(r/'planning/project.json').read_bytes();plan=json.loads(raw);s=derive_city(plan);m=json.loads((r/'assets/city-manifest.json').read_text());info=json.loads((r/'app/public/assets/city-build-info.json').read_text());data=(r/s['assets']['scene']).read_bytes();g=json.loads(data[20:20+struct.unpack_from('<I',data,12)[0]]);errors=[]
 def check(v,msg):
  if not v:errors.append(msg)
-check(struct.unpack_from('<4sII',data)==(b'glTF',2,len(data)),'GLB头长度错误');check(hashlib.sha256(raw).hexdigest()==m['planningSha256']==info['planningSha256'],'规划/区域模型版本不一致');check(hashlib.sha256(data).hexdigest()==m['assetSha256']==info['assetSha256'],'模型清单哈希不一致');check(hashlib.sha256((r/'scripts/build_city.py').read_bytes()).hexdigest()==m['scriptSha256'],'生成脚本版本不一致')
+check(struct.unpack_from('<4sII',data)==(b'glTF',2,len(data)),'GLB头长度错误');check(hashlib.sha256(raw).hexdigest()==m['planningSha256']==info['planningSha256'],'规划/区域模型版本不一致');check(hashlib.sha256(data).hexdigest()==m['assetSha256']==info['assetSha256'],'模型清单哈希不一致');check(m.get('execution')=='Blender MCP','城市不是MCP制作产物')
+for operation,digest in m['operations'].items():check(hashlib.sha256((r/operation).read_bytes()).hexdigest()==digest,'MCP操作记录改变：'+operation)
 nodes=g['nodes'];root=next(n for n in nodes if n.get('name')=='city_PARK-DEMO');check(root['extras']['regionObjectId']=='PARK-DEMO','园区身份错误');x,y,z=s['campusPositionM'];check(all(math.isclose(a,b,abs_tol=1e-3) for a,b in zip(root.get('translation',[]),[x,z,-y])),'园区坐标不一致')
 for poi in s['poi']:
  matches=[n for n in nodes if n.get('name')=='city_anchor_'+poi['id']];check(len(matches)==1,poi['id']+'锚点重复/缺失')

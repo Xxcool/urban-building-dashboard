@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "79f6978073173780d88be92ff843cd1604522b4917bc36394f0b1c8f697fcc87",
+  "argumentsSha256": "87d01d044964029aba01c992be5573aae24307b7a03d68169f9b768672f200ea",
+  "at": "2026-10-17T14:42:26.647723+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"city-v26-prepared.blend\"\nprepared {'receivers': ['regional_terrain_zoneGreen', 'regional_terrain_zoneCyan', 'regional_terrain_zoneGold', 'regional_terrain_grass', 'regional_terrain_shore', 'regional_campus_campus']}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"city-v26-prepared.blend\"\nprepared {'receivers': ['regional_terrain_zoneGreen', 'regional_terrain_zoneCyan', 'regional_terrain_zoneGold', 'regional_terrain_grass', 'regional_terrain_shore', 'regional_campus_campus']}\n"
+    },
+    "isError": false
+  }
+}

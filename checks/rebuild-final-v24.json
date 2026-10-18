@@ -1,0 +1,85 @@
+{
+  "result": "passed",
+  "output": "/Users/xiabin/Documents/urban-building-dashboard/work/rebuild-final-v24-001",
+  "seconds": 10.69,
+  "steps": [
+    {
+      "step": "Blender从规划源生成",
+      "exitCode": 0,
+      "seconds": 3.02
+    },
+    {
+      "step": "Blender生成区域LOD",
+      "exitCode": 0,
+      "seconds": 4.51
+    },
+    {
+      "step": "生成网页配置",
+      "exitCode": 0,
+      "seconds": 0.04
+    },
+    {
+      "step": "终稿与引用核对",
+      "exitCode": 0,
+      "seconds": 0.04
+    },
+    {
+      "step": "安装锁定依赖",
+      "exitCode": 0,
+      "seconds": 0.8
+    },
+    {
+      "step": "景观步道与净空回归",
+      "exitCode": 0,
+      "seconds": 0.05
+    },
+    {
+      "step": "道路水域边界回归",
+      "exitCode": 0,
+      "seconds": 0.04
+    },
+    {
+      "step": "业务契约测试",
+      "exitCode": 0,
+      "seconds": 0.26
+    },
+    {
+      "step": "生产构建",
+      "exitCode": 0,
+      "seconds": 1.28
+    },
+    {
+      "step": "实际资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.09
+    },
+    {
+      "step": "区域资产契约核对",
+      "exitCode": 0,
+      "seconds": 0.54
+    }
+  ],
+  "comparisons": {
+    "app/public/assets/campus.glb": {
+      "original": "b6f80d3c5b505eef48eb0752b9edd5de94a97e3c723d38d726c0814aed44c480",
+      "rebuilt": "b6f80d3c5b505eef48eb0752b9edd5de94a97e3c723d38d726c0814aed44c480",
+      "identical": true
+    },
+    "app/public/assets/runtime.json": {
+      "original": "d4b5ea85c3e39088c28043b2fc8cebd957ff26d44986de204a3f67bc467eaf77",
+      "rebuilt": "d4b5ea85c3e39088c28043b2fc8cebd957ff26d44986de204a3f67bc467eaf77",
+      "identical": true
+    },
+    "app/public/assets/city.glb": {
+      "original": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58",
+      "rebuilt": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58",
+      "identical": true
+    }
+  },
+  "log": "/Users/xiabin/Documents/urban-building-dashboard/work/rebuild-final-v24-001/rebuild.log",
+  "notes": [
+    "未复制旧GLB、blend、runtime、node_modules或dist；只复制规划、脚本、固定图像输入和前端源码。",
+    "blend包含保存路径等本机元数据，不要求二进制相同；实际GLB和网页配置做哈希比对。",
+    "网页交互和视觉需继续从本次dist实际打开核对。"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "d3a80e8d5cbec80b943353fed2bf9cc24c2799d57eb357721e0185c4fbb60df4",
+  "argumentsSha256": "e45afb95875985a8a4550fb46ce577de29709cb4f70254b7550e0dd3305d0038",
+  "at": "2026-10-17T14:17:55.011898+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: BAKED_PILOT_LOADED\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: BAKED_PILOT_LOADED\n"
+    },
+    "isError": false
+  }
+}

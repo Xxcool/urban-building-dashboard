@@ -1,0 +1,28 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "get_scene_info",
+  "argumentsSha256": null,
+  "at": "2026-10-17T13:42:28.868690+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Scene 'Scene' | 2 camera, 20 empty, 1 light, 107 mesh | active A1_stone | selected A1_frame, A1_stone, A1_roof, A1_bronze, pilot_plaza | mode OBJECT\n\nShowing 20 of 37 (name | type | location | size | hidden | children):\nbuilding_A1 | empty | at (-125.0, 70.0, 0.0) | 9 children\nbuilding_B1 | empty | at (-6.0, 78.0, 0.0) | 9 children\nbuilding_B2 | empty | at (104.0, 76.0, 0.0) | 9 children\nbuilding_A2 | empty | at (-147.0, -5.0, 0.0) | 9 children\nbuilding_B3 | empty | at (170.0, -5.0, 0.0) | 9 children\nbuilding_C1 | empty | at (-50.0, -98.0, 0.0) | 9 children\nbuilding_C2 | empty | at (55.0, -100.0, 0.0) | 9 children\nbuilding_C3 | empty | at (160.0, -98.0, 0.0) | 9 children\ntraffic_vehicle_template | empty | at (0.0, 0.0, 0.0) | 3 children\nenvironment_paving | mesh | at (0.0, 0.0, 0.0) | size 3000.0x3000.0x1.0\nenvironment_path | mesh | at (0.0, 0.0, 0.0) | size 400.0x320.0x0.61\nenvironment_road | mesh | at (0.0, 0.0, 0.0) | size 432.0x352.0x0.18\nenvironment_stone | mesh | at (0.0, 0.0, 0.0) | size 403.2x323.2x0.28\nenvironment_marking | mesh | at (0.0, 0.0, 0.0) | size 416.44x336.18x0.06\nenvironment_grass | mesh | at (0.0, 0.0, 0.0) | size 402.5x315.26x0.22\nenvironment_bark | mesh | at (0.0, 0.0, 0.0) | size 674.71x448.08x10.85\nenvironment_leavesCard | mesh | at (0.0, 0.0, 0.0) | size 684.96x460.71x16.44\nenvironment_cityLight | mesh | at (0.0, 0.0, 0.0) | size 1258.75x469.46x84.74\nenvironment_city | mesh | at (0.0, 0.0, 0.0) | size 1264.22x463.65x84.89\nlandscape_paving | mesh | at (0.0, 0.0, 0.0) | size 28.0x28.0x0.0\n... 17 more. Narrow with query= or root=, or raise limit.",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Scene 'Scene' | 2 camera, 20 empty, 1 light, 107 mesh | active A1_stone | selected A1_frame, A1_stone, A1_roof, A1_bronze, pilot_plaza | mode OBJECT\n\nShowing 20 of 37 (name | type | location | size | hidden | children):\nbuilding_A1 | empty | at (-125.0, 70.0, 0.0) | 9 children\nbuilding_B1 | empty | at (-6.0, 78.0, 0.0) | 9 children\nbuilding_B2 | empty | at (104.0, 76.0, 0.0) | 9 children\nbuilding_A2 | empty | at (-147.0, -5.0, 0.0) | 9 children\nbuilding_B3 | empty | at (170.0, -5.0, 0.0) | 9 children\nbuilding_C1 | empty | at (-50.0, -98.0, 0.0) | 9 children\nbuilding_C2 | empty | at (55.0, -100.0, 0.0) | 9 children\nbuilding_C3 | empty | at (160.0, -98.0, 0.0) | 9 children\ntraffic_vehicle_template | empty | at (0.0, 0.0, 0.0) | 3 children\nenvironment_paving | mesh | at (0.0, 0.0, 0.0) | size 3000.0x3000.0x1.0\nenvironment_path | mesh | at (0.0, 0.0, 0.0) | size 400.0x320.0x0.61\nenvironment_road | mesh | at (0.0, 0.0, 0.0) | size 432.0x352.0x0.18\nenvironment_stone | mesh | at (0.0, 0.0, 0.0) | size 403.2x323.2x0.28\nenvironment_marking | mesh | at (0.0, 0.0, 0.0) | size 416.44x336.18x0.06\nenvironment_grass | mesh | at (0.0, 0.0, 0.0) | size 402.5x315.26x0.22\nenvironment_bark | mesh | at (0.0, 0.0, 0.0) | size 674.71x448.08x10.85\nenvironment_leavesCard | mesh | at (0.0, 0.0, 0.0) | size 684.96x460.71x16.44\nenvironment_cityLight | mesh | at (0.0, 0.0, 0.0) | size 1258.75x469.46x84.74\nenvironment_city | mesh | at (0.0, 0.0, 0.0) | size 1264.22x463.65x84.89\nlandscape_paving | mesh | at (0.0, 0.0, 0.0) | size 28.0x28.0x0.0\n... 17 more. Narrow with query= or root=, or raise limit."
+    },
+    "isError": false
+  }
+}

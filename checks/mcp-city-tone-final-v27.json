@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "ed6cccdc845103262aae45e4d37d53d5bf765d0ab85b4e53d6e5d75dfc7db9a0",
+  "argumentsSha256": "1a5e88a90a3cb656e5c2ea3cb30c6900f005ccc586b6f8f29e8ed53d8c4dc58e",
+  "at": "2026-10-18T03:17:53.284068+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"city-v27-detailed.blend\"\n城市地表已移除周期条纹\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"city-v27-detailed.blend\"\n城市地表已移除周期条纹\n"
+    },
+    "isError": false
+  }
+}

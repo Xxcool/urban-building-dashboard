@@ -1,0 +1,27 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "at": "2026-10-17T13:35:46.289793+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Error executing code: Communication error with Blender: {\"exception_type\": \"TypeError\", \"message\": \"unsupported operand type(s) for +: 'PosixPath' and 'str'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 3, in <module>\\n  File \\\"<frozen runpy>\\\", line 287, in run_path\\n  File \\\"<frozen runpy>\\\", line 98, in _run_module_code\\n  File \\\"<frozen runpy>\\\", line 88, in _run_code\\n  File \\\"/Users/xiabin/Documents/urban-building-dashboard/scripts/bake_pilot.py\\\", line 134, in <module>\\n    else:bake(args.stage)\\n         ~~~~^^^^^^^^^^^^\\n  File \\\"/Users/xiabin/Documents/urban-building-dashboard/scripts/bake_pilot.py\\\", line 106, in bake\\n    bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'pilot-'+kind+'.blend'))\\n                                             ~~~~~~~~~~~~^~~~~\\nTypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'\\n\"}",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Error executing code: Communication error with Blender: {\"exception_type\": \"TypeError\", \"message\": \"unsupported operand type(s) for +: 'PosixPath' and 'str'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 3, in <module>\\n  File \\\"<frozen runpy>\\\", line 287, in run_path\\n  File \\\"<frozen runpy>\\\", line 98, in _run_module_code\\n  File \\\"<frozen runpy>\\\", line 88, in _run_code\\n  File \\\"/Users/xiabin/Documents/urban-building-dashboard/scripts/bake_pilot.py\\\", line 134, in <module>\\n    else:bake(args.stage)\\n         ~~~~^^^^^^^^^^^^\\n  File \\\"/Users/xiabin/Documents/urban-building-dashboard/scripts/bake_pilot.py\\\", line 106, in bake\\n    bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'pilot-'+kind+'.blend'))\\n                                             ~~~~~~~~~~~~^~~~~\\nTypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'\\n\"}"
+    },
+    "isError": false
+  }
+}

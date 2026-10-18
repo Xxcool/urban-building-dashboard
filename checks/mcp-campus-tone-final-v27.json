@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "283408ada8ed134eec9c986cb46b18b8437c1991e4336cdc3ffb64e4b8891f32",
+  "argumentsSha256": "4ef3ee1e6f3302cf78afc12a46db43ab91f044db2e73f06716396c24a286a8cd",
+  "at": "2026-10-18T03:17:48.594954+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"campus-v27-indirect.blend\"\n地面静态光照暗部已收敛\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"campus-v27-indirect.blend\"\n地面静态光照暗部已收敛\n"
+    },
+    "isError": false
+  }
+}

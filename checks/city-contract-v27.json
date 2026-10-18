@@ -1,0 +1,37 @@
+{
+  "result": "passed",
+  "errors": [],
+  "planningSha256": "d89f22721ac087c1489df7f2e567ee5f5ed572414068d26919523a4a50d8ee65",
+  "model": {
+    "quality": "detailed",
+    "planningSha256": "d89f22721ac087c1489df7f2e567ee5f5ed572414068d26919523a4a50d8ee65",
+    "scriptSha256": "464cf12994af6d8d4fd7f17f900fa58de9ae1826d04ec21caa99bf37c5cbf490",
+    "asset": "city.glb",
+    "assetSha256": "b5652ac26b7e1a22ffadb4c10615820298c39b2eae9d422f6430b3d3036a1e23",
+    "bytes": 23131912,
+    "triangles": 305476,
+    "decorativeBuildings": 1603,
+    "trees": 7200,
+    "contextBuildings": 2617,
+    "bridgeSpans": 3,
+    "regionObjectIds": [
+      "PARK-DEMO",
+      "INDUSTRY-DEMO",
+      "SERVICE-DEMO"
+    ],
+    "scope": "概念区域；装饰建筑不等于真实楼宇数据",
+    "blender": "5.2.2 LTS",
+    "operationPath": "assets/mcp-operations/v26/city-geometry.json",
+    "operationSha256": "464cf12994af6d8d4fd7f17f900fa58de9ae1826d04ec21caa99bf37c5cbf490",
+    "execution": "Blender MCP",
+    "bakingComplete": true,
+    "operations": {
+      "assets/mcp-operations/v27/city-polish.json": "41711866fb006bb55820d5fea4378689e1a73f93dceb0a98d348ba86379c9487",
+      "assets/mcp-operations/v27/city-ao.json": "693cb51365e5f51d515c14f796fb7277430e5ef4b5480bab8ba73df98edeebd3",
+      "assets/mcp-operations/v27/city-export.json": "34d40858933a41a4c148c22ad53a5d808bf3ac20b7de550dd82f43c9869f009f"
+    }
+  },
+  "dryRoadSurfaces": 14570,
+  "waterIntersections": 0,
+  "scope": "结构与预算检查，非真实地理/视觉/硬件认证"
+}

@@ -1,0 +1,37 @@
+{
+  "version": "final-v24",
+  "status": "user_confirmed",
+  "approval": {
+    "decisionId": "D024",
+    "status": "user_confirmed",
+    "reply": "确认，以这三张为终稿",
+    "scope": "城市、园区、楼宇三张完整整屏图为唯一有效视觉基准；允许移除旧稿与参考并更新引用，不等于现有网页还原已验收",
+    "date": "2026-10-17"
+  },
+  "assets": {
+    "city": {
+      "path": "design/final/city.png",
+      "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a",
+      "decisionId": "D024"
+    },
+    "campus": {
+      "path": "design/final/campus.png",
+      "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345",
+      "decisionId": "D024"
+    },
+    "building": {
+      "path": "design/final/building.png",
+      "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce",
+      "decisionId": "D024"
+    }
+  },
+  "type": "AI整屏设计终稿，非实际网页截图",
+  "nativeImageSize": [
+    1672,
+    941
+  ],
+  "targetViewport": [
+    1920,
+    1080
+  ]
+}

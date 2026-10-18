@@ -1,0 +1,4 @@
+{
+  "code": "import bpy,json\nfrom pathlib import Path\nroot=Path('__PROJECT_ROOT__');plan=json.loads((root/'planning/project.json').read_text());cfg=plan['production']['bakingPilot'];out=root/cfg['outputDirectory'];web=cfg['webIndirect']\nimage=bpy.data.images.load(str(out/web['source']),check_existing=False)\nimage.scale(web['resolution'],web['resolution'])\nscene=bpy.context.scene;old=scene.view_settings.view_transform;scene.view_settings.view_transform=web['colorTransform'];scene.render.image_settings.file_format='PNG';scene.render.image_settings.color_mode='RGB';scene.render.image_settings.color_depth=str(web['bitDepth'])\nimage.save_render(str(out/'indirect.png'),scene=scene);scene.view_settings.view_transform=old\nprint('WEB_INDIRECT',list(image.size),(out/'indirect.png').stat().st_size)\n",
+  "user_prompt": "技能改了，按照Blender MCP模式去处理即可"
+}

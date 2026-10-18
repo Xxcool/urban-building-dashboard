@@ -1,0 +1,38 @@
+{
+  "version": "v25",
+  "scope": "A1裙房及广场烘焙技术样区；不是三场景最终还原或验收",
+  "planningSha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2",
+  "execution": "Blender MCP execute_blender_code",
+  "receivers": [
+    "A1_stone",
+    "A1_frame",
+    "A1_bronze",
+    "A1_roof",
+    "pilot_plaza"
+  ],
+  "aoStrength": 0.75,
+  "indirectStrength": 0.6,
+  "uvChannel": 1,
+  "files": {
+    "pilot.glb": {
+      "bytes": 11085784,
+      "sha256": "64b2c724407523e515ae1f4143cc636ff7955af3c87e0334ebaba3f96b24c01a"
+    },
+    "ao.png": {
+      "bytes": 1804569,
+      "sha256": "1b269a13875df50c0496b72e0696c87ad3d22f9cacb16cee1b4c7c6294a431e7"
+    },
+    "indirect.png": {
+      "bytes": 545592,
+      "sha256": "d3463eda1f1d5e235abcd0afac97a66f70f95701fc689d08b041118f5df82302"
+    },
+    "pilot-baked.blend": {
+      "bytes": 7800823,
+      "sha256": "aae1f8e651981a2eb4ff8aa29715c4487087187e5a21f35096d2e6c722fe4c0f"
+    }
+  },
+  "intermediate": {
+    "path": "work/bake-pilot-v25/indirect.exr",
+    "scope": "高精度本地中间图，不随网页加载"
+  }
+}

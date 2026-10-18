@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "45751bfe907e35eb2e3d16a0f1cb37154e194fc26c5e2e817d56b7af28076073",
+  "argumentsSha256": "aa117fec4136907dc51ac9bbd0fbbbedde6a08ab347eec4adb006a538d6a26f0",
+  "at": "2026-10-17T14:07:09.090447+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: {\"filepath\": \"/Users/xiabin/Documents/urban-building-dashboard/assets/scene.blend\", \"scene\": \"Scene\", \"objects\": [[\"building_A1\", [-125.0, 70.0, 0.0], \"A1\"], [\"building_A2\", [-147.0, -5.0, 0.0], \"A2\"], [\"building_B1\", [-6.0, 78.0, 0.0], \"B1\"], [\"building_B2\", [104.0, 76.0, 0.0], \"B2\"], [\"building_B3\", [170.0, -5.0, 0.0], \"B3\"], [\"building_C1\", [-50.0, -98.0, 0.0], \"C1\"], [\"building_C2\", [55.0, -100.0, 0.0], \"C2\"], [\"building_C3\", [160.0, -98.0, 0.0], \"C3\"]], \"meshCount\": 106, \"triangles\": 78120}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: {\"filepath\": \"/Users/xiabin/Documents/urban-building-dashboard/assets/scene.blend\", \"scene\": \"Scene\", \"objects\": [[\"building_A1\", [-125.0, 70.0, 0.0], \"A1\"], [\"building_A2\", [-147.0, -5.0, 0.0], \"A2\"], [\"building_B1\", [-6.0, 78.0, 0.0], \"B1\"], [\"building_B2\", [104.0, 76.0, 0.0], \"B2\"], [\"building_B3\", [170.0, -5.0, 0.0], \"B3\"], [\"building_C1\", [-50.0, -98.0, 0.0], \"C1\"], [\"building_C2\", [55.0, -100.0, 0.0], \"C2\"], [\"building_C3\", [160.0, -98.0, 0.0], \"C3\"]], \"meshCount\": 106, \"triangles\": 78120}\n"
+    },
+    "isError": false
+  }
+}

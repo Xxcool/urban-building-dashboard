@@ -24,7 +24,7 @@ text = f'''# 制作规格 {prod['version']}
 | --- | --- |
 {rows}
 
-A1层数只读demoDesign.focusBuilding.floorsDefinition；层高为{prod['floorHeightM']}m。其他建筑高度仅是视觉建模估计，不转写为未定义业务指标。
+A1层数只读demoDesign.focusBuilding.floorsDefinition；裙房层高{prod['geometryById']['A1']['podiumFloorHeightM']}m，塔楼层高{prod['geometryById']['A1']['towerFloorHeightM']}m。其他建筑高度仅是视觉建模估计，不转写为未定义业务指标。
 
 ## 相机与构图
 
@@ -44,10 +44,10 @@ UI占位与安全边界：{json.dumps(p['design']['layout'], ensure_ascii=False)
 
 ## 生成与复验
 
-规划源 → scripts/build_scene.py --gray → 简化GLB/网页构图证据 → 改源复验 → scripts/build_scene.py → .blend、GLB → 网页材质/绑定检查 → 正式面板与场景联动。脚本指定输出目录，记录版本与哈希；禁止修补GLB和模型。两层共用模型与业务ID映射，标签、拾取和面板读取同一状态。
+规划源 + 三张唯一终稿 → Blender MCP修改并保存工程 → MCP制作UV、AO/间接光并导出GLB → 核对后发布资产 → 从规划派生runtime → 实际浏览器同相机对照。MCP操作记录在assets/mcp-operations/v26；不使用终端Blender生成器，不手改GLB。两层共用模型与业务ID映射，标签、拾取和面板读取同一状态。
 
 每层每版保存设计/实际对照，注明版本、视口、相机和状态；先处理构图与几何，再处理材质、UI、数据和交互。未通过项保留ID、原因假设、源修改、重建产物和下一步。
 '''
-output = root / ('docs/production-spec-' + prod['version'] + '.md')
+output = root / 'docs/production-current.md'
 output.write_text(text)
 print(output)

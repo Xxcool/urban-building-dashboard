@@ -1,0 +1,135 @@
+{
+  "status": "design-finalized-not-runtime-approved",
+  "approval": {
+    "decisionId": "D024",
+    "status": "user_confirmed",
+    "reply": "确认，以这三张为终稿",
+    "scope": "城市、园区、楼宇三张完整整屏图为唯一有效视觉基准；允许移除旧稿与参考并更新引用，不等于现有网页还原已验收",
+    "date": "2026-10-17"
+  },
+  "archive": "work/archive/design-before-final-v24-20261017-131314.zip",
+  "archivePolicy": "仅本地忽略的恢复包，不属于现行设计或提交内容",
+  "removedDesignFiles": [
+    "design/.DS_Store",
+    "design/material-generation-v1.json",
+    "design/foliage-generation-v1.json",
+    "design/materials/curtain-wall-v1.png",
+    "design/materials/foliage-cluster-v1.png",
+    "design/screens/manifest-v1.json",
+    "design/screens/city-generation-v1.json",
+    "design/screens/campus-no-data-design-v1.png",
+    "design/screens/building-no-data-design-v1.png",
+    "design/screens/generation-requests-v1.json",
+    "design/screens/city-no-data-prompt-v1.txt",
+    "design/screens/city-no-data-design-v1.png",
+    "design/screens/v24/index.html",
+    "design/screens/v24/brief.json",
+    "design/screens/v24/city.png",
+    "design/screens/v24/city-generation.json",
+    "design/screens/v24/campus.png",
+    "design/screens/v24/README.md",
+    "design/screens/v24/building.png",
+    "design/screens/v24/manifest.json",
+    "design/screens/v24/campus-generation.json",
+    "design/screens/v24/building-generation.json",
+    "design/screens/v24/variants/building-v24a-generation.json",
+    "design/screens/v24/variants/building-v24a.png",
+    "design/screens/v24/references/campus-landscape.png",
+    "design/screens/v24/references/campus-original.png",
+    "design/screens/v24/references/manifest.json",
+    "design/screens/v24/references/building-original.png",
+    "design/screens/v24/references/city-original.png",
+    "design/concepts/manifest-v1.json",
+    "design/concepts/B-building-v2r1.png",
+    "design/concepts/A-building-v1.png",
+    "design/concepts/.DS_Store",
+    "design/concepts/campus-landscape-v23a.png",
+    "design/concepts/prompts-v1.json",
+    "design/concepts/campus-landscape-v23a-generation.json",
+    "design/concepts/B-building-v1.png",
+    "design/concepts/generation-requests-v1.json",
+    "design/concepts/B-building-v2.png",
+    "design/concepts/B-campus-v1.png",
+    "design/concepts/B-campus-v2.png",
+    "design/concepts/manifest-B-v2.json",
+    "design/concepts/generation-requests-B-v2.json",
+    "design/concepts/A-campus-v1.png",
+    "design/concepts/city/B-city-v1.png",
+    "design/concepts/city/generation-B-city-v1.json",
+    "design/concepts/city/prompt-B-city-v1.txt"
+  ],
+  "removedReferenceFiles": [
+    "references/hightopo-campus.gif",
+    "references/hightopo-building.gif"
+  ],
+  "removedHistoricalScripts": [
+    "archive_concepts.py",
+    "build_city_restoration_review.py",
+    "build_comparisons.py",
+    "preview_entry_v22.py",
+    "record_v22.py",
+    "render_research.py",
+    "review_outline_v17.py",
+    "review_v19.py",
+    "review_v21.py",
+    "verify_runtime_evidence.py",
+    "verify_city_runtime.py"
+  ],
+  "finalAssets": {
+    "city": {
+      "path": "design/final/city.png",
+      "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a",
+      "decisionId": "D024"
+    },
+    "campus": {
+      "path": "design/final/campus.png",
+      "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345",
+      "decisionId": "D024"
+    },
+    "building": {
+      "path": "design/final/building.png",
+      "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce",
+      "decisionId": "D024"
+    }
+  },
+  "keptMaterialInputs": {
+    "curtainWall": {
+      "path": "assets/materials/curtain-wall-v1.png",
+      "sha256": "dcd3dba1ce867875792225a713a856ad39b69c2384787593f1e6557211477a4e",
+      "atlasColumns": 4,
+      "atlasRows": 4,
+      "provenance": "assets/materials/curtainWall-provenance.json",
+      "use": "预渲染窗内细节与反射，仅作幕墙表面；不代表室内空间或实时灯光"
+    },
+    "foliage": {
+      "path": "assets/materials/foliage-cluster-v1.png",
+      "sha256": "58a272e5451f17de076d059f3fd59ab7609c17c8d969b26ae07abb4e88458b0e",
+      "cardsPerTree": 12,
+      "alphaCutoff": 0.48,
+      "provenance": "assets/materials/foliage-provenance.json",
+      "use": "静态交错双面叶簇，Alpha裁切、真实裁切阴影；不参与AO法线通道，无业务状态或风速含义",
+      "widthHeightRatioRange": [
+        0.55,
+        0.75
+      ],
+      "heightRatioRange": [
+        0.45,
+        0.65
+      ]
+    }
+  },
+  "removedGeneratedGreyFiles": [
+    "assets/city-gray.blend",
+    "assets/city-manifest-gray.json",
+    "assets/scene-gray.blend",
+    "assets/manifest-gray.json",
+    "app/public/assets/campus-gray.glb",
+    "app/public/assets/city-gray.glb"
+  ],
+  "validationReports": [
+    "checks/design-contract-final-v24.json",
+    "checks/assets-contract-final-v24.json",
+    "checks/city-contract-final-v24.json",
+    "checks/rebuild-final-v24.json"
+  ]
+}

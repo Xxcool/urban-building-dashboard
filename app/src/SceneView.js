@@ -3,15 +3,17 @@ import {onMounted,onBeforeUnmount,ref,watch,computed} from 'vue';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {createDaylightSky} from './daylight-environment.js';
 import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
 import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {SMAAPass} from 'three/addons/postprocessing/SMAAPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 import {GTAOPass} from 'three/addons/postprocessing/GTAOPass.js';
 import {toThree,number,area,occupancy} from './state.js';
 import Icon from './Icon.js';
 import {measureFloatingCard} from './floating-card.js';
 import {createRoute} from './traffic.js';
+import {createCampusLandscape} from './campus-landscape.js';
 
 export default {
   components:{Icon},props:['active','config','level','selected','buildingData','mode','resetTick','tour'],emits:['select','focus','stats','status','ready','interrupt'],
@@ -22,10 +24,17 @@ export default {
     const modelHeight=computed(()=>props.config.production.geometryById[props.selected]?.size?.[2]);
     function closeCardOnEscape(event){if(cardOpen.value&&props.active&&event.key==='Escape'){cardOpen.value=false;event.stopImmediatePropagation();event.preventDefault();}}
     let renderer,scene,camera,controls,composer,aoPass,frame,observer,model,disposed=false,transition=null;
-    let environmentTexture,skyTexture,pmrem,room,quality,clickStart,renderCount=0,lastStats=0,lastTime=0;
+    let environmentTexture,skyTexture,pmrem,room,facadeEnvironment,quality,clickStart,renderCount=0,lastStats=0,lastTime=0;
     const roots=new Map(),anchors=new Map(),labels=new Map(),highlights=new Map(),ray=new THREE.Raycaster(),pointer=new THREE.Vector2(),frameTimes=[];
     let trafficSeconds=0;const trafficMeshes=[],trafficDummy=new THREE.Object3D();
     const pending=[...props.config.demoDesign.buildingIdentities];
+    const glassMaterials=new Map(),interiorMeshes=[];
+    // 总览使用同一幕墙的反射外观；仅近景启用窗后实体与折射，避免远景重复绘制全场景。
+    function applyDetailQuality(){
+      const close=props.level==='building';
+      for(const [material,authored] of glassMaterials){material.transmission=close&&authored.owner===props.config.demoDesign.focusBuilding.id?authored.transmission:0;material.needsUpdate=true;}
+      for(const mesh of interiorMeshes)mesh.visible=close&&mesh.name.startsWith('interior_v27_A1_');
+    }
     const loadingController=new AbortController();
     function disposeModel(root){
       const geometries=new Set(),mats=new Set(),textures=new Set();
@@ -90,6 +99,8 @@ export default {
         const settings=props.config.production.render;
         renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});renderer.outputColorSpace=THREE.SRGBColorSpace;
         renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=settings.exposure;
+        // 窗后折射使用半分辨率缓冲，主画面和文字保持原尺寸。
+        renderer.transmissionResolutionScale=settings.transmissionResolutionScale;
         renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFShadowMap;
         // 场景为固定演示快照；相机巡览不改变光源与几何，只在模型载入后计算一次阴影。
         renderer.shadowMap.autoUpdate=false;
@@ -97,20 +108,16 @@ export default {
         renderer.domElement.setAttribute('aria-label','可旋转和选择楼宇的三维园区');renderer.domElement.tabIndex=0;host.value.prepend(renderer.domElement);
         scene=new THREE.Scene();scene.fog=new THREE.Fog('#e1e8e9',settings.fogNear,settings.fogFar);
         // 天空作为背景纹理，不参与GBuffer，防止环境球遮挡远景AO和形成灰色多边形。
-        const skyPixels=new Uint8Array(512*256*4);
-        for(let y=0;y<256;y++)for(let x=0;x<512;x++){
-          const altitude=Math.max(0,(y-128)/128),t=Math.sqrt(altitude),cloud=Math.max(0,Math.sin(x*.036+Math.sin(y*.085)*2)+Math.sin(x*.084-y*.11)*.45-.65)*.35*Math.min(1,altitude*6);
-          const k=(y*512+x)*4;for(let c=0;c<3;c++){const value=THREE.MathUtils.lerp(settings.skyHorizonRgb[c],settings.skyTopRgb[c],t);skyPixels[k+c]=THREE.MathUtils.lerp(value,245,cloud);}skyPixels[k+3]=255;
-        }
-        skyTexture=new THREE.DataTexture(skyPixels,512,256);skyTexture.colorSpace=THREE.SRGBColorSpace;skyTexture.mapping=THREE.EquirectangularReflectionMapping;skyTexture.needsUpdate=true;scene.background=skyTexture;
+        skyTexture=createDaylightSky(props.config.production.restoration.sky);scene.background=skyTexture;
         scene.add(new THREE.HemisphereLight('#dfeefb','#b6b09a',settings.hemisphereIntensity));
-        const sun=new THREE.DirectionalLight('#fff5e5',settings.sunIntensity);sun.position.set(...toThree(settings.sunPosition));sun.castShadow=true;sun.shadow.mapSize.setScalar(settings.shadowMapSize);sun.shadow.camera.left=-300;sun.shadow.camera.right=300;sun.shadow.camera.top=270;sun.shadow.camera.bottom=-270;sun.shadow.camera.near=1;sun.shadow.camera.far=850;sun.shadow.normalBias=.2;sun.shadow.bias=-.00004;sun.shadow.radius=3;sun.shadow.camera.layers.enable(1);scene.add(sun);
-        pmrem=new THREE.PMREMGenerator(renderer);room=new RoomEnvironment();environmentTexture=pmrem.fromScene(room,.04);scene.environment=environmentTexture.texture;scene.environmentIntensity=settings.environmentIntensity;
+        const sun=new THREE.DirectionalLight('#fff5e5',settings.sunIntensity);sun.position.set(...toThree(settings.sunPosition));sun.castShadow=true;sun.shadow.mapSize.setScalar(settings.shadowMapSize);sun.shadow.camera.left=-300;sun.shadow.camera.right=300;sun.shadow.camera.top=270;sun.shadow.camera.bottom=-270;sun.shadow.camera.near=1;sun.shadow.camera.far=850;sun.shadow.normalBias=.2;sun.shadow.bias=-.00004;sun.shadow.radius=3;sun.shadow.camera.updateProjectionMatrix();sun.shadow.camera.layers.enable(1);scene.add(sun);
+        const fillSettings=settings.fillLight,fill=new THREE.DirectionalLight(fillSettings.color,fillSettings.intensity);fill.position.set(...toThree(fillSettings.positionM));scene.add(fill);
+        pmrem=new THREE.PMREMGenerator(renderer);environmentTexture=pmrem.fromEquirectangular(skyTexture);scene.environment=environmentTexture.texture;scene.environmentIntensity=settings.environmentIntensity;
         camera=new THREE.PerspectiveCamera(32,1,.2,2400);camera.layers.enable(1);
         controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.07;controls.maxPolarAngle=Math.PI*.46;controls.minPolarAngle=.2;controls.autoRotateSpeed=.45;
         composer=new EffectComposer(renderer);composer.addPass(new RenderPass(scene,camera));
         const ao=settings.ambientOcclusion;aoPass=new GTAOPass(scene,camera,512,512,undefined,ao);aoPass.blendIntensity=ao.blendIntensity;// 遮蔽通道降低内部采样分辨率，建筑、车辆、标签与浮层仍保持主画面原始分辨率。
-        const resizeAO=aoPass.setSize.bind(aoPass);aoPass.setSize=(w,h)=>resizeAO(Math.max(1,Math.round(w*.6)),Math.max(1,Math.round(h*.6)));composer.addPass(aoPass);composer.addPass(new OutputPass());
+        const resizeAO=aoPass.setSize.bind(aoPass);aoPass.setSize=(w,h)=>resizeAO(Math.max(1,Math.round(w*.6)),Math.max(1,Math.round(h*.6)));composer.addPass(aoPass);composer.addPass(new OutputPass());composer.addPass(new SMAAPass());
         // 法线通道不支持透明叶簇的Alpha裁切；只排除装饰叶片，保留主画面及真实裁切阴影。
         const renderAo=aoPass.render.bind(aoPass);aoPass.render=(...args)=>{const mask=camera.layers.mask;camera.layers.disable(1);try{return renderAo(...args);}finally{camera.layers.mask=mask;}};
         const response=await fetch('./assets/build-info.json',{signal:loadingController.signal});if(!response.ok)throw new Error('模型清单读取失败');const info=await response.json();quality=info.quality;
@@ -121,13 +128,36 @@ export default {
         if(disposed)return;
         const gltf=await new GLTFLoader().parseAsync(bytes,'./assets/');if(disposed){disposeModel(gltf.scene);return;}
         model=gltf.scene;scene.add(model);renderer.shadowMap.needsUpdate=true;
+        const baking={...props.config.production.bakedLighting,enabled:props.config.production.bakedLighting.enabled&&info.bakingComplete===true};
+        let indirectMap;
+        if(baking.enabled){
+          indirectMap=await new THREE.TextureLoader().loadAsync('./assets/'+baking.indirectAsset);
+          if(disposed){indirectMap.dispose();disposeModel(model);return;}
+          indirectMap.flipY=false;indirectMap.colorSpace=THREE.NoColorSpace;indirectMap.channel=baking.uvChannel;
+        }
+        // 仅在载入后生成一次静态环境探针；玻璃反射真实周边几何，巡览不重复捕获。
+        const cubeTarget=new THREE.WebGLCubeRenderTarget(128,{type:THREE.HalfFloatType}),probe=new THREE.CubeCamera(.5,1800,cubeTarget),focusGeometry=props.config.production.geometryById.A1;
+        probe.position.set(...toThree([focusGeometry.position[0],focusGeometry.position[1]-focusGeometry.towerSize[1]/2-8,38]));
+        const focusRoot=model.getObjectByName('building_A1');focusRoot.visible=false;renderer.shadowMap.enabled=false;probe.update(renderer,scene);renderer.shadowMap.enabled=true;focusRoot.visible=true;
+        facadeEnvironment=pmrem.fromCubemap(cubeTarget.texture);cubeTarget.dispose();
+
+        const originalWater=model.getObjectByName('landscape_water')?.material;
+        const landscape=createCampusLandscape(model,scene,props.config.production.landscape);originalWater?.dispose();
         const revealMaterials=new Map();
         model.traverse(obj=>{
           if(obj.isMesh){
             let owner=obj;while(owner&&!owner.userData.objectId)owner=owner.parent;
-            if(owner){const original=obj.material;if(!revealMaterials.has(original)){const material=original.clone();material.onBeforeCompile=shader=>{shader.uniforms.campusDetailReveal=detailReveal;shader.fragmentShader='uniform float campusDetailReveal;\n'+shader.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\ndiffuseColor.rgb=mix(vec3(.72,.78,.75),diffuseColor.rgb,campusDetailReveal);');};material.customProgramCacheKey=()=> 'campus-entry-v22';revealMaterials.set(original,material);}obj.material=revealMaterials.get(original);}
-            obj.castShadow=!obj.name.startsWith('environment_city');obj.receiveShadow=true;
-            if(obj.material?.name==='leavesCard'){const foliage=props.config.production.materialInputs.foliage;obj.layers.set(1);obj.material.alphaTest=foliage.alphaCutoff;obj.material.transparent=false;obj.material.depthWrite=true;obj.material.side=THREE.DoubleSide;obj.material.needsUpdate=true;}
+            if(owner){const original=obj.material,key=owner.userData.objectId+':'+original.uuid;if(!revealMaterials.has(key)){const material=original.clone();material.onBeforeCompile=shader=>{shader.uniforms.campusDetailReveal=detailReveal;shader.fragmentShader='uniform float campusDetailReveal;\n'+shader.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\ndiffuseColor.rgb=mix(vec3(.72,.78,.75),diffuseColor.rgb,campusDetailReveal);');};material.customProgramCacheKey=()=> 'campus-entry-v22';revealMaterials.set(key,material);}obj.material=revealMaterials.get(key);}
+            if(obj.userData.bakeReceiver){
+              if(!obj.geometry.getAttribute('uv1')||!obj.material.aoMap)throw new Error('静态烘焙接收面缺少UV2或AO：'+obj.name);
+              obj.material.aoMapIntensity=baking.aoStrength;obj.material.lightMap=indirectMap;obj.material.lightMapIntensity=baking.indirectStrength;
+            }
+            if(obj.name.startsWith('interior_v27_'))interiorMeshes.push(obj);
+            if(obj.material.name.startsWith('glass')){if(obj.material.transmission)glassMaterials.set(obj.material,{transmission:obj.material.transmission,owner:owner?.userData.objectId});obj.material.envMap=facadeEnvironment.texture;obj.material.envMapIntensity=.9;}
+            obj.castShadow=!obj.name.startsWith('environment_city')&&obj.name!=='landscape_water';obj.receiveShadow=true;
+            // 小型设施与透明水景保留主画面和真实阴影，避开重复法线/AO通道。
+            if(['landscape_wood','landscape_metal','landscape_skin','landscape_clothes','landscape_flower','landscape_water'].includes(obj.name))obj.layers.set(1);
+            if(obj.material?.name?.startsWith('leavesCard')){const foliage=props.config.production.materialInputs.foliage;obj.layers.set(1);obj.material.alphaTest=foliage.alphaCutoff;obj.material.transparent=false;obj.material.depthWrite=true;obj.material.side=THREE.DoubleSide;obj.material.needsUpdate=true;}
           }
           if(obj.userData.objectId){if(roots.has(obj.userData.objectId))throw new Error('重复业务根节点');roots.set(obj.userData.objectId,obj);}
           if(obj.name.startsWith('anchor_'))anchors.set(obj.name.slice(7),obj);
@@ -148,6 +178,7 @@ export default {
         }
         if(vehicleOffset!==traffic.vehicleCount)throw new Error('车队数量与规划不一致');
         function updateTraffic(){
+          host.value.dataset.landscape=JSON.stringify(landscape.update(trafficSeconds));
           const poses=Array.from({length:traffic.vehicleCount},(_,i)=>{const route=routes[i%2];return route.sample(Math.floor(i/2)*route.length/Math.ceil(traffic.vehicleCount/2)+trafficSeconds*traffic.speedMps);});
           for(const {mesh,indices} of fleet){indices.forEach((id,index)=>{const pose=poses[id];trafficDummy.position.set(...toThree(pose.position));trafficDummy.rotation.set(0,pose.heading,0);trafficDummy.updateMatrix();mesh.setMatrixAt(index,trafficDummy.matrix);});mesh.instanceMatrix.needsUpdate=true;}
           host.value.dataset.traffic=JSON.stringify({seconds:+trafficSeconds.toFixed(3),count:traffic.vehicleCount,types:traffic.fleet.map(t=>({type:t.type,count:t.count})),colors:traffic.colors,first:poses[0]});
@@ -156,7 +187,7 @@ export default {
         for(const [id,root] of roots){
           const g=props.config.production.geometryById[id],group=new THREE.Group();
           const edge=(w,d,h,x,y,z)=>{const box=new THREE.BoxGeometry(w+.22,h+.22,d+.22);const geometry=new THREE.EdgesGeometry(box);box.dispose();const line=new THREE.LineSegments(geometry,new THREE.LineBasicMaterial({color:'#23858b',transparent:true,opacity:.55}));line.position.set(x,z,-y);line.userData.selectionDecoration=true;group.add(line);};
-          if(g.podiumSizes){const fh=props.config.production.floorHeightM,f=props.config.demoDesign.focusBuilding.floorsDefinition;g.podiumSizes.forEach(([w,d],i)=>edge(w,d,fh,0,0,(i+.5)*fh));edge(...g.towerSize,f.towerAbovePodium*fh,...g.towerOffset,f.podium*fh+f.towerAbovePodium*fh/2);}
+          if(g.podiumSizes){const fh=g.podiumFloorHeightM,th=g.towerFloorHeightM,f=props.config.demoDesign.focusBuilding.floorsDefinition;g.podiumSizes.forEach(([w,d],i)=>edge(w,d,fh,0,0,(i+.5)*fh));edge(...g.towerSize,f.towerAbovePodium*th,...g.towerOffset,f.podium*fh+f.towerAbovePodium*th/2);}
           else edge(...g.size,0,0,g.size[2]/2);
           root.add(group);highlights.set(id,group);
         }
@@ -165,7 +196,8 @@ export default {
           button.disabled=!props.active;button.tabIndex=props.active?0:-1;button.addEventListener('click',()=>choose(item.id));labelHost.value.append(button);labels.set(item.id,button);
         }
         renderer.domElement.addEventListener('pointerdown',pointerDown,true);renderer.domElement.addEventListener('pointerup',pointerUp);renderer.domElement.addEventListener('wheel',interruptEntry,{capture:true,passive:true});
-        observer=new ResizeObserver(resize);observer.observe(host.value);window.addEventListener('resize',resize);document.addEventListener('visibilitychange',visibilityChanged);resize();setCamera(true);selectOutline();window.addEventListener('keydown',closeCardOnEscape,true);progressStatus('');updateTraffic();composer.render();emit('ready');
+        observer=new ResizeObserver(resize);observer.observe(host.value);window.addEventListener('resize',resize);document.addEventListener('visibilitychange',visibilityChanged);resize();setCamera(true);selectOutline();applyDetailQuality();window.addEventListener('keydown',closeCardOnEscape,true);progressStatus('');updateTraffic();renderer.shadowMap.needsUpdate=true;composer.render();
+        emit('ready');
         function render(time){
           if(disposed)return;
           if(!props.active||document.visibilityState!=='visible'){lastTime=0;frame=requestAnimationFrame(render);return;}
@@ -181,18 +213,18 @@ export default {
 
             const index=pending.findIndex(item=>item.id===id),reveal=entryFrame?entryFrame.labels[id==='A1'?0:index<4?1:2]:1;label.style.opacity=reveal;label.style.pointerEvents=entryFrame?'none':'';label.disabled=!!entryFrame||!props.active||reveal<.7;label.tabIndex=label.disabled?-1:0;label.hidden=!visible||reveal<.01;label.classList.toggle('selected',id===props.selected);label.style.transform=`translate(${(pos.x*.5+.5)*host.value.clientWidth}px,${(-pos.y*.5+.5)*host.value.clientHeight}px) translate(-50%,-100%)`;
           }
-          entryAO=entryFrame?0:Math.min(1,entryAO+visibleDelta*5);aoPass.enabled=!entryFrame;aoPass.blendIntensity=ao.blendIntensity*entryAO;placeCard(time);renderer.info.reset();composer.render();renderCount++;
+          entryAO=entryFrame?0:Math.min(1,entryAO+visibleDelta*5);aoPass.enabled=!baking.enabled&&!entryFrame;aoPass.blendIntensity=ao.blendIntensity*entryAO;placeCard(time);renderer.info.reset();composer.render();renderCount++;
           if(time-lastStats>1200){const sorted=[...frameTimes].sort((a,b)=>a-b);emit('stats',{quality,objects:[...roots.keys()],anchors:[...anchors.keys()],calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,modelTriangles:info.triangles,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,frameP95:sorted.length?+sorted[Math.floor((sorted.length-1)*.95)].toFixed(1):null,frames:renderCount,level:props.level,selection:props.selected,asset:info.asset,assetVersion:digest.slice(0,12)});lastStats=time;}
           frame=requestAnimationFrame(render);
         }
         frame=requestAnimationFrame(render);
       }catch(error){if(!disposed){console.error(error);progressStatus('三维场景加载失败，请检查资源后重试',true);}}
     });
-    watch(()=>props.active,()=>{lastTime=0;resize();if(!props.active)cardOpen.value=false;});watch(()=>props.level,()=>{cardOpen.value=false;setCamera();});watch(()=>props.resetTick,()=>setCamera());watch(()=>props.selected,selectOutline);
+    watch(()=>props.active,()=>{lastTime=0;resize();if(!props.active)cardOpen.value=false;});watch(()=>props.level,()=>{cardOpen.value=false;applyDetailQuality();setCamera();});watch(()=>props.resetTick,()=>setCamera());watch(()=>props.selected,selectOutline);
     onBeforeUnmount(()=>{
       disposed=true;window.removeEventListener('keydown',closeCardOnEscape,true);loadingController.abort();cancelAnimationFrame(frame);observer?.disconnect();window.removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibilityChanged);controls?.dispose();
       renderer?.domElement.removeEventListener('pointerdown',pointerDown,true);renderer?.domElement.removeEventListener('pointerup',pointerUp);renderer?.domElement.removeEventListener('wheel',interruptEntry,true);
-      disposeModel(scene);skyTexture?.dispose();environmentTexture?.dispose();room?.dispose();pmrem?.dispose();aoPass?.dispose();composer?.passes.forEach(p=>{if(p!==aoPass)p.dispose();});composer?.dispose();renderer?.dispose();renderer?.forceContextLoss();renderer?.domElement.remove();labels.forEach(label=>label.remove());
+      disposeModel(scene);skyTexture?.dispose();environmentTexture?.dispose();facadeEnvironment?.dispose();room?.dispose();pmrem?.dispose();aoPass?.dispose();composer?.passes.forEach(p=>{if(p!==aoPass)p.dispose();});composer?.dispose();renderer?.dispose();renderer?.forceContextLoss();renderer?.domElement.remove();labels.forEach(label=>label.remove());
     });
     return {number,area,occupancy,host,labelHost,status,failure,cardOpen,cardPosition,cardIdentity,modelHeight,reload:()=>window.location.reload()};
   },

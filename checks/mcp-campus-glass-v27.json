@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "6d733e31266a0077d0b231bf2b645318a1b52ad6531a731ef54b188482541d6d",
+  "argumentsSha256": "1dc9cbf713a2aa8664dea524d9d66537cd13ad32a45daad78c6f9204acd63934",
+  "at": "2026-10-18T03:12:43.580556+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"campus-v27-ground.blend\"\n玻璃与室内照明已按规划调整\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"campus-v27-ground.blend\"\n玻璃与室内照明已按规划调整\n"
+    },
+    "isError": false
+  }
+}

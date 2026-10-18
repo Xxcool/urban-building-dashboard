@@ -15,5 +15,4 @@ __pycache__/
 *.blend1
 *.blend2
 
-# Downloaded research references (kept locally)
-references/*.gif
+# 历史恢复包只保存在已忽略的 work/archive/

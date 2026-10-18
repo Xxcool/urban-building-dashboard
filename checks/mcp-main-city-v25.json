@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "9e4a05d7a882a973bf91640e99bc6605dc2bce5ad47517c931be4a6c3e87aeea",
+  "argumentsSha256": "8b8cd155c6d8d23e5fd1da2991aef3a75d5d2fd66cf6427da6cfa5cb69598f68",
+  "at": "2026-10-17T14:10:11.940096+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Error executing code: Communication error with Blender: {\"exception_type\": \"AssertionError\", \"message\": \"\\u5bfc\\u51fa\\u5185\\u5bb9\\u4e0d\\u540c\\uff0c\\u4fdd\\u7559\\u4e3b\\u6a21\\u578b\\u5e76\\u505c\\u6b62\\u540c\\u6b65\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 19, in <module>\\nAssertionError: \\u5bfc\\u51fa\\u5185\\u5bb9\\u4e0d\\u540c\\uff0c\\u4fdd\\u7559\\u4e3b\\u6a21\\u578b\\u5e76\\u505c\\u6b62\\u540c\\u6b65\\n\"}",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Error executing code: Communication error with Blender: {\"exception_type\": \"AssertionError\", \"message\": \"\\u5bfc\\u51fa\\u5185\\u5bb9\\u4e0d\\u540c\\uff0c\\u4fdd\\u7559\\u4e3b\\u6a21\\u578b\\u5e76\\u505c\\u6b62\\u540c\\u6b65\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 19, in <module>\\nAssertionError: \\u5bfc\\u51fa\\u5185\\u5bb9\\u4e0d\\u540c\\uff0c\\u4fdd\\u7559\\u4e3b\\u6a21\\u578b\\u5e76\\u505c\\u6b62\\u540c\\u6b65\\n\"}"
+    },
+    "isError": false
+  }
+}

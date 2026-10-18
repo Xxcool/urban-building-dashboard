@@ -1,0 +1,29 @@
+{
+  "id": "foliage-cluster-v1",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "prompt": "Use case: photorealistic-natural. Asset type: transparent foliage texture for architectural 3D vegetation cards. Create ONE irregular dense leafy canopy branch cluster of a mature evergreen camphor / broadleaf park tree, isolated on a fully transparent alpha background. Photorealistic small green leaves in many orientations, delicate twig structure, natural small see-through gaps and a feathery irregular edge. The cluster is roughly oval but asymmetrical, fills about 80 percent of a square, and has clear transparent margin on all four edges. Many tiny leaves, not a handful of large leaves. Muted olive and medium natural green palette, soft neutral daylight and subtle leaf shading; no dramatic sun direction or strong cast shadow. View straight at the cluster with no perspective ground. Only leaves and thin branches: no trunk, no ground, no pot, no landscape, no sky, no text, no frame, no logo, no visible checkerboard. True transparent background for alpha cutout, do not paint a white or green rectangle.",
+  "transparent_background": true,
+  "status": "generated_and_inspected",
+  "intendedUse": "静态三维树冠透明叶簇材质，替换粗团块外轮廓，业务建筑及相机不变",
+  "output": {
+    "path": "design/materials/foliage-cluster-v1.png",
+    "sha256": "58a272e5451f17de076d059f3fd59ab7609c17c8d969b26ae07abb4e88458b0e",
+    "cardsPerTree": 12,
+    "alphaCutoff": 0.48,
+    "provenance": "design/foliage-generation-v1.json",
+    "use": "静态交错双面叶簇，Alpha裁切、真实裁切阴影；不参与AO法线通道，无业务状态或风速含义"
+  },
+  "originalPath": "/Users/xiabin/.codex/generated_images/01a13e35-29cc-7841-8766-11b3599b1787/exec-8e4e2541-8225-48c1-b27b-e2f49a674ca8.png",
+  "inspection": "已查看：细叶和不规则外轮廓、透明背景；右侧边缘较紧，使用裁切阈值验证实体无矩形边。原图作为固定输入，未作后期抠图。",
+  "historicalOutput": {
+    "path": "design/materials/foliage-cluster-v1.png",
+    "sha256": "58a272e5451f17de076d059f3fd59ab7609c17c8d969b26ae07abb4e88458b0e",
+    "cardsPerTree": 12,
+    "alphaCutoff": 0.48,
+    "provenance": "design/foliage-generation-v1.json",
+    "use": "静态交错双面叶簇，Alpha裁切、真实裁切阴影；不参与AO法线通道，无业务状态或风速含义"
+  },
+  "currentPath": "assets/materials/foliage-cluster-v1.png",
+  "role": "模型固定材质输入，不是整屏设计参考"
+}

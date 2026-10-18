@@ -1,0 +1,8 @@
+{
+  "viewport": [
+    1920,
+    1080
+  ],
+  "source": "实际页面诊断面板",
+  "text": "场景信息\n\n资产：campus.glb · detailed\n\n版本：bd10f9d3539b · 模型三角形：164010\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：199\n\n每帧提交三角形：169287\n\n几何：227 · 纹理：21\n\n帧间隔 P95：17.6 ms · 已渲染 7453 帧\n\n层级：campus · 选择：A1"
+}

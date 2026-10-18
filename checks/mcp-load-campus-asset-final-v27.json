@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "48f85d352d8aadba0262250003963a7a84fcd6b2f5e8a2dbe2415d7a882b9c1e",
+  "argumentsSha256": "332c4da4d8ae2765358eeda7778ee6cefe818328f9402646f5f4b1a7b27a097f",
+  "at": "2026-10-18T03:35:56.470661+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: "
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "argumentsSha256": "01284f9dfc772d3fbb9751b69c963aa323ea59e8d8989eb6a197c608cabd89c4",
+  "at": "2026-10-17T13:53:10.423561+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Error executing code: Communication error with Blender: {\"exception_type\": \"RuntimeError\", \"message\": \"Error: Uninitialized image \\\"pilot_indirect\\\" from object \\\"A1_frame\\\"\\n\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 71, in <module>\\n  File \\\"<string>\\\", line 41, in bake\\nRuntimeError: Error: Uninitialized image \\\"pilot_indirect\\\" from object \\\"A1_frame\\\"\\n\\n\"}",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Error executing code: Communication error with Blender: {\"exception_type\": \"RuntimeError\", \"message\": \"Error: Uninitialized image \\\"pilot_indirect\\\" from object \\\"A1_frame\\\"\\n\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 71, in <module>\\n  File \\\"<string>\\\", line 41, in bake\\nRuntimeError: Error: Uninitialized image \\\"pilot_indirect\\\" from object \\\"A1_frame\\\"\\n\\n\"}"
+    },
+    "isError": false
+  }
+}

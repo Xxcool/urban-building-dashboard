@@ -1,0 +1,3 @@
+{
+  "code": "import bpy\nbpy.ops.wm.open_mainfile(filepath='__PROJECT_ROOT__/assets/scene.blend')"
+}

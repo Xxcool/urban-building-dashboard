@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "a7f8db1e7ab401c1b24b7f05067c5db83eb2aad2d89d5b7cce60baf15d9375bc",
+  "argumentsSha256": "31e916be5aed09390cc4f78a77e5b8e315f494eb341528bce6b039caff9678cf",
+  "at": "2026-10-17T14:55:13.778269+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"campus-v26.blend\"\n{'removedLegacyOverlappingPanes': []}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"campus-v26.blend\"\n{'removedLegacyOverlappingPanes': []}\n"
+    },
+    "isError": false
+  }
+}

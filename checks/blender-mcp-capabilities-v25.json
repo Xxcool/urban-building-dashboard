@@ -1,0 +1,35 @@
+{
+  "result": "supported_via_mcp_code_execution",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tools": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "execute_blender_code",
+    "record_trajectory_feedback",
+    "look",
+    "generate_3d",
+    "search_assets",
+    "import_asset"
+  ],
+  "required": [
+    "direct modeling",
+    "direct UV/material editing",
+    "direct Cycles baking",
+    "direct GLB export"
+  ],
+  "existingAO": {
+    "path": "work/bake-pilot-v25/ao.png",
+    "bytes": 1634553,
+    "sha256": "06ebe1180b123a74333e1a15197b35f8525306794d67348d9f68f092b1e4d3b4",
+    "status": "已实际生成，未完成网页验证，非终稿资产"
+  },
+  "skill": "/Users/xiabin/.codex/skills/build-3d-visual-dashboard/SKILL.md",
+  "resolvedBy": "最新版技能及用户明确要求允许MCP代码执行；无需专用工具"
+}

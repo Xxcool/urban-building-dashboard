@@ -1,0 +1,57 @@
+{
+  "viewport": [
+    1920,
+    1080
+  ],
+  "labels": [
+    "A1 科创大厦",
+    "B1",
+    "B2",
+    "A2",
+    "B3",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "entry": {
+    "seconds": 2.8,
+    "phase": "complete",
+    "ready": true,
+    "repeat": false,
+    "reduced": false,
+    "campusOpacity": 1,
+    "panel": 1,
+    "labels": [
+      1,
+      1,
+      1
+    ],
+    "cityCamera": {
+      "eye": [
+        487.1913,
+        445.50000000000006,
+        791.1391
+      ],
+      "target": [
+        230.6913,
+        33.75,
+        129.6391
+      ],
+      "fov": 32
+    },
+    "campusCamera": {
+      "eye": [
+        210,
+        330,
+        490
+      ],
+      "target": [
+        20,
+        25,
+        0
+      ],
+      "fov": 32
+    }
+  },
+  "observation": "中央水景与两组廊架均可见，八栋标签可读，主步行轴线接入水景外围铺装；此图仅验证构图简模。"
+}

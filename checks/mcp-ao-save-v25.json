@@ -1,0 +1,28 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "argumentsSha256": "f0f2cb3e8e0699c522022ba01d25d4a6a7dfd37b35d26966a8ca4bf7f60f2460",
+  "at": "2026-10-17T13:37:34.831215+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"pilot-ao.blend\"\nAO_SAVED\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"pilot-ao.blend\"\nAO_SAVED\n"
+    },
+    "isError": false
+  }
+}

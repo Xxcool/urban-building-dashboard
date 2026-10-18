@@ -1,0 +1,4 @@
+{
+  "code": "import bpy,json\nprint(json.dumps({'filepath':bpy.data.filepath,'scene':bpy.context.scene.name,'objects':[(obj.name,list(obj.location),obj.get('objectId')) for obj in bpy.data.objects if obj.get('objectId')],'meshCount':sum(obj.type=='MESH' for obj in bpy.data.objects),'triangles':sum(len(p.vertices)-2 for obj in bpy.data.objects if obj.type=='MESH' for p in obj.data.polygons)},ensure_ascii=False))\n",
+  "user_prompt": "技能改了，按照Blender MCP模式去处理即可"
+}

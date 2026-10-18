@@ -1,0 +1,4 @@
+{
+  "code": "import bpy\nbpy.ops.wm.open_mainfile(filepath='__PROJECT_ROOT__/assets/city.blend')\nprint('CITY_LOADED')",
+  "user_prompt": "技能改了，按照Blender MCP模式去处理即可"
+}

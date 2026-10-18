@@ -15,9 +15,9 @@ archive = args.archive.resolve()
 if archive.exists():
     raise SystemExit('交付包已存在，请使用新文件名。')
 sha = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
-source_paths = [root / 'planning/project.json', root / 'scripts/build_scene.py', root / 'scripts/prepare_runtime.py', root / 'scripts/build_city.py', root / 'scripts/city_layout.py',
-                *[root / 'app' / name for name in ['package.json', 'package-lock.json', 'index.html', 'vite.config.js']],
-                *(root / 'app/src').glob('*'), *(root / 'app/tests').glob('*')]
+source_paths = [root/'planning/project.json', *(root/'scripts').glob('*.py'), *(root/'assets/materials').glob('*.*'),
+                *[root/'app'/name for name in ['package.json','package-lock.json','index.html','vite.config.js']],
+                *(root/'app/src').glob('*'), *(root/'app/tests').glob('*')]
 comparisons = []
 for path in source_paths:
     other = rebuilt / path.relative_to(root)

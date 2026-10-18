@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "df4c1cfeeb2ba8ba618d361d2c2a2bdb376a702fe419c3080ca425cf24d05374",
+  "argumentsSha256": "035b4c49b261f9f05d1cfa5580f2447b36c552c7361a04827da5aef3a5a30f3b",
+  "at": "2026-10-18T03:31:32.402686+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"campus-v27-interior.blend\"\n{\"windowBackWalls\": 8, \"image\": \"assets/materials/curtain-wall-v1.png\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"campus-v27-interior.blend\"\n{\"windowBackWalls\": 8, \"image\": \"assets/materials/curtain-wall-v1.png\"}\n"
+    },
+    "isError": false
+  }
+}

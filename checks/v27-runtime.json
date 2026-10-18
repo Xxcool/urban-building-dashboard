@@ -1,0 +1,65 @@
+{
+  "url": "http://127.0.0.1:4185/",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "buildingBefore": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：259\n\n每帧提交三角形：327704\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 2775 帧\n\n层级：building · 选择：A1",
+  "cycles": [
+    {
+      "cycle": 1,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：354\n\n每帧提交三角形：349248\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 2860 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 2,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：286\n\n每帧提交三角形：332664\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 2944 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 3,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：354\n\n每帧提交三角形：349248\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 2990 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 4,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：330\n\n每帧提交三角形：344504\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3071 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 5,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：263\n\n每帧提交三角形：327952\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3154 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 6,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：354\n\n每帧提交三角形：349248\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3198 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 7,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：296\n\n每帧提交三角形：339096\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3283 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 8,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：259\n\n每帧提交三角形：327704\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3366 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 9,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：354\n\n每帧提交三角形：349248\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3412 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 10,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：286\n\n每帧提交三角形：332664\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3496 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 11,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：354\n\n每帧提交三角形：349248\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3542 帧\n\n层级：building · 选择：A1"
+    },
+    {
+      "cycle": 12,
+      "metrics": "场景信息\n\n资产：campus.glb · detailed\n\n版本：07e34e205a76 · 模型三角形：192782\n\n对象：A1, A2, B1, B2, B3, C1, C2, C3\n\n锚点：8 · draw calls：326\n\n每帧提交三角形：344072\n\n几何：235 · 纹理：32\n\n帧间隔 P95：34.3 ms · 已渲染 3624 帧\n\n层级：building · 选择：A1"
+    }
+  ],
+  "c1": "楼宇档案\n\nC1\n低层研发办公楼\n\n建筑面积\n\n2.4\n万㎡\n出租率\n82%\n入驻企业\n22家\n演示数据\n模型高度 21 m",
+  "motionA": "{\"seconds\":159.977,\"count\":18,\"types\":[{\"type\":\"sedan\",\"count\":9},{\"type\":\"suv\",\"count\":6},{\"type\":\"truck\",\"count\":3}],\"colors\":[\"#20282c\",\"#ecece7\",\"#983c39\",\"#727d82\"],\"first\":{\"position\":[-211.5,40.65480715669315,0],\"heading\":-1.5707963267948966}}",
+  "fountainA": "{\"seconds\":159.977,\"jets\":5,\"particles\":50,\"first\":[1.687,0.721,7]}",
+  "motionB": "{\"seconds\":242.141,\"count\":18,\"types\":[{\"type\":\"sedan\",\"count\":9},{\"type\":\"suv\",\"count\":6},{\"type\":\"truck\",\"count\":3}],\"colors\":[\"#20282c\",\"#ecece7\",\"#983c39\",\"#727d82\"],\"first\":{\"position\":[211.5,-134.31987859443262,0],\"heading\":1.5707963267948966}}",
+  "fountainB": "{\"seconds\":242.141,\"jets\":5,\"particles\":50,\"first\":[1.499,1.541,7]}",
+  "errors": [],
+  "cityMetrics": "场景信息\n\n资产：city.glb · detailed\n\n版本：b922150cae51 · 模型三角形：319876\n\n对象：PARK-DEMO, INDUSTRY-DEMO, SERVICE-DEMO\n\n锚点：3 · draw calls：56\n\n每帧提交三角形：349270\n\n几何：53 · 纹理：30\n\n帧间隔 P95：34.1 ms · 已渲染 7426 帧\n\n层级：city · 选择：PARK-DEMO"
+}

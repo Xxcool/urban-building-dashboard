@@ -1,0 +1,28 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "argumentsSha256": "070aa5713e23173e93a4138ed044094c3e23f3da7770fc4bd9992146a3a4eba2",
+  "at": "2026-10-17T13:45:28.299824+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: EXR [2048, 2048] 16777216 [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]\nInfo: Saved as \"pilot-indirect.blend\"\nINDIRECT_SAVED\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: EXR [2048, 2048] 16777216 [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]\nInfo: Saved as \"pilot-indirect.blend\"\nINDIRECT_SAVED\n"
+    },
+    "isError": false
+  }
+}

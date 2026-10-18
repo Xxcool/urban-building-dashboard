@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "53631195a17f0ccb32a25a55a23a7f3a981eaf96c4378b64e631abe4884a3013",
+  "argumentsSha256": "213e3e435490f6145eab84d6fe89ad6b0a1cfde1692f8e5c66dab04f3a2e661b",
+  "at": "2026-10-18T03:13:46.865198+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"city-v27-detailed.blend\"\n{\"understory\": 2400}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"city-v27-detailed.blend\"\n{\"understory\": 2400}\n"
+    },
+    "isError": false
+  }
+}

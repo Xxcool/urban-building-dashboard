@@ -1,0 +1,26 @@
+{
+  "result": "passed",
+  "errors": [],
+  "scope": "终稿文件、引用与重建输入闭合；不代表实际页面已还原",
+  "finalAssets": {
+    "city": {
+      "path": "design/final/city.png",
+      "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a",
+      "decisionId": "D024"
+    },
+    "campus": {
+      "path": "design/final/campus.png",
+      "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345",
+      "decisionId": "D024"
+    },
+    "building": {
+      "path": "design/final/building.png",
+      "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce",
+      "decisionId": "D024"
+    }
+  },
+  "materialInputs": {
+    "foliage": "assets/materials/foliage-atlas-v27.png",
+    "interiorAtlas": "assets/materials/curtain-wall-v1.png"
+  }
+}

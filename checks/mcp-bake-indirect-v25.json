@@ -1,0 +1,28 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "argumentsSha256": "6c387391880041b511bc216fbc4051545e7bbbd66e8d824b17216df34f49caf1",
+  "at": "2026-10-17T13:43:09.377089+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Error executing code: Communication error with Blender: {\"exception_type\": \"RuntimeError\", \"message\": \"Error: Image 'pilot_indirect' does not have any image data\\n\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 53, in <module>\\n  File \\\"<string>\\\", line 46, in bake\\nRuntimeError: Error: Image 'pilot_indirect' does not have any image data\\n\\n\"}",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Error executing code: Communication error with Blender: {\"exception_type\": \"RuntimeError\", \"message\": \"Error: Image 'pilot_indirect' does not have any image data\\n\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 53, in <module>\\n  File \\\"<string>\\\", line 46, in bake\\nRuntimeError: Error: Image 'pilot_indirect' does not have any image data\\n\\n\"}"
+    },
+    "isError": false
+  }
+}

@@ -16,6 +16,7 @@ rows=[p['demoDesign']['focusBuilding'],*p['demoDesign']['buildingMetrics'].value
 assert len(rows)==p['demoDesign']['campus']['buildings']
 for key in ['grossAreaM2','rentableAreaM2','rentedAreaM2','enterprises']:
  assert sum(row[key] for row in rows)==p['demoDesign']['campus'][key],key+'逐栋总量不一致'
+assert sum(item['enterprises'] for item in p['demoDesign']['industryComposition']['items'])==p['demoDesign']['campus']['enterprises'],'产业演示企业分类总量不守恒'
 config={k:p[k] for k in ['project','demoDesign','production']}
 config['production']['city']=derive_city(p)
 config['design']={k:v for k,v in p['design'].items() if k not in ['baselines','baselineReuse']}

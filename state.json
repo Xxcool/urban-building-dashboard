@@ -7,8 +7,7 @@
     "design",
     "production",
     "scene-check",
-    "runtime",
-    "review"
+    "runtime"
   ],
   "levels": [
     "city",
@@ -17,606 +16,325 @@
   ],
   "source": {
     "path": "planning/project.json",
-    "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+    "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
   },
-  "currentStage": "review",
+  "currentStage": "production",
   "records": {
     "research": {
       "status": "completed",
       "levels": {},
       "evidence": [
         {
-          "path": "docs/iteration-v22.md",
-          "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+          "path": "docs/design-final.md",
+          "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
         }
       ],
-      "summary": "复用既有研究和已确认范围，本轮仅实施已确认进入动效"
+      "summary": "复用用户已确认范围和唯一终稿，不重新开展调研"
     },
     "concept": {
       "status": "completed",
       "levels": {
         "city": {
           "artifact": {
-            "path": "design/concepts/city/B-city-v1.png",
-            "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+            "path": "design/final/city.png",
+            "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
           },
           "evidence": [
             {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
             }
           ],
           "source": {
             "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
           },
           "baselines": {},
           "result": "passed",
-          "summary": "复用原固定概念及真实用户确认",
+          "summary": "沿用D024真实确认；v27未更换三张终稿",
           "next": null,
-          "userDecision": "原城市图展示后用户回复“可以”",
-          "time": "2026-10-17T12:01:40.713398+00:00"
+          "userDecision": "用户明确回复：确认，以这三张为终稿",
+          "time": "2026-10-18T03:43:12.853731+00:00"
         },
         "campus": {
           "artifact": {
-            "path": "design/concepts/B-campus-v2.png",
-            "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            "path": "design/final/campus.png",
+            "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
           },
           "evidence": [
             {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
             }
           ],
           "source": {
             "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
           },
           "baselines": {},
           "result": "passed",
-          "summary": "复用原固定概念及真实用户确认",
+          "summary": "沿用D024真实确认；v27未更换三张终稿",
           "next": null,
-          "userDecision": "原园区与楼宇两图展示后用户回复“可以”",
-          "time": "2026-10-17T12:01:40.769972+00:00"
+          "userDecision": "用户明确回复：确认，以这三张为终稿",
+          "time": "2026-10-18T03:43:12.927577+00:00"
         },
         "building": {
           "artifact": {
-            "path": "design/concepts/B-building-v2r1.png",
-            "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            "path": "design/final/building.png",
+            "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
           },
           "evidence": [
             {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
             }
           ],
           "source": {
             "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
           },
           "baselines": {},
           "result": "passed",
-          "summary": "复用原固定概念及真实用户确认",
+          "summary": "沿用D024真实确认；v27未更换三张终稿",
           "next": null,
-          "userDecision": "原园区与楼宇两图展示后用户回复“可以”",
-          "time": "2026-10-17T12:01:40.830979+00:00"
+          "userDecision": "用户明确回复：确认，以这三张为终稿",
+          "time": "2026-10-18T03:43:13.002463+00:00"
         }
       },
       "evidence": [
         {
-          "path": "docs/iteration-v22.md",
-          "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
         }
       ],
-      "summary": "原概念方向不变，确认沿用"
+      "summary": "三层概念复用已确认唯一终稿"
     },
     "design": {
       "status": "completed",
       "levels": {
         "city": {
           "artifact": {
-            "path": "design/concepts/city/B-city-v1.png",
-            "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+            "path": "design/final/city.png",
+            "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
           },
           "evidence": [
             {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
             },
             {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
             }
           ],
           "source": {
             "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
           },
           "baselines": {
             "concept": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+              "path": "design/final/city.png",
+              "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
             }
           },
           "result": "passed",
-          "summary": "原基准未修改，v22动效按已确认分镜实施",
+          "summary": "沿用三张整屏终稿，哈希与确认记录一致",
           "next": null,
           "userDecision": null,
-          "time": "2026-10-17T12:01:40.940932+00:00"
+          "time": "2026-10-18T03:43:13.162181+00:00"
         },
         "campus": {
           "artifact": {
-            "path": "design/concepts/B-campus-v2.png",
-            "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+            "path": "design/final/campus.png",
+            "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
           },
           "evidence": [
             {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
             },
             {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
             }
           ],
           "source": {
             "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
           },
           "baselines": {
             "concept": {
-              "path": "design/concepts/B-campus-v2.png",
-              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+              "path": "design/final/campus.png",
+              "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
             }
           },
           "result": "passed",
-          "summary": "原基准未修改，v22动效按已确认分镜实施",
+          "summary": "沿用三张整屏终稿，哈希与确认记录一致",
           "next": null,
           "userDecision": null,
-          "time": "2026-10-17T12:01:41.004600+00:00"
+          "time": "2026-10-18T03:43:13.253091+00:00"
         },
         "building": {
           "artifact": {
-            "path": "design/concepts/B-building-v2r1.png",
-            "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+            "path": "design/final/building.png",
+            "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
           },
           "evidence": [
             {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
             },
             {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
             }
           ],
           "source": {
             "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
           },
           "baselines": {
             "concept": {
-              "path": "design/concepts/B-building-v2r1.png",
-              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+              "path": "design/final/building.png",
+              "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
             }
           },
           "result": "passed",
-          "summary": "原基准未修改，v22动效按已确认分镜实施",
+          "summary": "沿用三张整屏终稿，哈希与确认记录一致",
           "next": null,
           "userDecision": null,
-          "time": "2026-10-17T12:01:41.068981+00:00"
+          "time": "2026-10-18T03:43:13.349547+00:00"
         }
       },
       "evidence": [
         {
-          "path": "docs/iteration-v22.md",
-          "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+          "path": "design/final/manifest.json",
+          "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
         }
       ],
-      "summary": "既有整屏基准及v22分镜已核对"
+      "summary": "整屏基准未更改，按v27规划继续制作与实际复验"
     },
     "production": {
-      "status": "completed",
-      "levels": {
-        "city": {
-          "artifact": {
-            "path": "app/public/assets/city.glb",
-            "sha256": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/rebuild-v22-final.json",
-              "sha256": "073682b2c82e12a2fdb5dbc6fd80c11aae3e880f9a67ee67186472b4f6c4fcff"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
-            },
-            "design": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
-            }
-          },
-          "result": "passed",
-          "summary": "独立从源重建，资产契约通过；不代表写实视觉批准",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:41.271598+00:00"
-        },
-        "campus": {
-          "artifact": {
-            "path": "app/public/assets/campus.glb",
-            "sha256": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/rebuild-v22-final.json",
-              "sha256": "073682b2c82e12a2fdb5dbc6fd80c11aae3e880f9a67ee67186472b4f6c4fcff"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/B-campus-v2.png",
-              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
-            },
-            "design": {
-              "path": "design/concepts/B-campus-v2.png",
-              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
-            }
-          },
-          "result": "passed",
-          "summary": "独立从源重建，资产契约通过；不代表写实视觉批准",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:41.355664+00:00"
-        },
-        "building": {
-          "artifact": {
-            "path": "app/public/assets/campus.glb",
-            "sha256": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/rebuild-v22-final.json",
-              "sha256": "073682b2c82e12a2fdb5dbc6fd80c11aae3e880f9a67ee67186472b4f6c4fcff"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/B-building-v2r1.png",
-              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
-            },
-            "design": {
-              "path": "design/concepts/B-building-v2r1.png",
-              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
-            }
-          },
-          "result": "passed",
-          "summary": "独立从源重建，资产契约通过；不代表写实视觉批准",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:41.442994+00:00"
-        }
-      },
-      "evidence": [
-        {
-          "path": "docs/iteration-v22.md",
-          "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-        }
-      ],
-      "summary": "模型和配置从源生成，哈希一致"
-    },
-    "scene-check": {
-      "status": "completed",
-      "levels": {
-        "city": {
-          "artifact": {
-            "path": "checks/city-final-v22.png",
-            "sha256": "02f9a0e8f99fe095591749523a0d6c6c6452299e02e0ba3271856ef354f5e402"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
-            },
-            "design": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
-            }
-          },
-          "result": "passed",
-          "summary": "实际网页模型加载、绑定及终态构图复核",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:41.611681+00:00"
-        },
-        "campus": {
-          "artifact": {
-            "path": "checks/campus-final-v22.png",
-            "sha256": "d49e6247a722de1138467e4d459738e97068d3622b244b02ec1ccf4f75968891"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/B-campus-v2.png",
-              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
-            },
-            "design": {
-              "path": "design/concepts/B-campus-v2.png",
-              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
-            }
-          },
-          "result": "passed",
-          "summary": "实际网页模型加载、绑定及终态构图复核",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:41.697339+00:00"
-        },
-        "building": {
-          "artifact": {
-            "path": "checks/building-final-v22.png",
-            "sha256": "b4cae3614fb2f4ddab6f23b105772161dd5e21b267c378347f5cc8cb9b3c8678"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/B-building-v2r1.png",
-              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
-            },
-            "design": {
-              "path": "design/concepts/B-building-v2r1.png",
-              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
-            }
-          },
-          "result": "passed",
-          "summary": "实际网页模型加载、绑定及终态构图复核",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:41.786433+00:00"
-        }
-      },
-      "evidence": [
-        {
-          "path": "docs/iteration-v22.md",
-          "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-        }
-      ],
-      "summary": "三层实际网页终态与原基准并排复核，写实差异保留至review"
-    },
-    "runtime": {
-      "status": "completed",
-      "levels": {
-        "city": {
-          "artifact": {
-            "path": "checks/city-final-v22.png",
-            "sha256": "02f9a0e8f99fe095591749523a0d6c6c6452299e02e0ba3271856ef354f5e402"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/entry-runtime-v22.json",
-              "sha256": "509d0d3d77adbae29f36238ba036bc9f7b180f1a8524e32447ee73242b0de418"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
-            },
-            "design": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
-            }
-          },
-          "result": "passed",
-          "summary": "进入动效、对象联动和往返验证通过",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:41.956710+00:00"
-        },
-        "campus": {
-          "artifact": {
-            "path": "checks/campus-final-v22.png",
-            "sha256": "d49e6247a722de1138467e4d459738e97068d3622b244b02ec1ccf4f75968891"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/entry-runtime-v22.json",
-              "sha256": "509d0d3d77adbae29f36238ba036bc9f7b180f1a8524e32447ee73242b0de418"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/B-campus-v2.png",
-              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
-            },
-            "design": {
-              "path": "design/concepts/B-campus-v2.png",
-              "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
-            }
-          },
-          "result": "passed",
-          "summary": "进入动效、对象联动和往返验证通过",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:42.040059+00:00"
-        },
-        "building": {
-          "artifact": {
-            "path": "checks/building-final-v22.png",
-            "sha256": "b4cae3614fb2f4ddab6f23b105772161dd5e21b267c378347f5cc8cb9b3c8678"
-          },
-          "evidence": [
-            {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-            },
-            {
-              "path": "checks/entry-runtime-v22.json",
-              "sha256": "509d0d3d77adbae29f36238ba036bc9f7b180f1a8524e32447ee73242b0de418"
-            }
-          ],
-          "source": {
-            "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
-          },
-          "baselines": {
-            "concept": {
-              "path": "design/concepts/B-building-v2r1.png",
-              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
-            },
-            "design": {
-              "path": "design/concepts/B-building-v2r1.png",
-              "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
-            }
-          },
-          "result": "passed",
-          "summary": "进入动效、对象联动和往返验证通过",
-          "next": null,
-          "userDecision": null,
-          "time": "2026-10-17T12:01:42.125765+00:00"
-        }
-      },
-      "evidence": [
-        {
-          "path": "docs/iteration-v22.md",
-          "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
-        }
-      ],
-      "summary": "动效实际交互及12轮往返完成，保留未覆盖项"
-    },
-    "review": {
       "status": "in_progress",
       "levels": {
         "city": {
           "artifact": {
-            "path": "checks/city-final-v22.png",
-            "sha256": "02f9a0e8f99fe095591749523a0d6c6c6452299e02e0ba3271856ef354f5e402"
+            "path": "checks/v27-city.png",
+            "sha256": "e24469193e155f357fc7db21c281e28342132b335bb1541e510bd3778c6f4764"
           },
           "evidence": [
             {
-              "path": "docs/iteration-v22.md",
-              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+              "path": "checks/v27-side-by-side.png",
+              "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
             },
             {
-              "path": "checks/review-v22.html",
-              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+              "path": "docs/restoration-v27.md",
+              "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
             }
           ],
           "source": {
             "path": "planning/project.json",
-            "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
           },
           "baselines": {
             "concept": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+              "path": "design/final/city.png",
+              "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
             },
             "design": {
-              "path": "design/concepts/city/B-city-v1.png",
-              "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+              "path": "design/final/city.png",
+              "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
             }
           },
           "result": "failed",
-          "summary": "动效通过不等于城市写实还原通过",
-          "next": "继续按原稿细化街区、建筑个体与湖岸水面；本轮进入动画等待用户体验反馈",
+          "summary": "本轮工程与功能验证通过；整体AI写实还原差异未标记最终视觉通过",
+          "next": "保留实际截图与当前制作成果，继续逐项核对艺术表现差异",
           "userDecision": null,
-          "time": "2026-10-17T12:01:42.389510+00:00"
+          "time": "2026-10-18T03:46:47.412151+00:00"
+        },
+        "campus": {
+          "artifact": {
+            "path": "checks/v27-campus.png",
+            "sha256": "b53c9385c0efb5c21845456c9931227ffc4305d284d2c729abe254b824a3d6cd"
+          },
+          "evidence": [
+            {
+              "path": "checks/v27-side-by-side.png",
+              "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+            },
+            {
+              "path": "docs/restoration-v27.md",
+              "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/final/campus.png",
+              "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+            },
+            "design": {
+              "path": "design/final/campus.png",
+              "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+            }
+          },
+          "result": "failed",
+          "summary": "本轮工程与功能验证通过；整体AI写实还原差异未标记最终视觉通过",
+          "next": "保留实际截图与当前制作成果，继续逐项核对艺术表现差异",
+          "userDecision": null,
+          "time": "2026-10-18T03:46:47.483258+00:00"
+        },
+        "building": {
+          "artifact": {
+            "path": "checks/v27-building.png",
+            "sha256": "39c71d70ff3afd39ac943f3dec36c1eeaa7ed4d867d898e4205a43b3ff412af1"
+          },
+          "evidence": [
+            {
+              "path": "checks/v27-side-by-side.png",
+              "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+            },
+            {
+              "path": "docs/restoration-v27.md",
+              "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+            }
+          ],
+          "source": {
+            "path": "planning/project.json",
+            "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+          },
+          "baselines": {
+            "concept": {
+              "path": "design/final/building.png",
+              "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+            },
+            "design": {
+              "path": "design/final/building.png",
+              "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+            }
+          },
+          "result": "failed",
+          "summary": "本轮工程与功能验证通过；整体AI写实还原差异未标记最终视觉通过",
+          "next": "保留实际截图与当前制作成果，继续逐项核对艺术表现差异",
+          "userDecision": null,
+          "time": "2026-10-18T03:46:47.554999+00:00"
         }
       }
+    },
+    "scene-check": {
+      "status": "pending",
+      "levels": {}
+    },
+    "runtime": {
+      "status": "pending",
+      "levels": {}
     }
   },
   "issues": {
@@ -624,24 +342,78 @@
       "stage": "production",
       "level": "city",
       "result": "passed",
-      "change": "城市344825三角形/14.293MB，v22独立重建及契约检查通过",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
       "evidence": [
         {
-          "path": "checks/city-contract-v22.json",
-          "sha256": "abefb922a367b801d74ef4344ceda85c7dbc50781dd7b4859d268ca3bd1bcb43"
+          "path": "checks/city-contract-v27-delivery.json",
+          "sha256": "9bbb941b348ad22e70c3ecc1d8a43f9d506b2f669487dedcda564b100f4e9ed0"
         },
         {
-          "path": "checks/rebuild-v22-final.json",
-          "sha256": "073682b2c82e12a2fdb5dbc6fd80c11aae3e880f9a67ee67186472b4f6c4fcff"
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
         }
       ],
       "next": null,
-      "time": "2026-10-17T12:01:41.196322+00:00"
+      "time": "2026-10-18T03:46:47.135905+00:00"
     },
-    "R-05-REALISM": {
-      "stage": "review",
+    "FINAL-ALIGN-24-CITY": {
+      "stage": "production",
       "level": "city",
       "result": "failed",
+      "change": "v27已完成本轮MCP制作、UI和功能复验；保留AI终稿与实时场景的整体写实还原差异",
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "68ec616f8a8be56c3b0cec7615115bf6cf7de866848c63d2d4da8e6eba022da0"
+        }
+      ],
+      "next": "继续按同条件对照完善自然植被、建筑反射和街区细节；不把用户对设计的确认视为实现验收",
+      "time": "2026-10-18T03:46:46.909469+00:00"
+    },
+    "FINAL-ALIGN-24-CAMPUS": {
+      "stage": "production",
+      "level": "campus",
+      "result": "failed",
+      "change": "v27已完成本轮MCP制作、UI和功能复验；保留AI终稿与实时场景的整体写实还原差异",
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "68ec616f8a8be56c3b0cec7615115bf6cf7de866848c63d2d4da8e6eba022da0"
+        }
+      ],
+      "next": "继续按同条件对照完善自然植被、建筑反射和街区细节；不把用户对设计的确认视为实现验收",
+      "time": "2026-10-18T03:46:46.996542+00:00"
+    },
+    "FINAL-ALIGN-24-BUILDING": {
+      "stage": "production",
+      "level": "building",
+      "result": "failed",
+      "change": "v27已完成本轮MCP制作、UI和功能复验；保留AI终稿与实时场景的整体写实还原差异",
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "68ec616f8a8be56c3b0cec7615115bf6cf7de866848c63d2d4da8e6eba022da0"
+        }
+      ],
+      "next": "继续按同条件对照完善自然植被、建筑反射和街区细节；不把用户对设计的确认视为实现验收",
+      "time": "2026-10-18T03:46:47.067685+00:00"
+    },
+    "R-05-REALISM": {
+      "stage": "runtime",
+      "level": "city",
+      "result": "needs_review",
       "change": "v22进入动效实现；原城市建筑和湖岸写实差异仍开放",
       "evidence": [
         {
@@ -655,6 +427,60 @@
       ],
       "next": "继续按原稿细化街区、建筑个体与湖岸水面；本轮进入动画等待用户体验反馈",
       "time": "2026-10-17T12:01:42.300300+00:00"
+    },
+    "MCP-BAKE-PILOT-25": {
+      "stage": "production",
+      "level": "building",
+      "result": "passed",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
+      "evidence": [
+        {
+          "path": "checks/rebuild-v27-delivered.json",
+          "sha256": "6e147740828227169f118cb3395865f37ec36605169f327c4ff276fe55f8aca2"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T03:46:47.205423+00:00"
+    },
+    "C26-SOUTH-ENTRANCES": {
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
+      "evidence": [
+        {
+          "path": "checks/assets-contract-v27-delivery.json",
+          "sha256": "16ccd7a54ef7dc90b1d1b3b0c03b82f17a9e2a8be8955573bbff28ce202d33af"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T03:46:47.273263+00:00"
+    },
+    "C26-TREES-EDGE-CONTEXT": {
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
+      "evidence": [
+        {
+          "path": "checks/v27-campus.png",
+          "sha256": "b53c9385c0efb5c21845456c9931227ffc4305d284d2c729abe254b824a3d6cd"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T03:46:47.342463+00:00"
     }
   },
   "history": [
@@ -5800,6 +5626,3856 @@
       "next": "继续按原稿细化街区、建筑个体与湖岸水面；本轮进入动画等待用户体验反馈",
       "userDecision": null,
       "time": "2026-10-17T12:01:42.389510+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "time": "2026-10-17T13:18:53.104436+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "用户确认三张唯一终稿并清理旧设计，后续按终稿重新校准",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/iteration-v22.md",
+              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+            }
+          ],
+          "summary": "复用既有研究和已确认范围，本轮仅实施已确认进入动效"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/concepts/city/B-city-v1.png",
+                "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "复用原固定概念及真实用户确认",
+              "next": null,
+              "userDecision": "原城市图展示后用户回复“可以”",
+              "time": "2026-10-17T12:01:40.713398+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/concepts/B-campus-v2.png",
+                "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "复用原固定概念及真实用户确认",
+              "next": null,
+              "userDecision": "原园区与楼宇两图展示后用户回复“可以”",
+              "time": "2026-10-17T12:01:40.769972+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/concepts/B-building-v2r1.png",
+                "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "复用原固定概念及真实用户确认",
+              "next": null,
+              "userDecision": "原园区与楼宇两图展示后用户回复“可以”",
+              "time": "2026-10-17T12:01:40.830979+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/iteration-v22.md",
+              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+            }
+          ],
+          "summary": "原概念方向不变，确认沿用"
+        },
+        "design": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/concepts/city/B-city-v1.png",
+                "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                }
+              },
+              "result": "passed",
+              "summary": "原基准未修改，v22动效按已确认分镜实施",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:40.940932+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/concepts/B-campus-v2.png",
+                "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                }
+              },
+              "result": "passed",
+              "summary": "原基准未修改，v22动效按已确认分镜实施",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.004600+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/concepts/B-building-v2r1.png",
+                "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                }
+              },
+              "result": "passed",
+              "summary": "原基准未修改，v22动效按已确认分镜实施",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.068981+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/iteration-v22.md",
+              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+            }
+          ],
+          "summary": "既有整屏基准及v22分镜已核对"
+        },
+        "production": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "app/public/assets/city.glb",
+                "sha256": "071cf2d34b7470d839f9ab6a6f79d6cdb33789e9aa2720c026ce43f19eb0fd58"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/rebuild-v22-final.json",
+                  "sha256": "073682b2c82e12a2fdb5dbc6fd80c11aae3e880f9a67ee67186472b4f6c4fcff"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                },
+                "design": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                }
+              },
+              "result": "passed",
+              "summary": "独立从源重建，资产契约通过；不代表写实视觉批准",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.271598+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "app/public/assets/campus.glb",
+                "sha256": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/rebuild-v22-final.json",
+                  "sha256": "073682b2c82e12a2fdb5dbc6fd80c11aae3e880f9a67ee67186472b4f6c4fcff"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                },
+                "design": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                }
+              },
+              "result": "passed",
+              "summary": "独立从源重建，资产契约通过；不代表写实视觉批准",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.355664+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "app/public/assets/campus.glb",
+                "sha256": "b7a4b94631eb4ff93ddae89ee8c73a8a51d746680d3c5560d0391acb3395cbca"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/rebuild-v22-final.json",
+                  "sha256": "073682b2c82e12a2fdb5dbc6fd80c11aae3e880f9a67ee67186472b4f6c4fcff"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                },
+                "design": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                }
+              },
+              "result": "passed",
+              "summary": "独立从源重建，资产契约通过；不代表写实视觉批准",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.442994+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/iteration-v22.md",
+              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+            }
+          ],
+          "summary": "模型和配置从源生成，哈希一致"
+        },
+        "scene-check": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "checks/city-final-v22.png",
+                "sha256": "02f9a0e8f99fe095591749523a0d6c6c6452299e02e0ba3271856ef354f5e402"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                },
+                "design": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                }
+              },
+              "result": "passed",
+              "summary": "实际网页模型加载、绑定及终态构图复核",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.611681+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "checks/campus-final-v22.png",
+                "sha256": "d49e6247a722de1138467e4d459738e97068d3622b244b02ec1ccf4f75968891"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                },
+                "design": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                }
+              },
+              "result": "passed",
+              "summary": "实际网页模型加载、绑定及终态构图复核",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.697339+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "checks/building-final-v22.png",
+                "sha256": "b4cae3614fb2f4ddab6f23b105772161dd5e21b267c378347f5cc8cb9b3c8678"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                },
+                "design": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                }
+              },
+              "result": "passed",
+              "summary": "实际网页模型加载、绑定及终态构图复核",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.786433+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/iteration-v22.md",
+              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+            }
+          ],
+          "summary": "三层实际网页终态与原基准并排复核，写实差异保留至review"
+        },
+        "runtime": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "checks/city-final-v22.png",
+                "sha256": "02f9a0e8f99fe095591749523a0d6c6c6452299e02e0ba3271856ef354f5e402"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/entry-runtime-v22.json",
+                  "sha256": "509d0d3d77adbae29f36238ba036bc9f7b180f1a8524e32447ee73242b0de418"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                },
+                "design": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                }
+              },
+              "result": "passed",
+              "summary": "进入动效、对象联动和往返验证通过",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:41.956710+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "checks/campus-final-v22.png",
+                "sha256": "d49e6247a722de1138467e4d459738e97068d3622b244b02ec1ccf4f75968891"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/entry-runtime-v22.json",
+                  "sha256": "509d0d3d77adbae29f36238ba036bc9f7b180f1a8524e32447ee73242b0de418"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                },
+                "design": {
+                  "path": "design/concepts/B-campus-v2.png",
+                  "sha256": "b7256276a9357e0255ac1799e189de000f3c69563e0672624b826acfb76db264"
+                }
+              },
+              "result": "passed",
+              "summary": "进入动效、对象联动和往返验证通过",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:42.040059+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "checks/building-final-v22.png",
+                "sha256": "b4cae3614fb2f4ddab6f23b105772161dd5e21b267c378347f5cc8cb9b3c8678"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/entry-runtime-v22.json",
+                  "sha256": "509d0d3d77adbae29f36238ba036bc9f7b180f1a8524e32447ee73242b0de418"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                },
+                "design": {
+                  "path": "design/concepts/B-building-v2r1.png",
+                  "sha256": "1aa5b6d94d1b17ae9b7eb815fa59fa75c1f0f44f88a9f2e41045d85aae8f43e4"
+                }
+              },
+              "result": "passed",
+              "summary": "进入动效、对象联动和往返验证通过",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T12:01:42.125765+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/iteration-v22.md",
+              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+            }
+          ],
+          "summary": "动效实际交互及12轮往返完成，保留未覆盖项"
+        },
+        "review": {
+          "status": "in_progress",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "checks/city-final-v22.png",
+                "sha256": "02f9a0e8f99fe095591749523a0d6c6c6452299e02e0ba3271856ef354f5e402"
+              },
+              "evidence": [
+                {
+                  "path": "docs/iteration-v22.md",
+                  "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+                },
+                {
+                  "path": "checks/review-v22.html",
+                  "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "77b5d301adbc07b4799edeedd7faf3646457dfd057dceace520dcaadc476b6ee"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                },
+                "design": {
+                  "path": "design/concepts/city/B-city-v1.png",
+                  "sha256": "795eafd78c54589532038304611a5fffeb3d02dd2311c7b381dc0064ae838170"
+                }
+              },
+              "result": "failed",
+              "summary": "动效通过不等于城市写实还原通过",
+              "next": "继续按原稿细化街区、建筑个体与湖岸水面；本轮进入动画等待用户体验反馈",
+              "userDecision": null,
+              "time": "2026-10-17T12:01:42.389510+00:00"
+            }
+          }
+        }
+      },
+      "time": "2026-10-17T13:18:53.104512+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-17T13:19:26.850287+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "用户确认此层整屏终稿；仅确认视觉设计，不代表实现验收",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T13:19:26.900939+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "用户确认此层整屏终稿；仅确认视觉设计，不代表实现验收",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T13:19:26.952222+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "用户确认此层整屏终稿；仅确认视觉设计，不代表实现验收",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T13:19:27.001582+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-17T13:19:27.051227+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "passed",
+      "summary": "已确认的完整整屏设计；不代表实现验收",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T13:19:41.319110+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "passed",
+      "summary": "已确认的完整整屏设计；不代表实现验收",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T13:19:41.376025+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "passed",
+      "summary": "已确认的完整整屏设计；不代表实现验收",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T13:19:41.433647+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-17T13:19:41.490739+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CITY",
+      "stage": "production",
+      "level": "city",
+      "result": "failed",
+      "change": "当前模型和界面尚未完全还原新终稿，已记录逐项差异",
+      "evidence": [
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "43b091ae81ce99ca05284bac0cbeba3760e79f61cc2f3fee888ade4f3dc68add"
+        }
+      ],
+      "next": "按终稿拆分制作规格、校准相机构图，再逐版截图对照修复",
+      "time": "2026-10-17T13:19:41.547490+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CAMPUS",
+      "stage": "production",
+      "level": "campus",
+      "result": "failed",
+      "change": "当前模型和界面尚未完全还原新终稿，已记录逐项差异",
+      "evidence": [
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "43b091ae81ce99ca05284bac0cbeba3760e79f61cc2f3fee888ade4f3dc68add"
+        }
+      ],
+      "next": "按终稿拆分制作规格、校准相机构图，再逐版截图对照修复",
+      "time": "2026-10-17T13:19:41.604085+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-BUILDING",
+      "stage": "production",
+      "level": "building",
+      "result": "failed",
+      "change": "当前模型和界面尚未完全还原新终稿，已记录逐项差异",
+      "evidence": [
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "43b091ae81ce99ca05284bac0cbeba3760e79f61cc2f3fee888ade4f3dc68add"
+        }
+      ],
+      "next": "按终稿拆分制作规格、校准相机构图，再逐版截图对照修复",
+      "time": "2026-10-17T13:19:41.661114+00:00"
+    },
+    {
+      "event": "review_removed",
+      "record": {
+        "status": "pending",
+        "levels": {}
+      },
+      "issues": {
+        "R-05-REALISM": {
+          "stage": "review",
+          "level": "city",
+          "result": "needs_review",
+          "change": "v22进入动效实现；原城市建筑和湖岸写实差异仍开放",
+          "evidence": [
+            {
+              "path": "docs/iteration-v22.md",
+              "sha256": "ab29adbfcbdc9d5ae405fbf48664826c231c5ff126b79da4f2cb8285b20d0cbb"
+            },
+            {
+              "path": "checks/review-v22.html",
+              "sha256": "9eddf1885be6ab32e6d395c5b679b1c401a3a9d0b48420772b607bd12f6962aa"
+            }
+          ],
+          "next": "继续按原稿细化街区、建筑个体与湖岸水面；本轮进入动画等待用户体验反馈",
+          "time": "2026-10-17T12:01:42.300300+00:00"
+        }
+      },
+      "time": "2026-10-17T14:00:15.778255+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "time": "2026-10-17T14:00:15.833676+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "用户确认切换Blender MCP并制作AO与间接光样区，视觉终稿不变，主场景未启用样区",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/design-final.md",
+              "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+            },
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            }
+          ],
+          "summary": "沿用已确认的武汉光谷示范范围，三层展示，不重复调研"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "用户确认此层整屏终稿；仅确认视觉设计，不代表实现验收",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T13:19:26.900939+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "用户确认此层整屏终稿；仅确认视觉设计，不代表实现验收",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T13:19:26.952222+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "用户确认此层整屏终稿；仅确认视觉设计，不代表实现验收",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T13:19:27.001582+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            },
+            {
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+            }
+          ],
+          "summary": "三层已由用户确认为唯一整屏终稿，后续按终稿制作"
+        },
+        "design": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/city.png",
+                  "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+                }
+              },
+              "result": "passed",
+              "summary": "已确认的完整整屏设计；不代表实现验收",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T13:19:41.319110+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/campus.png",
+                  "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+                }
+              },
+              "result": "passed",
+              "summary": "已确认的完整整屏设计；不代表实现验收",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T13:19:41.376025+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "858ae5baf99b1202d547a7cd202048c662e7e34fc9d5c60efaa633d91c236e1b"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/building.png",
+                  "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+                }
+              },
+              "result": "passed",
+              "summary": "已确认的完整整屏设计；不代表实现验收",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T13:19:41.433647+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            },
+            {
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+            }
+          ],
+          "summary": "三层唯一整屏终稿已确认，转入按终稿制作"
+        },
+        "production": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-17T14:00:15.833824+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-17T14:01:52.406148+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T14:01:52.468020+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T14:01:52.529060+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T14:01:52.590300+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-17T14:01:52.648998+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T14:01:52.708743+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T14:01:52.771040+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T14:01:52.835249+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-17T14:01:52.900031+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "time": "2026-10-17T14:16:30.362935+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "MCP样区参数和交付路径定稿；主模型已核验内容不变，三张终稿不变",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/design-final.md",
+              "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+            },
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            }
+          ],
+          "summary": "沿用已确认业务范围，更新MCP制作路径，不重新调研"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T14:01:52.468020+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T14:01:52.529060+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T14:01:52.590300+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            },
+            {
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+            }
+          ],
+          "summary": "终稿保持不变，按已确认方向进入制作"
+        },
+        "design": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/city.png",
+                  "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+                }
+              },
+              "result": "passed",
+              "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T14:01:52.708743+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/campus.png",
+                  "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+                }
+              },
+              "result": "passed",
+              "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T14:01:52.771040+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "1ccaccb5b817d87c9473f5afe12d45d2eb975649302a358e5091f22cb45dc9e5"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/building.png",
+                  "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+                }
+              },
+              "result": "passed",
+              "summary": "沿用用户已确认的唯一终稿；MCP与烘焙不改变视觉方向",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T14:01:52.835249+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            },
+            {
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+            }
+          ],
+          "summary": "终稿保持不变，按已确认方向进入制作"
+        },
+        "production": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-17T14:16:30.363031+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-17T14:16:30.456426+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T14:16:30.513711+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T14:16:30.572347+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-17T14:16:30.630811+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-17T14:16:30.694454+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "passed",
+      "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T14:16:30.756395+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "passed",
+      "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T14:16:30.821400+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "passed",
+      "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-17T14:16:30.885513+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-17T14:16:30.951228+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "MCP-BAKE-PILOT-25",
+      "stage": "production",
+      "level": "building",
+      "result": "passed",
+      "change": "真实MCP调用完成A1样区AO、间接光、UV2导出和网页技术核对，非完整视觉验收",
+      "evidence": [
+        {
+          "path": "checks/bake-pilot-assets-v25.json",
+          "sha256": "c9ab9b554b07669826e93d075e0bcd51472aa45d08c976f5f33ae5d67658e50b"
+        },
+        {
+          "path": "checks/bake-pilot-web-v25.json",
+          "sha256": "596368a03225943e2ab76de01af02d5f2e92358dd79ef1bab11b7a81ea215741"
+        },
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T14:16:31.019071+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CITY",
+      "stage": "production",
+      "level": "city",
+      "result": "failed",
+      "change": "MCP技术样区完成，但整体相机、幕墙与周边环境尚未达到确认终稿",
+      "evidence": [
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "daa656035789de77aa48d65afb171f9224c5d2f1034dd4426de57f33ef7fa3ca"
+        }
+      ],
+      "next": "按终稿逐层校准构图、深化幕墙与环境，再更新烘焙并在实际网页逐版对照",
+      "time": "2026-10-17T14:16:31.084166+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CAMPUS",
+      "stage": "production",
+      "level": "campus",
+      "result": "failed",
+      "change": "MCP技术样区完成，但整体相机、幕墙与周边环境尚未达到确认终稿",
+      "evidence": [
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "daa656035789de77aa48d65afb171f9224c5d2f1034dd4426de57f33ef7fa3ca"
+        }
+      ],
+      "next": "按终稿逐层校准构图、深化幕墙与环境，再更新烘焙并在实际网页逐版对照",
+      "time": "2026-10-17T14:16:31.153671+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-BUILDING",
+      "stage": "production",
+      "level": "building",
+      "result": "failed",
+      "change": "MCP技术样区完成，但整体相机、幕墙与周边环境尚未达到确认终稿",
+      "evidence": [
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "daa656035789de77aa48d65afb171f9224c5d2f1034dd4426de57f33ef7fa3ca"
+        }
+      ],
+      "next": "按终稿逐层校准构图、深化幕墙与环境，再更新烘焙并在实际网页逐版对照",
+      "time": "2026-10-17T14:16:31.220857+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "production",
+      "reason": "补齐最终样区文件哈希和固定网页入口记录，保持三张终稿确认不变",
+      "records": {
+        "production": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-17T14:19:28.536462+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "MCP-BAKE-PILOT-25",
+      "stage": "production",
+      "level": "building",
+      "result": "passed",
+      "change": "通过真实MCP制作并验证A1样区AO/间接光、UV2和最终项目资产，完成同镜头网页技术核对",
+      "evidence": [
+        {
+          "path": "checks/bake-pilot-assets-v25.json",
+          "sha256": "c9ab9b554b07669826e93d075e0bcd51472aa45d08c976f5f33ae5d67658e50b"
+        },
+        {
+          "path": "checks/bake-pilot-web-v25.json",
+          "sha256": "7d62b8dbf07ae05e9b373f2977769a8edf3c6fabecdba891e73c98b3c92d2c9b"
+        },
+        {
+          "path": "checks/bake-final-v25.png",
+          "sha256": "ae20c24eff91da77a181bb59b087aef488e876deb1ed8cba18468a68989b88a1"
+        },
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-17T14:19:28.666585+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CITY",
+      "stage": "production",
+      "level": "city",
+      "result": "failed",
+      "change": "整体相机、幕墙与周边环境仍未达到确认终稿，MCP烘焙技术样区不等于整屏还原完成",
+      "evidence": [
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "daa656035789de77aa48d65afb171f9224c5d2f1034dd4426de57f33ef7fa3ca"
+        }
+      ],
+      "next": "按终稿校准构图、深化材质与环境，再逐层重烘焙和网页对照",
+      "time": "2026-10-17T14:19:28.736256+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CAMPUS",
+      "stage": "production",
+      "level": "campus",
+      "result": "failed",
+      "change": "整体相机、幕墙与周边环境仍未达到确认终稿，MCP烘焙技术样区不等于整屏还原完成",
+      "evidence": [
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "daa656035789de77aa48d65afb171f9224c5d2f1034dd4426de57f33ef7fa3ca"
+        }
+      ],
+      "next": "按终稿校准构图、深化材质与环境，再逐层重烘焙和网页对照",
+      "time": "2026-10-17T14:19:28.802966+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-BUILDING",
+      "stage": "production",
+      "level": "building",
+      "result": "failed",
+      "change": "整体相机、幕墙与周边环境仍未达到确认终稿，MCP烘焙技术样区不等于整屏还原完成",
+      "evidence": [
+        {
+          "path": "docs/bake-pilot-v25.md",
+          "sha256": "76b85d3216783f24f854fa6f9d0e306ae711e8158376ae12399ebdff3c8cec5a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "daa656035789de77aa48d65afb171f9224c5d2f1034dd4426de57f33ef7fa3ca"
+        }
+      ],
+      "next": "按终稿校准构图、深化材质与环境，再逐层重烘焙和网页对照",
+      "time": "2026-10-17T14:19:28.870081+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "df5c2f4e697bacddb6498f2c7df001fa7fc553bddcd03457cce72a262ede61c7"
+      },
+      "time": "2026-10-17T15:14:35.046586+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "v26通过实际Blender MCP更新三层模型与烘焙，并按用户反馈补两处入口、树种、行人与道路外环境",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/design-final.md",
+              "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+            },
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            }
+          ],
+          "summary": "沿用确认业务范围，不重复调研"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T14:16:30.513711+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T14:16:30.572347+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-17T14:16:30.630811+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            },
+            {
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+            }
+          ],
+          "summary": "三场景终稿不变，按稿继续制作"
+        },
+        "design": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/city.png",
+                  "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+                }
+              },
+              "result": "passed",
+              "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T14:16:30.756395+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/campus.png",
+                  "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+                }
+              },
+              "result": "passed",
+              "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T14:16:30.821400+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/building.png",
+                  "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+                }
+              },
+              "result": "passed",
+              "summary": "复用已确认唯一终稿，MCP样区不改变视觉方向",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-17T14:16:30.885513+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            },
+            {
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+            }
+          ],
+          "summary": "三场景终稿不变，按稿继续制作"
+        },
+        "production": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-17T15:14:35.046681+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "df5c2f4e697bacddb6498f2c7df001fa7fc553bddcd03457cce72a262ede61c7"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "time": "2026-10-18T02:32:46.726434+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "沿用三张终稿与范围，登记v26模型、入口边界与树色街区的实际修正及网页复验",
+      "records": {
+        "research": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "concept": {
+          "status": "pending",
+          "levels": {}
+        },
+        "design": {
+          "status": "pending",
+          "levels": {}
+        },
+        "production": {
+          "status": "pending",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-18T02:32:46.726608+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-18T02:32:46.790926+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用用户已确认唯一终稿，当前修正未更改视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T02:32:46.851040+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用用户已确认唯一终稿，当前修正未更改视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T02:32:46.913765+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        },
+        {
+          "path": "design/final/README.md",
+          "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用用户已确认唯一终稿，当前修正未更改视觉方向",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T02:32:46.979613+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-18T02:32:47.041366+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "docs/design-final.md",
+          "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "passed",
+      "summary": "复用三张整屏终稿作为唯一实现基准",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T02:32:47.106847+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "docs/design-final.md",
+          "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "passed",
+      "summary": "复用三张整屏终稿作为唯一实现基准",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T02:32:47.172268+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "docs/design-final.md",
+          "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "passed",
+      "summary": "复用三张整屏终稿作为唯一实现基准",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T02:32:47.241513+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-18T02:32:47.311479+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "city",
+      "artifact": {
+        "path": "checks/v26-city-resume.png",
+        "sha256": "6ce326342c6bec3190b10af8a8f94de85eda1b2540bce564f1ca1d4adb16efda"
+      },
+      "evidence": [
+        {
+          "path": "checks/v26-comparison.html",
+          "sha256": "70f023b77fd0444d047d056aae47c65b2f651aa7fd7dabb09cb8e2f8e4e89175"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "dad6238e79f4d4b6fbdee8dc1c2e11ca1f8981329fa975073a7f87e492be087c"
+        },
+        {
+          "path": "checks/v26-runtime-resume.json",
+          "sha256": "bcc3ee058702d3738f0bdadd076c6cf7bf800de610642799d3636e3c1a9f371c"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        },
+        "design": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "failed",
+      "summary": "本轮局部修正、结构与交互已落实，整体材质及景观写实程度仍有差距",
+      "next": "保留当前模型和本轮修正，按并排对照继续深化该层材质、植被和构图，不替换终稿",
+      "userDecision": null,
+      "time": "2026-10-18T02:32:47.381552+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "campus",
+      "artifact": {
+        "path": "checks/v26-campus-resume.png",
+        "sha256": "1d2e6905457fcf29a8c0ffabc43e3f0bb2610180d1a8a05430d8d9b9a1f47ff3"
+      },
+      "evidence": [
+        {
+          "path": "checks/v26-comparison.html",
+          "sha256": "70f023b77fd0444d047d056aae47c65b2f651aa7fd7dabb09cb8e2f8e4e89175"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "dad6238e79f4d4b6fbdee8dc1c2e11ca1f8981329fa975073a7f87e492be087c"
+        },
+        {
+          "path": "checks/v26-runtime-resume.json",
+          "sha256": "bcc3ee058702d3738f0bdadd076c6cf7bf800de610642799d3636e3c1a9f371c"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        },
+        "design": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "failed",
+      "summary": "本轮局部修正、结构与交互已落实，整体材质及景观写实程度仍有差距",
+      "next": "保留当前模型和本轮修正，按并排对照继续深化该层材质、植被和构图，不替换终稿",
+      "userDecision": null,
+      "time": "2026-10-18T02:32:47.455112+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "building",
+      "artifact": {
+        "path": "checks/v26-building-resume.png",
+        "sha256": "05793562af5eab3b58604f75157a7a6220ec37b06b425e57d73a9d956cc8d86a"
+      },
+      "evidence": [
+        {
+          "path": "checks/v26-comparison.html",
+          "sha256": "70f023b77fd0444d047d056aae47c65b2f651aa7fd7dabb09cb8e2f8e4e89175"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "dad6238e79f4d4b6fbdee8dc1c2e11ca1f8981329fa975073a7f87e492be087c"
+        },
+        {
+          "path": "checks/v26-runtime-resume.json",
+          "sha256": "bcc3ee058702d3738f0bdadd076c6cf7bf800de610642799d3636e3c1a9f371c"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        },
+        "design": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "failed",
+      "summary": "本轮局部修正、结构与交互已落实，整体材质及景观写实程度仍有差距",
+      "next": "保留当前模型和本轮修正，按并排对照继续深化该层材质、植被和构图，不替换终稿",
+      "userDecision": null,
+      "time": "2026-10-18T02:32:47.529273+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C26-SOUTH-ENTRANCES",
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "两条步行入口接至人行道，导出顶点与车行道内缘保持0.5m距离",
+      "evidence": [
+        {
+          "path": "checks/assets-contract-v26-resume.json",
+          "sha256": "4ba29aba4cb91066cd98892278e863933aba0f4d525afa4adcb96b794a095349"
+        },
+        {
+          "path": "checks/v26-runtime-resume.json",
+          "sha256": "bcc3ee058702d3738f0bdadd076c6cf7bf800de610642799d3636e3c1a9f371c"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T02:32:47.602214+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C26-TREES-EDGE-CONTEXT",
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "采用浅樱花粉与柔和金黄，三侧补8组24栋错落办公楼群，实际页面复验",
+      "evidence": [
+        {
+          "path": "checks/v26-campus-resume.png",
+          "sha256": "1d2e6905457fcf29a8c0ffabc43e3f0bb2610180d1a8a05430d8d9b9a1f47ff3"
+        },
+        {
+          "path": "checks/mcp-campus-edge-architecture-v26.json",
+          "sha256": "d84fe8189b5965923b6b1429f02c6ca2f77abf2dc0fcb89adfbb340442835b7e"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T02:32:47.673089+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "time": "2026-10-18T03:31:58.605516+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "v27通过Blender MCP更新图集、窗后空间和静态光照，前端加入抗锯齿及按视角分配渲染细节；复用已确认范围和终稿",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/design-final.md",
+              "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+            },
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            }
+          ],
+          "summary": "复用已确认范围与终稿，不重复调研"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用用户已确认唯一终稿，当前修正未更改视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-18T02:32:46.851040+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用用户已确认唯一终稿，当前修正未更改视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-18T02:32:46.913765+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                },
+                {
+                  "path": "design/final/README.md",
+                  "sha256": "37e86d5f38d4679a26d662f450eedc82536813e619d6a3d72b7d1acf5bbe2447"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用用户已确认唯一终稿，当前修正未更改视觉方向",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-18T02:32:46.979613+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            }
+          ],
+          "summary": "三层既有确认仍有效"
+        },
+        "design": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "docs/design-final.md",
+                  "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+                },
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/city.png",
+                  "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+                }
+              },
+              "result": "passed",
+              "summary": "复用三张整屏终稿作为唯一实现基准",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-18T02:32:47.106847+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "docs/design-final.md",
+                  "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+                },
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/campus.png",
+                  "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+                }
+              },
+              "result": "passed",
+              "summary": "复用三张整屏终稿作为唯一实现基准",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-18T02:32:47.172268+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "docs/design-final.md",
+                  "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+                },
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/building.png",
+                  "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+                }
+              },
+              "result": "passed",
+              "summary": "复用三张整屏终稿作为唯一实现基准",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-18T02:32:47.241513+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "docs/design-final.md",
+              "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+            }
+          ],
+          "summary": "继续既有终稿下的MCP制作与逐版复验"
+        },
+        "production": {
+          "status": "in_progress",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "checks/v26-city-resume.png",
+                "sha256": "6ce326342c6bec3190b10af8a8f94de85eda1b2540bce564f1ca1d4adb16efda"
+              },
+              "evidence": [
+                {
+                  "path": "checks/v26-comparison.html",
+                  "sha256": "70f023b77fd0444d047d056aae47c65b2f651aa7fd7dabb09cb8e2f8e4e89175"
+                },
+                {
+                  "path": "docs/implementation-status.md",
+                  "sha256": "dad6238e79f4d4b6fbdee8dc1c2e11ca1f8981329fa975073a7f87e492be087c"
+                },
+                {
+                  "path": "checks/v26-runtime-resume.json",
+                  "sha256": "bcc3ee058702d3738f0bdadd076c6cf7bf800de610642799d3636e3c1a9f371c"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/city.png",
+                  "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+                },
+                "design": {
+                  "path": "design/final/city.png",
+                  "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+                }
+              },
+              "result": "failed",
+              "summary": "本轮局部修正、结构与交互已落实，整体材质及景观写实程度仍有差距",
+              "next": "保留当前模型和本轮修正，按并排对照继续深化该层材质、植被和构图，不替换终稿",
+              "userDecision": null,
+              "time": "2026-10-18T02:32:47.381552+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "checks/v26-building-resume.png",
+                "sha256": "05793562af5eab3b58604f75157a7a6220ec37b06b425e57d73a9d956cc8d86a"
+              },
+              "evidence": [
+                {
+                  "path": "checks/v26-comparison.html",
+                  "sha256": "70f023b77fd0444d047d056aae47c65b2f651aa7fd7dabb09cb8e2f8e4e89175"
+                },
+                {
+                  "path": "docs/implementation-status.md",
+                  "sha256": "dad6238e79f4d4b6fbdee8dc1c2e11ca1f8981329fa975073a7f87e492be087c"
+                },
+                {
+                  "path": "checks/v26-runtime-resume.json",
+                  "sha256": "bcc3ee058702d3738f0bdadd076c6cf7bf800de610642799d3636e3c1a9f371c"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "7a26a44da08149ace73da807aaf2bd4b437f52916624582cbed678235ec48d3e"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/building.png",
+                  "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+                },
+                "design": {
+                  "path": "design/final/building.png",
+                  "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+                }
+              },
+              "result": "failed",
+              "summary": "本轮局部修正、结构与交互已落实，整体材质及景观写实程度仍有差距",
+              "next": "保留当前模型和本轮修正，按并排对照继续深化该层材质、植被和构图，不替换终稿",
+              "userDecision": null,
+              "time": "2026-10-18T02:32:47.529273+00:00"
+            }
+          }
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-18T03:31:58.605699+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-18T03:32:50.348621+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用D024真实确认；v27未更换三张终稿",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T03:32:50.477625+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用D024真实确认；v27未更换三张终稿",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T03:32:50.656542+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用D024真实确认；v27未更换三张终稿",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T03:32:50.720954+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-18T03:32:50.784060+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/manifest.json",
+          "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T03:32:50.849454+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/manifest.json",
+          "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T03:32:50.915971+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/manifest.json",
+          "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T03:32:50.987041+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-18T03:32:51.058757+00:00"
+    },
+    {
+      "event": "source_changed",
+      "previous": {
+        "path": "planning/project.json",
+        "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+      },
+      "new": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "time": "2026-10-18T03:43:12.683932+00:00"
+    },
+    {
+      "event": "reopened",
+      "stage": "research",
+      "reason": "v27近景复验后接入窗后图集并校准透明玻璃粗糙度，绑定最终工程参数",
+      "records": {
+        "research": {
+          "status": "completed",
+          "levels": {},
+          "evidence": [
+            {
+              "path": "docs/design-final.md",
+              "sha256": "b031ff1c427eb0d2c9c2b6f701f42c39f0f2d5d67c2f524af87837c2222e202c"
+            },
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            }
+          ],
+          "summary": "复用用户已确认范围和唯一终稿，不重新开展调研"
+        },
+        "concept": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用D024真实确认；v27未更换三张终稿",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-18T03:32:50.477625+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用D024真实确认；v27未更换三张终稿",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-18T03:32:50.656542+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+              },
+              "baselines": {},
+              "result": "passed",
+              "summary": "沿用D024真实确认；v27未更换三张终稿",
+              "next": null,
+              "userDecision": "用户明确回复：确认，以这三张为终稿",
+              "time": "2026-10-18T03:32:50.720954+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/approval.md",
+              "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+            }
+          ],
+          "summary": "三层概念复用已确认唯一终稿"
+        },
+        "design": {
+          "status": "completed",
+          "levels": {
+            "city": {
+              "artifact": {
+                "path": "design/final/city.png",
+                "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/manifest.json",
+                  "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+                },
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/city.png",
+                  "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+                }
+              },
+              "result": "passed",
+              "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-18T03:32:50.849454+00:00"
+            },
+            "campus": {
+              "artifact": {
+                "path": "design/final/campus.png",
+                "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/manifest.json",
+                  "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+                },
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/campus.png",
+                  "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+                }
+              },
+              "result": "passed",
+              "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-18T03:32:50.915971+00:00"
+            },
+            "building": {
+              "artifact": {
+                "path": "design/final/building.png",
+                "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+              },
+              "evidence": [
+                {
+                  "path": "design/final/manifest.json",
+                  "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+                },
+                {
+                  "path": "design/final/approval.md",
+                  "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+                }
+              ],
+              "source": {
+                "path": "planning/project.json",
+                "sha256": "610468c5e8eb9f3ca0660924249c5c561b2c05e50669d350f7e36a28da64fe36"
+              },
+              "baselines": {
+                "concept": {
+                  "path": "design/final/building.png",
+                  "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+                }
+              },
+              "result": "passed",
+              "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+              "next": null,
+              "userDecision": null,
+              "time": "2026-10-18T03:32:50.987041+00:00"
+            }
+          },
+          "evidence": [
+            {
+              "path": "design/final/manifest.json",
+              "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+            }
+          ],
+          "summary": "整屏基准未更改，按v27规划继续制作与实际复验"
+        },
+        "production": {
+          "status": "in_progress",
+          "levels": {}
+        },
+        "scene-check": {
+          "status": "pending",
+          "levels": {}
+        },
+        "runtime": {
+          "status": "pending",
+          "levels": {}
+        }
+      },
+      "time": "2026-10-18T03:43:12.684212+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "research",
+      "time": "2026-10-18T03:43:12.786721+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用D024真实确认；v27未更换三张终稿",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T03:43:12.853731+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用D024真实确认；v27未更换三张终稿",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T03:43:12.927577+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "concept",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {},
+      "result": "passed",
+      "summary": "沿用D024真实确认；v27未更换三张终稿",
+      "next": null,
+      "userDecision": "用户明确回复：确认，以这三张为终稿",
+      "time": "2026-10-18T03:43:13.002463+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "concept",
+      "time": "2026-10-18T03:43:13.076578+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "city",
+      "artifact": {
+        "path": "design/final/city.png",
+        "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+      },
+      "evidence": [
+        {
+          "path": "design/final/manifest.json",
+          "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T03:43:13.162181+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "campus",
+      "artifact": {
+        "path": "design/final/campus.png",
+        "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+      },
+      "evidence": [
+        {
+          "path": "design/final/manifest.json",
+          "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T03:43:13.253091+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "design",
+      "level": "building",
+      "artifact": {
+        "path": "design/final/building.png",
+        "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+      },
+      "evidence": [
+        {
+          "path": "design/final/manifest.json",
+          "sha256": "4518fe8b76ea90824d3f61913803c8b241bc1f91ce404c637f143bee62229cfa"
+        },
+        {
+          "path": "design/final/approval.md",
+          "sha256": "49b789bfe6f86fe1b3c8d321499662333fbf61e6bc99d6c3a7605643f255cb57"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "passed",
+      "summary": "沿用三张整屏终稿，哈希与确认记录一致",
+      "next": null,
+      "userDecision": null,
+      "time": "2026-10-18T03:43:13.349547+00:00"
+    },
+    {
+      "event": "completed",
+      "stage": "design",
+      "time": "2026-10-18T03:43:13.450941+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CITY",
+      "stage": "production",
+      "level": "city",
+      "result": "failed",
+      "change": "v27已完成本轮MCP制作、UI和功能复验；保留AI终稿与实时场景的整体写实还原差异",
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "68ec616f8a8be56c3b0cec7615115bf6cf7de866848c63d2d4da8e6eba022da0"
+        }
+      ],
+      "next": "继续按同条件对照完善自然植被、建筑反射和街区细节；不把用户对设计的确认视为实现验收",
+      "time": "2026-10-18T03:46:46.909469+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-CAMPUS",
+      "stage": "production",
+      "level": "campus",
+      "result": "failed",
+      "change": "v27已完成本轮MCP制作、UI和功能复验；保留AI终稿与实时场景的整体写实还原差异",
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "68ec616f8a8be56c3b0cec7615115bf6cf7de866848c63d2d4da8e6eba022da0"
+        }
+      ],
+      "next": "继续按同条件对照完善自然植被、建筑反射和街区细节；不把用户对设计的确认视为实现验收",
+      "time": "2026-10-18T03:46:46.996542+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "FINAL-ALIGN-24-BUILDING",
+      "stage": "production",
+      "level": "building",
+      "result": "failed",
+      "change": "v27已完成本轮MCP制作、UI和功能复验；保留AI终稿与实时场景的整体写实还原差异",
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/implementation-status.md",
+          "sha256": "68ec616f8a8be56c3b0cec7615115bf6cf7de866848c63d2d4da8e6eba022da0"
+        }
+      ],
+      "next": "继续按同条件对照完善自然植被、建筑反射和街区细节；不把用户对设计的确认视为实现验收",
+      "time": "2026-10-18T03:46:47.067685+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "CITY-BUDGET",
+      "stage": "production",
+      "level": "city",
+      "result": "passed",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
+      "evidence": [
+        {
+          "path": "checks/city-contract-v27-delivery.json",
+          "sha256": "9bbb941b348ad22e70c3ecc1d8a43f9d506b2f669487dedcda564b100f4e9ed0"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T03:46:47.135905+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "MCP-BAKE-PILOT-25",
+      "stage": "production",
+      "level": "building",
+      "result": "passed",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
+      "evidence": [
+        {
+          "path": "checks/rebuild-v27-delivered.json",
+          "sha256": "6e147740828227169f118cb3395865f37ec36605169f327c4ff276fe55f8aca2"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T03:46:47.205423+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C26-SOUTH-ENTRANCES",
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
+      "evidence": [
+        {
+          "path": "checks/assets-contract-v27-delivery.json",
+          "sha256": "16ccd7a54ef7dc90b1d1b3b0c03b82f17a9e2a8be8955573bbff28ce202d33af"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T03:46:47.273263+00:00"
+    },
+    {
+      "event": "issue",
+      "id": "C26-TREES-EDGE-CONTEXT",
+      "stage": "production",
+      "level": "campus",
+      "result": "passed",
+      "change": "当前实际MCP产物、契约和网页证据复验通过，范围见v27制作记录",
+      "evidence": [
+        {
+          "path": "checks/v27-campus.png",
+          "sha256": "b53c9385c0efb5c21845456c9931227ffc4305d284d2c729abe254b824a3d6cd"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "next": null,
+      "time": "2026-10-18T03:46:47.342463+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "city",
+      "artifact": {
+        "path": "checks/v27-city.png",
+        "sha256": "e24469193e155f357fc7db21c281e28342132b335bb1541e510bd3778c6f4764"
+      },
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        },
+        "design": {
+          "path": "design/final/city.png",
+          "sha256": "9dd4553d0742a27cd7934201aa6949cdd014b652fe35e2b999451cf439aa593a"
+        }
+      },
+      "result": "failed",
+      "summary": "本轮工程与功能验证通过；整体AI写实还原差异未标记最终视觉通过",
+      "next": "保留实际截图与当前制作成果，继续逐项核对艺术表现差异",
+      "userDecision": null,
+      "time": "2026-10-18T03:46:47.412151+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "campus",
+      "artifact": {
+        "path": "checks/v27-campus.png",
+        "sha256": "b53c9385c0efb5c21845456c9931227ffc4305d284d2c729abe254b824a3d6cd"
+      },
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        },
+        "design": {
+          "path": "design/final/campus.png",
+          "sha256": "3f4a06ae77ce177366d4f1f041c38238430e597cc95fe716f727a1c518bba345"
+        }
+      },
+      "result": "failed",
+      "summary": "本轮工程与功能验证通过；整体AI写实还原差异未标记最终视觉通过",
+      "next": "保留实际截图与当前制作成果，继续逐项核对艺术表现差异",
+      "userDecision": null,
+      "time": "2026-10-18T03:46:47.483258+00:00"
+    },
+    {
+      "event": "checked",
+      "stage": "production",
+      "level": "building",
+      "artifact": {
+        "path": "checks/v27-building.png",
+        "sha256": "39c71d70ff3afd39ac943f3dec36c1eeaa7ed4d867d898e4205a43b3ff412af1"
+      },
+      "evidence": [
+        {
+          "path": "checks/v27-side-by-side.png",
+          "sha256": "6e370660b33f76b586963dd8b5959d4d7be7f4494f6b6f8c05fd07ab73b7af1a"
+        },
+        {
+          "path": "docs/restoration-v27.md",
+          "sha256": "e50638d38686513204537966b3a28a69966b0b007dc2b4545994c1ca7ff9b114"
+        }
+      ],
+      "source": {
+        "path": "planning/project.json",
+        "sha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769"
+      },
+      "baselines": {
+        "concept": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        },
+        "design": {
+          "path": "design/final/building.png",
+          "sha256": "71db605990c7bb73dd9aa7642cc7167c1dc03e8d345ad97d23942a5e18c638ce"
+        }
+      },
+      "result": "failed",
+      "summary": "本轮工程与功能验证通过；整体AI写实还原差异未标记最终视觉通过",
+      "next": "保留实际截图与当前制作成果，继续逐项核对艺术表现差异",
+      "userDecision": null,
+      "time": "2026-10-18T03:46:47.554999+00:00"
     }
   ]
 }

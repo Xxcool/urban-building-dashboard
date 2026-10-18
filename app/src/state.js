@@ -4,7 +4,8 @@ export function snapshot(config, mode) {
   const source={...config.demoDesign.buildingMetrics,[config.demoDesign.focusBuilding.id]:config.demoDesign.focusBuilding};
   const byBuilding=Object.fromEntries(Object.entries(source).map(([id,item])=>[id,mode==='no-data'?blank(item):item]));
   const campus={buildings:Object.keys(source).length,...Object.fromEntries(['grossAreaM2','rentableAreaM2','rentedAreaM2','enterprises'].map(key=>[key,Object.values(source).reduce((sum,item)=>sum+item[key],0)]))};
-  return {campus:mode==='no-data'?blank(campus):campus,building:byBuilding[config.demoDesign.focusBuilding.id],byBuilding,quality:mode==='no-data'?'missing':'demo'};
+  const industryComposition=config.demoDesign.industryComposition.items.map(item=>({...item,enterprises:mode==='no-data'?null:item.enterprises,share:mode==='no-data'?null:Math.round(item.enterprises/campus.enterprises*100)}));
+  return {industryComposition,campus:mode==='no-data'?blank(campus):campus,building:byBuilding[config.demoDesign.focusBuilding.id],byBuilding,quality:mode==='no-data'?'missing':'demo'};
 }
 export function number(value, decimals=0) {
   return value===null || value===undefined || !Number.isFinite(value) ? '—' : value.toLocaleString('zh-CN',{minimumFractionDigits:decimals,maximumFractionDigits:decimals});

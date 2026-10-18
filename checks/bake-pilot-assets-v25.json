@@ -1,0 +1,30 @@
+{
+  "result": "passed",
+  "scope": "实际样区文件、5个UV2接收面、GLB内嵌AO与哈希；不代表终稿还原完成",
+  "receivers": [
+    "A1_bronze",
+    "A1_frame",
+    "A1_roof",
+    "A1_stone",
+    "pilot_plaza"
+  ],
+  "planningSha256": "0952854762ce4839514f9c4783812499b7195e1af529e255efa1f77a373d37d2",
+  "files": {
+    "pilot.glb": {
+      "bytes": 11085784,
+      "sha256": "64b2c724407523e515ae1f4143cc636ff7955af3c87e0334ebaba3f96b24c01a"
+    },
+    "ao.png": {
+      "bytes": 1804569,
+      "sha256": "1b269a13875df50c0496b72e0696c87ad3d22f9cacb16cee1b4c7c6294a431e7"
+    },
+    "indirect.png": {
+      "bytes": 545592,
+      "sha256": "d3463eda1f1d5e235abcd0afac97a66f70f95701fc689d08b041118f5df82302"
+    },
+    "pilot-baked.blend": {
+      "bytes": 7800823,
+      "sha256": "aae1f8e651981a2eb4ff8aa29715c4487087187e5a21f35096d2e6c722fe4c0f"
+    }
+  }
+}

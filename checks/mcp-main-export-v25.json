@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "4d8ed1c472dfc580338dd7e6abfe3924d7bb72b7757510edf907cb51c889ce31",
+  "argumentsSha256": "fd6ac6481a49ae36c7aa38fb29d69e54340dbcd167ff8dd2440d4c3845d9fba3",
+  "at": "2026-10-17T14:05:22.597426+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Error executing code: Communication error with Blender: {\"exception_type\": \"RuntimeError\", \"message\": \"Error: Python: Traceback (most recent call last):\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/__init__.py\\\", line 1409, in execute\\n    res = gltf2_blender_export.save(context, export_settings)\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/blender/exp/export.py\\\", line 23, in save\\n    if bpy.context.active_object is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^\\nAttributeError: 'Context' object has no attribute 'active_object'\\nLocation: <string>:12\\n\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 12, in <module>\\nRuntimeError: Error: Python: Traceback (most recent call last):\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/__init__.py\\\", line 1409, in execute\\n    res = gltf2_blender_export.save(context, export_settings)\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/blender/exp/export.py\\\", line 23, in save\\n    if bpy.context.active_object is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^\\nAttributeError: 'Context' object has no attribute 'active_object'\\nLocation: <string>:12\\n\\n\"}",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Error executing code: Communication error with Blender: {\"exception_type\": \"RuntimeError\", \"message\": \"Error: Python: Traceback (most recent call last):\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/__init__.py\\\", line 1409, in execute\\n    res = gltf2_blender_export.save(context, export_settings)\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/blender/exp/export.py\\\", line 23, in save\\n    if bpy.context.active_object is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^\\nAttributeError: 'Context' object has no attribute 'active_object'\\nLocation: <string>:12\\n\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/Users/xiabin/Library/Application Support/Blender/5.2/scripts/addons/blender_mcp.py\\\", line 2105, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\\"<string>\\\", line 12, in <module>\\nRuntimeError: Error: Python: Traceback (most recent call last):\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/__init__.py\\\", line 1409, in execute\\n    res = gltf2_blender_export.save(context, export_settings)\\n  File \\\"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/blender/exp/export.py\\\", line 23, in save\\n    if bpy.context.active_object is not None:\\n       ^^^^^^^^^^^^^^^^^^^^^^^^^\\nAttributeError: 'Context' object has no attribute 'active_object'\\nLocation: <string>:12\\n\\n\"}"
+    },
+    "isError": false
+  }
+}

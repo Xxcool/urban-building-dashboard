@@ -1,0 +1,29 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "executedCodeSha256": "7f3c220610a531579baeeb23f9617a17d64da2a7286583fada1cdbcbf699dae9",
+  "argumentsSha256": "c3bd4aaf567058e95f2b9b51bc40f386bba7a042df6a0deda5ab3a3e74d38aeb",
+  "at": "2026-10-17T14:57:02.197308+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"campus-v26-prepared.blend\"\nprepared {'receivers': ['A1_stone', 'A1_frame', 'A1_bronze', 'A1_roof', 'environment_path', 'landscape_stone', 'landscape_wood']}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"campus-v26-prepared.blend\"\nprepared {'receivers': ['A1_stone', 'A1_frame', 'A1_bronze', 'A1_roof', 'environment_path', 'landscape_stone', 'landscape_wood']}\n"
+    },
+    "isError": false
+  }
+}

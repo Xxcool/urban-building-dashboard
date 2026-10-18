@@ -1,0 +1,65 @@
+{
+  "result": "passed",
+  "output": "/Users/xiabin/Documents/urban-building-dashboard/work/v27/rebuild-verified",
+  "seconds": 10.03,
+  "steps": [
+    {
+      "step": "campus MCP load",
+      "exitCode": 0,
+      "seconds": 1.07
+    },
+    {
+      "step": "campus MCP export",
+      "exitCode": 0,
+      "seconds": 1.72
+    },
+    {
+      "step": "city MCP load",
+      "exitCode": 0,
+      "seconds": 1.2
+    },
+    {
+      "step": "city MCP export",
+      "exitCode": 0,
+      "seconds": 1.58
+    },
+    {
+      "step": "派生网页配置",
+      "exitCode": 0,
+      "seconds": 0.06
+    },
+    {
+      "step": "安装锁定依赖",
+      "exitCode": 0,
+      "seconds": 1.31
+    },
+    {
+      "step": "前端契约测试",
+      "exitCode": 0,
+      "seconds": 0.73
+    },
+    {
+      "step": "生产构建",
+      "exitCode": 0,
+      "seconds": 2.16
+    }
+  ],
+  "comparisons": {
+    "campus": {
+      "originalSha256": "07e34e205a7687bde98dbdeb6afe65ea2c8eb747db7dbd5899937bf7b009a05b",
+      "rebuiltSha256": "07e34e205a7687bde98dbdeb6afe65ea2c8eb747db7dbd5899937bf7b009a05b",
+      "identical": true,
+      "sameModelContent": true
+    },
+    "city": {
+      "originalSha256": "b922150cae511d2f5f400b5f7933e205d61f522eb36bdbcab9cc352c71b8868c",
+      "rebuiltSha256": "b922150cae511d2f5f400b5f7933e205d61f522eb36bdbcab9cc352c71b8868c",
+      "identical": true,
+      "sameModelContent": true
+    },
+    "runtime": {
+      "identical": true
+    }
+  },
+  "scope": "独立目录加载打包Blend，通过真实MCP重导；模型JSON与二进制相同，仅忽略插件运行态布尔字段。前端由规划源和锁定依赖重新构建，不重新执行历史建模操作。"
+}

@@ -1,0 +1,27 @@
+{
+  "transport": "MCP stdio → Blender MCP → Blender addon",
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool": "execute_blender_code",
+  "at": "2026-10-17T13:32:13.218565+00:00",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"pilot-prepared.blend\"\n{\"stage\": \"prepared\", \"planningSha256\": \"d35bdd6def594c4a2843658ce022ee439c4d72665ffc12f6fafcbf5302bc039a\", \"device\": \"Apple M1 (GPU - 7 cores)\", \"receivers\": [\"A1_stone\", \"A1_frame\", \"A1_bronze\", \"A1_roof\", \"pilot_plaza\"], \"excluded\": [\"landscape_water\", \"landscape_waterEdge\", \"vehicle_sedan_car\", \"vehicle_sedan_dark\", \"vehicle_sedan_gray\", \"vehicle_sedan_marking\", \"vehicle_sedan_tailLamp\", \"vehicle_sedan_vehicleGlass\", \"vehicle_suv_car\", \"vehicle_suv_dark\", \"vehicle_suv_gray\", \"vehicle_suv_marking\", \"vehicle_suv_tailLamp\", \"vehicle_suv_vehicleGlass\", \"vehicle_truck_car\", \"vehicle_truck_dark\", \"vehicle_truck_gray\", \"vehicle_truck_marking\", \"vehicle_truck_tailLamp\", \"vehicle_truck_vehicleGlass\"], \"uvChannel\": 1, \"resolution\": 2048}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"pilot-prepared.blend\"\n{\"stage\": \"prepared\", \"planningSha256\": \"d35bdd6def594c4a2843658ce022ee439c4d72665ffc12f6fafcbf5302bc039a\", \"device\": \"Apple M1 (GPU - 7 cores)\", \"receivers\": [\"A1_stone\", \"A1_frame\", \"A1_bronze\", \"A1_roof\", \"pilot_plaza\"], \"excluded\": [\"landscape_water\", \"landscape_waterEdge\", \"vehicle_sedan_car\", \"vehicle_sedan_dark\", \"vehicle_sedan_gray\", \"vehicle_sedan_marking\", \"vehicle_sedan_tailLamp\", \"vehicle_sedan_vehicleGlass\", \"vehicle_suv_car\", \"vehicle_suv_dark\", \"vehicle_suv_gray\", \"vehicle_suv_marking\", \"vehicle_suv_tailLamp\", \"vehicle_suv_vehicleGlass\", \"vehicle_truck_car\", \"vehicle_truck_dark\", \"vehicle_truck_gray\", \"vehicle_truck_marking\", \"vehicle_truck_tailLamp\", \"vehicle_truck_vehicleGlass\"], \"uvChannel\": 1, \"resolution\": 2048}\n"
+    },
+    "isError": false
+  }
+}
