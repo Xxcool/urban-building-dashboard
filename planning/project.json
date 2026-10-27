@@ -735,9 +735,9 @@
       }
     },
     "assets": {
-      "scene": "app/public/assets/campus.glb",
+      "scene": "public/assets/campus.glb",
       "sourceBlend": "assets/scene.blend",
-      "grayScene": "app/public/assets/campus-gray.glb",
+      "grayScene": "public/assets/campus-gray.glb",
       "businessNodePrefix": "building_",
       "loading": "单包一次加载，两层复用，同一业务根节点下按材质合批；不复制全场景"
     },
@@ -926,8 +926,8 @@
         ]
       },
       "assets": {
-        "scene": "app/public/assets/city.glb",
-        "grayScene": "app/public/assets/city-gray.glb",
+        "scene": "public/assets/city.glb",
+        "grayScene": "public/assets/city-gray.glb",
         "blend": "assets/city.blend"
       },
       "budget": {

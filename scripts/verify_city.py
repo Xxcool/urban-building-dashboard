@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,hashlib,json,struct,math
 from city_layout import derive_city
 from city_geometry import clear_surface
-p=argparse.ArgumentParser();p.add_argument('--report',default='checks/city-assets-contract.json');a=p.parse_args();r=Path(__file__).resolve().parents[1];raw=(r/'planning/project.json').read_bytes();plan=json.loads(raw);s=derive_city(plan);m=json.loads((r/'assets/city-manifest.json').read_text());info=json.loads((r/'app/public/assets/city-build-info.json').read_text());data=(r/s['assets']['scene']).read_bytes();g=json.loads(data[20:20+struct.unpack_from('<I',data,12)[0]]);errors=[]
+p=argparse.ArgumentParser();p.add_argument('--report',default='checks/city-assets-contract.json');a=p.parse_args();r=Path(__file__).resolve().parents[1];raw=(r/'planning/project.json').read_bytes();plan=json.loads(raw);s=derive_city(plan);m=json.loads((r/'assets/city-manifest.json').read_text());info=json.loads((r/'public/assets/city-build-info.json').read_text());data=(r/s['assets']['scene']).read_bytes();g=json.loads(data[20:20+struct.unpack_from('<I',data,12)[0]]);errors=[]
 def check(v,msg):
  if not v:errors.append(msg)
 check(struct.unpack_from('<4sII',data)==(b'glTF',2,len(data)),'GLB头长度错误');check(hashlib.sha256(raw).hexdigest()==m['planningSha256']==info['planningSha256'],'规划/区域模型版本不一致');check(hashlib.sha256(data).hexdigest()==m['assetSha256']==info['assetSha256'],'模型清单哈希不一致');check(m.get('execution')=='Blender MCP','城市不是MCP制作产物')

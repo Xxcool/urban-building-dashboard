@@ -1,0 +1,30 @@
+# 校验根目录 Vue 工程与规划契约。
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.20.2'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm test
+      - run: python3 scripts/test_campus_landscape.py
+      - run: python3 scripts/test_city_geometry.py
+      - run: python3 scripts/test_migrate_asset_paths.py
+      - run: python3 scripts/verify_design.py
+      - run: python3 scripts/verify_assets.py
+      - run: python3 scripts/verify_city.py
+      - run: npm run build

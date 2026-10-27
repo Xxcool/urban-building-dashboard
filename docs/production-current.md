@@ -1,6 +1,6 @@
 # 制作规格 v27-final-polish
 
-由 scripts/render_specs.py 从 planning/project.json 派生。规划SHA-256：15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769。
+由 scripts/render_specs.py 从 planning/project.json 派生。规划SHA-256：952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651。
 
 尺寸依据：全部为虚构示范的制作估计，不是实测；由同一几何解释两层投影，网页构图不通过则改源。坐标约定：{"unit": "m", "blender": "X向右、Y向园区后排、Z向上，原点为园区地面中心", "threeConversion": "[x,y,z] -> [x,z,-y]，GLB默认Y向上导出", "modelOrigin": [0, 0, 0]}。
 
@@ -63,9 +63,9 @@ UI占位与安全边界：{"railFraction": 0.28, "sceneFraction": 0.72, "padding
 ## 资产、材质与性能
 
 {
-  "scene": "app/public/assets/campus.glb",
+  "scene": "public/assets/campus.glb",
   "sourceBlend": "assets/scene.blend",
-  "grayScene": "app/public/assets/campus-gray.glb",
+  "grayScene": "public/assets/campus-gray.glb",
   "businessNodePrefix": "building_",
   "loading": "单包一次加载，两层复用，同一业务根节点下按材质合批；不复制全场景"
 }

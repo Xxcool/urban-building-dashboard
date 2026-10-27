@@ -11,7 +11,7 @@
 | 楼宇幕墙 | 在同一八栋业务根节点内增加楼板、墙面、隔断和灯带；窗后墙面使用固定办公图集，不整面覆盖外幕墙，移除随机旧亮片；保留24层的 A1、三级裙房和经营口径 | `assets/mcp-operations/v27/campus-polish.json`、`campus-glass.json` |
 | AO／间接光 | A1石材、框架、竖梃、屋面与静态设施使用UV2；城市静态地表AO重新烘焙 | `campus-ao.json`、`campus-indirect.json`、`city-ao.json` |
 | 城市地表 | 保持湖岸和道路拓扑，统一树冠材质，补2400组低矮植被；地表改用低对比无方向斑驳，移除初版周期条纹 | `city-detail.json`、`city-tone.json`；普通道路水域交叉为0 |
-| 天空和边缘 | 天空纹理使用线性过滤并提高分辨率；加入SMAA；补暖色侧光表现竖梃 | `app/src/daylight-environment.js`、`SceneView.js` |
+| 天空和边缘 | 天空纹理使用线性过滤并提高分辨率；加入SMAA；补暖色侧光表现竖梃 | `src/scenes/daylight-environment.js`、`SceneView.vue` |
 | 性能 | 园区总览不重复绘制窗后结构与折射；仅A1近景启用室内与半分辨率折射缓冲 | 实际页面指标、重复切层记录 |
 | 文档展示 | README使用实际网页截图，AI设计图仍独立保存在唯一终稿目录 | `docs/images/` |
 
@@ -21,7 +21,7 @@
 
 实际制作工具链：MCP stdio → Blender MCP → 本机 Blender 插件 → Blender 5.2.2。代码片段通过 MCP 的执行工具运行；终端客户端不导入 bpy、不直接生成模型。
 
-当前工程：`assets/scene.blend` 与 `assets/city.blend`，所需图像均已打包；GLB中的对象身份、米制尺寸、UV和内嵌贴图通过实际结构核对。间接光图单独位于 `app/public/assets/campus-indirect-v27.png`。
+当前工程：`assets/scene.blend` 与 `assets/city.blend`，所需图像均已打包；GLB中的对象身份、米制尺寸、UV和内嵌贴图通过实际结构核对。间接光图单独位于 `public/assets/campus-indirect-v27.png`。
 
 操作记录在 `assets/mcp-operations/v27/`。它们是带前置工程状态的逐次操作，不能简单从头对任意场景运行。完整工程是本版本重导入口，v25／v26记录保留制作沿革。
 
