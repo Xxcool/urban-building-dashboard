@@ -1,6 +1,6 @@
 <script setup>
 // 实际GLB场景、相机、拾取、标签和生命周期；不从网格颜色反推业务数据。
-import { onMounted, onBeforeUnmount, ref, watch, computed } from 'vue';
+import { onMounted, onBeforeUnmount, ref, watch, computed, nextTick } from 'vue';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -12,6 +12,8 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
 import { toThree, number, area, occupancy } from '../data/state.js';
 import Icon from '../components/Icon.vue';
+import SceneLoading from '../components/SceneLoading.vue';
+import { readSceneBytes } from './load-asset.js';
 import { measureFloatingCard } from '../utils/floating-card.js';
 import { createRoute } from './traffic.js';
 import { createCampusLandscape } from './campus-landscape.js';
@@ -28,6 +30,10 @@ const props = defineProps([
 ]);
 const emit = defineEmits(['select', 'focus', 'stats', 'status', 'ready', 'interrupt']);
 
+// 阶段对应真实资源、空间构建与首帧准备，字节总量来自当前模型清单。
+const loadingPhase = ref('resources');
+const downloadedBytes = ref(0);
+const totalBytes = ref(0);
 const host = ref(null),
   labelHost = ref(null),
   status = ref('正在载入三维场景'),
@@ -359,11 +365,17 @@ onMounted(async () => {
     quality = info.quality;
     if (info.planningSha256 !== props.config.planningSha256)
       throw new Error('模型与规划版本不一致，请重新构建');
+    totalBytes.value = info.bytes;
     const assetResponse = await fetch('./assets/' + info.asset, {
       signal: loadingController.signal,
     });
     if (!assetResponse.ok) throw new Error('模型文件读取失败');
-    const bytes = await assetResponse.arrayBuffer();
+    const bytes = await readSceneBytes(assetResponse, (received) => {
+      if (!disposed) downloadedBytes.value = received;
+    });
+    loadingPhase.value = 'scene';
+    await nextTick();
+    if (disposed) return;
     if (bytes.byteLength < 12 || new DataView(bytes).getUint32(0, true) !== 0x46546c67)
       throw new Error('模型文件不是有效GLB');
     const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), (v) =>
@@ -609,15 +621,18 @@ onMounted(async () => {
     observer.observe(host.value);
     window.addEventListener('resize', resize);
     document.addEventListener('visibilitychange', visibilityChanged);
+    loadingPhase.value = 'ready';
+    await nextTick();
+    if (disposed) return;
     resize();
     setCamera(true);
     selectOutline();
     applyDetailQuality();
     window.addEventListener('keydown', closeCardOnEscape, true);
-    progressStatus('');
     updateTraffic();
     renderer.shadowMap.needsUpdate = true;
     composer.render();
+    progressStatus('');
     emit('ready');
     function render(time) {
       if (disposed) return;
@@ -829,8 +844,17 @@ const reload = () => window.location.reload();
         ><span>模型高度 {{ modelHeight }} m</span>
       </footer>
     </aside>
-    <div v-if="status" :class="['scene-status', { error: failure }]" role="status">
-      {{ status }}<button v-if="failure" @click="reload">重新载入</button>
-    </div>
+    <Transition name="scene-loading">
+      <SceneLoading
+        v-if="status"
+        :scene="level"
+        :phase="loadingPhase"
+        :downloaded="downloadedBytes"
+        :total="totalBytes"
+        :message="status"
+        :error="failure"
+        @retry="reload"
+      />
+    </Transition>
   </div>
 </template>

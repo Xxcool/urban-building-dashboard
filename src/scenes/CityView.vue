@@ -1,6 +1,6 @@
 <script setup>
 // 独立区域LOD场景：示意路网与建筑，不新增真实地理数据或经营统计。
-import { onMounted, onBeforeUnmount, ref, watch, computed } from 'vue';
+import { onMounted, onBeforeUnmount, ref, watch, computed, nextTick } from 'vue';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -13,6 +13,8 @@ import { SMAAPass } from 'three/addons/postprocessing/SMAAPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { toThree, area, number, occupancy } from '../data/state.js';
 import Icon from '../components/Icon.vue';
+import SceneLoading from '../components/SceneLoading.vue';
+import { readSceneBytes } from './load-asset.js';
 import { createDaylightSky } from './daylight-environment.js';
 import { measureFloatingCard } from '../utils/floating-card.js';
 import { entranceFrame } from './entrance.js';
@@ -23,6 +25,10 @@ const emit = defineEmits(['enter', 'stats', 'status', 'entrance', 'interrupt']);
 const cardPosition = ref(null),
   selectedPoi = ref(null),
   selectedInfo = computed(() => spec.poi.find((p) => p.id === selectedPoi.value));
+// 阶段对应真实资源、空间构建与首帧准备，字节总量来自当前模型清单。
+const loadingPhase = ref('resources');
+const downloadedBytes = ref(0);
+const totalBytes = ref(0);
 const host = ref(null),
   labelHost = ref(null),
   status = ref('正在载入区域场景'),
@@ -431,9 +437,15 @@ onMounted(async () => {
     const info = await response.json();
     if (info.planningSha256 !== props.config.planningSha256)
       throw new Error('区域模型与规划版本不一致');
+    totalBytes.value = info.bytes;
     const assetResponse = await fetch('./assets/' + info.asset, { signal: controller.signal });
     if (!assetResponse.ok) throw new Error('区域模型读取失败');
-    const bytes = await assetResponse.arrayBuffer();
+    const bytes = await readSceneBytes(assetResponse, (received) => {
+      if (!disposed) downloadedBytes.value = received;
+    });
+    loadingPhase.value = 'scene';
+    await nextTick();
+    if (disposed) return;
     const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), (v) =>
       v.toString(16).padStart(2, '0'),
     ).join('');
@@ -654,12 +666,14 @@ onMounted(async () => {
     document.addEventListener('visibilitychange', visibility);
     renderer.domElement.addEventListener('pointerdown', down, true);
     renderer.domElement.addEventListener('pointerup', up);
+    loadingPhase.value = 'ready';
+    await nextTick();
+    if (disposed) return;
     resize();
     ready = true;
     reduced.addEventListener('change', reduceChanged);
     renderer.domElement.addEventListener('wheel', interrupt, { capture: true, passive: true });
     startEntrance();
-    report('');
     function render(time) {
       if (disposed) return;
       frame = requestAnimationFrame(render);
@@ -747,6 +761,7 @@ onMounted(async () => {
       renderer.shadowMap.enabled = true;
       mixPass.uniforms.bloomTexture.value = bloomPass.renderTargetsHorizontal[0].texture;
       composer.render();
+      if (frames === 0) report('');
       frames++;
       if (time - lastStats > 1200) {
         const sorted = [...samples].sort((a, b) => a - b);
@@ -843,6 +858,7 @@ onBeforeUnmount(() => {
 });
 
 const definitions = props.config.demoDesign.contentDefinitions;
+const reload = () => window.location.reload();
 </script>
 
 <template>
@@ -915,8 +931,17 @@ const definitions = props.config.demoDesign.contentDefinitions;
         ><span>{{ selectedPoi === 'INDUSTRY-DEMO' ? '光谷示范园区' : '设施信息待核定' }}</span>
       </footer>
     </section>
-    <div v-if="status" :class="['scene-status', { error: failure }]" role="status">
-      {{ status }}
-    </div>
+    <Transition name="scene-loading">
+      <SceneLoading
+        v-if="status"
+        scene="city"
+        :phase="loadingPhase"
+        :downloaded="downloadedBytes"
+        :total="totalBytes"
+        :message="status"
+        :error="failure"
+        @retry="reload"
+      />
+    </Transition>
   </div>
 </template>

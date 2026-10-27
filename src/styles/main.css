@@ -546,28 +546,6 @@ dl {
   padding: 8px 13px;
   pointer-events: none;
 }
-.scene-status {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  background: #edf1ecb3;
-  font-size: 22px;
-  z-index: 10;
-  backdrop-filter: blur(5px);
-}
-.scene-status button {
-  border: 1px solid #88a9a6;
-  border-radius: 22px;
-  padding: 8px 18px;
-  font-size: 17px;
-}
-.scene-status.error {
-  color: #7e453e;
-}
 .no-data .kpi strong {
   color: #71858a;
 }
