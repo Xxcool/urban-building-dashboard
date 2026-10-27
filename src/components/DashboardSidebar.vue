@@ -5,7 +5,7 @@ import Icon from './Icon.vue';
 import { number, area, occupancy, vacant } from '../data/state.js';
 const props = defineProps(['config', 'level', 'mode', 'data', 'selected', 'entering']);
 const emit = defineEmits(['back', 'focus']);
-const previewUrl = import.meta.env.BASE_URL + 'assets/a1-preview.png';
+const previewUrl = import.meta.env.BASE_URL + 'assets/a1-preview.jpg';
 const focusBuilding = props.config.demoDesign.focusBuilding;
 const selectedData = computed(() => props.data.byBuilding[props.selected]);
 const currentIdentity = computed(() =>
@@ -172,6 +172,8 @@ const metrics = computed(() => [
             <img
               v-if="selected === focusBuilding.id"
               :src="previewUrl"
+              width="600"
+              height="720"
               alt="A1科创大厦实际模型预览"
             /><template v-else
               ><Icon name="building" /><b>{{ selected }}</b></template

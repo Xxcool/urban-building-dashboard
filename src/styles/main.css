@@ -1511,6 +1511,8 @@ dl {
   min-height: 222px;
 }
 .building-portrait {
+  min-width: 0;
+  min-height: 0;
   overflow: hidden;
   background: linear-gradient(145deg, #c6e0e9, #d8e5df);
   display: flex;
@@ -1528,9 +1530,11 @@ dl {
   font-size: 32px;
 }
 .building-portrait img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* 缩略图展示完整楼宇轮廓，不能按容器比例裁去楼顶和裙房。 */
+  object-fit: contain;
 }
 .selected-building-metrics {
   padding: 8px 20px;
