@@ -1,0 +1,80 @@
+{
+  "quality": "detailed",
+  "planningSha256": "952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651",
+  "asset": "campus.glb",
+  "assetSha256": "07e34e205a7687bde98dbdeb6afe65ea2c8eb747db7dbd5899937bf7b009a05b",
+  "bytes": 18604156,
+  "triangles": 192782,
+  "bakingComplete": true,
+  "execution": "Blender MCP",
+  "operations": {
+    "assets/mcp-operations/v27/campus-polish.json": "a625dfde063012760994ffaaccb73b0b39319928bd4ee3d15a5936ead3f45200",
+    "assets/mcp-operations/v27/campus-ground-bake.json": "5155a6c1300ff79f1da293f7eb96c796b78844d546fb63cd26b0aee999e2f315",
+    "assets/mcp-operations/v27/campus-glass.json": "1dc9cbf713a2aa8664dea524d9d66537cd13ad32a45daad78c6f9204acd63934",
+    "assets/mcp-operations/v27/campus-ao.json": "e862ab0ed9bfba3ca898e278cf717142617b490068fdeb69a1594ccc09df73e0",
+    "assets/mcp-operations/v27/campus-interior-atlas.json": "035b4c49b261f9f05d1cfa5580f2447b36c552c7361a04827da5aef3a5a30f3b",
+    "assets/mcp-operations/v27/campus-surface-final.json": "37b2ef5fe2dd162654b150e1ce46585942d43fe3ffb841ca13fb561defd8b232",
+    "assets/mcp-operations/v27/campus-indirect.json": "3f4c52c0dfa431718635edf155e480b8e32d0e8b7248434518fba6506e2fd66f",
+    "assets/mcp-operations/v27/campus-tone.json": "4ef3ee1e6f3302cf78afc12a46db43ab91f044db2e73f06716396c24a286a8cd",
+    "assets/mcp-operations/v27/campus-export.json": "0b054ffce70262d709c039db7e26cd942606365279100ecee5a3af06b815749f"
+  },
+  "blender": "5.2.2 LTS",
+  "objects": [
+    {
+      "objectId": "A1",
+      "rootNode": "building_A1",
+      "anchorNode": "anchor_A1",
+      "heightM": 101.4
+    },
+    {
+      "objectId": "A2",
+      "rootNode": "building_A2",
+      "anchorNode": "anchor_A2",
+      "heightM": 21
+    },
+    {
+      "objectId": "B1",
+      "rootNode": "building_B1",
+      "anchorNode": "anchor_B1",
+      "heightM": 84
+    },
+    {
+      "objectId": "B2",
+      "rootNode": "building_B2",
+      "anchorNode": "anchor_B2",
+      "heightM": 76
+    },
+    {
+      "objectId": "B3",
+      "rootNode": "building_B3",
+      "anchorNode": "anchor_B3",
+      "heightM": 21
+    },
+    {
+      "objectId": "C1",
+      "rootNode": "building_C1",
+      "anchorNode": "anchor_C1",
+      "heightM": 21
+    },
+    {
+      "objectId": "C2",
+      "rootNode": "building_C2",
+      "anchorNode": "anchor_C2",
+      "heightM": 21
+    },
+    {
+      "objectId": "C3",
+      "rootNode": "building_C3",
+      "anchorNode": "anchor_C3",
+      "heightM": 21
+    }
+  ],
+  "layoutMigration": {
+    "fromPlanningSha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769",
+    "toPlanningSha256": "952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651",
+    "fromScene": "app/public/assets/campus.glb",
+    "toScene": "public/assets/campus.glb",
+    "assetSha256": "07e34e205a7687bde98dbdeb6afe65ea2c8eb747db7dbd5899937bf7b009a05b",
+    "scope": "仅调整仓库路径；模型内容和原 MCP 制作记录保持一致"
+  }
+}

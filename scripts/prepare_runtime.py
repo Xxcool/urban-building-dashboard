@@ -10,7 +10,7 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--output-root',type=Path,default=root)
 args=parser.parse_args()
 raw=(root/'planning/project.json').read_bytes();p=json.loads(raw)
-out=args.output_root/'app/public/assets';out.mkdir(parents=True,exist_ok=True)
+out=args.output_root/'public/assets';out.mkdir(parents=True,exist_ok=True)
 # 原确认总量作为校验约束；前端实际汇总只从逐栋演示指标派生。
 rows=[p['demoDesign']['focusBuilding'],*p['demoDesign']['buildingMetrics'].values()]
 assert len(rows)==p['demoDesign']['campus']['buildings']

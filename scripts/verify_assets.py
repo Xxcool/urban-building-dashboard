@@ -16,8 +16,8 @@ source = (root / 'planning/project.json').read_bytes()
 p = json.loads(source)
 spec = p['production']
 manifest = json.loads((root / 'assets/manifest.json').read_text())
-runtime = json.loads((root / 'app/public/assets/runtime.json').read_text())
-info = json.loads((root / 'app/public/assets/build-info.json').read_text())
+runtime = json.loads((root / 'public/assets/runtime.json').read_text())
+info = json.loads((root / 'public/assets/build-info.json').read_text())
 raw = (root / spec['assets']['scene']).read_bytes()
 errors = []
 

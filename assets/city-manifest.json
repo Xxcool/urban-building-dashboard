@@ -1,6 +1,6 @@
 {
   "quality": "detailed",
-  "planningSha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769",
+  "planningSha256": "952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651",
   "scriptSha256": "464cf12994af6d8d4fd7f17f900fa58de9ae1826d04ec21caa99bf37c5cbf490",
   "asset": "city.glb",
   "assetSha256": "b922150cae511d2f5f400b5f7933e205d61f522eb36bdbcab9cc352c71b8868c",
@@ -27,5 +27,13 @@
     "assets/mcp-operations/v27/city-ao.json": "693cb51365e5f51d515c14f796fb7277430e5ef4b5480bab8ba73df98edeebd3",
     "assets/mcp-operations/v27/city-tone.json": "1a5e88a90a3cb656e5c2ea3cb30c6900f005ccc586b6f8f29e8ed53d8c4dc58e",
     "assets/mcp-operations/v27/city-export.json": "34d40858933a41a4c148c22ad53a5d808bf3ac20b7de550dd82f43c9869f009f"
+  },
+  "layoutMigration": {
+    "fromPlanningSha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769",
+    "toPlanningSha256": "952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651",
+    "fromScene": "app/public/assets/city.glb",
+    "toScene": "public/assets/city.glb",
+    "assetSha256": "b922150cae511d2f5f400b5f7933e205d61f522eb36bdbcab9cc352c71b8868c",
+    "scope": "仅调整仓库路径；模型内容和原 MCP 制作记录保持一致"
   }
 }

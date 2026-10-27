@@ -3,7 +3,7 @@ import argparse,time
 from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from pathlib import Path
 from threading import Lock
-p=argparse.ArgumentParser();p.add_argument('--port',type=int,required=True);p.add_argument('--mode',choices=['delay','fail-first'],required=True);a=p.parse_args();root=Path(__file__).resolve().parents[1]/'app/dist';lock=Lock();seen=False
+p=argparse.ArgumentParser();p.add_argument('--port',type=int,required=True);p.add_argument('--mode',choices=['delay','fail-first'],required=True);a=p.parse_args();root=Path(__file__).resolve().parents[1]/'dist';lock=Lock();seen=False
 class Handler(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(root),**kwargs)
  def do_GET(self):

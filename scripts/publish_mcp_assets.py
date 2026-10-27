@@ -3,10 +3,10 @@ import argparse,hashlib,json,shutil,struct
 from pathlib import Path
 from city_layout import derive_city
 root=Path(__file__).resolve().parents[1];parser=argparse.ArgumentParser();parser.add_argument('--stage',choices=['geometry','baked'],required=True);parser.add_argument('--version');args=parser.parse_args();version=args.version
-plan_raw=(root/'planning/project.json').read_bytes();plan=json.loads(plan_raw);digest=hashlib.sha256(plan_raw).hexdigest();version=version or plan['production']['restoration']['version'];work=root/'work'/version;dst=root/'app/public/assets';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+plan_raw=(root/'planning/project.json').read_bytes();plan=json.loads(plan_raw);digest=hashlib.sha256(plan_raw).hexdigest();version=version or plan['production']['restoration']['version'];work=root/'work'/version;dst=root/'public/assets';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def read_glb(path):
  data=path.read_bytes();assert data[:4]==b'glTF';length=struct.unpack_from('<I',data,12)[0];return json.loads(data[20:20+length]),data
-sources={'campus':(work/'campus-v26.glb',work/'campus-v26.blend'),'city':(work/'city-output/app/public/assets/city.glb',work/'city-output/assets/city.blend')}
+sources={'campus':(work/'campus-v26.glb',work/'campus-v26.blend'),'city':(work/'city-output/public/assets/city.glb',work/'city-output/assets/city.blend')}
 if args.stage=='baked':sources={level:(work/(level+'-'+version+'-baked.glb'),work/(level+'-'+version+'-baked.blend'))for level in sources}
 loaded={level:read_glb(glb)for level,(glb,blend)in sources.items()}
 # 绑定必须在文件复制前验证；不根据材质颜色推断业务身份。
@@ -41,7 +41,8 @@ for level,(glb,blend) in sources.items():
   manifest={**info,'files':{str(p.relative_to(root)):{'sha256':sha(p),'bytes':p.stat().st_size}for p in [destination,blend_destination]},'landscapeGeneratorSha256':sha(root/'scripts/campus_landscape.py'),'landscapePhase':'detailed'}
   (root/'assets/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');(dst/'build-info.json').write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n')
  else:
-  base=json.loads((root/'app/public/assets/city-build-info.json').read_text());base.update(info);(root/'assets/city-manifest.json').write_text(json.dumps(base,ensure_ascii=False,indent=2)+'\n');(dst/'city-build-info.json').write_text(json.dumps(base,ensure_ascii=False,indent=2)+'\n')
+  # 新制作资产重新绑定规划，不能继承旧目录迁移的内容一致声明。
+  base=json.loads((root/'public/assets/city-build-info.json').read_text());base.pop('layoutMigration',None);base.update(info);(root/'assets/city-manifest.json').write_text(json.dumps(base,ensure_ascii=False,indent=2)+'\n');(dst/'city-build-info.json').write_text(json.dumps(base,ensure_ascii=False,indent=2)+'\n')
 if version=='v26':shutil.copyfile(work/'a1-preview-v26.png',dst/'a1-preview-v26.png')
 if version=='v26':shutil.copyfile(work/'city-output/checks/city-road-surfaces.json',root/'checks/city-road-surfaces.json')
 if args.stage=='baked':

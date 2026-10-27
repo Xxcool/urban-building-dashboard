@@ -1,6 +1,6 @@
 {
   "quality": "detailed",
-  "planningSha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769",
+  "planningSha256": "952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651",
   "asset": "campus.glb",
   "assetSha256": "07e34e205a7687bde98dbdeb6afe65ea2c8eb747db7dbd5899937bf7b009a05b",
   "bytes": 18604156,
@@ -70,7 +70,7 @@
     }
   ],
   "files": {
-    "app/public/assets/campus.glb": {
+    "public/assets/campus.glb": {
       "sha256": "07e34e205a7687bde98dbdeb6afe65ea2c8eb747db7dbd5899937bf7b009a05b",
       "bytes": 18604156
     },
@@ -80,5 +80,13 @@
     }
   },
   "landscapeGeneratorSha256": "0fd4d69be7a473a91c6eabde3e04729b60d8c52a383926cb0913525ccdadf55e",
-  "landscapePhase": "detailed"
+  "landscapePhase": "detailed",
+  "layoutMigration": {
+    "fromPlanningSha256": "15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769",
+    "toPlanningSha256": "952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651",
+    "fromScene": "app/public/assets/campus.glb",
+    "toScene": "public/assets/campus.glb",
+    "assetSha256": "07e34e205a7687bde98dbdeb6afe65ea2c8eb747db7dbd5899937bf7b009a05b",
+    "scope": "仅调整仓库路径；模型内容和原 MCP 制作记录保持一致"
+  }
 }

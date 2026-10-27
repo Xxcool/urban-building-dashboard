@@ -34,11 +34,11 @@
 
 ## 本地运行
 
-Node.js 20.20.2、npm 10.8.2；依赖由 `app/package-lock.json` 锁定。
+Node.js 20.20.2、npm 10.8.2；依赖由根目录 `package-lock.json` 锁定。
 
 ```sh
 git clone https://github.com/Xxcool/urban-building-dashboard.git
-cd urban-building-dashboard/app
+cd urban-building-dashboard
 npm ci
 npm run dev
 ```
@@ -47,6 +47,7 @@ npm run dev
 
 ```sh
 npm test
+npm run format:check
 npm run build
 npm run preview -- --port 4175
 ```
@@ -60,12 +61,22 @@ npm run preview -- --port 4175
 - 车辆、人物和喷泉保持实时运动。园区总览与 A1 近景分配不同渲染细节。
 - 实际 GLB 约为园区 **18.6 MB**、城市 **24.2 MB**，按层级加载；园区和楼宇共用同一模型。
 
+日常前端开发直接使用仓库内的现有资产，无需重复执行目录迁移脚本。`scripts/migrate_asset_paths.py --previous-planning <旧规划文件>` 仅用于本次 `app/public` 到 `public` 的一次性迁移，拒绝模型或业务规划变化。
+
 加载已保存工程、通过 MCP 再导出与独立目录重建的方法见 [制作与复验记录](docs/restoration-v27.md)。历史操作记录表达各次修改上下文，不应对任意当前场景直接重放。
 
 ## 项目结构
 
 ```text
-app/                  Vue + Three.js 前端、测试和运行资产
+src/App.vue           Vue 单文件根组件与三层展示协调
+src/components/       图标、经营摘要等界面组件
+src/scenes/           Three.js 容器、入场与场景运动
+src/composables/      Vue 组合式逻辑
+src/data/             同一规划快照与数值口径
+src/utils/            浮卡布局等纯计算工具
+src/styles/           展示样式
+public/assets/        网页运行模型、贴图与派生配置
+tests/                前端契约测试
 planning/             统一规划源
 assets/               打包 Blender 工程、材质、MCP 操作和导出清单
 design/final/         唯一有效的三场景设计终稿
@@ -74,6 +85,10 @@ docs/                 当前规格、实现说明与历史记录
 scripts/              配置派生、MCP 通信、核对及重建工具
 checks/               实际对照、交互、性能与重建证据
 ```
+
+前端直接在仓库根目录开发和构建，使用 Vue 3 单文件组件与 Vite 的 Vue 插件。编辑器建议安装 Vue - Official 扩展；格式化使用 `npm run format`。
+
+线上站点使用 Vercel：项目 Root Directory 设为仓库根目录（留空），构建命令为 `npm run build`，输出目录为 `dist`。若现有平台设置仍为 `app`，需要在合并目录迁移前同步调整。仓库中的 CI 只执行验证。
 
 ## 验证
 

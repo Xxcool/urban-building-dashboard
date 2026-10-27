@@ -1,6 +1,6 @@
 # 当前城市制作规格
 
-唯一规划SHA-256：15616177c7084908378f3be02d0cdb0c39490084f7fa99b4a021f4b981b46769
+唯一规划SHA-256：952b7727eaa7496f30b67cc3f7b7e637c871cfc8eb2cbec42408a568823e1651
 
 唯一视觉终稿：../design/final/city.png，用户确认见../design/final/approval.md。
 
@@ -93,8 +93,8 @@ v26已按唯一终稿重新标注边界、南部完整水系、道路与园区�
     ]
   },
   "assets": {
-    "scene": "app/public/assets/city.glb",
-    "grayScene": "app/public/assets/city-gray.glb",
+    "scene": "public/assets/city.glb",
+    "grayScene": "public/assets/city-gray.glb",
     "blend": "assets/city.blend"
   },
   "budget": {
