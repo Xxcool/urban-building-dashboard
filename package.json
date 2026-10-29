@@ -1,6 +1,7 @@
 {
   "name": "gaoxin-digital-building",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",

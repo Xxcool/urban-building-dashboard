@@ -2,7 +2,7 @@
 
 以武汉光谷为产业背景，使用 Vue 3、Three.js 与 Blender MCP 制作的三维空间展示：城市区域 → 示范园区 → A1 科创大厦。
 
-**[在线体验 →](https://urban-building-dashboard.vercel.app/)** · [本地运行](#本地运行) · [项目结构](#项目结构) · [实现状态](docs/implementation-status.md)
+**[在线体验 →](https://urban-building-dashboard.vercel.app/)** · [本地运行](#本地运行) · [项目结构](#项目结构)
 
 > 园区、建筑、坐标与经营指标均为演示设定；城市区域为概念示意，不是测绘成果或真实运营数据。
 
@@ -116,3 +116,17 @@ checks/               实际对照、交互、性能与重建证据
 [当前实现状态](docs/implementation-status.md) · [逐项修正与验证](docs/restoration-v27.md) · [终稿与实际对照](checks/v27-comparison.html)
 
 当前为演示项目；目标展厅硬件、长时运行、完整跨浏览器矩阵与真实接口接入未验证。依赖与第三方声明见 [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt)。
+
+---
+
+## 👨‍💻 作者 (Author)
+
+- **Xxcool** - [GitHub (@Xxcool)](https://github.com/Xxcool) · [掘金技术主页](https://juejin.cn/user/4265760845468296/posts)
+
+---
+
+## 📄 开源许可 (License)
+
+本项目遵循 [MIT License](LICENSE) 开源协议。
+
+
