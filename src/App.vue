@@ -51,6 +51,7 @@ const handleEntrance = (frame) => {
 };
 const cityView = ref(null),
   campusView = ref(null),
+  entryLoadingHost = ref(null),
   journey = ref(null),
   campusReady = ref(false),
   campusAttempt = ref(0),
@@ -313,6 +314,8 @@ onBeforeUnmount(() => {
         }
       "
     />
+    <!-- 加载反馈独立于园区镜头的透明度，交接前仍能显示真实进度。 -->
+    <div ref="entryLoadingHost" class="entry-loading-layer" :style="sceneStyle"></div>
     <SceneView
       ref="campusView"
       :key="campusAttempt"
@@ -321,6 +324,7 @@ onBeforeUnmount(() => {
       v-if="visitedCampus"
       v-show="level !== 'city' || !!journey"
       :active="campusActive"
+      :loading-target="journey ? entryLoadingHost : null"
       :config="config"
       :level="sceneLevel"
       :selected="selected"

@@ -1279,6 +1279,13 @@ dl {
   stroke-dasharray: 3 3;
 }
 /* 园区进入由共享时间线驱动，两层镜头在交叠期间保持同一地面投影。 */
+.entry-loading-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
 .entering-campus .city-scene {
   opacity: var(--entry-city, 1);
 }

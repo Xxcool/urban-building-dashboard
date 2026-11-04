@@ -27,6 +27,7 @@ const props = defineProps([
   'mode',
   'resetTick',
   'tour',
+  'loadingTarget',
 ]);
 const emit = defineEmits(['select', 'focus', 'stats', 'status', 'ready', 'interrupt']);
 
@@ -844,17 +845,19 @@ const reload = () => window.location.reload();
         ><span>模型高度 {{ modelHeight }} m</span>
       </footer>
     </aside>
-    <Transition name="scene-loading">
-      <SceneLoading
-        v-if="status"
-        :scene="level"
-        :phase="loadingPhase"
-        :downloaded="downloadedBytes"
-        :total="totalBytes"
-        :message="status"
-        :error="failure"
-        @retry="reload"
-      />
-    </Transition>
+    <Teleport :to="loadingTarget || host" :disabled="!loadingTarget">
+      <Transition name="scene-loading">
+        <SceneLoading
+          v-if="status"
+          :scene="level"
+          :phase="loadingPhase"
+          :downloaded="downloadedBytes"
+          :total="totalBytes"
+          :message="status"
+          :error="failure"
+          @retry="reload"
+        />
+      </Transition>
+    </Teleport>
   </div>
 </template>
