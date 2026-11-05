@@ -2,7 +2,7 @@
 
 以武汉光谷为产业背景，使用 Vue 3、Three.js 与 Blender MCP 制作的三维空间展示：城市区域 → 示范园区 → A1 科创大厦。
 
-**[在线体验 →](https://urban-building-dashboard.vercel.app/)** · [本地运行](#本地运行) · [项目结构](#项目结构)
+**[在线体验 →](https://urban-building-dashboard.pages.dev/)** · [本地运行](#本地运行) · [项目结构](#项目结构)
 
 > 园区、建筑、坐标与经营指标均为演示设定；城市区域为概念示意，不是测绘成果或真实运营数据。
 
@@ -107,7 +107,7 @@ checks/               实际对照、交互、性能与重建证据
 
 前端直接在仓库根目录开发和构建，使用 Vue 3 单文件组件与 Vite 的 Vue 插件。编辑器建议安装 Vue - Official 扩展；格式化使用 `npm run format`。
 
-线上站点使用 Vercel：项目 Root Directory 设为仓库根目录（留空），构建命令为 `npm run build`，输出目录为 `dist`。当前项目的平台根目录设置已同步为仓库根目录。仓库中的 CI 只执行验证。
+线上站点使用 Cloudflare Pages：已关联本仓库的 `main` 分支，推送后自动构建部署。根目录留空，构建命令为 `npm run build`，输出目录为 `dist`。仓库中的 CI 只执行验证。
 
 ## 验证
 
